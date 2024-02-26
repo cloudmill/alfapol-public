@@ -560,6 +560,7 @@
 	</head>
 
 	<body class="body">
+		<div class="overlay submodal" data-element="submodal" data-action="close-submodal"></div>
 		<div class="overlay high" data-element="popup" data-action="close-popup"></div>
 		<div class="overlay low" data-element="popup" data-action="close-popup"></div>
 		<div class="wrapper">
@@ -683,14 +684,19 @@
 					</div>
 				</section>
 				<section class="section catalog">
-					<div class="contact-form contacts__ymap" data-element="popup" data-popup="ymap-popup"><button class="contact-form__close" data-action="close-popup"><svg class="contact-form__close-svg" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<div class="contact-form contacts__ymap contacts__ymap_submodal" data-element="popup" data-popup="ymap-popup"><button class="contact-form__close" data-action="close-popup"><svg class="contact-form__close-svg" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<path d="M6 6L18 18" stroke="#0E2245" stroke-width="1.5" stroke-linecap="round"></path>
 								<path d="M18 6L6 18" stroke="#0E2245" stroke-width="1.5" stroke-linecap="round"></path>
 							</svg></button>
 						<div class="contact-form__wrapper">
 							<div class="contact-form__inner" data-element="popup-content">
 								<div class="contact-form__header">
-									<h4 class="contact-form__title">Головной офис</h4>
+									<h4 class="contact-form__title">Головной офис</h4><button class="section-link" data-element="submodal-btn">
+										<div class="section-link__span">Как добраться</div><svg class="section-link__svg section-link__svg_white" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M4 12H20" stroke="#0E2245" stroke-width="1.5" stroke-linecap="round"></path>
+											<path d="M12 4L12 20" stroke="#0E2245" stroke-width="1.5" stroke-linecap="round"></path>
+										</svg>
+									</button>
 								</div>
 								<div class="contact-form__map-wrapper">
 									<div class="contact-form__map" id="map"></div>
@@ -698,16 +704,77 @@
 							</div>
 						</div>
 					</div>
+					<div class="contact-form ymap-submodal" data-element="submodal" data-popup="ymap-submodal"><button class="contact-form__close" data-action="close-submodal"><svg class="contact-form__close-svg" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M6 6L18 18" stroke="#0E2245" stroke-width="1.5" stroke-linecap="round"></path>
+								<path d="M18 6L6 18" stroke="#0E2245" stroke-width="1.5" stroke-linecap="round"></path>
+							</svg></button>
+						<div class="contact-form__wrapper">
+							<div class="contact-form__inner">
+								<div class="contact-form__header">
+									<h4 class="contact-form__title">как добраться</h4>
+								</div>
+								<div class="contact-form__content">
+									<div class="ymap-submodal__picture-wrapper">
+										<picture class="picture ymap-submodal__picture desktop">
+											<source type="image/webp" srcset="assets/images/ymap-how-to-get.webp"><img class="picture__img" src="assets/images/ymap-how-to-get.png">
+										</picture>
+										<picture class="picture ymap-submodal__picture mobile">
+											<source type="image/webp" srcset="assets/images/ymap-how-to-get-m.webp"><img class="picture__img" src="assets/images/ymap-how-to-get-m.png">
+										</picture>
+										<div class="ymap-submodal__picture-notes">
+											<div class="ymap-submodal__picture-note">
+												<div class="ymap-submodal__picture-note-step">2</div>
+												<div class="ymap-submodal__picture-note-text">Проезд через ворота</div>
+												<picture class="picture ymap-submodal__picture-note-arrow-2 desktop">
+													<source type="image/webp" srcset="assets/images/ya-how-to-get-step-2.webp"><img class="picture__img" src="assets/images/ya-how-to-get-step-2.png">
+												</picture>
+												<picture class="picture ymap-submodal__picture-note-arrow-2 mobile">
+													<source type="image/webp" srcset="assets/images/ya-how-to-get-step-2-m.webp"><img class="picture__img" src="assets/images/ya-how-to-get-step-2-m.png">
+												</picture>
+											</div>
+											<div class="ymap-submodal__picture-note">
+												<div class="ymap-submodal__picture-note-step">1</div>
+												<div class="ymap-submodal__picture-note-text">Необходимо получить пропуск</div><svg class="ymap-submodal__picture-note-arrow-1 desktop" width="104" height="78" viewbox="0 0 104 78" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M103.729 8.84839C103.729 13.2667 100.147 16.8484 95.7285 16.8484C91.3102 16.8484 87.7285 13.2667 87.7285 8.84839C87.7285 4.43011 91.3102 0.848388 95.7285 0.848389C100.147 0.848389 103.729 4.43011 103.729 8.84839ZM0.499997 78L0.5 12.8484L3.5 12.8484L3.5 78L0.499997 78ZM6 7.34839L95.7285 7.34839L95.7285 10.3484L6 10.3484L6 7.34839ZM0.5 12.8484C0.5 9.81082 2.96243 7.34839 6 7.34839L6 10.3484C4.61929 10.3484 3.5 11.4677 3.5 12.8484L0.5 12.8484Z" fill="url(#paint0_linear_966_35583)"></path>
+													<defs>
+														<lineargradient id="paint0_linear_966_35583" x1="2.77855" y1="62.1295" x2="0.445961" y2="80.3237" gradientunits="userSpaceOnUse">
+															<stop stop-color="white"></stop>
+															<stop offset="1" stop-color="white" stop-opacity="0"></stop>
+														</lineargradient>
+													</defs>
+												</svg>
+												<picture class="picture ymap-submodal__picture-note-arrow-1 mobile">
+													<source type="image/webp" srcset="assets/images/ya-how-to-get-step-1-m.webp"><img class="picture__img" src="assets/images/ya-how-to-get-step-1-m.png">
+												</picture>
+											</div>
+										</div>
+									</div>
+									<div class="ymap-submodal__info">196600, Санкт-Петербург, город Пушкин, ул. Промышленная, 17П<ul class="ymap-submodal__info-list">
+											<li class="ymap-submodal__info-item">Время пути - 4 минуты</li>
+											<li class="ymap-submodal__info-item">8 800 350-58-76</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
 					<ul class="contacts__cards">
 						<li class="contacts__card">
-							<h2 class="contacts__card-title">Головной офис</h2>
+							<div class="contacts__card-header">
+								<h2 class="contacts__card-title">Головной офис</h2><button class="section-link desktop" data-action="ymap-popup-show" data-ymap-content="office" data-title="головной офис" data-coords="59.859542,30.328265">
+									<div class="section-link__span">На карте</div><svg class="section-link__svg section-link__svg_white" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M4 12H20" stroke="#0E2245" stroke-width="1.5" stroke-linecap="round"></path>
+										<path d="M12 4L12 20" stroke="#0E2245" stroke-width="1.5" stroke-linecap="round"></path>
+									</svg>
+								</button>
+							</div>
 							<div class="contacts__card-address">196135, Санкт-Петербург, ул. Ленсовета, 5<div class="contacts__card-schedule">9–18 Мск<div class="contacts__card-schedule-divider"></div>Сб, вс — выходной</div>
 							</div>
 							<div class="contacts__card-links"><a class="contacts__card-link" href="#">
 									<div class="contacts__card-link-icon contacts__card-link-icon_phone"></div>8 800 350-58-76
 								</a><a class="contacts__card-link" href="#">
 									<div class="contacts__card-link-icon contacts__card-link-icon_email"></div>info@alfapol.ru
-								</a></div><button class="section-link" data-action="ymap-popup-show" data-ymap-content="office" data-coords="59.859542,30.328265">
+								</a></div><button class="section-link mobile" data-action="ymap-popup-show" data-ymap-content="office" data-title="головной офис" data-coords="59.859542,30.328265">
 								<div class="section-link__span">На карте</div><svg class="section-link__svg section-link__svg_white" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 									<path d="M4 12H20" stroke="#0E2245" stroke-width="1.5" stroke-linecap="round"></path>
 									<path d="M12 4L12 20" stroke="#0E2245" stroke-width="1.5" stroke-linecap="round"></path>
@@ -716,14 +783,21 @@
 						</li>
 						<div class="separator-line"></div>
 						<li class="contacts__card">
-							<h2 class="contacts__card-title">Завод и склад</h2>
+							<div class="contacts__card-header">
+								<h2 class="contacts__card-title">Завод и склад</h2><button class="section-link desktop" data-action="ymap-popup-show" data-ymap-content="factory" data-title="завод и склад" data-coords="59.731151,30.440393" data-submodal="">
+									<div class="section-link__span">На карте</div><svg class="section-link__svg section-link__svg_white" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M4 12H20" stroke="#0E2245" stroke-width="1.5" stroke-linecap="round"></path>
+										<path d="M12 4L12 20" stroke="#0E2245" stroke-width="1.5" stroke-linecap="round"></path>
+									</svg>
+								</button>
+							</div>
 							<div class="contacts__card-address">196600, Санкт-Петербург, город Пушкин, ул. Автомобильная, д.9, лит.А<div class="contacts__card-schedule">9–18 Мск<div class="contacts__card-schedule-divider"></div>Сб, вс — выходной</div>
 							</div>
 							<div class="contacts__card-links"><a class="contacts__card-link" href="#">
 									<div class="contacts__card-link-icon contacts__card-link-icon_phone"></div>8 800 350-58-76
 								</a><a class="contacts__card-link" href="#">
 									<div class="contacts__card-link-icon contacts__card-link-icon_email"></div>info@alfapol.ru
-								</a></div><button class="section-link" data-action="ymap-popup-show" data-ymap-content="factory" data-coords="59.731151,30.440393">
+								</a></div><button class="section-link mobile" data-action="ymap-popup-show" data-ymap-content="factory" data-title="завод и склад" data-coords="59.731151,30.440393" data-submodal="">
 								<div class="section-link__span">На карте</div><svg class="section-link__svg section-link__svg_white" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 									<path d="M4 12H20" stroke="#0E2245" stroke-width="1.5" stroke-linecap="round"></path>
 									<path d="M12 4L12 20" stroke="#0E2245" stroke-width="1.5" stroke-linecap="round"></path>
