@@ -1,0 +1,10 @@
+<svg width="32.000000" height="32.000000" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<defs>
+		<clipPath id="clip5_5076">
+			<rect id="play-button" width="32.000000" height="32.000000" fill="white" fill-opacity="0"/>
+		</clipPath>
+	</defs>
+	<g clip-path="url(#clip5_5076)">
+		<path id="play-button" d="M20 16.4401L12 22.2136L12 10.6666L20 16.4401Z" fill="#0E2245" fill-opacity="1.000000" fill-rule="nonzero"/>
+	</g>
+</svg>
