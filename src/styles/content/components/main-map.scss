@@ -1,0 +1,8 @@
+.section-map {
+    width: 100%;
+    margin-bottom: rem(-8px);
+
+    @media #{media('<',t)} {
+        margin-top: rem(4px);
+    }
+}

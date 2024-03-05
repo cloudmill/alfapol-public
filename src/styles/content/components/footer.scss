@@ -1,0 +1,387 @@
+.footer {
+  background: color(text);
+
+  overflow-x: hidden;
+
+  &.white {
+    background: none;
+
+    margin-top: rem(120px);
+
+    @media #{media('<',t)} {
+      margin-top: rem(40px);
+    }
+  }
+
+  &__inner {
+    width: calc(100% - rem(8px) - rem(8px));
+    height: rem(514px);
+
+    margin: 0 rem(8px) rem(8px);
+
+    background-color: color(blue);
+    border-radius: rem(6px);
+
+    display: grid;
+    grid-template-columns: rem(647px) auto;
+    gap: rem(8px);
+
+    position: relative;
+
+    @media #{media('<',t)} {
+      width: calc(100% - rem(4px) - rem(4px));
+      height: auto;
+
+      display: block;
+
+      margin: 0 rem(4px) rem(4px);
+      padding: rem(32px) rem(20px) rem(20px);
+    }
+  }
+
+  &__logo {
+    width: 100%;
+    height: 100%;
+
+    display: grid;
+    align-items: center;
+    justify-content: center;
+
+    &.desktop {
+      @media #{media('<',t)} {
+        display: none;
+      }
+    }
+
+    &-link {
+      width: fit-content;
+      height: fit-content;
+    }
+
+    &-svg {
+      width: rem(225px);
+      height: rem(103px);
+    }
+  }
+
+  &__content {
+    &-top {
+      display: grid;
+      grid-template-columns: rem(452px) rem(302px) auto;
+
+      padding-top: rem(32px);
+
+      @media #{media('<',t)} {
+        display: block;
+
+        padding-top: 0;
+      }
+    }
+
+    &-bottom {
+      display: grid;
+      grid-template-columns: rem(745px) auto;
+      gap: rem(159px);
+
+      margin-top: rem(70px);
+
+      @media #{media('<',t)} {
+        display: block;
+        margin-top: rem(16px);
+      }
+    }
+  }
+
+  // &__contacts {
+
+  // }
+
+  &__contact {
+    display: block;
+    height: fit-content;
+    width: max-content;
+
+    margin-top: rem(8px);
+
+    color: color(white);
+    font-size: rem(40px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 110%; /* 44px */
+    letter-spacing: rem(-0.8px);
+    text-transform: uppercase;
+    transition: $transition;
+
+    @media #{media('>',t)} {
+      &:hover {
+        color: color(text);
+      }
+    }
+
+    @media #{media('<',t)} {
+      font-size: rem(20px);
+      line-height: 120%; /* 24px */
+      letter-spacing: rem(-0.4px);
+
+      &:first-of-type {
+        margin-top: 0;
+      }
+    }
+
+    &:active {
+      color: color(text);
+    }
+  }
+
+  &__nav {
+    @media #{media('<',t)} {
+      margin-top: rem(16px);
+    }
+
+    &-li {
+      & + & {
+        margin-top: rem(20px);
+
+        @media #{media('<',t)} {
+          margin-top: rem(8px);
+        }
+      }
+    }
+  }
+
+  &__info {
+    @media #{media('<',t)} {
+      position: absolute;
+      top: rem(104px);
+      left: rem(382px);
+    }
+
+    &-li {
+      // @media #{media('<',t)} {
+      //     font-size: rem(14px);
+      //     line-height: 130%; /* 18.2px */
+      //     letter-spacing: rem(-0.28px);
+      // }
+
+      & + & {
+        margin-top: rem(20px);
+
+        @media #{media('<',t)} {
+          margin-top: rem(8px);
+        }
+      }
+    }
+  }
+
+  &-link {
+    color: color(white);
+    font-family: Rubik;
+    font-size: rem(20px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%; /* 20px */
+    letter-spacing: rem(-0.2px);
+    transition: $transition;
+
+    @media #{media('>',t)} {
+      &:hover {
+        color: color(text);
+      }
+    }
+
+    @media #{media('<',t)} {
+      font-size: rem(14px);
+      line-height: 130%; /* 18.2px */
+      letter-spacing: rem(-0.28px);
+    }
+
+    &:active {
+      color: color(text);
+    }
+  }
+
+  &__politics {
+    margin-top: rem(-52px);
+
+    // display: flex;
+    // flex-direction: column;
+    // gap: rem(4px);
+
+    @media #{media('<',t)} {
+      margin-top: rem(16px);
+    }
+
+    &-li {
+      .politics-link {
+        font-family: Rubik;
+        font-size: rem(16px);
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%; /* 24px */
+        letter-spacing: rem(-0.16px);
+
+        color: color(white);
+        transition: $transition;
+
+        @media #{media('>',t)} {
+          &:hover {
+            color: color(text);
+          }
+        }
+
+        &:active {
+          color: color(text);
+        }
+      }
+
+      @media #{media('<',t)} {
+        font-size: rem(12px);
+        letter-spacing: rem(-0.12px);
+      }
+
+      & + & {
+        margin-top: rem(4px);
+      }
+    }
+  }
+
+  &__copyright {
+    color: color(white);
+    opacity: 0.5;
+    font-family: Rubik;
+    font-size: rem(16px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 24px */
+    letter-spacing: rem(-0.16px);
+
+    @media #{media('<',t)} {
+      font-size: rem(12px);
+      letter-spacing: rem(-0.12px);
+    }
+  }
+
+  &__cloudmill {
+    height: rem(24px);
+
+    display: flex;
+    align-items: center;
+    gap: rem(7px);
+
+    @media #{media('<',t)} {
+      margin-top: rem(8px);
+    }
+
+    &-span {
+      color: color(white);
+      opacity: 0.5;
+      font-family: Rubik;
+      font-size: rem(16px);
+      font-style: normal;
+      font-weight: 400;
+      line-height: 150%; /* 24px */
+      letter-spacing: rem(-0.16px);
+
+      @media #{media('<',t)} {
+        font-size: rem(12px);
+        letter-spacing: rem(-0.12px);
+      }
+    }
+
+    &-link {
+      width: max-content;
+      height: fit-content;
+    }
+
+    &-svg {
+      height: rem(10px);
+      width: rem(91.74px);
+
+      path {
+        transition: $transition;
+      }
+
+      @media #{media('>',t)} {
+        &:hover {
+          path {
+            fill: color(text);
+          }
+        }
+      }
+
+      @media #{media('<',t)} {
+        height: rem(8px);
+        width: rem(73.39px);
+      }
+
+      &:active {
+        path {
+          fill: color(text);
+        }
+      }
+    }
+  }
+
+  &__up {
+    width: rem(40px);
+    height: rem(40px);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    top: rem(32px);
+    right: rem(52px);
+
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: rem(4px);
+
+    transition: $transition;
+
+    @media #{media('>',t)} {
+      &:hover {
+        background: color(white);
+        border-color: color(white);
+
+        .footer__up-svg {
+          path {
+            fill: color(blue);
+          }
+        }
+      }
+    }
+
+    @media #{media('<',t)} {
+      width: rem(32px);
+      height: rem(34px);
+
+      right: rem(20px);
+    }
+
+    &:active {
+      background: color(white);
+      border-color: color(white);
+
+      .footer__up-svg {
+        path {
+          fill: color(blue);
+        }
+      }
+    }
+
+    &-svg {
+      width: rem(24px);
+      height: rem(24px);
+
+      path {
+        transition: $transition;
+      }
+
+      @media #{media('<',t)} {
+        width: rem(16px);
+        height: rem(16px);
+      }
+    }
+  }
+}

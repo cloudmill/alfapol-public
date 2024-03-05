@@ -1,0 +1,318 @@
+.about-company {
+  &__history {
+    height: rem(992px);
+
+    margin-top: rem(60px);
+
+    padding-bottom: rem(60px);
+
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+
+    position: relative;
+
+    @media #{media('<',t)} {
+      height: auto;
+
+      display: block;
+    }
+
+    &.desktop {
+      @media #{media('<',t)} {
+        display: none;
+      }
+    }
+
+    &.mobile {
+      @media #{media('>',t)} {
+        display: none;
+      }
+    }
+
+    &-header {
+      height: 100%;
+
+      padding: rem(60px) rem(155.5px) 0 0;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      position: relative;
+    }
+
+    &-logo {
+      width: rem(97px);
+      height: rem(45px);
+
+      position: absolute;
+      top: rem(72px);
+      right: rem(155.5px);
+    }
+
+    // &-title {
+    //   margin-top: rem(60px);
+    // }
+
+    &-image {
+      width: 100%;
+
+      display: block;
+
+      border-radius: rem(6px);
+      overflow: hidden;
+
+      @media #{media('<',m)} {
+        order: 2;
+      }
+    }
+
+    &-progress {
+      width: 1px;
+      height: calc(100% - rem(120px));
+
+      position: absolute;
+      top: rem(60px);
+      left: 50%;
+      transform: translateX(-50%);
+
+      background-image: url("data:image/svg+xml,%3Csvg width='1.000000' height='100%25' viewBox='0 0 1 872' fill='none' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cline id='Line 50' x1='0.500000' y1='0.000000' x2='0.500000' y2='100%25' stroke='%23C7D1D8' stroke-opacity='1.000000' stroke-width='1.000000' stroke-dasharray='4.000000,%0A8.000000'/%3E%3C/svg%3E%0A");
+
+      // &-trip {
+      //   height: 100%;
+      // }
+
+      &-bar {
+        width: 1px;
+        height: rem(200px);
+
+        max-height: 100%;
+
+        background: color(blue);
+
+        position: relative;
+
+        transition: $transition;
+
+        &::before {
+          content: "";
+
+          display: block;
+          width: rem(13px);
+          height: rem(13px);
+
+          border-radius: rem(4px);
+          background: color(blue);
+
+          position: absolute;
+          bottom: 0;
+          left: 50%;
+          transform: translate(-50%, 50%);
+        }
+      }
+    }
+
+    &-content {
+      padding-top: rem(57px);
+      padding-left: rem(154.5px);
+
+      position: relative;
+
+      overflow: hidden;
+
+      @media #{media('<',t)} {
+        padding: 0;
+
+        margin-top: rem(16px);
+
+        display: grid;
+        grid-template-columns: rem(350px) rem(370px);
+        gap: rem(24px);
+      }
+
+      @media #{media('<',m)} {
+        grid-template-columns: none;
+      }
+    }
+
+    &-text {
+      &-slider {
+        height: rem(815px);
+        width: rem(594px);
+
+        overflow: hidden;
+
+        @media #{media('<',t)} {
+          height: rem(264px);
+          width: rem(370px);
+        }
+
+        @media #{media('<',m)} {
+          height: auto;
+          width: 100%;
+
+          order: 1;
+        }
+      }
+      &-slide {
+        width: 100%;
+        height: rem(350px);
+
+        margin-top: rem(60px);
+
+        margin-bottom: rem(154px);
+
+        font-size: rem(20px);
+        font-weight: 400;
+        line-height: 150%;
+        letter-spacing: -0.01em;
+
+        @media #{media('<',t)} {
+          height: 100%;
+
+          margin-top: 0;
+          margin-bottom: 0;
+
+          font-size: rem(14px);
+          letter-spacing: -0.02em;
+
+          display: none;
+        }
+
+        &.active {
+          @media #{media('<',t)} {
+            display: block;
+          }
+        }
+      }
+    }
+
+    &-year {
+      &-shadow {
+        width: 100%;
+        height: rem(314px);
+
+        position: absolute;
+        top: rem(-314px);
+        left: 0;
+
+        background: linear-gradient(
+          180deg,
+          rgba(255, 255, 255, 0) 0%,
+          #ffffff 100%
+        );
+      }
+      &-slider {
+        height: 100%;
+
+        padding-left: rem(143px);
+        padding-top: rem(32px);
+
+        background: color(white);
+
+        position: relative;
+
+        @media #{media('<',t)} {
+          height: rem(24px);
+
+          padding: 0;
+        }
+
+        &-wrapper {
+          width: 100%;
+          height: rem(166px);
+
+          position: absolute;
+          bottom: 0;
+          left: 0;
+
+          @media #{media('<',t)} {
+            height: fit-content;
+            width: 100vw;
+
+            position: static;
+
+            margin-top: rem(16px);
+            margin-left: rem(-12px);
+
+            padding: 0;
+            padding-left: rem(12px);
+            padding-bottom: rem(4px);
+
+            white-space: nowrap;
+
+            overflow-x: scroll;
+
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+
+            &::-webkit-scrollbar {
+              display: none;
+            }
+          }
+        }
+      }
+
+      &-slide {
+        color: color(blue);
+
+        font-size: rem(168px);
+        font-weight: 400;
+        line-height: 80%;
+        letter-spacing: -0.08em;
+        text-transform: uppercase;
+
+        transition: $transition;
+
+        @media #{media('<',t)} {
+          color: color(dark-grey);
+          font-size: rem(16px);
+          line-height: 120%;
+          letter-spacing: -0.02em;
+
+          margin-right: rem(16px);
+
+          position: relative;
+
+          &::before {
+            content: "";
+
+            display: block;
+            width: 100%;
+            height: 1px;
+
+            border-radius: 1px;
+
+            background: transparent;
+
+            position: absolute;
+            bottom: 0;
+            left: 0;
+
+            transition: $transition;
+          }
+
+          &.active {
+            color: color(blue);
+
+            &::before {
+              bottom: rem(-4px);
+
+              background: color(blue);
+            }
+          }
+        }
+      }
+    }
+
+    &-paragraph {
+      & + & {
+        margin-top: rem(20px);
+
+        @media #{media('<',t)} {
+          margin-top: rem(12px);
+        }
+      }
+    }
+  }
+}

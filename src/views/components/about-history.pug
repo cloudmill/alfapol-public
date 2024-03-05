@@ -1,0 +1,130 @@
+mixin about-history
+    .about-company__history.desktop 
+        .about-company__history-progress
+            //- +grey-dashed-line.about-company__history-progress-trip
+            .about-company__history-progress-bar
+        .about-company__history-header
+            h2.section-title.about-company__chapter-title.about-company__history-title
+                |история
+            +grey-contour-logo.about-company__history-logo
+            +picture("about-history-slider.png").about-company__history-image
+
+        .about-company__history-content
+            .about-company__history-text-slider 
+                .about-company__history-text-slide 
+                    p.about-company__history-paragraph
+                        |Компания «АЛЬФАПОЛ» получила патент на материалы для защиты помещений от воздействия электромагнитного излучения и магнитных полей промышленной частоты, не имеющие аналогов в России и мире. Мы придали защитные свойства привычным для строителей сухим смесям — штукатурной и напольной.
+                    p.about-company__history-paragraph
+                        |Были созданы радонозащитные покрытия серии «АЛЬФАПОЛ Ш». Исследования подтвердили гармонизирующий для человека эффект от нахождения в помещениях, в отделке которых использовались материалы этой серии.
+
+                .about-company__history-text-slide 
+                    p.about-company__history-paragraph
+                        |На базе ООО «АЛЬФАПОЛ» был создан аккредитованный Испытательный Исследовательский Центр защиты от ЭМП под руководством доктора медицинских наук, заместителя председателя национального комитета России по защите от неионизирующих излучений Никитиной В.Н.
+                    p.about-company__history-paragraph
+                        |Компания «АЛЬФАПОЛ» стала дипломантом конкурса «100 лучших товаров России» в номинации «Новинка года» за штукатурный радиоэкранирующий состав «Альфапол ШТ-1».
+
+            
+            .about-company__history-year-slider-wrapper 
+                .about-company__history-year-shadow 
+
+                .about-company__history-year-slider 
+                    .about-company__history-year-slide  
+                        |2004
+
+
+
+
+
+    .about-company__history.mobile 
+        //- .about-company__history-header
+        h2.section-title.about-company__chapter-title.about-company__history-title
+            |история
+
+            
+        .about-company__history-year-slider-wrapper
+
+            button.about-company__history-year-slide.active(data-history-slide-btn=1)
+                |2010
+            button.about-company__history-year-slide(data-history-slide-btn=2)
+                |2012
+            button.about-company__history-year-slide(data-history-slide-btn=3)
+                |2014
+            button.about-company__history-year-slide(data-history-slide-btn=4)
+                |2016
+            button.about-company__history-year-slide(data-history-slide-btn=5)
+                |2016
+            button.about-company__history-year-slide(data-history-slide-btn=6)
+                |2016
+            button.about-company__history-year-slide(data-history-slide-btn=7)
+                |2016
+            button.about-company__history-year-slide(data-history-slide-btn=8)
+                |2016
+            button.about-company__history-year-slide(data-history-slide-btn=9)
+                |2016
+            button.about-company__history-year-slide(data-history-slide-btn=10)
+                |2016
+
+        .about-company__history-content
+            +picture("about-history-slider-tablet.png").about-company__history-image
+            .about-company__history-text-slider
+                .about-company__history-text-slide.active(data-history-slide=1)
+                    p.about-company__history-paragraph
+                        |1 Компания «АЛЬФАПОЛ» получила патент на материалы для защиты помещений от воздействия электромагнитного излучения и магнитных полей промышленной частоты, не имеющие аналогов в России и мире. Мы придали защитные свойства привычным для строителей сухим смесям — штукатурной и напольной.
+                    p.about-company__history-paragraph
+                        |Были созданы радонозащитные покрытия серии «АЛЬФАПОЛ Ш». Исследования подтвердили гармонизирующий для человека эффект от нахождения в помещениях, в отделке которых использовались материалы этой серии.
+
+                .about-company__history-text-slide(data-history-slide=2)
+                    p.about-company__history-paragraph
+                        |2 На базе ООО «АЛЬФАПОЛ» был создан аккредитованный Испытательный Исследовательский Центр защиты от ЭМП под руководством доктора медицинских наук, заместителя председателя национального комитета России по защите от неионизирующих излучений Никитиной В.Н.
+                    p.about-company__history-paragraph
+                        |Компания «АЛЬФАПОЛ» стала дипломантом конкурса «100 лучших товаров России» в номинации «Новинка года» за штукатурный радиоэкранирующий состав «Альфапол ШТ-1».
+
+                .about-company__history-text-slide(data-history-slide=3)
+                    p.about-company__history-paragraph
+                        |3 Компания «АЛЬФАПОЛ» получила патент на материалы для защиты помещений от воздействия электромагнитного излучения и магнитных полей промышленной частоты, не имеющие аналогов в России и мире. Мы придали защитные свойства привычным для строителей сухим смесям — штукатурной и напольной.
+                    p.about-company__history-paragraph
+                        |Были созданы радонозащитные покрытия серии «АЛЬФАПОЛ Ш». Исследования подтвердили гармонизирующий для человека эффект от нахождения в помещениях, в отделке которых использовались материалы этой серии.
+
+                .about-company__history-text-slide(data-history-slide=4)
+                    p.about-company__history-paragraph
+                        |4 Компания «АЛЬФАПОЛ» получила патент на материалы для защиты помещений от воздействия электромагнитного излучения и магнитных полей промышленной частоты, не имеющие аналогов в России и мире. Мы придали защитные свойства привычным для строителей сухим смесям — штукатурной и напольной.
+                    p.about-company__history-paragraph
+                        |Были созданы радонозащитные покрытия серии «АЛЬФАПОЛ Ш». Исследования подтвердили гармонизирующий для человека эффект от нахождения в помещениях, в отделке которых использовались материалы этой серии.
+
+                .about-company__history-text-slide(data-history-slide=5)
+                    p.about-company__history-paragraph
+                        |5 Компания «АЛЬФАПОЛ» получила патент на материалы для защиты помещений от воздействия электромагнитного излучения и магнитных полей промышленной частоты, не имеющие аналогов в России и мире. Мы придали защитные свойства привычным для строителей сухим смесям — штукатурной и напольной.
+                    p.about-company__history-paragraph
+                        |Были созданы радонозащитные покрытия серии «АЛЬФАПОЛ Ш». Исследования подтвердили гармонизирующий для человека эффект от нахождения в помещениях, в отделке которых использовались материалы этой серии.
+
+                .about-company__history-text-slide(data-history-slide=6)
+                    p.about-company__history-paragraph
+                        |6 Компания «АЛЬФАПОЛ» получила патент на материалы для защиты помещений от воздействия электромагнитного излучения и магнитных полей промышленной частоты, не имеющие аналогов в России и мире. Мы придали защитные свойства привычным для строителей сухим смесям — штукатурной и напольной.
+                    p.about-company__history-paragraph
+                        |Были созданы радонозащитные покрытия серии «АЛЬФАПОЛ Ш». Исследования подтвердили гармонизирующий для человека эффект от нахождения в помещениях, в отделке которых использовались материалы этой серии.
+
+                .about-company__history-text-slide(data-history-slide=7)
+                    p.about-company__history-paragraph
+                        |7 На базе ООО «АЛЬФАПОЛ» был создан аккредитованный Испытательный Исследовательский Центр защиты от ЭМП под руководством доктора медицинских наук, заместителя председателя национального комитета России по защите от неионизирующих излучений Никитиной В.Н.
+                    p.about-company__history-paragraph
+                        |Компания «АЛЬФАПОЛ» стала дипломантом конкурса «100 лучших товаров России» в номинации «Новинка года» за штукатурный радиоэкранирующий состав «Альфапол ШТ-1».
+
+                .about-company__history-text-slide(data-history-slide=8)
+                    p.about-company__history-paragraph
+                        |8 Компания «АЛЬФАПОЛ» получила патент на материалы для защиты помещений от воздействия электромагнитного излучения и магнитных полей промышленной частоты, не имеющие аналогов в России и мире. Мы придали защитные свойства привычным для строителей сухим смесям — штукатурной и напольной.
+                    p.about-company__history-paragraph
+                        |Были созданы радонозащитные покрытия серии «АЛЬФАПОЛ Ш». Исследования подтвердили гармонизирующий для человека эффект от нахождения в помещениях, в отделке которых использовались материалы этой серии.
+
+                .about-company__history-text-slide(data-history-slide=9)
+                    p.about-company__history-paragraph
+                        |9 Компания «АЛЬФАПОЛ» получила патент на материалы для защиты помещений от воздействия электромагнитного излучения и магнитных полей промышленной частоты, не имеющие аналогов в России и мире. Мы придали защитные свойства привычным для строителей сухим смесям — штукатурной и напольной.
+                    p.about-company__history-paragraph
+                        |Были созданы радонозащитные покрытия серии «АЛЬФАПОЛ Ш». Исследования подтвердили гармонизирующий для человека эффект от нахождения в помещениях, в отделке которых использовались материалы этой серии.
+
+                .about-company__history-text-slide(data-history-slide=10)
+                    p.about-company__history-paragraph
+                        |10 Компания «АЛЬФАПОЛ» получила патент на материалы для защиты помещений от воздействия электромагнитного излучения и магнитных полей промышленной частоты, не имеющие аналогов в России и мире. Мы придали защитные свойства привычным для строителей сухим смесям — штукатурной и напольной.
+                    p.about-company__history-paragraph
+                        |Были созданы радонозащитные покрытия серии «АЛЬФАПОЛ Ш». Исследования подтвердили гармонизирующий для человека эффект от нахождения в помещениях, в отделке которых использовались материалы этой серии.
+
+

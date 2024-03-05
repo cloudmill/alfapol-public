@@ -1,0 +1,96 @@
+-
+  var test = 'test'
+
+block variables
+  - var param = false
+
+
+
+include ./components/svg
+include ./components/picture
+
+include ./components/header
+include ./components/footer
+include ./components/our-production
+include ./components/at-objects
+include ./components/main-about
+include ./components/proposal
+include ./components/main-map
+include ./components/main-hero
+include ./components/catalog-hero
+include ./components/catalog-filter
+include ./components/catalog-goods
+include ./components/catalog-form
+include ./components/product-hero
+include ./components/product-examples-slider
+include ./components/product-subslider
+include ./components/product-form
+include ./components/about-hero
+include ./components/about-content
+include ./components/about-history
+include ./components/about-awards
+include ./components/about-manufacture
+include ./components/about-manufacture-hero
+include ./components/vacancies-hero
+include ./components/vacancies-content
+include ./components/vacancies-form
+include ./components/contacts-hero
+include ./components/contacts-content
+include ./components/contacts-map
+include ./components/contacts-form
+include ./components/articles-hero
+include ./components/articles-content
+include ./components/faq-content
+include ./components/partners-content
+include ./components/partners-hero
+include ./components/partners-form
+
+
+
+
+
+include ./components/cards
+
+
+
+
+
+
+
+
+//- include ./components/main-about
+
+
+
+doctype html
+
+html(lang='ru')
+  
+  head
+    meta(charset="utf-8")
+    title= data.title
+    meta(name="viewport" content="width=device-width, initial-scale=1, user-scalable=no")
+  
+  body.body
+
+    .overlay.submodal(data-element="submodal" data-action="close-submodal")
+    .overlay.high(data-element="popup" data-action="close-popup")
+    .overlay.low(data-element="popup" data-action="close-popup")
+
+    .wrapper
+
+
+
+      block header
+        +header
+
+      main.main
+        block content
+
+      block footer
+        +footer
+
+      block grid-test
+        //- +grid-test
+
+    block scripts

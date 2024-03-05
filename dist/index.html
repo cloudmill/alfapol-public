@@ -1,4 +1,4 @@
-<div class="header__contact-form contact-form" data-element="popup"><button class="contact-form__close" data-action="close-popup"><svg class="contact-form__close-svg" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<div class="header__contact-form contact-form" data-element="popup" data-form-target="contact-us"><button class="contact-form__close" data-action="close-popup"><svg class="contact-form__close-svg" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 			<path d="M6 6L18 18" stroke="#0E2245" stroke-width="1.5" stroke-linecap="round"></path>
 			<path d="M18 6L6 18" stroke="#0E2245" stroke-width="1.5" stroke-linecap="round"></path>
 		</svg></button>
@@ -7,14 +7,14 @@
 			<div class="contact-form__header">
 				<h4 class="contact-form__title">связаться с нами</h4>
 			</div>
-			<form class="contact-form__inputs"><input class="contact-form__input" name="name" placeholder="Имя*" required><input class="contact-form__input" type="tel" name="tel" placeholder="Телефон*" data-mask-phone data-parsley-phone-required required>
-				<div class="contact-form__agreement">Нажимая кнопку «Отправить», я даю согласие на обработку <a class="contact-form__personal" href="#">персональных данных</a></div><button class="contact-form__submit" type="submit" value="Отправить"><span class="contact-form__submit-text">Отправить </span><svg class="contact-form__submit-svg" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<form class="contact-form__inputs" id="header-form"><input class="contact-form__input" name="name" placeholder="Имя*" required><input class="contact-form__input" type="tel" name="tel" placeholder="Телефон*" data-mask-phone data-parsley-phone-required required>
+				<div class="contact-form__agreement">Нажимая кнопку «Отправить», я даю согласие на обработку <a class="contact-form__personal" href="#">персональных данных</a></div><button class="contact-form__submit" type="submit" value="Отправить" form="header-form"><span class="contact-form__submit-text">Отправить </span><svg class="contact-form__submit-svg" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 						<path d="M21.2705 11.0193C21.6732 11.3983 21.6919 12.0321 21.3122 12.4342L18.727 15.1714C18.1058 15.8292 17 15.3895 17 14.4848L17 9.31443C17 8.43805 18.0472 7.98559 18.6854 8.58623L21.2705 11.0193Z" fill="white"></path>
 						<path d="M2 11C1.58579 11 1.25 11.3358 1.25 11.75C1.25 12.1642 1.58579 12.5 2 12.5L2 11ZM17 11L2 11L2 12.5L17 12.5L17 11Z" fill="white"></path>
 					</svg></button>
 			</form>
 		</div>
-		<div class="contact-form__success" data-element="popup-stub"><svg class="contact-form__success-svg" width="160" height="160" viewbox="0 0 160 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+		<div class="contact-form__success" data-element="popup-success"><svg class="contact-form__success-svg" width="160" height="160" viewbox="0 0 160 160" fill="none" xmlns="http://www.w3.org/2000/svg">
 				<rect width="160" height="160" fill="white"></rect>
 				<circle cx="80" cy="80" r="66.25" stroke="url(#paint0_linear_766_16456)" stroke-width="1.5"></circle>
 				<path d="M63 80.5451L71.3089 88.387C72.8596 89.8505 75.2857 89.8404 76.8241 88.3639L97 69" stroke="#0E2245" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -173,7 +173,7 @@
 		</div>
 	</div>
 </div>
-<div class="header__cart contact-form contact-form_controls" data-element="popup"><button class="contact-form__close" data-action="close-popup"><svg class="contact-form__close-svg" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<div class="header__cart contact-form contact-form_controls" data-element="popup" data-form-target="open-cart"><button class="contact-form__close" data-action="close-popup"><svg class="contact-form__close-svg" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 			<path d="M6 6L18 18" stroke="#0E2245" stroke-width="1.5" stroke-linecap="round"></path>
 			<path d="M18 6L6 18" stroke="#0E2245" stroke-width="1.5" stroke-linecap="round"></path>
 		</svg></button>
@@ -519,7 +519,7 @@
 				</svg>
 			</a></div>
 	</div>
-	<div class="header__cart-empty" data-element="popup-stub">
+	<div class="header__cart-empty" data-element="popup-success">
 		<div class="header__cart-empty-wrapper"><svg class="header__cart-empty-svg" width="160" height="160" viewbox="0 0 160 160" fill="none" xmlns="http://www.w3.org/2000/svg">
 				<path d="M18 35.409L34.9091 94.5909H108.182M108.182 94.5909L130.727 15.6818H142M108.182 94.5909L118.6 112.822C118.981 113.489 118.499 114.318 117.731 114.318H34.9091" stroke="#0E2245" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
 				<circle cx="43.3637" cy="136.864" r="8.45455" stroke="#0E2245" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></circle>
@@ -578,6 +578,7 @@
 					<li><a href="article">Статья образец</a></li>
 					<li><a href="instructions">Инструкции</a></li>
 					<li><a href="faq">Вопрос-ответ</a></li>
+					<li><a href="partners">Партнерам</a></li>
 				</ul>
 			</main>
 		</div>

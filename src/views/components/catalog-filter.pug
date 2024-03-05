@@ -1,0 +1,86 @@
+mixin catalog-filter
+    section.section.catalog-filter
+        .contact-form.contact-form_controls.material-properties(data-element="popup")
+            button.contact-form__close(data-action="close-popup" data-catalog="catalog-close")
+                +close-btn.contact-form__close-svg
+
+            .contact-form__wrapper
+                .contact-form__inner.contact-form__inner_controls
+                    .contact-form__header
+                        h4.contact-form__title Свойства материала
+                        .separator-line.contact-form__header-separator(data-element="popup-header-separator")
+                    .material-properties__list-wrapper(data-element="scroll-event")
+                        ul.material-properties__list
+
+                            +material-props-checkbox(1, 'Антистатичность')
+                            +material-props-checkbox(2, 'Наливные материалы')
+                            +material-props-checkbox(3, 'Безыскровость')
+                            +material-props-checkbox(4, 'Напольные материалы')
+                            +material-props-checkbox(5, 'Водонепроницаемость')
+                            +material-props-checkbox(6, 'Износостойкость')
+                            +material-props-checkbox(7, 'Водостойкость')
+                            +material-props-checkbox(8, 'Химстойкость')
+                            +material-props-checkbox(9, 'Негорючесть')
+                            +material-props-checkbox(10, 'Термостойкость')
+                            +material-props-checkbox(11, 'Высокая марочная прочность')
+                            +material-props-checkbox(12, 'Тонкослойные покрытия')
+                            +material-props-checkbox(13, 'Декоративные материалы')
+                            +material-props-checkbox(14, 'Противоскользящие материалы')
+                            +material-props-checkbox(15, 'Наполненные полимерные материалы')
+                            +material-props-checkbox(16, 'Эластичные напольные покрытия')
+                            +material-props-checkbox(17, 'Материалы для вертикальных поверхностей')
+
+                            +material-props-checkbox(18, 'Антистатичность')
+                            +material-props-checkbox(19, 'Наливные материалы')
+                            +material-props-checkbox(20, 'Безыскровость')
+                            +material-props-checkbox(21, 'Напольные материалы')
+                            +material-props-checkbox(22, 'Водонепроницаемость')
+                            +material-props-checkbox(23, 'Износостойкость')
+                            +material-props-checkbox(24, 'Водостойкость')
+                            +material-props-checkbox(25, 'Химстойкость')
+                            +material-props-checkbox(26, 'Негорючесть')
+                            +material-props-checkbox(27, 'Термостойкость')
+                            +material-props-checkbox(28, 'Высокая марочная прочность')
+                            +material-props-checkbox(29, 'Тонкослойные покрытия')
+                            +material-props-checkbox(30, 'Декоративные материалы')
+                            +material-props-checkbox(31, 'Противоскользящие материалы')
+                            +material-props-checkbox(32, 'Наполненные полимерные материалы')
+                            +material-props-checkbox(33, 'Эластичные напольные покрытия')
+                            +material-props-checkbox(34, 'Материалы для вертикальных поверхностей')
+
+            .material-properties__controls.contact-form__controls
+                button.section-link.material-properties__reset
+                    .section-link__span Сбросить
+                    +reset-btn.section-link__svg 
+                button.section-link.material-properties__apply
+                    .section-link__span Применить
+                    +button-arrow.section-link__svg 
+        .catalog-filter__inputs
+            .select-wrapper.catalog-filter__select.desktop 
+                .select 
+                    //- select.select__select.catalog-filter__select 
+                    select.select__select
+                        option(value="Системы продукции по области применения" selected) Системы продукции по области применения
+                        option(value="Требование к покрытию") Требование к покрытию
+                        option(value="Способ укладки") Способ укладки
+                        option(value="Тип вяжущего") Тип вяжущего
+
+            .select-wrapper.catalog-filter__select.desktop 
+                .select
+                    //- select.select__select.catalog-filter__select 
+                    select.select__select
+                        option(value="Системы продукции по области применения") Антистатические полы и покрытия
+                        option(value="Требование к покрытию") Безыскровые полы
+                        option(value="Способ укладки") Полы и покрытия для защиты от излучений
+                        option(value="Тип вяжущего") Жаростойкие бетоны
+                        option(value="Тип вяжущего") Маслобензостойкие полы
+                        option(value="Тип вяжущего") Химически стойкие полы
+                        option(value="Тип вяжущего") Термостойкие полы
+                        option(value="Тип вяжущего") Декоративные полы
+            button.catalog-filter__properties-btn(data-element="popup")
+                span.catalog-filter__properties-span 
+                    | Свойства материала
+                    .catalog-filter__properties-counter 22
+                +button-plus-svg.catalog-filter__properties-svg
+
+

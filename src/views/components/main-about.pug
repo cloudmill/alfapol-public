@@ -1,0 +1,13 @@
+mixin main-about
+    section.section.section-about
+        .section-about__inner
+            +picture('main-about-bg.png').section-about__bg.desktop
+            +picture('main-about-bg-tablet.png').section-about__bg.tablet
+            +picture('main-about-bg-mobile.png').section-about__bg.mobile
+            .section-about__text
+                h4.section-title.section-about__title
+                    span.section-title.black Разрабатываем и производим самые современные, долговечные и безопасные продукты
+                p.section-about__desc Если мы не найдем готовое решение, будем работать над ним вместе с вами.
+            a(href="#").section-link.section-about__link 
+                .section-link__span О компании
+                +button-arrow.section-link__svg 

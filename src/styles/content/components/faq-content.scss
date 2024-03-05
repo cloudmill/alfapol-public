@@ -1,0 +1,98 @@
+.faq {
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: auto rem(1197px);
+  gap: rem(32px);
+
+  margin-top: rem(72px);
+
+  @media #{media('<',t)} {
+    grid-template-columns: auto rem(370px);
+
+    margin-top: rem(28px);
+  }
+
+  @media #{media('<',m)} {
+    grid-template-columns: none;
+  }
+
+  &__your {
+    @media #{media('<',m)} {
+      order: 2;
+    }
+
+    &-title {
+      font-size: rem(40px);
+      font-weight: 400;
+      line-height: 110%;
+      letter-spacing: -0.02em;
+      text-transform: uppercase;
+
+      @media #{media('<',t)} {
+        font-size: rem(20px);
+        line-height: 120%;
+      }
+    }
+
+    &-btn {
+      margin-top: rem(40px);
+
+      @media #{media('<',t)} {
+        margin-top: rem(16px);
+      }
+    }
+  }
+}
+
+.qa {
+  &-list {
+    display: grid;
+    row-gap: rem(16px);
+
+    @media #{media('<',t)} {
+      row-gap: rem(8px);
+    }
+
+    @media #{media('<',m)} {
+      order: 1;
+    }
+  }
+
+  &__question {
+    font-size: rem(32px);
+    font-weight: 400;
+    line-height: 130%;
+    letter-spacing: -0.01em;
+
+    @media #{media('<',t)} {
+      font-size: rem(14px);
+      font-weight: 400;
+      line-height: 150%;
+      letter-spacing: -0.02em;
+    }
+  }
+
+  &__answer {
+    padding: 0 rem(150.5px) rem(40px);
+
+    display: grid;
+    row-gap: rem(16px);
+
+    @media #{media('<',t)} {
+      padding: 0 rem(16px) rem(24px);
+    }
+
+    &-paragraph {
+      font-size: rem(20px);
+      font-weight: 400;
+      line-height: 150%;
+      letter-spacing: -0.01em;
+
+      @media #{media('<',t)} {
+        font-size: rem(14px);
+        letter-spacing: -0.02em;
+      }
+    }
+  }
+}

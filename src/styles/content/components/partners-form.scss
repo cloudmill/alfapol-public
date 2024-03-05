@@ -1,0 +1,178 @@
+.partners-form {
+  height: rem(880px);
+
+  margin: rem(120px) rem(8px) rem(-112px);
+
+  padding: rem(60px);
+
+  border-radius: rem(6px);
+  background-color: color(dark-blue);
+  background-image: url("assets/images/partners-form.jpeg");
+  background-size: cover;
+
+  position: relative;
+
+  @media #{media('<',t)} {
+    height: auto;
+
+    margin: rem(40px) rem(4px) rem(-36px);
+
+    border-radius: rem(4px);
+
+    padding: rem(16px);
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: rem(4px);
+
+    background-image: none;
+  }
+
+  @media #{media('<',m)} {
+    grid-template-columns: 1fr;
+    row-gap: rem(24px);
+  }
+
+  &__title {
+    width: rem(737px);
+
+    color: color(white);
+
+    font-size: rem(64px);
+    font-weight: 400;
+    line-height: 110%;
+    letter-spacing: -0.04em;
+    text-transform: uppercase;
+
+    @media #{media('<',t)} {
+      width: auto;
+
+      font-size: rem(24px);
+      font-weight: 400;
+      line-height: 120%;
+      letter-spacing: -0.02em;
+    }
+  }
+
+  &__subtitle {
+    width: rem(586px);
+
+    margin-top: rem(32px);
+
+    color: color(white);
+
+    font-size: rem(24px);
+    line-height: 160%;
+    letter-spacing: -0.01em;
+
+    @media #{media('<',t)} {
+      width: auto;
+
+      margin-top: rem(12px);
+
+      font-size: rem(16px);
+      line-height: 150%;
+      letter-spacing: -0.01em;
+    }
+  }
+
+  &__form {
+    width: rem(594px);
+
+    padding: rem(40px);
+
+    border-radius: rem(4px);
+
+    backdrop-filter: blur(rem(34px));
+    background: rgba(255, 255, 255, 0.84);
+
+    @media #{media('<',t)} {
+      width: 100%;
+
+      padding: rem(16px);
+    }
+
+    &-wrapper {
+      width: fit-content;
+
+      position: absolute;
+      top: rem(392px);
+      right: rem(203px);
+
+      @media #{media('<',t)} {
+        width: 100%;
+
+        position: static;
+      }
+    }
+
+    .partners-form__input {
+      background: color(white);
+
+      border: 1px solid color(separator);
+
+      color: color(text);
+
+      @media #{media('>',t)} {
+        &:hover {
+          background: color(light-grey);
+        }
+      }
+
+      &:active,
+      &:focus {
+        background: color(white);
+        border-color: color(blue);
+      }
+    }
+
+    .partners-form__politics {
+      color: color(dark-grey);
+
+      &-link {
+        color: color(text);
+
+        transition: $transition;
+
+        &:active,
+        &:focus {
+          color: color(blue);
+        }
+
+        @media #{media('>',t)} {
+          &:hover {
+            color: color(blue);
+          }
+        }
+      }
+    }
+  }
+
+  &__inputs {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: rem(12px);
+
+    @media #{media('<',t)} {
+      row-gap: rem(8px);
+    }
+  }
+
+  &__submit {
+    margin-top: rem(24px);
+
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: rem(24px);
+
+    @media #{media('<',t)} {
+      margin-top: rem(16px);
+
+      row-gap: rem(12px);
+    }
+
+    &-btn {
+      width: 100%;
+    }
+  }
+}

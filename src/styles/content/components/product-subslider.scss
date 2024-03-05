@@ -1,0 +1,131 @@
+.product-subslider {
+  // &__inner {
+  margin: rem(120px) rem(60px) 0;
+  // }
+
+  @media #{media('<',t)} {
+    margin: rem(40px) rem(12px) 0;
+  }
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+
+    * {
+      flex-shrink: 0;
+    }
+  }
+
+  &__buttons {
+    display: flex;
+
+    gap: rem(8px);
+
+    @media #{media('<',t)} {
+      display: none;
+    }
+
+    * {
+      flex-shrink: 0;
+    }
+  }
+
+  &__button {
+    width: rem(72px);
+    height: rem(72px);
+
+    background: color(light-grey);
+    border-radius: rem(4px);
+
+    .product-examples__btn-inner {
+      width: 100%;
+      height: 100%;
+
+      display: grid;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .product-examples__btn-svg {
+      width: rem(24px);
+      height: rem(24px);
+    }
+
+    &.right {
+      .product-examples__btn-svg {
+        transform: rotate(180deg);
+      }
+    }
+  }
+
+  &__swiper {
+    width: calc(100% + rem(60px) * 2);
+    height: rem(536px);
+
+    margin-top: rem(60px);
+    margin-bottom: rem(120px);
+    margin-left: rem(-60px);
+    padding-left: rem(60px);
+
+    padding-right: rem(60px);
+
+    @media #{media('<',t)} {
+      width: calc(100% + rem(12px) * 2);
+      height: rem(453px);
+
+      margin-top: rem(24px);
+      margin-bottom: rem(40px);
+      margin-left: rem(-12px);
+      padding-left: rem(12px);
+
+      padding-right: rem(12px);
+    }
+
+    .swiper-slide {
+      width: fit-content;
+
+      @media #{media('>',t)} {
+        &:hover {
+          position: relative;
+
+          z-index: 3;
+          overflow: visible;
+        }
+      }
+    }
+  }
+
+  &__title {
+    font-family: Rubik;
+    font-size: rem(64px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 110%; /* 70.4px */
+    letter-spacing: rem(-2.56px);
+    text-transform: uppercase;
+
+    @media #{media('<',t)} {
+      font-size: rem(24px);
+      line-height: 120%; /* 28.8px */
+      letter-spacing: rem(-0.48px);
+    }
+  }
+
+  // .swiper-wrapper {
+  //   margin-top: rem(60px);
+
+  //   margin-bottom: rem(120px);
+
+  //   @media #{media('<',t)} {
+  //     margin-top: rem(24px);
+
+  //     margin-bottom: rem(40px);
+  //   }
+  // }
+
+  .catalog-card {
+    @media #{media('<',t)} {
+      width: rem(320px);
+    }
+  }
+}

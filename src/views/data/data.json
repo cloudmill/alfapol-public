@@ -1,0 +1,58 @@
+{
+  "title": "test-html",
+
+  "routes": [
+    {
+      "href": "main",
+      "title": "Главная"
+    },
+    {
+      "href": "catalog",
+      "title": "Каталог"
+    },
+    {
+      "href": "product",
+      "title": "Страница продукта"
+    },
+    {
+      "href": "order",
+      "title": "Оформление заказа"
+    },
+    {
+      "href": "about",
+      "title": "О компании"
+    },
+    {
+      "href": "manufacture",
+      "title": "Производство"
+    },
+    {
+      "href": "vacancies",
+      "title": "Вакансии"
+    },
+    {
+      "href": "contacts",
+      "title": "Контакты"
+    },
+    {
+      "href": "articles",
+      "title": "Статьи"
+    },
+    {
+      "href": "article",
+      "title": "Статья образец"
+    },
+    {
+      "href": "instructions",
+      "title": "Инструкции"
+    },
+    {
+      "href": "faq",
+      "title": "Вопрос-ответ"
+    },
+    {
+      "href": "partners",
+      "title": "Партнерам"
+    }
+  ]
+}

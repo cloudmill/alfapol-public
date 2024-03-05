@@ -1,0 +1,217 @@
+.articles {
+  &__section.section {
+    margin-top: rem(60px);
+
+    @media #{media('<',t)} {
+      margin-top: 0;
+
+      padding-top: rem(24px);
+    }
+  }
+
+  &__btn.catalog__sections-btn {
+    margin-left: 0 !important;
+
+    @media #{media('>',t)} {
+      font-size: rem(64px);
+      font-weight: 400;
+      line-height: 110%;
+      letter-spacing: -0.04em;
+
+      margin-right: rem(40px);
+    }
+
+    @media #{media('<',t)} {
+      margin-right: rem(16px);
+    }
+  }
+
+  &__content {
+    margin-top: rem(72px);
+
+    display: grid;
+    gap: rem(40px);
+
+    @media #{media('<',t)} {
+      margin-top: rem(28px);
+
+      grid-template-columns: repeat(2, rem(366px));
+      gap: rem(24px) rem(12px);
+    }
+
+    @media #{media('<',m)} {
+      grid-template-columns: none;
+    }
+  }
+
+  &__preview {
+    display: flex;
+
+    padding-top: rem(24px);
+
+    border-top: 1px solid color(separator);
+
+    @media #{media('<',t)} {
+      flex-direction: column;
+
+      padding-top: rem(16px);
+    }
+
+    * {
+      flex-shrink: 0;
+    }
+
+    &-date {
+      width: rem(115px);
+
+      margin-right: rem(36px);
+
+      color: color(dark-grey);
+      font-size: rem(16px);
+      font-weight: 400;
+      line-height: 130%;
+      letter-spacing: -0.01em;
+      text-transform: uppercase;
+
+      @media #{media('<',t)} {
+        width: auto;
+      }
+    }
+
+    &-text {
+      width: rem(896px);
+
+      margin-right: rem(158px);
+
+      display: flex;
+      flex-direction: column;
+      row-gap: rem(20px);
+
+      @media #{media('<',t)} {
+        width: auto;
+
+        margin-right: 0;
+        margin-top: rem(12px);
+        margin-bottom: rem(24px);
+
+        row-gap: rem(12px);
+      }
+    }
+
+    &-title {
+      font-size: rem(40px);
+      font-weight: 400;
+      line-height: 110%;
+      letter-spacing: -0.02em;
+      text-transform: uppercase;
+
+      @media #{media('<',t)} {
+        font-size: rem(20px);
+        line-height: 120%;
+      }
+    }
+
+    &-note {
+      color: color(dark-grey);
+      font-size: rem(20px);
+      font-weight: 400;
+      line-height: 150%;
+      letter-spacing: -0.01em;
+
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -moz-box;
+      -moz-box-orient: vertical;
+      display: -webkit-box;
+      -webkit-line-clamp: 4;
+      -webkit-box-orient: vertical;
+      line-clamp: 4;
+      box-orient: vertical;
+
+      @media #{media('<',t)} {
+        font-size: rem(14px);
+        letter-spacing: -0.02em;
+
+        -webkit-line-clamp: 3;
+        line-clamp: 3;
+      }
+    }
+
+    &-picture {
+      width: rem(595px);
+      height: rem(260px);
+
+      overflow: hidden;
+
+      border-radius: rem(6px);
+
+      @media #{media('<',t)} {
+        width: rem(366px);
+        height: rem(161px);
+
+        border-radius: rem(4px);
+      }
+
+      @media #{media('<',m)} {
+        width: rem(350px);
+        height: rem(154px);
+      }
+
+      &-wrapper {
+        position: relative;
+
+        @media #{media('<',t)} {
+          margin-top: auto;
+
+          align-self: flex-end;
+        }
+      }
+    }
+
+    &-video {
+      &-play {
+        width: rem(72px);
+        height: rem(72px);
+
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        display: grid;
+        align-items: center;
+        justify-content: center;
+
+        background: rgba(255, 255, 255, 0.8);
+        backdrop-filter: blur(rem(12px));
+        border-radius: rem(4px);
+
+        @media #{media('<',t)} {
+          width: rem(40px);
+          height: rem(40px);
+        }
+      }
+
+      &-svg {
+        width: rem(32px);
+        height: rem(32px);
+
+        background-image: url("data:image/svg+xml,%3Csvg width='32.000000' height='32.000000' viewBox='0 0 32 32' fill='none' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cdefs%3E%3CclipPath id='clip5_5076'%3E%3Crect id='play-button' width='32.000000' height='32.000000' fill='white' fill-opacity='0'/%3E%3C/clipPath%3E%3C/defs%3E%3Cg clip-path='url(%23clip5_5076)'%3E%3Cpath id='play-button' d='M20 16.4401L12 22.2136L12 10.6666L20 16.4401Z' fill='%230E2245' fill-opacity='1.000000' fill-rule='nonzero'/%3E%3C/g%3E%3C/svg%3E%0A");
+        background-size: cover;
+
+        @media #{media('<',t)} {
+          width: rem(16px);
+          height: rem(16px);
+        }
+      }
+    }
+  }
+
+  &__show-more {
+    margin: rem(60px) auto 0;
+
+    @media #{media('<',t)} {
+      margin-top: rem(40px);
+    }
+  }
+}

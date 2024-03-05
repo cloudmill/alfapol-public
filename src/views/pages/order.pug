@@ -1,0 +1,95 @@
+extends ../app
+
+
+block footer
+
+
+
+block content
+    section.section.order(data-element="window")
+        .order__content(data-element="window-content")
+            .order__wrapper
+                .product-hero__breadcrumbs.order__breadcrumbs
+                    .product-hero__breadcrumbs-inner
+                        a(href="#").product-hero__breadcrumbs-link Главная
+                        +button-arrow.product-hero__breadcrumbs-svg
+                        .product-hero__breadcrumbs-link.active оформление заказа
+                        
+                a(href="#").order__back.back-link
+                    +header-info.order__back-svg.back-link__svg
+                    span.order__back-text.back-link__text
+                        |Вернуться в каталог
+                        
+                .order__hero
+                    h1.order__title Оформление заказа
+                    h2.order__subtitle Пожалуйста, заполните простую форму, и мы свяжемся с вами в ближайшее время.
+
+                .order__placing 
+                    .order__data 
+                        h4.section-title ваши данные 
+                        form#order-form.order__form(data-element="trigger-stub")
+                            .order__radiobuttons 
+                                .order__radiobutton-wrapper
+                                    input#order-entity-radio.order__radiobutton(type="radio", name="client", data-parsley-errors-container="#error-client-radiobuttons", checked, required) 
+                                    label.order__radiobutton-label(for="order-entity-radio") 
+                                        .order__radiobutton-custom  
+                                            .order__radiobutton-select 
+                                        span.order__radiobutton-text Юридическое лицо
+
+                                .order__radiobutton-wrapper
+                                    input#order-person-radio.order__radiobutton(type="radio", name="client", data-parsley-errors-container="#error-client-radiobuttons", required) 
+                                    label.order__radiobutton-label(for="order-person-radio") 
+                                        .order__radiobutton-custom  
+                                            .order__radiobutton-select 
+                                        span.order__radiobutton-text Физическое лицо/ИП
+
+                            #error-client-radiobuttons
+
+                            .order__text-inputs
+                                input.order__input(type="text", name="name", maxlength="50", placeholder="Имя или название организации*", required)
+                                input.order__input(type="text", name="email/tel", maxlength="253", placeholder="Телефон или почта*", required)
+                        .order__payment
+                            h4.section-title оплата
+                            ol.order__payment-list
+                                li.order__payment-item 
+                                    |Для оплаты необходимо согласовать с менеджером сроки поставки и получить счёт-договор.
+                                li.order__payment-item 
+                                    |При наличии выбранной позиции на складе отгрузка возможна сразу после оплаты.
+                                li.order__payment-item 
+                                    |Наши менеджеры свяжутся с вами по указанным контактным данным в ближайшее время.
+                                li.order__payment-item 
+                                    |Так же вы всегда можете связаться с нами по телефону или через форму обратной связи внизу страницы.
+
+                    .order__info 
+                        h4.section-title ваш заказ
+                            ul.order__list
+                                +order-card("АЛЬФАПОЛ ПУ-4 ВН АСХ", "Антистатический кислотостойкий щелочестойкий термостойкий полиуретан-цементный промышленный пол Антистатический кислотостойкий щелочестойкий термостойкий полиуретан-цементный промышленный пол")
+                                +order-card("АЛЬФАПОЛ ПУ-4 ВН АСХ", "Антистатический кислотостойкий щелочестойкий термостойкий полиуретан-цементный промышленный пол Антистатический кислотостойкий щелочестойкий термостойкий полиуретан-цементный промышленный пол")
+                                +order-card("АЛЬФАПОЛ ПУ-4 ВН АСХ", "Антистатический кислотостойкий щелочестойкий термостойкий полиуретан-цементный промышленный пол Антистатический кислотостойкий щелочестойкий термостойкий полиуретан-цементный промышленный пол")
+                                +order-card("АЛЬФАПОЛ ПУ-4 ВН АСХ", "Антистатический кислотостойкий щелочестойкий термостойкий полиуретан-цементный промышленный пол Антистатический кислотостойкий щелочестойкий термостойкий полиуретан-цементный промышленный пол")
+
+                        button.section-link.order__submit(form="order-form", type="submit")
+                            .section-link__span Оформить заказ
+                            +button-arrow.section-link__svg
+
+                        .order__disclamer 
+                            |Ваши личные данные строго конфиденциальны и обрабатываются согласно Федеральному закону № 152 «О персональных данных», мы не передаём ваши адреса, телефоны или любые другие данные третьим лицам и используем их исключительно для связи и работы с вами.
+
+
+            .order__submit-wrapper.mobile
+                button.section-link.order__submit.mobile(form="order-form", type="submit")
+                    .section-link__span Оформить заказ
+                    +button-arrow.section-link__svg
+
+
+        .order__success(data-element="window-success")
+            .order__success-inner
+                +order-success.order__success-svg
+                h4.section-title.order__success-title заказ оформлен
+                h2.order__subtitle Спасибо, мы получили ваш заказ и скоро свяжемся с вами.
+                a(href="#").section-link.order__to-main
+                    .section-link__span Главная страница
+                    +button-arrow.section-link__svg
+
+block footer
+    +footer.white

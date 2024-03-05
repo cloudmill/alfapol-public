@@ -1,0 +1,97 @@
+mixin at-objects 
+    section.section.section-slider.section-objects
+        .separator-line.desktop
+        .section-header
+            h4.section-title 
+                span.section-title.grey Продукция АЛЬФАПОЛ  
+                span.section-title.black на&nbsp;объектах
+            a(href="#").section-link.desktop
+                .section-link__span Области применения
+                +button-arrow.section-link__svg 
+        .separator-line.desktop
+        .objects-slider
+            .objects-slider__desc
+                .objects-slider__thumbs
+                    .swiper.objects-slider__swiper
+                        .swiper-wrapper 
+                            .swiper-slide
+                                button.swiper-slide__thumb-object(data-object="explosive") Взрывоопасные помещения
+                            .swiper-slide
+                                button.swiper-slide__thumb-object(data-object="electric") Помещения с требованиями защиты электронного оборудования
+                            .swiper-slide
+                                button.swiper-slide__thumb-object(data-object="food") Предприятия АПК и пищевые производства
+                            .swiper-slide
+                                button.swiper-slide__thumb-object(data-object="civil") Общественные пространства
+                            .swiper-slide
+                                button.swiper-slide__thumb-object(data-object="factory") Производственные и складские помещения
+                            .swiper-slide
+                                button.swiper-slide__thumb-object(data-object="oil") Объекты нефтегазовой промышленности
+                            .swiper-slide
+                                button.swiper-slide__thumb-object(data-object="ships") Суда и объекты судостроительной промышленности
+                    
+                .objects-slider__controls.desktop
+                    .objects-slider__btns
+                        button.objects-slider__btn.objects-slider__btn_left
+                            .objects-slider__btn-inner
+                                +swiper-btn.objects-slider__btn-svg
+                        button.objects-slider__btn.right.objects-slider__btn_right.right
+                            .objects-slider__btn-inner
+                                +swiper-btn.objects-slider__btn-svg
+
+                    .objects-slider__pagination.swiper__pagination
+
+            .objects-slider__img
+                .objects-slider__content
+                    .objects-slider__image-wrapper
+                        .objects-slider__image-container
+                            .swiper.objects-swiper-image 
+                                .swiper-wrapper 
+                                    .swiper-slide(data-objects-img='explosive')
+                                        +picture("explosive.png").objects-slider__image.desktop
+                                        +picture("explosive-m.png").objects-slider__image.tablet
+                                        p.objects-slider__desc-mobile Взрывоопасные помещения
+                                    .swiper-slide(data-objects-img='electric')
+                                        +picture("electric.png").objects-slider__image.desktop
+                                        +picture("explosive-m.png").objects-slider__image.tablet
+                                        p.objects-slider__desc-mobile Помещения с требованиями защиты электронного оборудования
+                                    .swiper-slide(data-objects-img='food')
+                                        +picture("food.png").objects-slider__image.desktop
+                                        +picture("explosive-m.png").objects-slider__image.tablet
+                                        p.objects-slider__desc-mobile Предприятия АПК и пищевые производства
+                                    .swiper-slide(data-objects-img='civil')
+                                        +picture("civil.png").objects-slider__image.desktop
+                                        +picture("explosive-m.png").objects-slider__image.tablet
+                                        p.objects-slider__desc-mobile Общественные пространства
+                                    .swiper-slide(data-objects-img='factory')
+                                        +picture("factory.png").objects-slider__image.desktop
+                                        +picture("explosive-m.png").objects-slider__image.tablet
+                                        p.objects-slider__desc-mobile Производственные и складские помещения
+                                    .swiper-slide(data-objects-img='oil')
+                                        +picture("oil-gas.png").objects-slider__image.desktop
+                                        +picture("explosive-m.png").objects-slider__image.tablet
+                                        p.objects-slider__desc-mobile Объекты нефтегазовой промышленности
+                                    .swiper-slide(data-objects-img='ships')
+                                        +picture("ships.png").objects-slider__image.desktop
+                                        +picture("explosive-m.png").objects-slider__image.tablet
+                                        p.objects-slider__desc-mobile Суда и объекты судостроительной промышленности
+
+            .objects-slider__icon.desktop.swiper
+                .objects-slider__icon-wrapper.swiper-wrapper
+                    .swiper-slide(data-objects-icon='explosive')
+                        +swiper-icon-explosive.objects-slider__icon-svg 
+                    .swiper-slide(data-objects-icon='electric')
+                        +swiper-icon-electric.objects-slider__icon-svg 
+                    .swiper-slide(data-objects-icon='food') 
+                        +swiper-icon-food.objects-slider__icon-svg 
+                    .swiper-slide(data-objects-icon='civil') 
+                        +swiper-icon-civil.objects-slider__icon-svg 
+                    .swiper-slide(data-objects-icon='factory') 
+                        +swiper-icon-factory.objects-slider__icon-svg 
+                    .swiper-slide(data-objects-icon='oil') 
+                        +swiper-icon-oil.objects-slider__icon-svg 
+                    .swiper-slide(data-objects-icon='ships') 
+                        +swiper-icon-ships.objects-slider__icon-svg 
+
+                .objects-slider__icon-bg 
+                    +picture('swiper-icon-bg.png')
+

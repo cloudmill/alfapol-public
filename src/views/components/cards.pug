@@ -1,0 +1,200 @@
+mixin material-props-checkbox(myId, title)
+    li.material-properties__item
+        input.material-properties__checkbox(id=myId, type="checkbox", name=myId, data-material-parameters)  
+        label.material-properties__checkbox-label(for=myId)
+            p.material-properties__checkbox-title
+                span.material-properties__checkbox-span=title
+
+mixin product-hero-table(param, value)
+    .product-hero__accordion-table-data 
+        p.product-hero__accordion-table-param=param
+        p.product-hero__accordion-table-value=value
+
+mixin product-hero-document(title, volume)
+    a(href="#").product-hero__accordion-document(class=attributes.class)
+        .product-hero__accordion-document-title=title 
+        .product-hero__accordion-document-data 
+            p.product-hero__accordion-document-volume=volume
+            +accordion-document.product-hero__accordion-document-svg
+
+mixin icon-label(text)
+    .icon-label(class=attributes.class, data-card-icon)
+        .icon-label__inner 
+            +icon-label-arrow.icon-label__arrow 
+            .icon-label__text=text
+
+mixin order-card(title, subtitle)
+    li.order__item.order-item
+        .order-item__image-wrapper
+            +picture("catalog-card.png").order-item__image
+        .order-item__desc
+            h4.header__cart-title.order-item__desc-title=title
+            p.header__cart-subtitle.order-item__desc-subtitle=subtitle
+
+mixin about-company-accordion(counter, title, formType, btnAttr, popupTitle, popupSubtitle, hasComment, list)
+    .about-company__accordion 
+        .accordion-container
+            .ac 
+                .ac-trigger
+                    .about-company__accordion-header
+                        .about-company__accordion-counter=counter
+                        .about-company__accordion-title=title
+                        .about-company__accordion-btn
+                            +swiper-btn.about-company__accordion-svg
+                .ac-panel
+                    .about-company__accordion-panel 
+                        .about-company__accordion-content
+                            if list
+                                ul.about-company__accordion-list
+                                    each item in [...list]
+                                        li.about-company__accordion-item=item
+                            //- button.section-link.about-company__accordion-bid-btn(data-popup-btn="about-popup",data-form-type=formType, data-client-target=btnAttr, data-popup-title=popupTitle, data-popup-subtitle=popupSubtitle, data-popup-comment=hasComment)
+                            button.section-link.about-company__accordion-bid-btn(data-popup-btn="about-popup", data-client-target=btnAttr, data-popup-title=popupTitle, data-popup-subtitle=popupSubtitle, data-popup-comment=hasComment)
+                                .section-link__span Оставить заявку
+                                +button-plus-svg.section-link__svg
+            if formType=="standard"
+                +modal-order-standard(popupTitle, popupSubtitle, btnAttr)
+            if formType=="extended"
+                +modal-order-extended(popupTitle, popupSubtitle, btnAttr)
+
+
+//- mixin about-safety-accordion(title)
+//-     .about-company__accordion
+//-         .accordion-container
+//-                 .ac 
+//-                     .ac-trigger
+//-                         .about-company__accordion-header.about-company__accordion-header_safety
+//-                             .about-company__accordion-title=title
+//-                             .about-company__accordion-btn
+//-                                 +swiper-btn.about-company__accordion-svg
+//-                     .ac-panel
+//-                         .about-company__accordion-panel_safety
+//-                             |panel
+
+mixin about-safety-card(year, card1Title, card1Weight, card2Title, card2Weight)
+    .about-company__accordion-safety-card
+        .about-company__accordion-safety-year=year
+        .about-company__accordion-safety-documents
+            +product-hero-document(card1Title, card1Weight).about-company__accordion-safety-link
+            +product-hero-document(card2Title, card2Weight).about-company__accordion-safety-link
+
+mixin vacancies-description(title, desc, descArray)
+    .vacancies__item-specs 
+        .vacancies__item-specs-title=title
+
+        if desc
+            .vacancies__item-requirements=desc
+        if descArray 
+            .vacancies__item-requirements
+                ul.vacancies__item-requirements-list 
+                    each item in [...descArray]
+                        li.vacancies__item-requirements-item=item
+
+
+mixin article-preview(date,title,text,pic,hasVideo)
+    a(href="#").articles__preview(class=attributes.class)
+        .articles__preview-date=date
+        .articles__preview-text 
+            h4.articles__preview-title=title 
+            .articles__preview-note=text 
+        .articles__preview-picture-wrapper
+            +picture(`${pic}.png`).articles__preview-picture
+            if hasVideo
+                .articles__preview-video-play 
+                    .articles__preview-video-svg
+
+mixin modal-order-standard(title, subtitle, target)
+    .contact-form(data-element="popup", data-popup="about-popup", data-form-target=target)
+        button.contact-form__close(data-action="close-popup")
+            +close-btn.contact-form__close-svg
+
+        .contact-form__wrapper
+            //- .contact-form__inner-wrapper(data-form="standard")
+            .contact-form__inner(data-element="popup-content")
+                .contact-form__header
+                    h4.contact-form__title=title
+                    if subtitle 
+                        .contact-form__subtitle=subtitle
+                
+                form.contact-form__inputs(id=target)
+                    input(type="text", name="name", placeholder="Имя или название организации", required).contact-form__input
+                    input(type="tel", name="tel", placeholder="Телефон*", data-mask-phone, data-parsley-phone-required, required).contact-form__input
+
+                .contact-form__agreement 
+                    | Нажимая кнопку «Отправить», я даю согласие на обработку 
+                    a(href="#").contact-form__personal персональных данных
+                button.contact-form__submit(form=target, type="submit", value="Отправить")
+                    span.contact-form__submit-text Отправить 
+                    +button-arrow.contact-form__submit-svg
+
+            .contact-form__success(data-element="popup-success")
+                +contact-us-success.contact-form__success-svg
+                h4.contact-form__success-title отправлено
+                p.contact-form__success-desc Спасибо. Мы свяжемся с вами в ближайшее время.
+                button.section-link.contact-form__success-close
+                    .section-link__span Закрыть
+                    +button-arrow.section-link__svg 
+
+
+
+mixin modal-order-extended(title, subtitle, target)
+    .contact-form(data-element="popup", data-popup="about-popup", data-form-target=target)
+        button.contact-form__close(data-action="close-popup")
+            +close-btn.contact-form__close-svg
+
+        .contact-form__wrapper
+            //- .contact-form__inner-wrapper(data-form="standard")
+            .contact-form__inner(data-element="popup-content")
+                .contact-form__header
+                    h4.contact-form__title=title
+                    if subtitle 
+                        .contact-form__subtitle=subtitle
+
+                
+                form.contact-form__inputs(id=target)
+                    input(type="text", name="name", placeholder="Имя или название организации", required).contact-form__input
+                    input(type="tel", name="tel", placeholder="Телефон*", data-mask-phone, data-parsley-phone-required, required).contact-form__input
+                    #about-additional-input
+                        label(for="contact-form-text-area").contact-form__text-area-label.contact-form__input
+                            textarea#contact-form-text-area(name="contact-form-text-area", placeholder="Дополнительная информация", maxlength="255").contact-form__text-area
+
+                .add-attachment__wrapper(data-element="add-files-block")
+                    ul.add-attachment__files.added(data-element="file-list")
+                        li.add-attachment__file(data-element="file")
+                            .add-attachment__file-name resume.pdf
+                            button.add-attachment__file-remove(data-action="remove-file")
+                        li.add-attachment__file(data-element="file")
+                            .add-attachment__file-name CV.doc
+                            button.add-attachment__file-remove(data-action="remove-file")
+
+                    button.add-attachment__btn( data-action="attach-file")
+                        .add-attachment__icon
+                        .add-attachment__text Прикрепить файл
+
+                .contact-form__agreement 
+                    | Нажимая кнопку «Отправить», я даю согласие на обработку 
+                    a(href="#").contact-form__personal персональных данных
+                button.contact-form__submit(form=target, type="submit", value="Отправить")
+                    span.contact-form__submit-text Отправить 
+                    +button-arrow.contact-form__submit-svg
+                    
+            .contact-form__success(data-element="popup-success")
+                +contact-us-success.contact-form__success-svg
+                h4.contact-form__success-title отправлено
+                p.contact-form__success-desc Спасибо. Мы свяжемся с вами в ближайшее время.
+                button.section-link.contact-form__success-close
+                    .section-link__span Закрыть
+                    +button-arrow.section-link__svg 
+
+mixin form-small-success 
+    .vacancies-form__success.contact-form(data-element="popup" data-success="popup")
+        button.contact-form__close(data-action="close-popup")
+            +close-btn.contact-form__close-svg
+
+        .contact-form__wrapper        
+            .contact-form__success(data-element="popup-success")
+            +contact-us-success.contact-form__success-svg
+            h4.contact-form__success-title отправлено
+            p.contact-form__success-desc Спасибо. Мы свяжемся с вами в ближайшее время.
+            button.section-link.contact-form__success-close
+                .section-link__span Закрыть

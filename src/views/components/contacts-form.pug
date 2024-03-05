@@ -1,0 +1,42 @@
+mixin contacts-form
+    section.section.catalog-form.contacts-form(data-element="form-wrapper")
+
+        form.product-form__form.callback-form
+            h4.catalog-form__title
+                |связаться с нами
+            .product-form__inputs.contacts-form__inputs
+                .product-form__input-wrapper
+                    input.product-form__input(type="name", name="name", placeholder="Имя", maxLength="50" required)
+                .product-form__input-wrapper
+                    input.product-form__input(type="text", name="email", placeholder="Телефон или почта", maxLength="253" required)
+                .product-form__input-wrapper               
+                    label(for="product-form-msg").product-form__input.msg(data-text-area="textarea-wrapper")
+                        textarea#product-form-msg.product-form__msg(type="text", name="message", placeholder="Сообщение", maxLength="255", data-parsley-errors-container='#productFormError', data-text-area="textarea" required)
+            #productFormError
+
+            .product-form__submit.catalog-form__submit 
+                p.product-form__politics.catalog-form__politics
+                    | Нажимая кнопку «Отправить», я даю согласие 
+                    a(href="#").catalog-form__politics-link
+                        |на обработку персональных данных
+                    |  и соглашаюсь с 
+                    a(href="#").catalog-form__politics-link политикой конфиденциальности
+                button.section-link.product-form__submit-btn.catalog-form__submit-btn(type="submit")
+                    .section-link__span Отправить
+                    +button-arrow.catalog-form__submit-svg
+
+        .catalog-form__header
+            h4.catalog-form__title.contacts-form__title Общество с ограниченной ответственностью «АЛЬФАПОЛ»
+            .catalog-form__subtitle.contacts-form__subtitle 
+                p 196600, Санкт-Петербург, Пушкин, ул. Автомобильная, 9, лит. А
+                p ИНН:  7820312017
+                p КПП: 782001001
+                p ОГРН: 1077847595858
+                p ОКПО: 82166262
+                p ОКТМО: 40397000
+                p Расчетный счет:  407 028 106 253 600 003 54
+                p Филиал «Центральный» Банка ВТБ ПАО в г. Москве
+                p к/сч 30101810145250000411
+                p БИК 044525411
+
+        +form-small-success

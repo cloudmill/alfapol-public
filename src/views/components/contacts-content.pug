@@ -1,0 +1,316 @@
+mixin contacts-content
+    section.section.catalog
+
+
+
+
+
+        .contact-form.contacts__ymap.contacts__ymap_submodal(data-element="popup" data-popup="ymap-popup")
+            button.contact-form__close(data-action="close-popup")
+                +close-btn.contact-form__close-svg
+
+            .contact-form__wrapper
+                .contact-form__inner(data-element="popup-content")
+                    .contact-form__header
+                        h4.contact-form__title Головной офис
+                        button.section-link(data-element="submodal-btn")
+                            .section-link__span Как добраться
+                            +button-plus-svg.section-link__svg.section-link__svg_white
+
+                    .contact-form__map-wrapper
+                        #map.contact-form__map
+
+        .contact-form.ymap-submodal(data-element="submodal" data-popup="ymap-submodal")
+            button.contact-form__close(data-action="close-submodal")
+                +close-btn.contact-form__close-svg
+
+            .contact-form__wrapper 
+                .contact-form__inner
+                    .contact-form__header
+                        h4.contact-form__title как добраться
+
+                    .contact-form__content
+                        .ymap-submodal__picture-wrapper
+                            +picture("ymap-how-to-get.png").ymap-submodal__picture.desktop
+                            +picture("ymap-how-to-get-m.png").ymap-submodal__picture.mobile
+                            .ymap-submodal__picture-notes
+                                .ymap-submodal__picture-note
+                                    .ymap-submodal__picture-note-step 2
+                                    .ymap-submodal__picture-note-text
+                                        |Проезд через ворота
+                                    +picture("ya-how-to-get-step-2.png").ymap-submodal__picture-note-arrow-2.desktop
+                                    +picture("ya-how-to-get-step-2-m.png").ymap-submodal__picture-note-arrow-2.mobile
+                                .ymap-submodal__picture-note
+                                    .ymap-submodal__picture-note-step 1
+                                    .ymap-submodal__picture-note-text
+                                        |Необходимо получить пропуск
+                                    +ya-how-to-get-step-1.ymap-submodal__picture-note-arrow-1.desktop
+                                    +picture("ya-how-to-get-step-1-m.png").ymap-submodal__picture-note-arrow-1.mobile
+
+                        .ymap-submodal__info 
+                            |196600, Санкт-Петербург, город Пушкин, ул. Промышленная, 17П
+
+                            ul.ymap-submodal__info-list
+                                li.ymap-submodal__info-item Время пути - 4 минуты
+                                li.ymap-submodal__info-item 8 800 350-58-76
+
+
+
+
+
+        ul.contacts__cards
+            li.contacts__card 
+                .contacts__card-header
+                    h2.contacts__card-title
+                        |Головной офис
+                    button.section-link.desktop(data-action="ymap-popup-show" data-ymap-content="office" data-title="головной офис" data-coords="59.859542,30.328265")
+                        .section-link__span На карте
+                        +button-plus-svg.section-link__svg.section-link__svg_white
+                .contacts__card-address 
+                    |196135, Санкт-Петербург, ул. Ленсовета, 5
+                    .contacts__card-schedule
+                        |9–18 Мск
+                        .contacts__card-schedule-divider 
+                        |Сб, вс — выходной
+
+
+                .contacts__card-links 
+                    a(href="#").contacts__card-link
+                        .contacts__card-link-icon.contacts__card-link-icon_phone
+                        |8 800 350-58-76
+                    a(href="#").contacts__card-link
+                        .contacts__card-link-icon.contacts__card-link-icon_email
+                        |info@alfapol.ru
+                button.section-link.mobile(data-action="ymap-popup-show" data-ymap-content="office" data-title="головной офис" data-coords="59.859542,30.328265")
+                    .section-link__span На карте
+                    +button-plus-svg.section-link__svg.section-link__svg_white
+
+            .separator-line
+            
+            li.contacts__card 
+                .contacts__card-header
+                    h2.contacts__card-title
+                        |Завод и склад
+                    button.section-link.desktop(data-action="ymap-popup-show" data-ymap-content="factory" data-title="завод и склад" data-coords="59.731151,30.440393" data-submodal="")
+                        .section-link__span На карте
+                        +button-plus-svg.section-link__svg.section-link__svg_white
+
+                .contacts__card-address 
+                    |196600, Санкт-Петербург, город Пушкин, ул. Автомобильная, д.9, лит.А
+                    .contacts__card-schedule
+                        |9–18 Мск
+                        .contacts__card-schedule-divider 
+                        |Сб, вс — выходной
+
+
+                .contacts__card-links 
+                    a(href="#").contacts__card-link
+                        .contacts__card-link-icon.contacts__card-link-icon_phone
+                        |8 800 350-58-76
+                    a(href="#").contacts__card-link
+                        .contacts__card-link-icon.contacts__card-link-icon_email
+                        |info@alfapol.ru
+                button.section-link.mobile(data-action="ymap-popup-show" data-ymap-content="factory" data-title="завод и склад" data-coords="59.731151,30.440393" data-submodal="")
+                    .section-link__span На карте
+                    +button-plus-svg.section-link__svg.section-link__svg_white
+
+
+
+        ul.contacts__departments
+            li.contacts__department
+                .contacts__department-title
+                    |Маркетинг и реклама
+                .contacts__department-info
+                    .contacts__department-person
+                        |Алиса Рыжова 
+                    .contacts__department-links
+                        a(href="#").contacts__card-link.contacts__department-link
+                            .contacts__card-link-icon.contacts__card-link-icon_email
+                            |ag@alfapol.ru
+
+            li.contacts__department
+                .contacts__department-title
+                    |Офис-менеджер
+                .contacts__department-info
+                    .contacts__department-person
+                        |Вотинова Ирина Николаевна
+                    .contacts__department-links
+                        a(href="#").contacts__card-link.contacts__department-link
+                            .contacts__card-link-icon.contacts__card-link-icon_phone
+                            |+7 (812) 371-29-11
+                        a(href="#").contacts__card-link.contacts__department-link
+                            .contacts__card-link-icon.contacts__card-link-icon_email
+                            |office@alfapol.ru
+
+            li.contacts__department
+                .contacts__department-title
+                    |Исполнительный директор
+                .contacts__department-info
+                    .contacts__department-person
+                        |Собкалов Геннадий Григорьевич
+                    .contacts__department-links
+                        a(href="#").contacts__card-link.contacts__department-link
+                            .contacts__card-link-icon.contacts__card-link-icon_email
+                            |sgg@alfapol.ru
+
+            li.contacts__department
+                .contacts__department-title
+                    |Снабжение и логистика
+                .contacts__department-info
+                    .contacts__department-person
+                        |Иванова Надежда
+                    .contacts__department-links
+                        a(href="#").contacts__card-link.contacts__department-link
+                            .contacts__card-link-icon.contacts__card-link-icon_email
+                            |snab@alfapol.ru
+
+
+    section.sales-department
+        .sales-department__header.product-subslider__top
+            h2.product-subslider__title
+                |отдел продаж
+            .product-subslider__buttons 
+                button.product-subslider__button.sales-department__btn.left 
+                    .product-examples__btn-inner
+                        +swiper-btn.product-examples__btn-svg
+                button.product-subslider__button.sales-department__btn.right
+                    .product-examples__btn-inner
+                        +swiper-btn.product-examples__btn-svg
+
+        .sales-department__slider-wrapper
+            .sales-department__slider.swiper
+                .swiper-wrapper 
+                    .swiper-slide
+                        .sales-department__slide
+                            +picture("sales-slide1.png").sales-department__slide-photo
+                            .sales-department__slide-info
+                                h4.sales-department__slide-title
+                                    |Убиенных Татьяна
+                                .sales-department__slide-contacts
+                                    a(href="#").sales-department__slide-link.sales-department__slide-link  
+                                        .sales-department__slide-link-icon.sales-department__slide-link-icon_phone
+                                        |+7 958 523-72-86
+                                    a(href="#").sales-department__slide-link.sales-department__slide-link 
+                                        .sales-department__slide-link-icon.sales-department__slide-link-icon_email
+                                        |tu@alfapol.ru
+                                    a(href="#").sales-department__slide-link.sales-department__slide-link 
+                                        .sales-department__slide-link-icon.sales-department__slide-link-icon_skype
+                                        |tu@alfapol.ru
+
+                    .swiper-slide
+                        .sales-department__slide 
+                            +picture("sales-slide2.png").sales-department__slide-photo
+                            .sales-department__slide-info
+                                h4.sales-department__slide-title
+                                    |Захаров Евгений
+                                .sales-department__slide-contacts
+                                    a(href="#").sales-department__slide-link.sales-department__slide-link  
+                                        .sales-department__slide-link-icon.sales-department__slide-link-icon_phone
+                                        |+7 958 523-72-86
+                                    a(href="#").sales-department__slide-link.sales-department__slide-link 
+                                        .sales-department__slide-link-icon.sales-department__slide-link-icon_email
+                                        |tu@alfapol.ru
+                                    a(href="#").sales-department__slide-link.sales-department__slide-link 
+                                        .sales-department__slide-link-icon.sales-department__slide-link-icon_skype
+                                        |tu@alfapol.ru
+
+                    .swiper-slide
+                        .sales-department__slide 
+                            +picture("sales-slide3.png").sales-department__slide-photo
+                            .sales-department__slide-info
+                                h4.sales-department__slide-title
+                                    |Михайлова Вероника
+                                .sales-department__slide-contacts
+                                    a(href="#").sales-department__slide-link.sales-department__slide-link  
+                                        .sales-department__slide-link-icon.sales-department__slide-link-icon_phone
+                                        |+7 958 523-72-86
+                                    a(href="#").sales-department__slide-link.sales-department__slide-link 
+                                        .sales-department__slide-link-icon.sales-department__slide-link-icon_email
+                                        |tu@alfapol.ru
+                                    a(href="#").sales-department__slide-link.sales-department__slide-link 
+                                        .sales-department__slide-link-icon.sales-department__slide-link-icon_skype
+                                        |tu@alfapol.ru
+                                        
+                    .swiper-slide
+                        .sales-department__slide 
+                            +picture("sales-slide4.png").sales-department__slide-photo
+                            .sales-department__slide-info
+                                h4.sales-department__slide-title
+                                    |Рябцев Сергей
+                                .sales-department__slide-contacts
+                                    a(href="#").sales-department__slide-link.sales-department__slide-link  
+                                        .sales-department__slide-link-icon.sales-department__slide-link-icon_phone
+                                        |+7 958 523-72-86
+                                    a(href="#").sales-department__slide-link.sales-department__slide-link 
+                                        .sales-department__slide-link-icon.sales-department__slide-link-icon_email
+                                        |tu@alfapol.ru
+                                    a(href="#").sales-department__slide-link.sales-department__slide-link 
+                                        .sales-department__slide-link-icon.sales-department__slide-link-icon_skype
+                                        |tu@alfapol.ru
+                    .swiper-slide
+                        .sales-department__slide
+                            +picture("sales-slide1.png").sales-department__slide-photo
+                            .sales-department__slide-info
+                                h4.sales-department__slide-title
+                                    |Убиенных Татьяна
+                                .sales-department__slide-contacts
+                                    a(href="#").sales-department__slide-link.sales-department__slide-link  
+                                        .sales-department__slide-link-icon.sales-department__slide-link-icon_phone
+                                        |+7 958 523-72-86
+                                    a(href="#").sales-department__slide-link.sales-department__slide-link 
+                                        .sales-department__slide-link-icon.sales-department__slide-link-icon_email
+                                        |tu@alfapol.ru
+                                    a(href="#").sales-department__slide-link.sales-department__slide-link 
+                                        .sales-department__slide-link-icon.sales-department__slide-link-icon_skype
+                                        |tu@alfapol.ru
+
+                    .swiper-slide
+                        .sales-department__slide 
+                            +picture("sales-slide2.png").sales-department__slide-photo
+                            .sales-department__slide-info
+                                h4.sales-department__slide-title
+                                    |Захаров Евгений
+                                .sales-department__slide-contacts
+                                    a(href="#").sales-department__slide-link.sales-department__slide-link  
+                                        .sales-department__slide-link-icon.sales-department__slide-link-icon_phone
+                                        |+7 958 523-72-86
+                                    a(href="#").sales-department__slide-link.sales-department__slide-link 
+                                        .sales-department__slide-link-icon.sales-department__slide-link-icon_email
+                                        |tu@alfapol.ru
+                                    a(href="#").sales-department__slide-link.sales-department__slide-link 
+                                        .sales-department__slide-link-icon.sales-department__slide-link-icon_skype
+                                        |tu@alfapol.ru
+
+                    .swiper-slide
+                        .sales-department__slide 
+                            +picture("sales-slide3.png").sales-department__slide-photo
+                            .sales-department__slide-info
+                                h4.sales-department__slide-title
+                                    |Михайлова Вероника
+                                .sales-department__slide-contacts
+                                    a(href="#").sales-department__slide-link.sales-department__slide-link  
+                                        .sales-department__slide-link-icon.sales-department__slide-link-icon_phone
+                                        |+7 958 523-72-86
+                                    a(href="#").sales-department__slide-link.sales-department__slide-link 
+                                        .sales-department__slide-link-icon.sales-department__slide-link-icon_email
+                                        |tu@alfapol.ru
+                                    a(href="#").sales-department__slide-link.sales-department__slide-link 
+                                        .sales-department__slide-link-icon.sales-department__slide-link-icon_skype
+                                        |tu@alfapol.ru
+                                        
+                    .swiper-slide
+                        .sales-department__slide 
+                            +picture("sales-slide4.png").sales-department__slide-photo
+                            .sales-department__slide-info
+                                h4.sales-department__slide-title
+                                    |Рябцев Сергей
+                                .sales-department__slide-contacts
+                                    a(href="#").sales-department__slide-link.sales-department__slide-link  
+                                        .sales-department__slide-link-icon.sales-department__slide-link-icon_phone
+                                        |+7 958 523-72-86
+                                    a(href="#").sales-department__slide-link.sales-department__slide-link 
+                                        .sales-department__slide-link-icon.sales-department__slide-link-icon_email
+                                        |tu@alfapol.ru
+                                    a(href="#").sales-department__slide-link.sales-department__slide-link 
+                                        .sales-department__slide-link-icon.sales-department__slide-link-icon_skype
+                                        |tu@alfapol.ru

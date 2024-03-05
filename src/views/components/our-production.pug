@@ -1,0 +1,104 @@
+mixin our-production 
+    section.section.section-slider
+        .section-header
+            h4.section-title 
+                span.section-title.grey наша 
+                span.section-title.black продукция
+            a(href="#").section-link.desktop
+                .section-link__span Перейти в каталог
+                +button-arrow.section-link__svg 
+        .separator-line
+
+        .production-slider.swiper
+            .production-slider__inner.swiper-wrapper
+                .production-slider__slide.swiper-slide
+                    +picture('antistatic.png').production-slider__bg.desktop
+                    +picture('antistatic-hover.png').production-slider__bg-hover.desktop
+                    +picture('antistatic-m.png').production-slider__bg.mobile
+                    .production-slider__icon 
+                        +production-antistatic.production-slider__icon-svg
+                    .production-slider__desc 
+                        .production-slider__desc-inner
+                            h6.production-slider__title Антистатические полы и покрытия
+                            +production-arrow.production-slider__arrow-svg
+
+                .production-slider__slide.swiper-slide
+                    +picture('non-sparking.png').production-slider__bg.desktop
+                    +picture('non-sparking-hover.png').production-slider__bg-hover.desktop
+                    +picture('non-sparking-m.png').production-slider__bg.mobile
+                    .production-slider__icon 
+                        +production-non-sparking.production-slider__icon-svg
+                    .production-slider__desc 
+                        .production-slider__desc-inner
+                            h6.production-slider__title Безыскровые полы
+                            +production-arrow.production-slider__arrow-svg
+
+                .production-slider__slide.swiper-slide
+                    +picture('radiation.png').production-slider__bg.desktop
+                    +picture('non-sparking-hover.png').production-slider__bg-hover.desktop
+                    +picture('antistatic-m.png').production-slider__bg.mobile
+                    .production-slider__icon 
+                        +production-radiation.production-slider__icon-svg
+                    .production-slider__desc 
+                        .production-slider__desc-inner
+                            h6.production-slider__title Полы и покрытия для защиты от излучений
+                            +production-arrow.production-slider__arrow-svg
+
+                .production-slider__slide.swiper-slide
+                    +picture('heat.png').production-slider__bg.desktop
+                    +picture('non-sparking-hover.png').production-slider__bg-hover.desktop
+                    +picture('heat-m.png').production-slider__bg.mobile
+                    .production-slider__icon 
+                        +production-heat.production-slider__icon-svg
+                    .production-slider__desc 
+                        .production-slider__desc-inner
+                            h6.production-slider__title Жаростойкие бетоны
+                            +production-arrow.production-slider__arrow-svg
+
+                .production-slider__slide.swiper-slide
+                    +picture('oil.png').production-slider__bg.desktop
+                    +picture('non-sparking-hover.png').production-slider__bg-hover.desktop
+                    +picture('antistatic-m.png').production-slider__bg.mobile
+                    .production-slider__icon 
+                        +production-oil.production-slider__icon-svg
+                    .production-slider__desc 
+                        .production-slider__desc-inner
+                            h6.production-slider__title Маслобензостойкие полы
+                            +production-arrow.production-slider__arrow-svg
+
+                .production-slider__slide.swiper-slide
+                    +picture('chemical.png').production-slider__bg.desktop
+                    +picture('non-sparking-hover.png').production-slider__bg-hover.desktop
+                    +picture('antistatic-m.png').production-slider__bg.mobile
+                    .production-slider__icon 
+                        +production-chemistry.production-slider__icon-svg
+                    .production-slider__desc 
+                        .production-slider__desc-inner
+                            h6.production-slider__title Химически стойкие полы
+                            +production-arrow.production-slider__arrow-svg
+
+                .production-slider__slide.swiper-slide
+                    +picture('thermo.png').production-slider__bg.desktop
+                    +picture('non-sparking-hover.png').production-slider__bg-hover.desktop
+                    +picture('antistatic-m.png').production-slider__bg.mobile
+                    .production-slider__icon 
+                        +production-thermo.production-slider__icon-svg
+                    .production-slider__desc 
+                        .production-slider__desc-inner
+                            h6.production-slider__title Термостойкие полы
+                            +production-arrow.production-slider__arrow-svg
+
+                .production-slider__slide.swiper-slide
+                    +picture('decor.png').production-slider__bg.desktop
+                    +picture('non-sparking-hover.png').production-slider__bg-hover.desktop
+                    +picture('antistatic-m.png').production-slider__bg.mobile
+                    .production-slider__icon 
+                        +production-decor.production-slider__icon-svg
+                    .production-slider__desc 
+                        .production-slider__desc-inner
+                            h6.production-slider__title Декоративные полы
+                            +production-arrow.production-slider__arrow-svg
+
+        a(href="#").section-link.mobile
+                .section-link__span Перейти в каталог
+                +button-arrow.section-link__svg 

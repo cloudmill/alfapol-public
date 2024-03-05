@@ -1,0 +1,559 @@
+mixin product-hero
+    section.section.product-hero
+        //- .product-hero__image-to-cart
+        .product-hero__image-wrapper
+            .product-hero__image
+                .product-hero__breadcrumbs.no-tablet
+                    .product-hero__breadcrumbs-inner
+                        a(href="#").product-hero__breadcrumbs-link Главная
+                        +button-arrow.product-hero__breadcrumbs-svg
+                        a(href="#").product-hero__breadcrumbs-link каталог
+                        +button-arrow.product-hero__breadcrumbs-svg
+                        a(href="#").product-hero__breadcrumbs-link Антистатические полы и покрытия
+                        +button-arrow.product-hero__breadcrumbs-svg
+                        .product-hero__breadcrumbs-link.active АЛЬФАПОЛ ПУ-4 ВН АСХ
+
+                ul.product-hero__icons
+                    li.product-hero__icons-item
+                        +adhesion-icon.product-hero__icons-svg
+                        +icon-label("Высокая адгезия").product-hero__icons-label.icon-label_hero
+                    li.product-hero__icons-item
+                        +universal-icon.product-hero__icons-svg
+                        +icon-label("Универсальность применения").product-hero__icons-label.icon-label_hero
+                    li.product-hero__icons-item 
+                        +temperature-stability-icon.product-hero__icons-svg
+                        +icon-label("Температурная устойчивость до 130°С").product-hero__icons-label.icon-label_hero
+                    li.product-hero__icons-item
+                        +easy-cleaning-icon.product-hero__icons-svg
+                        +icon-label("Легко мыть и дезинфицировать").product-hero__icons-label.icon-label_hero
+                +picture("catalog-card.png").product-hero__image-pic(data-element="product-image")
+
+            .separator-line.product-hero__separator-line
+            
+            button.product-hero__quote-btn(data-btn="add-to-cart") Получить расчет
+
+        .product-hero__desc
+            .product-hero__breadcrumbs.tablet
+                    .product-hero__breadcrumbs-inner
+                        a(href="#").product-hero__breadcrumbs-link Главная
+                        +button-arrow.product-hero__breadcrumbs-svg
+                        a(href="#").product-hero__breadcrumbs-link каталог
+                        +button-arrow.product-hero__breadcrumbs-svg
+                        a(href="#").product-hero__breadcrumbs-link Антистатические полы и покрытия
+                        +button-arrow.product-hero__breadcrumbs-svg
+                        .product-hero__breadcrumbs-link АЛЬФАПОЛ ПУ-4 ВН АСХ
+            .product-hero__label новинка
+            h2.product-hero__title 
+                p АЛЬФАПОЛ ПУ-4 
+                p ВН АСХ
+
+            h4.product-hero__subtitle
+                | Антистатический кислотостойкий щелочестойкий термостойкий полиуретан-цементный промышленный пол
+
+            .product-hero__table.two-columns
+                .product-hero__table-header 
+                    .product-hero__table-column.title Толщина слоя от-до, мм 
+                    .product-hero__table-column 0,5-5 
+                    .product-hero__table-column 1-5
+
+                .product-hero__table-data
+                    .product-hero__table-row.row-title Цена за 1 кг, ₽
+                    .product-hero__table-row 813
+                    .product-hero__table-row 415
+
+                .product-hero__table-data
+                    .product-hero__table-row.row-title Цена за 1 м2 при толщине слоя 1 мм, ₽
+                    .product-hero__table-row 1155
+                    .product-hero__table-row 738
+
+            .product-hero__table.three-columns
+                .product-hero__table-header 
+                    .product-hero__table-column.title Толщина слоя от-до, мм 
+                    .product-hero__table-column 0,5-5 
+                    .product-hero__table-column 1-5
+                    .product-hero__table-column 3
+
+                .product-hero__table-data
+                    .product-hero__table-row.row-title Цена за 1 кг, ₽
+                    .product-hero__table-row 813
+                    .product-hero__table-row 415
+                    .product-hero__table-row 163
+
+                .product-hero__table-data
+                    .product-hero__table-row.row-title Цена за 1 м2 при толщине слоя 1 мм, ₽
+                    .product-hero__table-row 1155
+                    .product-hero__table-row 738
+                    .product-hero__table-row 533
+
+            .product-hero__table.four-columns
+                .product-hero__table-header 
+                    .product-hero__table-column.title Толщина слоя от-до, мм 
+                    .product-hero__table-column 0,5-5 
+                    .product-hero__table-column 1-5
+                    .product-hero__table-column 3
+                    .product-hero__table-column 4
+
+                .product-hero__table-data
+                    .product-hero__table-row.row-title Цена за 1 кг, ₽
+                    .product-hero__table-row 813
+                    .product-hero__table-row 415
+                    .product-hero__table-row 163
+                    .product-hero__table-row 163
+
+                .product-hero__table-data
+                    .product-hero__table-row.row-title Цена за 1 м2 при толщине слоя 1 мм, ₽
+                    .product-hero__table-row 1155
+                    .product-hero__table-row 738
+                    .product-hero__table-row 533
+                    .product-hero__table-row 163
+
+            .product-hero__slider-wrapper
+                .swiper.product-hero__slider
+                    .swiper-wrapper 
+                        .swiper-slide
+                            +picture('product-hero-slide1.png').product-hero__slider-image
+                            p.product-hero__slider-note
+                                | Белый, заполнитель гранит 
+                        .swiper-slide
+                            +picture('product-hero-slide2.png').product-hero__slider-image
+                            p.product-hero__slider-note
+                                | Светло-зеленый, заполнитель гранит
+                        .swiper-slide
+                            +picture('product-hero-slide1.png').product-hero__slider-image
+                            p.product-hero__slider-note
+                                | Белый, заполнитель гранит
+                        .swiper-slide
+                            +picture('product-hero-slide2.png').product-hero__slider-image
+                            p.product-hero__slider-note
+                                | Светло-зеленый, заполнитель гранит
+                        .swiper-slide
+                            +picture('product-hero-slide2.png').product-hero__slider-image
+                            p.product-hero__slider-note
+                                | Светло-зеленый, заполнитель гранит
+                        .swiper-slide
+                            +picture('product-hero-slide1.png').product-hero__slider-image
+                            p.product-hero__slider-note
+                                | Белый, заполнитель гранит
+                        .swiper-slide
+                            +picture('product-hero-slide2.png').product-hero__slider-image
+                            p.product-hero__slider-note
+                                | Светло-зеленый, заполнитель гранит
+
+                .product-hero__slider-remote
+                    .product-hero__slider-pagination
+                    .product-hero__slider-buttons
+                        .product-hero__slider-button.left
+                            +swiper-btn.product-hero__slider-button-svg
+                        .product-hero__slider-button.right
+                            +swiper-btn.product-hero__slider-button-svg
+
+            p.product-hero__desc-about
+                |Высоконаполненное колерованное индустриальное антистатическое покрытие для помещений с интенсивными механическими, ударными, абразивными нагрузками, агрессивными жидкостными и тепловыми воздействиями. Для пищевой, химической, нефтехимической промышленности, низкотемпературных складов и пр. Толщина слоя 5–15 мм.
+
+            .product-hero__colors 
+                h4.product-hero__colors-title
+                    | цвета
+
+                .product-hero__colors-inner
+                    .product-hero__color-examples
+                        .product-hero__color-wrapper
+                            .product-hero__color.ral1021
+                        .product-hero__color-wrapper
+                            .product-hero__color.ral7021
+                        .product-hero__color-wrapper
+                            .product-hero__color.ral5023
+                        .product-hero__color-wrapper
+                            .product-hero__color.ral6009
+                        .product-hero__color-wrapper.desktop
+                            .product-hero__color.ral8012
+                    button.product-hero__color-more(data-btn="product-more-colors")
+                        .product-hero__color-span Все цвета
+                        +button-plus-svg.product-hero__color-plus
+
+            ul.product-hero__advantages 
+                li.product-hero__advantages-item
+                    +advantages-supply.product-hero__advantages-svg
+                    p.product-hero__advantages-title 
+                        | Прямые поставки с завода без посредников
+                li.product-hero__advantages-item
+                    +advantages-discount.product-hero__advantages-svg
+                    p.product-hero__advantages-title 
+                        | Гибкая система скидок при оптовых закупках
+                li.product-hero__advantages-item
+                    +advantages-specialists.product-hero__advantages-svg
+                    p.product-hero__advantages-title 
+                        | Специалисты для монтажа под ваши задачи
+
+            .product-hero__accordions
+                .product-hero__accordion
+                    .accordion-container
+                        .ac
+                            .ac-header.ac-trigger 
+                                p.product-hero__accordion-title 
+                                    | Технические характеристики
+                                .product-hero__accordion-btn 
+                                    +swiper-btn.product-hero__accordion-svg
+                            .ac-panel
+                                .product-hero__accordion-panel
+                                    .product-hero__accordion-table
+                                        .product-hero__accordion-table-header 
+                                            p.product-hero__accordion-table-title     
+                                                | Основа
+                                            p.product-hero__accordion-table-subtitle
+                                                | Полиуретан-цемент
+                                        +product-hero-table("Комплект, кг", "30,9")
+                                        +product-hero-table("Расход смеси на 1 кв. м/мм, кг", "2")
+                                        +product-hero-table("Компонент А, кг", "3,5")
+                                        +product-hero-table("Компонент б, кг", "3")
+                                        +product-hero-table("Компонент в, кг", "25")
+                                        +product-hero-table("Плотность А+Б при температуре 23°C, г/см³", "2")
+                                        +product-hero-table("Время жизни смеси (распределённой по поверхности), мин, не более", "10")
+                                        +product-hero-table("Интервал для нанесения следующего слоя покрытия, ч, не менее", "12")
+                                        +product-hero-table("Пешеходные нагрузки, ч, не менее", "24")
+                                        +product-hero-table("Полное отверждение, сут, не менее", "2")
+                                        +product-hero-table("Температура применения, °C", "+10°C до +30°C")
+                                        +product-hero-table("Срок хранения, мес, не более", "6")
+
+                .product-hero__accordion
+                    .accordion-container
+                        .ac
+                            .ac-header.ac-trigger 
+                                p.product-hero__accordion-title 
+                                    | Документы и сертификаты
+                                .product-hero__accordion-btn 
+                                    +swiper-btn.product-hero__accordion-svg
+                            .ac-panel
+                                .product-hero__accordion-panel.documents
+                                    +product-hero-document("Техническое описание", "234 кб")
+                                    +product-hero-document("Сертификат соответствия", "234 кб")
+                                    +product-hero-document("Протокол испытаний (истираемость)", "234 кб")
+                                    +product-hero-document("Протокол испытаний (химстойкость)", "234 кб")
+                                    +product-hero-document("Рекомендации по устройству антистатических покрытий пола", "234 кб")
+                                    +product-hero-document("Свидетельство о государственной регистрации ЕАЭС", "234 кб")
+                                    +product-hero-document("Паспорта безопасности компонентов", "234 кб")
+
+                .product-hero__accordion
+                    .accordion-container
+                        .ac
+                            .ac-header.ac-trigger 
+                                p.product-hero__accordion-title 
+                                    | Свойства и применение
+                                .product-hero__accordion-btn 
+                                    +swiper-btn.product-hero__accordion-svg
+                            .ac-panel
+                                .product-hero__accordion-panel
+                                    h4.product-hero__accordion-panel-title 
+                                        | Ключевые свойства
+                                    ul.product-hero__accordion-panel-list 
+                                        li.product-hero__accordion-panel-item 
+                                            | Абразивостойкость
+                                        li.product-hero__accordion-panel-item 
+                                            | Водо — и химстойкость
+                                        li.product-hero__accordion-panel-item 
+                                            | Температурная устойчивость до 130 °С
+                                        li.product-hero__accordion-panel-item 
+                                            | Быстрый набор прочности
+                                        li.product-hero__accordion-panel-item 
+                                            | Фактурная поверхность
+                                        li.product-hero__accordion-panel-item 
+                                            | 9 базовых цветов на выбор
+                                        li.product-hero__accordion-panel-item 
+                                            | Лёгкость уборки готовых покрытий
+                                        li.product-hero__accordion-panel-item 
+                                            | Без растворителя
+                                        li.product-hero__accordion-panel-item 
+                                            | Возможность нанесения покрытия без предварительного выравнивания основания
+                                        li.product-hero__accordion-panel-item 
+                                            | Не имеет запаха
+                                        li.product-hero__accordion-panel-item 
+                                            | Покрытие АЛЬФАГРУНТ® ЭКРАН абсолютно безопасно
+                                        li.product-hero__accordion-panel-item 
+                                            | Материал производится в соответствии с требованиями, установленными в нормативных документах: ГН 2.1.8/2.2.4.2262–07, СанПиН 2.1.2.2645–10, СанПиН 2971–84
+
+                                    h4.product-hero__accordion-panel-title 
+                                        | Объекты применения
+                                    ul.product-hero__accordion-panel-list 
+                                        li.product-hero__accordion-panel-item 
+                                            | Производственные зоны с высокой транспортной нагрузкой
+                                        li.product-hero__accordion-panel-item 
+                                            | Цеха по производству соков, масел
+                                        li.product-hero__accordion-panel-item 
+                                            | Производства продуктов питания
+                                        li.product-hero__accordion-panel-item 
+                                            | Молокозаводы, сыроварни
+                                        li.product-hero__accordion-panel-item 
+                                            | Производственные помещения с требованиями по устойчивости к воде и химикатам
+                                        li.product-hero__accordion-panel-item 
+                                            | Производственные помещения с требованиями к термической стойкости полов
+                                        li.product-hero__accordion-panel-item 
+                                            | Производственные объекты с влажными технологическими процессами
+                                        li.product-hero__accordion-panel-item 
+                                            | Пандусы и наклонные основания
+
+
+
+        //- .product-hero__colors-popup.colors-popup.product-popup.show(data-element="popup")
+        .contact-form.colors-popup.product-popup(data-element="popup")
+            button.contact-form__close.colors-popup__close(data-action="close-popup")
+                +close-btn.contact-form__close-svg.colors-popup__close-svg
+            //- .colors-popup__inner.contact-form__content
+            .contact-form__wrapper
+                .contact-form__inner
+                    .contact-form__header
+                        h4.colors-popup__title.contact-form__title все цвета
+                        .separator-line.contact-form__header-separator(data-element="popup-header-separator")
+
+                    .colors-popup__colors-wrapper(data-element="scroll-event")
+
+                        ul.colors-popup__list 
+                            li.colors-popup__item
+                                .colors-popup__example.product-hero__color-wrapper
+                                    .colors-popup__example-color.product-hero__color.ral1021
+                                .colors-popup__example-title RAL 1021 Рапсово-жёлтый
+
+                            li.colors-popup__item
+                                .colors-popup__example.product-hero__color-wrapper
+                                    .colors-popup__example-color.product-hero__color.ral7021
+                                .colors-popup__example-title RAL 7021 Чёрно-серый
+
+                            li.colors-popup__item
+                                .colors-popup__example.product-hero__color-wrapper
+                                    .colors-popup__example-color.product-hero__color.ral5023
+                                .colors-popup__example-title RAL 5023 Отдалённо-синий
+
+                            li.colors-popup__item
+                                .colors-popup__example.product-hero__color-wrapper
+                                    .colors-popup__example-color.product-hero__color.ral6009
+                                .colors-popup__example-title RAL 6009 Пихтовый зелёный
+
+                            li.colors-popup__item
+                                .colors-popup__example.product-hero__color-wrapper
+                                    .colors-popup__example-color.product-hero__color.ral7001
+                                .colors-popup__example-title RAL 7001 Серебристо-серый
+
+                            li.colors-popup__item
+                                .colors-popup__example.product-hero__color-wrapper
+                                    .colors-popup__example-color.product-hero__color.ral8012
+                                .colors-popup__example-title RAL 8012 Красно-коричневый
+                            li.colors-popup__item
+                                .colors-popup__example.product-hero__color-wrapper
+                                    .colors-popup__example-color.product-hero__color.ral1021
+                                .colors-popup__example-title RAL 1021 Рапсово-жёлтый
+
+                            li.colors-popup__item
+                                .colors-popup__example.product-hero__color-wrapper
+                                    .colors-popup__example-color.product-hero__color.ral7021
+                                .colors-popup__example-title RAL 7021 Чёрно-серый
+
+                            li.colors-popup__item
+                                .colors-popup__example.product-hero__color-wrapper
+                                    .colors-popup__example-color.product-hero__color.ral5023
+                                .colors-popup__example-title RAL 5023 Отдалённо-синий
+
+                            li.colors-popup__item
+                                .colors-popup__example.product-hero__color-wrapper
+                                    .colors-popup__example-color.product-hero__color.ral6009
+                                .colors-popup__example-title RAL 6009 Пихтовый зелёный
+
+                            li.colors-popup__item
+                                .colors-popup__example.product-hero__color-wrapper
+                                    .colors-popup__example-color.product-hero__color.ral7001
+                                .colors-popup__example-title RAL 7001 Серебристо-серый
+
+                            li.colors-popup__item
+                                .colors-popup__example.product-hero__color-wrapper
+                                    .colors-popup__example-color.product-hero__color.ral8012
+                                .colors-popup__example-title RAL 8012 Красно-коричневый
+                            li.colors-popup__item
+                                .colors-popup__example.product-hero__color-wrapper
+                                    .colors-popup__example-color.product-hero__color.ral1021
+                                .colors-popup__example-title RAL 1021 Рапсово-жёлтый
+
+                            li.colors-popup__item
+                                .colors-popup__example.product-hero__color-wrapper
+                                    .colors-popup__example-color.product-hero__color.ral7021
+                                .colors-popup__example-title RAL 7021 Чёрно-серый
+
+                            li.colors-popup__item
+                                .colors-popup__example.product-hero__color-wrapper
+                                    .colors-popup__example-color.product-hero__color.ral5023
+                                .colors-popup__example-title RAL 5023 Отдалённо-синий
+
+                            li.colors-popup__item
+                                .colors-popup__example.product-hero__color-wrapper
+                                    .colors-popup__example-color.product-hero__color.ral6009
+                                .colors-popup__example-title RAL 6009 Пихтовый зелёный
+
+                            li.colors-popup__item
+                                .colors-popup__example.product-hero__color-wrapper
+                                    .colors-popup__example-color.product-hero__color.ral7001
+                                .colors-popup__example-title RAL 7001 Серебристо-серый
+
+                            li.colors-popup__item
+                                .colors-popup__example.product-hero__color-wrapper
+                                    .colors-popup__example-color.product-hero__color.ral8012
+                                .colors-popup__example-title RAL 8012 Красно-коричневый
+                            li.colors-popup__item
+                                .colors-popup__example.product-hero__color-wrapper
+                                    .colors-popup__example-color.product-hero__color.ral1021
+                                .colors-popup__example-title RAL 1021 Рапсово-жёлтый
+
+                            li.colors-popup__item
+                                .colors-popup__example.product-hero__color-wrapper
+                                    .colors-popup__example-color.product-hero__color.ral7021
+                                .colors-popup__example-title RAL 7021 Чёрно-серый
+
+                            li.colors-popup__item
+                                .colors-popup__example.product-hero__color-wrapper
+                                    .colors-popup__example-color.product-hero__color.ral5023
+                                .colors-popup__example-title RAL 5023 Отдалённо-синий
+
+                            li.colors-popup__item
+                                .colors-popup__example.product-hero__color-wrapper
+                                    .colors-popup__example-color.product-hero__color.ral6009
+                                .colors-popup__example-title RAL 6009 Пихтовый зелёный
+
+                            li.colors-popup__item
+                                .colors-popup__example.product-hero__color-wrapper
+                                    .colors-popup__example-color.product-hero__color.ral7001
+                                .colors-popup__example-title RAL 7001 Серебристо-серый
+
+                            li.colors-popup__item
+                                .colors-popup__example.product-hero__color-wrapper
+                                    .colors-popup__example-color.product-hero__color.ral8012
+                                .colors-popup__example-title RAL 8012 Красно-коричневый
+
+                            li.colors-popup__item
+                                .colors-popup__example.product-hero__color-wrapper
+                                    .colors-popup__example-color.product-hero__color.ral1021
+                                .colors-popup__example-title RAL 1021 Рапсово-жёлтый
+
+                            li.colors-popup__item
+                                .colors-popup__example.product-hero__color-wrapper
+                                    .colors-popup__example-color.product-hero__color.ral7021
+                                .colors-popup__example-title RAL 7021 Чёрно-серый
+
+                            li.colors-popup__item
+                                .colors-popup__example.product-hero__color-wrapper
+                                    .colors-popup__example-color.product-hero__color.ral5023
+                                .colors-popup__example-title RAL 5023 Отдалённо-синий
+
+                            li.colors-popup__item
+                                .colors-popup__example.product-hero__color-wrapper
+                                    .colors-popup__example-color.product-hero__color.ral6009
+                                .colors-popup__example-title RAL 6009 Пихтовый зелёный
+
+                            li.colors-popup__item
+                                .colors-popup__example.product-hero__color-wrapper
+                                    .colors-popup__example-color.product-hero__color.ral7001
+                                .colors-popup__example-title RAL 7001 Серебристо-серый
+
+                            li.colors-popup__item
+                                .colors-popup__example.product-hero__color-wrapper
+                                    .colors-popup__example-color.product-hero__color.ral8012
+                                .colors-popup__example-title RAL 8012 Красно-коричневый
+                            li.colors-popup__item
+                                .colors-popup__example.product-hero__color-wrapper
+                                    .colors-popup__example-color.product-hero__color.ral1021
+                                .colors-popup__example-title RAL 1021 Рапсово-жёлтый
+
+                            li.colors-popup__item
+                                .colors-popup__example.product-hero__color-wrapper
+                                    .colors-popup__example-color.product-hero__color.ral7021
+                                .colors-popup__example-title RAL 7021 Чёрно-серый
+
+                            li.colors-popup__item
+                                .colors-popup__example.product-hero__color-wrapper
+                                    .colors-popup__example-color.product-hero__color.ral5023
+                                .colors-popup__example-title RAL 5023 Отдалённо-синий
+
+                            li.colors-popup__item
+                                .colors-popup__example.product-hero__color-wrapper
+                                    .colors-popup__example-color.product-hero__color.ral6009
+                                .colors-popup__example-title RAL 6009 Пихтовый зелёный
+
+                            li.colors-popup__item
+                                .colors-popup__example.product-hero__color-wrapper
+                                    .colors-popup__example-color.product-hero__color.ral7001
+                                .colors-popup__example-title RAL 7001 Серебристо-серый
+
+                            li.colors-popup__item
+                                .colors-popup__example.product-hero__color-wrapper
+                                    .colors-popup__example-color.product-hero__color.ral8012
+                                .colors-popup__example-title RAL 8012 Красно-коричневый
+                            li.colors-popup__item
+                                .colors-popup__example.product-hero__color-wrapper
+                                    .colors-popup__example-color.product-hero__color.ral1021
+                                .colors-popup__example-title RAL 1021 Рапсово-жёлтый
+
+                            li.colors-popup__item
+                                .colors-popup__example.product-hero__color-wrapper
+                                    .colors-popup__example-color.product-hero__color.ral7021
+                                .colors-popup__example-title RAL 7021 Чёрно-серый
+
+                            li.colors-popup__item
+                                .colors-popup__example.product-hero__color-wrapper
+                                    .colors-popup__example-color.product-hero__color.ral5023
+                                .colors-popup__example-title RAL 5023 Отдалённо-синий
+
+                            li.colors-popup__item
+                                .colors-popup__example.product-hero__color-wrapper
+                                    .colors-popup__example-color.product-hero__color.ral6009
+                                .colors-popup__example-title RAL 6009 Пихтовый зелёный
+
+                            li.colors-popup__item
+                                .colors-popup__example.product-hero__color-wrapper
+                                    .colors-popup__example-color.product-hero__color.ral7001
+                                .colors-popup__example-title RAL 7001 Серебристо-серый
+
+                            li.colors-popup__item
+                                .colors-popup__example.product-hero__color-wrapper
+                                    .colors-popup__example-color.product-hero__color.ral8012
+                                .colors-popup__example-title RAL 8012 Красно-коричневый
+                            li.colors-popup__item
+                                .colors-popup__example.product-hero__color-wrapper
+                                    .colors-popup__example-color.product-hero__color.ral1021
+                                .colors-popup__example-title RAL 1021 Рапсово-жёлтый
+
+                            li.colors-popup__item
+                                .colors-popup__example.product-hero__color-wrapper
+                                    .colors-popup__example-color.product-hero__color.ral7021
+                                .colors-popup__example-title RAL 7021 Чёрно-серый
+
+                            li.colors-popup__item
+                                .colors-popup__example.product-hero__color-wrapper
+                                    .colors-popup__example-color.product-hero__color.ral5023
+                                .colors-popup__example-title RAL 5023 Отдалённо-синий
+
+                            li.colors-popup__item
+                                .colors-popup__example.product-hero__color-wrapper
+                                    .colors-popup__example-color.product-hero__color.ral6009
+                                .colors-popup__example-title RAL 6009 Пихтовый зелёный
+
+                            li.colors-popup__item
+                                .colors-popup__example.product-hero__color-wrapper
+                                    .colors-popup__example-color.product-hero__color.ral7001
+                                .colors-popup__example-title RAL 7001 Серебристо-серый
+
+                            li.colors-popup__item
+                                .colors-popup__example.product-hero__color-wrapper
+                                    .colors-popup__example-color.product-hero__color.ral8012
+                                .colors-popup__example-title RAL 8012 Красно-коричневый
+
+
+    .product-hero__cart
+        .product-hero__cart-inner
+            button.contact-form__close.product-hero__cart-close
+                +close-btn.contact-form__close-svg
+
+            .product-hero__cart-picture-wrapper
+                +picture("catalog-card.png").product-hero__cart-picture
+            .product-hero__cart-desc
+                .product-hero__cart-note Добавлено в корзину
+                h4.product-hero__cart-title 
+                    |АЛЬФАПОЛ 
+                    span.product-hero__cart-title_model 
+                        |ПУ-4 ВН АСХ
+                button.section-link.product-hero__cart-go-to(data-action="open-cart")
+                    .section-link__span В корзину
+                    +button-arrow.section-link__svg 

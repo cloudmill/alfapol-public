@@ -1,0 +1,21 @@
+mixin catalog-hero
+    section.section.catalog-hero
+        .catalog-hero__inner.light-grey
+            //- +catalog-hero-bg.catalog-hero__bg.desktop
+            //- +catalog-hero-bg-mobile.catalog-hero__bg.mobile
+            .catalog-hero__wrapper
+                .catalog-hero__info
+                    .catalog-hero__breadcrumbs  
+                        .catalog-hero__breadcrumbs-inner
+                            a(href="#").catalog-hero__breadcrumbs-link Главная
+                            +button-arrow.catalog-hero__breadcrumbs-svg
+                            a(href="#").catalog-hero__breadcrumbs-link каталог
+                            +button-arrow.catalog-hero__breadcrumbs-svg
+                            a(href="#").catalog-hero__breadcrumbs-link Антистатические полы и покрытия
+                    .catalog-hero__desc 
+                        h1.catalog-hero__title Антистатические полы и&nbsp;покрытия 
+                        h4.catalog-hero__specs Антистатические наливные полимерные или минеральные покрытия, полиуретан-цементные антистатические полы АЛЬФАПОЛ® и системы токопроводящих химстойких грунтовок и красок АС®. 
+                .catalog-hero__img.desktop
+                    +picture('catalog-hero.png')
+                .catalog-hero__img.mobile
+                    +picture('catalog-hero-tablet.png')

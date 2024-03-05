@@ -1,0 +1,137 @@
+.section-about {
+    margin-top: rem(120px);
+    padding: 0 rem(8px) rem(8px);
+
+    @media #{media('<',t)} {
+        margin-top: rem(28px);
+        padding: 0 rem(4px);
+    }
+
+    &__inner {
+        width: 100%;
+        height: rem(880px);
+
+        position: relative;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        border-radius: rem(6px);
+        overflow: hidden;
+
+        padding: rem(52px);
+
+        @media #{media('<',t)} {
+            height: rem(492px);
+            padding: 0;
+            padding-top: rem(338px);
+            border-radius: rem(4px);
+        }
+        
+        @media #{media('<',m)} {
+            // height: rem(532px);
+            height: max-content;
+            justify-content: normal;
+            gap: rem(16px);
+
+            padding-top: rem(482px);
+        }
+        
+        @media #{media('<',s)} {
+            padding-top: rem(320px);
+        }
+    }
+
+    &__bg {
+        width: 100%;
+        height: 100%;
+
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+
+        @media #{media('<',t)} {
+            img{
+                border-radius: rem(4px);
+            }
+        }
+
+        &.tablet {
+            @media #{media('>',t)} {
+                display: none;
+            }
+
+            @media #{media('<',m)} {
+                display: none;
+            }
+        }
+
+        &.mobile {
+            @media #{media('>',m)} {
+                display: none;
+            }
+        }
+    }
+
+    &__title {
+        width: rem(679px);
+
+        @media #{media('<',t)} {
+            width: auto;
+        }
+    }
+
+    &__desc {
+        width: rem(470px);
+
+        margin-top: rem(40px);
+
+        color: color(text);
+        font-family: Rubik;
+        font-size: rem(24px);
+        font-style: normal;
+        font-weight: 400;
+        line-height: 160%; /* 38.4px */
+        letter-spacing: rem(-0.24px);
+
+        @media #{media('<',t)} {
+            width: auto;
+
+            margin-top: 0;
+            font-size: rem(16px);
+            line-height: 150%; /* 24px */
+            letter-spacing: rem(-0.16px);
+        }
+    }
+
+    &__link {
+        width: rem(288px);
+
+        @media #{media('<',t)} {
+            width: rem(124px);
+            margin-left: rem(8px);
+        }
+
+        @media #{media('<',m)} {
+            margin-top: 0;
+        }
+    } 
+
+    &__text {
+        @media #{media('<',t)} {
+            width: rem(744px);
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: rem(4px);
+            padding: 0 rem(8px);
+        }
+
+        @media #{media('<',m)} {
+            width: 100%;
+            grid-template-columns: none;
+            gap: rem(12px);
+        }
+    }
+}
