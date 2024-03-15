@@ -1,0 +1,24 @@
+<svg width="80.000000" height="80.000000" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<defs>
+		<clipPath id="clip1329_50906">
+			<rect id="Icon / Icon Alfapol" width="80.000000" height="80.000000" fill="white" fill-opacity="0"/>
+		</clipPath>
+		<linearGradient id="paint_linear_60_8922_0" x1="21.753067" y1="1.250000" x2="21.753067" y2="20.250000" gradientUnits="userSpaceOnUse">
+			<stop stop-color="#0184FF" stop-opacity="0.000000"/>
+			<stop offset="1.000000" stop-color="#0184FF"/>
+		</linearGradient>
+		<linearGradient id="paint_linear_60_8931_0" x1="51.499996" y1="54.500000" x2="53.999996" y2="48.000000" gradientUnits="userSpaceOnUse">
+			<stop stop-color="#0184FF"/>
+			<stop offset="1.000000" stop-color="#0184FF" stop-opacity="0.000000"/>
+		</linearGradient>
+	</defs>
+	<rect id="Icon / Icon Alfapol" width="80.000000" height="80.000000" fill="#FFFFFF" fill-opacity="0"/>
+	<g clip-path="url(#clip1329_50906)">
+		<path id="path2646" d="M33.0071 19.8521L39.0071 14L44.5938 19.7334" stroke="#0184FF" stroke-opacity="1.000000" stroke-width="1.500000" stroke-linejoin="round" stroke-linecap="round"/>
+		<path id="path2650" d="M52.0071 20L60.2838 20L60.2838 28.1104" stroke="#0184FF" stroke-opacity="1.000000" stroke-width="1.500000" stroke-linejoin="round" stroke-linecap="round"/>
+		<path id="Union" d="M32.7571 40L32.7571 33.769C32.7571 33.6684 32.7377 33.5718 32.6989 33.4791C32.6599 33.3863 32.6047 33.3047 32.533 33.2342L18.533 19.4653C18.2335 19.1708 17.7668 19.1747 17.4724 19.4741C17.1779 19.7735 17.1818 20.2402 17.4812 20.5347L31.2571 34.0833L31.2571 40C31.2571 40.42 31.587 40.75 32.0071 40.75C32.4271 40.75 32.7571 40.42 32.7571 40ZM38.2571 40C38.2571 40.42 38.587 40.75 39.0071 40.75C39.4271 40.75 39.7571 40.42 39.7571 40L39.7571 15C39.7571 14.58 39.4271 14.25 39.0071 14.25C38.5872 14.25 38.2571 14.58 38.2571 15L38.2571 40ZM46.7571 34.0833L46.7571 40C46.7571 40.42 46.4271 40.75 46.0071 40.75C45.587 40.75 45.2571 40.42 45.2571 40L45.2571 33.769C45.2571 33.7187 45.262 33.6694 45.2717 33.6211C45.2814 33.5728 45.2959 33.5254 45.3154 33.4791C45.3348 33.4327 45.3584 33.3891 45.386 33.3483C45.4136 33.3075 45.4453 33.2695 45.4812 33.2342L59.4812 19.4653C59.7806 19.1708 60.2473 19.1747 60.5419 19.4741C60.8363 19.7735 60.8324 20.2402 60.533 20.5347L46.7571 34.0833Z" clip-rule="evenodd" fill="url(#paint_linear_60_8922_0)" fill-opacity="1.000000" fill-rule="evenodd"/>
+		<path id="path2658" d="M26.2838 20L18.0071 20L18.0071 28.1104" stroke="#0184FF" stroke-opacity="1.000000" stroke-width="1.500000" stroke-linejoin="round" stroke-linecap="round"/>
+		<path id="Union" d="M50.7571 65.25L50.7571 40.75L52.2614 40.75C52.6813 40.75 53.0114 40.42 53.0114 40C53.0114 39.58 52.6813 39.25 52.2614 39.25L26.0071 39.25C25.587 39.25 25.2571 39.58 25.2571 40C25.2571 40.42 25.587 40.75 26.0071 40.75L28.2571 40.75L28.2571 65.25L26.7065 65.25C26.2865 65.25 25.9565 65.58 25.9565 66C25.9565 66.42 26.2865 66.75 26.7065 66.75L52.9608 66.75C53.3807 66.75 53.7108 66.42 53.7108 66C53.7108 65.58 53.3807 65.25 52.9608 65.25L50.7571 65.25ZM49.2571 65.25L49.2571 40.75L29.7571 40.75L29.7571 65.25L49.2571 65.25Z" clip-rule="evenodd" fill="#0E2245" fill-opacity="1.000000" fill-rule="evenodd"/>
+		<path id="Ellipse 174" d="M54.0071 47C54.0071 52.5229 49.9777 57 45.0071 57C40.0365 57 36.0071 52.5229 36.0071 47" stroke="url(#paint_linear_60_8931_0)" stroke-opacity="1.000000" stroke-width="1.500000" stroke-linecap="round"/>
+	</g>
+</svg>

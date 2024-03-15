@@ -1,0 +1,36 @@
+<svg width="80.000000" height="80.000000" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<defs>
+		<clipPath id="clip1329_50905">
+			<rect id="Icon / Icon Alfapol" width="80.000000" height="80.000000" fill="white" fill-opacity="0"/>
+		</clipPath>
+		<linearGradient id="paint_linear_60_8932_0" x1="63.571423" y1="16.750000" x2="55.428570" y2="25.571430" gradientUnits="userSpaceOnUse">
+			<stop stop-color="#0184FF"/>
+			<stop offset="1.000000" stop-color="#0184FF" stop-opacity="0.000000"/>
+		</linearGradient>
+		<linearGradient id="paint_linear_60_8933_0" x1="17.428577" y1="16.750000" x2="25.571430" y2="25.571430" gradientUnits="userSpaceOnUse">
+			<stop stop-color="#0184FF"/>
+			<stop offset="1.000000" stop-color="#0184FF" stop-opacity="0.000000"/>
+		</linearGradient>
+		<linearGradient id="paint_linear_60_8934_0" x1="17.428577" y1="63.062504" x2="25.571430" y2="54.241074" gradientUnits="userSpaceOnUse">
+			<stop stop-color="#0184FF"/>
+			<stop offset="1.000000" stop-color="#0184FF" stop-opacity="0.000000"/>
+		</linearGradient>
+		<linearGradient id="paint_linear_60_8942_0" x1="63.571423" y1="63.062504" x2="55.428570" y2="54.241074" gradientUnits="userSpaceOnUse">
+			<stop stop-color="#0184FF"/>
+			<stop offset="1.000000" stop-color="#0184FF" stop-opacity="0.000000"/>
+		</linearGradient>
+	</defs>
+	<rect id="Icon / Icon Alfapol" width="80.000000" height="80.000000" fill="#FFFFFF" fill-opacity="0.600000"/>
+	<g clip-path="url(#clip1329_50905)">
+		<rect id="vuesax/linear/scanning" width="57.000000" height="57.000000" transform="translate(12.000000 12.000000)" fill="#FFFFFF" fill-opacity="0"/>
+		<path id="Vector 233" d="M47.625 16.75L62.5 16.75C63.4666 16.75 64.25 17.5335 64.25 18.5L64.25 34.5625" stroke="url(#paint_linear_60_8932_0)" stroke-opacity="1.000000" stroke-width="1.500000" stroke-linecap="round"/>
+		<path id="Vector 234" d="M33.375 16.75L18.5 16.75C17.5334 16.75 16.75 17.5335 16.75 18.5L16.75 34.5625" stroke="url(#paint_linear_60_8933_0)" stroke-opacity="1.000000" stroke-width="1.500000" stroke-linecap="round"/>
+		<path id="Vector 235" d="M33.375 63.0625L18.5 63.0625C17.5334 63.0625 16.75 62.279 16.75 61.3125L16.75 45.25" stroke="url(#paint_linear_60_8934_0)" stroke-opacity="1.000000" stroke-width="1.500000" stroke-linecap="round"/>
+		<path id="Vector" d="M32.1875 38.125C28.9083 38.125 26.25 35.4667 26.25 32.1875C26.25 28.9083 28.9083 26.25 32.1875 26.25C35.4667 26.25 38.125 28.9083 38.125 32.1875C38.125 35.4667 35.4667 38.125 32.1875 38.125Z" stroke="#0184FF" stroke-opacity="1.000000" stroke-width="1.500000" stroke-linejoin="round"/>
+		<path id="Vector" d="M29.8125 54.75C27.845 54.75 26.25 53.155 26.25 51.1875C26.25 49.22 27.845 47.625 29.8125 47.625C31.78 47.625 33.375 49.22 33.375 51.1875C33.375 53.155 31.78 54.75 29.8125 54.75Z" stroke="#0E2245" stroke-opacity="1.000000" stroke-width="1.500000" stroke-linejoin="round"/>
+		<path id="Vector" d="M51.1875 33.375C49.22 33.375 47.625 31.78 47.625 29.8125C47.625 27.845 49.22 26.25 51.1875 26.25C53.155 26.25 54.75 27.845 54.75 29.8125C54.75 31.78 53.155 33.375 51.1875 33.375Z" stroke="#0E2245" stroke-opacity="1.000000" stroke-width="1.500000" stroke-linejoin="round"/>
+		<path id="Vector" d="M48.8125 54.75C45.5333 54.75 42.875 52.0917 42.875 48.8125C42.875 45.5333 45.5333 42.875 48.8125 42.875C52.0917 42.875 54.75 45.5333 54.75 48.8125C54.75 52.0917 52.0917 54.75 48.8125 54.75Z" stroke="#0184FF" stroke-opacity="1.000000" stroke-width="1.500000" stroke-linejoin="round"/>
+		<g opacity="0.000000"/>
+		<path id="Vector 236" d="M47.625 63.0625L62.5 63.0625C63.4666 63.0625 64.25 62.279 64.25 61.3125L64.25 45.25" stroke="url(#paint_linear_60_8942_0)" stroke-opacity="1.000000" stroke-width="1.500000" stroke-linecap="round"/>
+	</g>
+</svg>
