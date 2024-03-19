@@ -673,38 +673,85 @@
 				<section class="section order" data-element="window">
 					<div class="order__content" data-element="window-content">
 						<div class="order__wrapper">
-							<div class="product-hero__breadcrumbs order__breadcrumbs">
-								<div class="product-hero__breadcrumbs-inner"><a class="product-hero__breadcrumbs-link" href="#">Главная</a><svg class="product-hero__breadcrumbs-svg" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<div class="breadcrumbs order__breadcrumbs">
+								<div class="breadcrumbs__inner"><a class="product-hero__breadcrumbs-link breadcrumbs__link" href="#">Главная</a><svg class="product-hero__breadcrumbs-svg breadcrumbs__svg" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 										<path d="M21.2705 11.0193C21.6732 11.3983 21.6919 12.0321 21.3122 12.4342L18.727 15.1714C18.1058 15.8292 17 15.3895 17 14.4848L17 9.31443C17 8.43805 18.0472 7.98559 18.6854 8.58623L21.2705 11.0193Z" fill="white"></path>
 										<path d="M2 11C1.58579 11 1.25 11.3358 1.25 11.75C1.25 12.1642 1.58579 12.5 2 12.5L2 11ZM17 11L2 11L2 12.5L17 12.5L17 11Z" fill="white"></path>
-									</svg>
-									<div class="product-hero__breadcrumbs-link active">оформление заказа</div>
-								</div>
-							</div><a class="order__back back-link" href="#"><svg class="order__back-svg back-link__svg" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path d="M13.0395 15.2705C12.6605 15.6732 12.0267 15.6919 11.6247 15.3122L7.8286 11.727C7.17084 11.1058 7.61048 10 8.51523 10L15.6856 10C16.5619 10 17.0144 11.0472 16.4138 11.6854L13.0395 15.2705Z" fill="#0E2245"></path>
-								</svg><span class="order__back-text back-link__text">Вернуться в каталог</span></a>
+									</svg><a class="product-hero__breadcrumbs-link breadcrumbs__link" href="#">оформление заказа</a><svg class="product-hero__breadcrumbs-svg breadcrumbs__svg" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M21.2705 11.0193C21.6732 11.3983 21.6919 12.0321 21.3122 12.4342L18.727 15.1714C18.1058 15.8292 17 15.3895 17 14.4848L17 9.31443C17 8.43805 18.0472 7.98559 18.6854 8.58623L21.2705 11.0193Z" fill="white"></path>
+										<path d="M2 11C1.58579 11 1.25 11.3358 1.25 11.75C1.25 12.1642 1.58579 12.5 2 12.5L2 11ZM17 11L2 11L2 12.5L17 12.5L17 11Z" fill="white"></path>
+									</svg></div>
+							</div>
+							<div class="order__back"><a class="refresh-button hover-btn secondary-button" href="#">
+									<div class="hover-btn__bg grey"></div>
+									<div class="hover-btn__content">
+										<div class="hover-btn__content-top refresh-button__content"><svg class="order__back-svg back-link__svg" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M13.0395 15.2705C12.6605 15.6732 12.0267 15.6919 11.6247 15.3122L7.8286 11.727C7.17084 11.1058 7.61048 10 8.51523 10L15.6856 10C16.5619 10 17.0144 11.0472 16.4138 11.6854L13.0395 15.2705Z" fill="#0E2245"></path>
+											</svg>
+											<div class="primary-button__span">Вернуться в каталог</div>
+										</div>
+										<div class="hover-btn__content-bot refresh-button__content"><svg class="order__back-svg back-link__svg" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M13.0395 15.2705C12.6605 15.6732 12.0267 15.6919 11.6247 15.3122L7.8286 11.727C7.17084 11.1058 7.61048 10 8.51523 10L15.6856 10C16.5619 10 17.0144 11.0472 16.4138 11.6854L13.0395 15.2705Z" fill="#0E2245"></path>
+											</svg>
+											<div class="primary-button__span">Вернуться в каталог</div>
+										</div>
+									</div>
+								</a></div>
 							<div class="order__hero">
 								<h1 class="order__title">Оформление заказа</h1>
 								<h2 class="order__subtitle">Пожалуйста, заполните простую форму, и мы свяжемся с вами в ближайшее время.</h2>
 							</div>
 							<div class="order__placing">
 								<div class="order__data">
-									<h4 class="section-title">ваши данные</h4>
-									<form class="order__form" id="order-form" data-element="trigger-stub">
-										<div class="order__radiobuttons">
-											<div class="order__radiobutton-wrapper"><input class="order__radiobutton" id="order-entity-radio" type="radio" name="client" data-parsley-errors-container="#error-client-radiobuttons" checked="checked" required><label class="order__radiobutton-label" for="order-entity-radio">
-													<div class="order__radiobutton-custom">
-														<div class="order__radiobutton-select"></div>
-													</div><span class="order__radiobutton-text">Юридическое лицо</span>
-												</label></div>
-											<div class="order__radiobutton-wrapper"><input class="order__radiobutton" id="order-person-radio" type="radio" name="client" data-parsley-errors-container="#error-client-radiobuttons" required><label class="order__radiobutton-label" for="order-person-radio">
-													<div class="order__radiobutton-custom">
-														<div class="order__radiobutton-select"></div>
-													</div><span class="order__radiobutton-text">Физическое лицо/ИП</span>
-												</label></div>
+									<h4 class="section-title">ваши данные<div class="order__radiobuttons"><button class="order__radiobutton active" data-client-btn="entity">
+												<div class="order__radiobutton-custom">
+													<div class="order__radiobutton-select"></div>
+												</div><span class="order__radiobutton-text">Юридическое лицо</span>
+											</button><button class="order__radiobutton" data-client-btn="person">
+												<div class="order__radiobutton-custom">
+													<div class="order__radiobutton-select"></div>
+												</div><span class="order__radiobutton-text">Физическое лицо/ИП</span>
+											</button></div>
+									</h4>
+									<form class="order__form active" id="order-entity-form" data-client-form="entity">
+										<div class="order__text-inputs">
+											<div class="input-wrapper" data-input-parent="">
+												<div class="input-wrapper__placeholder">Имя или название организации*</div><input class="input order__input" data-input="" autocomplete="off" required name="name" maxlength="50" placeholder="Имя или название организации*"><svg class="input-wrapper-svg" width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<g opacity="0.3">
+														<path d="M5 5L15 15" stroke="#0E2245" stroke-width="1.5" stroke-linecap="round"></path>
+														<path d="M15 5L5 15" stroke="#0E2245" stroke-width="1.5" stroke-linecap="round"></path>
+													</g>
+												</svg>
+											</div>
+											<div class="input-wrapper" data-input-parent="">
+												<div class="input-wrapper__placeholder">Телефон или почта*</div><input class="input order__input" data-input="" autocomplete="off" required name="email/tel" maxlength="253" placeholder="Телефон или почта*"><svg class="input-wrapper-svg" width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<g opacity="0.3">
+														<path d="M5 5L15 15" stroke="#0E2245" stroke-width="1.5" stroke-linecap="round"></path>
+														<path d="M15 5L5 15" stroke="#0E2245" stroke-width="1.5" stroke-linecap="round"></path>
+													</g>
+												</svg>
+											</div>
 										</div>
-										<div id="error-client-radiobuttons"></div>
-										<div class="order__text-inputs"><input class="order__input" name="name" maxlength="50" placeholder="Имя или название организации*" required><input class="order__input" name="email/tel" maxlength="253" placeholder="Телефон или почта*" required></div>
+									</form>
+									<form class="order__form" id="order-person-form" data-client-form="person">
+										<div class="order__text-inputs">
+											<div class="input-wrapper" data-input-parent="">
+												<div class="input-wrapper__placeholder">Имя или название организации*</div><input class="input order__input" data-input="" autocomplete="off" required name="name" maxlength="50" placeholder="Имя или название организации*"><svg class="input-wrapper-svg" width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<g opacity="0.3">
+														<path d="M5 5L15 15" stroke="#0E2245" stroke-width="1.5" stroke-linecap="round"></path>
+														<path d="M15 5L5 15" stroke="#0E2245" stroke-width="1.5" stroke-linecap="round"></path>
+													</g>
+												</svg>
+											</div>
+											<div class="input-wrapper" data-input-parent="">
+												<div class="input-wrapper__placeholder">Телефон или почта*</div><input class="input order__input" data-input="" autocomplete="off" required name="email/tel" maxlength="253" placeholder="Телефон или почта*"><svg class="input-wrapper-svg" width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<g opacity="0.3">
+														<path d="M5 5L15 15" stroke="#0E2245" stroke-width="1.5" stroke-linecap="round"></path>
+														<path d="M15 5L5 15" stroke="#0E2245" stroke-width="1.5" stroke-linecap="round"></path>
+													</g>
+												</svg>
+											</div>
+										</div>
 									</form>
 									<div class="order__payment">
 										<h4 class="section-title">оплата</h4>
@@ -763,21 +810,75 @@
 												</div>
 											</li>
 										</ul>
-									</h4><button class="section-link order__submit" form="order-form" type="submit">
-										<div class="section-link__span">Оформить заказ</div><svg class="section-link__svg" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<path d="M21.2705 11.0193C21.6732 11.3983 21.6919 12.0321 21.3122 12.4342L18.727 15.1714C18.1058 15.8292 17 15.3895 17 14.4848L17 9.31443C17 8.43805 18.0472 7.98559 18.6854 8.58623L21.2705 11.0193Z" fill="white"></path>
-											<path d="M2 11C1.58579 11 1.25 11.3358 1.25 11.75C1.25 12.1642 1.58579 12.5 2 12.5L2 11ZM17 11L2 11L2 12.5L17 12.5L17 11Z" fill="white"></path>
-										</svg>
+									</h4><button class="primary-button hover-btn wide order__submit active" form="order-entity-form" type="submit" data-client-form-submit="entity">
+										<div class="hover-btn__bg dark-blue"></div>
+										<div class="hover-btn__content">
+											<div class="hover-btn__content-top primary-button__content">
+												<div class="primary-button__span">Оформить заказ</div><svg class="primary-button__svg primary-button__svg_rotate" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M21.2705 11.0193C21.6732 11.3983 21.6919 12.0321 21.3122 12.4342L18.727 15.1714C18.1058 15.8292 17 15.3895 17 14.4848L17 9.31443C17 8.43805 18.0472 7.98559 18.6854 8.58623L21.2705 11.0193Z" fill="white"></path>
+													<path d="M2 11C1.58579 11 1.25 11.3358 1.25 11.75C1.25 12.1642 1.58579 12.5 2 12.5L2 11ZM17 11L2 11L2 12.5L17 12.5L17 11Z" fill="white"></path>
+												</svg>
+											</div>
+											<div class="hover-btn__content-bot primary-button__content">
+												<div class="primary-button__span">Оформить заказ</div><svg class="primary-button__svg primary-button__svg_rotate" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M21.2705 11.0193C21.6732 11.3983 21.6919 12.0321 21.3122 12.4342L18.727 15.1714C18.1058 15.8292 17 15.3895 17 14.4848L17 9.31443C17 8.43805 18.0472 7.98559 18.6854 8.58623L21.2705 11.0193Z" fill="white"></path>
+													<path d="M2 11C1.58579 11 1.25 11.3358 1.25 11.75C1.25 12.1642 1.58579 12.5 2 12.5L2 11ZM17 11L2 11L2 12.5L17 12.5L17 11Z" fill="white"></path>
+												</svg>
+											</div>
+										</div>
+									</button><button class="primary-button hover-btn wide order__submit" form="order-person-form" type="submit" data-client-form-submit="person">
+										<div class="hover-btn__bg dark-blue"></div>
+										<div class="hover-btn__content">
+											<div class="hover-btn__content-top primary-button__content">
+												<div class="primary-button__span">Оформить заказ</div><svg class="primary-button__svg primary-button__svg_rotate" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M21.2705 11.0193C21.6732 11.3983 21.6919 12.0321 21.3122 12.4342L18.727 15.1714C18.1058 15.8292 17 15.3895 17 14.4848L17 9.31443C17 8.43805 18.0472 7.98559 18.6854 8.58623L21.2705 11.0193Z" fill="white"></path>
+													<path d="M2 11C1.58579 11 1.25 11.3358 1.25 11.75C1.25 12.1642 1.58579 12.5 2 12.5L2 11ZM17 11L2 11L2 12.5L17 12.5L17 11Z" fill="white"></path>
+												</svg>
+											</div>
+											<div class="hover-btn__content-bot primary-button__content">
+												<div class="primary-button__span">Оформить заказ</div><svg class="primary-button__svg primary-button__svg_rotate" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M21.2705 11.0193C21.6732 11.3983 21.6919 12.0321 21.3122 12.4342L18.727 15.1714C18.1058 15.8292 17 15.3895 17 14.4848L17 9.31443C17 8.43805 18.0472 7.98559 18.6854 8.58623L21.2705 11.0193Z" fill="white"></path>
+													<path d="M2 11C1.58579 11 1.25 11.3358 1.25 11.75C1.25 12.1642 1.58579 12.5 2 12.5L2 11ZM17 11L2 11L2 12.5L17 12.5L17 11Z" fill="white"></path>
+												</svg>
+											</div>
+										</div>
 									</button>
 									<div class="order__disclamer">Ваши личные данные строго конфиденциальны и обрабатываются согласно Федеральному закону № 152 «О персональных данных», мы не передаем ваши адреса, телефоны или любые другие данные третьим лицам и используем их исключительно для связи и работы с вами.</div>
 								</div>
 							</div>
 						</div>
-						<div class="order__submit-wrapper mobile"><button class="section-link order__submit mobile" form="order-form" type="submit">
-								<div class="section-link__span">Оформить заказ</div><svg class="section-link__svg" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path d="M21.2705 11.0193C21.6732 11.3983 21.6919 12.0321 21.3122 12.4342L18.727 15.1714C18.1058 15.8292 17 15.3895 17 14.4848L17 9.31443C17 8.43805 18.0472 7.98559 18.6854 8.58623L21.2705 11.0193Z" fill="white"></path>
-									<path d="M2 11C1.58579 11 1.25 11.3358 1.25 11.75C1.25 12.1642 1.58579 12.5 2 12.5L2 11ZM17 11L2 11L2 12.5L17 12.5L17 11Z" fill="white"></path>
-								</svg>
+						<div class="order__submit-wrapper mobile"><button class="primary-button hover-btn wide order__submit active mobile" form="order-entity-form" type="submit" data-client-form-submit="entity">
+								<div class="hover-btn__bg dark-blue"></div>
+								<div class="hover-btn__content">
+									<div class="hover-btn__content-top primary-button__content">
+										<div class="primary-button__span">Оформить заказ</div><svg class="primary-button__svg primary-button__svg_rotate" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M21.2705 11.0193C21.6732 11.3983 21.6919 12.0321 21.3122 12.4342L18.727 15.1714C18.1058 15.8292 17 15.3895 17 14.4848L17 9.31443C17 8.43805 18.0472 7.98559 18.6854 8.58623L21.2705 11.0193Z" fill="white"></path>
+											<path d="M2 11C1.58579 11 1.25 11.3358 1.25 11.75C1.25 12.1642 1.58579 12.5 2 12.5L2 11ZM17 11L2 11L2 12.5L17 12.5L17 11Z" fill="white"></path>
+										</svg>
+									</div>
+									<div class="hover-btn__content-bot primary-button__content">
+										<div class="primary-button__span">Оформить заказ</div><svg class="primary-button__svg primary-button__svg_rotate" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M21.2705 11.0193C21.6732 11.3983 21.6919 12.0321 21.3122 12.4342L18.727 15.1714C18.1058 15.8292 17 15.3895 17 14.4848L17 9.31443C17 8.43805 18.0472 7.98559 18.6854 8.58623L21.2705 11.0193Z" fill="white"></path>
+											<path d="M2 11C1.58579 11 1.25 11.3358 1.25 11.75C1.25 12.1642 1.58579 12.5 2 12.5L2 11ZM17 11L2 11L2 12.5L17 12.5L17 11Z" fill="white"></path>
+										</svg>
+									</div>
+								</div>
+							</button><button class="primary-button hover-btn wide order__submit mobile" form="order-person-form" type="submit" data-client-form-submit="person">
+								<div class="hover-btn__bg dark-blue"></div>
+								<div class="hover-btn__content">
+									<div class="hover-btn__content-top primary-button__content">
+										<div class="primary-button__span">Оформить заказ</div><svg class="primary-button__svg primary-button__svg_rotate" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M21.2705 11.0193C21.6732 11.3983 21.6919 12.0321 21.3122 12.4342L18.727 15.1714C18.1058 15.8292 17 15.3895 17 14.4848L17 9.31443C17 8.43805 18.0472 7.98559 18.6854 8.58623L21.2705 11.0193Z" fill="white"></path>
+											<path d="M2 11C1.58579 11 1.25 11.3358 1.25 11.75C1.25 12.1642 1.58579 12.5 2 12.5L2 11ZM17 11L2 11L2 12.5L17 12.5L17 11Z" fill="white"></path>
+										</svg>
+									</div>
+									<div class="hover-btn__content-bot primary-button__content">
+										<div class="primary-button__span">Оформить заказ</div><svg class="primary-button__svg primary-button__svg_rotate" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M21.2705 11.0193C21.6732 11.3983 21.6919 12.0321 21.3122 12.4342L18.727 15.1714C18.1058 15.8292 17 15.3895 17 14.4848L17 9.31443C17 8.43805 18.0472 7.98559 18.6854 8.58623L21.2705 11.0193Z" fill="white"></path>
+											<path d="M2 11C1.58579 11 1.25 11.3358 1.25 11.75C1.25 12.1642 1.58579 12.5 2 12.5L2 11ZM17 11L2 11L2 12.5L17 12.5L17 11Z" fill="white"></path>
+										</svg>
+									</div>
+								</div>
 							</button></div>
 					</div>
 					<div class="order__success" data-element="window-success">
@@ -802,11 +903,22 @@
 								</g>
 							</svg>
 							<h4 class="section-title order__success-title">заказ оформлен</h4>
-							<h2 class="order__subtitle">Спасибо, мы получили ваш заказ и скоро свяжемся с вами.</h2><a class="section-link order__to-main" href="#">
-								<div class="section-link__span">Главная страница</div><svg class="section-link__svg" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path d="M21.2705 11.0193C21.6732 11.3983 21.6919 12.0321 21.3122 12.4342L18.727 15.1714C18.1058 15.8292 17 15.3895 17 14.4848L17 9.31443C17 8.43805 18.0472 7.98559 18.6854 8.58623L21.2705 11.0193Z" fill="white"></path>
-									<path d="M2 11C1.58579 11 1.25 11.3358 1.25 11.75C1.25 12.1642 1.58579 12.5 2 12.5L2 11ZM17 11L2 11L2 12.5L17 12.5L17 11Z" fill="white"></path>
-								</svg>
+							<h2 class="order__subtitle">Спасибо, мы получили ваш заказ и скоро свяжемся с вами.</h2><a class="primary-button hover-btn order__to-main" href="#">
+								<div class="hover-btn__bg dark-blue"></div>
+								<div class="hover-btn__content">
+									<div class="hover-btn__content-top primary-button__content">
+										<div class="primary-button__span">Главная страница</div><svg class="primary-button__svg primary-button__svg_rotate" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M21.2705 11.0193C21.6732 11.3983 21.6919 12.0321 21.3122 12.4342L18.727 15.1714C18.1058 15.8292 17 15.3895 17 14.4848L17 9.31443C17 8.43805 18.0472 7.98559 18.6854 8.58623L21.2705 11.0193Z" fill="white"></path>
+											<path d="M2 11C1.58579 11 1.25 11.3358 1.25 11.75C1.25 12.1642 1.58579 12.5 2 12.5L2 11ZM17 11L2 11L2 12.5L17 12.5L17 11Z" fill="white"></path>
+										</svg>
+									</div>
+									<div class="hover-btn__content-bot primary-button__content">
+										<div class="primary-button__span">Главная страница</div><svg class="primary-button__svg primary-button__svg_rotate" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M21.2705 11.0193C21.6732 11.3983 21.6919 12.0321 21.3122 12.4342L18.727 15.1714C18.1058 15.8292 17 15.3895 17 14.4848L17 9.31443C17 8.43805 18.0472 7.98559 18.6854 8.58623L21.2705 11.0193Z" fill="white"></path>
+											<path d="M2 11C1.58579 11 1.25 11.3358 1.25 11.75C1.25 12.1642 1.58579 12.5 2 12.5L2 11ZM17 11L2 11L2 12.5L17 12.5L17 11Z" fill="white"></path>
+										</svg>
+									</div>
+								</div>
 							</a>
 						</div>
 					</div>
