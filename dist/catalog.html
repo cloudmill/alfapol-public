@@ -13,7 +13,7 @@
 
 	<body class="body">
 		<div class="wrapper">
-			<header class="conatiner header header__line-hb" data-element="popup">
+			<header class="conatiner header" data-element="popup">
 				<div class="header__left"><a class="header__logo" href="#"><svg class="header__logo-svg" width="185" height="32" viewbox="0 0 185 32" fill="none" xmlns="http://www.w3.org/2000/svg">
 							<path d="M65.0828 15.3526C64.8785 14.9827 64.4989 14.7669 64.0901 14.7669H57.1117C56.6738 14.7669 56.265 15.0443 56.0606 15.4451C53.4328 20.9634 50.7465 26.6667 46.6588 28.7013C45.3157 27.9923 44.0893 26.8516 42.9214 25.1869C47.5055 20.1618 51.5933 12.3622 55.2431 1.66474C55.3599 1.2948 55.3307 0.863193 55.0971 0.524079C54.8927 0.184965 54.5131 0 54.1335 0H47.1551C46.6588 0 46.2208 0.339106 46.0456 0.801534C43.7682 7.42967 41.3739 12.8863 38.8044 17.2023C38.6876 16.9249 38.5709 16.6474 38.4541 16.3699C35.1547 8.69363 31.4173 0 22.1323 0H15.1539C6.80318 0 0 7.18304 0 16C0 24.817 6.80318 32 15.1539 32H29.1398C33.5196 32 37.5197 30.3044 41.2279 26.9133C43.739 30.3661 46.5712 32 50.1042 32C57.8125 32 61.5207 24.1387 65.1413 16.5549C65.3164 16.1541 65.2872 15.7225 65.0828 15.3526ZM22.1323 2.46628C29.899 2.46628 33.0524 9.71098 36.3518 17.3873C36.673 18.1272 36.9942 18.867 37.3153 19.6069C36.5562 20.7168 35.797 21.7341 35.0087 22.659C32.0304 15.9692 27.9427 6.8131 22.0739 2.4971C22.0739 2.46627 22.1031 2.46628 22.1323 2.46628ZM2.33586 16C2.33586 8.94027 7.47475 3.1445 14.0152 2.52793C9.81061 5.36416 7.00758 10.3584 7.00758 16C7.00758 21.6724 9.81061 26.6358 14.0152 29.4721C7.47475 28.8555 2.33586 23.0597 2.33586 16ZM22.1323 29.5337C15.0663 29.5337 9.31423 23.4605 9.31423 16C9.31423 9.95761 13.0808 4.84007 18.2489 3.11367C24.9353 5.85741 29.8406 16.8632 32.9356 23.8304L33.2568 24.5395C29.8114 27.869 26.1324 29.5337 22.1323 29.5337ZM40.7607 23.9846C40.6147 24.1079 40.4979 24.2004 40.4103 24.3545C37.4613 27.2832 34.3079 28.9788 30.9501 29.4104C37.4905 25.341 43.1258 16.4316 47.9727 2.46628H52.4692C48.9654 12.3931 45.0821 19.5453 40.7607 23.9846ZM50.1042 29.5337C50.0166 29.5337 49.8998 29.5029 49.8122 29.5029C53.1992 26.6975 55.5642 21.9499 57.8125 17.2023H62.1922C59.068 23.7688 55.8562 29.5337 50.1042 29.5337Z" fill="#0E2245"></path>
 							<path d="M84.3537 9.74168C84.2369 9.40256 83.9449 9.18677 83.6238 9.18677H82.1055C81.7843 9.18677 81.4923 9.40256 81.3755 9.74168L77.3461 21.6723C77.2585 21.9189 77.2878 22.1964 77.4338 22.4122C77.5797 22.628 77.8133 22.7513 78.0761 22.7513H79.2148C79.536 22.7513 79.828 22.5355 79.9448 22.1964L80.7331 19.8534H84.8793L85.6676 22.1964C85.7844 22.5355 86.0764 22.7513 86.3976 22.7513H87.6239C87.8867 22.7513 88.1203 22.628 88.2663 22.4122C88.4123 22.1964 88.4415 21.9189 88.3539 21.6723L84.3537 9.74168ZM84.0909 17.418H81.5507L82.8354 13.287L84.0909 17.418Z" fill="#0E2245"></path>
@@ -25,33 +25,39 @@
 							<path d="M166.693 9.06348C165.116 9.06348 163.89 9.58756 162.984 10.5741C162.079 11.5914 161.641 13.102 161.641 15.075V16.5548C161.641 18.7128 162.079 20.3159 162.984 21.3641C163.89 22.4122 165.116 22.9363 166.693 22.9363C168.269 22.9363 169.496 22.4122 170.401 21.3641C171.277 20.3159 171.744 18.7128 171.744 16.5548V15.075C171.744 13.102 171.306 11.5914 170.401 10.5741C169.496 9.55673 168.269 9.06348 166.693 9.06348ZM167.715 20.1926C167.423 20.3159 167.072 20.3775 166.693 20.3775C166.313 20.3775 165.963 20.3159 165.671 20.1926C165.379 20.0693 165.145 19.8843 164.97 19.6068C164.766 19.3294 164.62 18.9286 164.503 18.4353C164.386 17.9421 164.328 17.2947 164.328 16.5548V15.075C164.328 13.8111 164.532 12.8862 164.97 12.3621C165.379 11.838 165.963 11.5914 166.693 11.5914C167.452 11.5914 168.007 11.838 168.415 12.3621C168.853 12.8862 169.058 13.7802 169.058 15.075V16.5548C169.058 17.2947 168.999 17.9421 168.882 18.4353C168.766 18.9286 168.62 19.3294 168.415 19.6068C168.211 19.8843 167.977 20.0693 167.715 20.1926Z" fill="#0E2245"></path>
 							<path d="M184.212 9.18677H177.263C176.825 9.18677 176.474 9.55671 176.474 10.0191V14.5509C176.474 15.7532 176.445 16.7398 176.357 17.4796C176.299 18.1887 176.182 18.7436 176.007 19.1444C175.861 19.4835 175.686 19.7301 175.481 19.8534C175.335 19.9459 175.131 20.0076 174.927 20.0692C174.576 20.1617 174.313 20.5008 174.313 20.8708V22.0731C174.313 22.3197 174.401 22.5355 174.576 22.6897C174.722 22.813 174.897 22.9055 175.102 22.9055C175.131 22.9055 175.16 22.9055 175.189 22.9055C175.715 22.8438 176.182 22.7205 176.591 22.5355C177.175 22.2889 177.642 21.8265 178.022 21.1791C178.372 20.5625 178.664 19.6993 178.81 18.6203C178.985 17.5721 179.073 16.2157 179.073 14.5509V11.6839H182.314V21.9498C182.314 22.4122 182.664 22.7821 183.102 22.7821H184.212C184.65 22.7821 185 22.4122 185 21.9498V10.0191C185 9.55671 184.65 9.18677 184.212 9.18677Z" fill="#0E2245"></path>
 						</svg></a>
-					<div class="header__catalog header__line-vl header__line-vr desktop"><button class="header__catalog-btn catalog-btn" data-element="popup">
-							<div class="catalog-btn__inner"><span class="catalog-btn__span">Каталог</span><svg class="catalog-btn__svg" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path d="M13.0395 15.2705C12.6605 15.6732 12.0267 15.6919 11.6247 15.3122L7.8286 11.727C7.17084 11.1058 7.61048 10 8.51523 10L15.6856 10C16.5619 10 17.0144 11.0472 16.4138 11.6854L13.0395 15.2705Z" fill="white"></path>
-								</svg></div>
+					<div class="header__catalog header__line-vl header__line-vr desktop"><button class="primary-button hover-btn header__catalog-btn catalog-btn" data-element="popup">
+							<div class="hover-btn__bg dark-blue"></div>
+							<div class="hover-btn__content">
+								<div class="hover-btn__content-top primary-button__content">
+									<div class="primary-button__span">Каталог</div><svg class="primary-button__svg" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M13.0395 15.2705C12.6605 15.6732 12.0267 15.6919 11.6247 15.3122L7.8286 11.727C7.17084 11.1058 7.61048 10 8.51523 10L15.6856 10C16.5619 10 17.0144 11.0472 16.4138 11.6854L13.0395 15.2705Z" fill="white"></path>
+									</svg>
+								</div>
+								<div class="hover-btn__content-bot primary-button__content">
+									<div class="primary-button__span">Каталог</div><svg class="primary-button__svg" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M13.0395 15.2705C12.6605 15.6732 12.0267 15.6919 11.6247 15.3122L7.8286 11.727C7.17084 11.1058 7.61048 10 8.51523 10L15.6856 10C16.5619 10 17.0144 11.0472 16.4138 11.6854L13.0395 15.2705Z" fill="white"></path>
+									</svg>
+								</div>
+							</div>
 						</button></div>
 				</div>
-				<ul class="header__center header__info-ul">
-					<li class="header__info-li accordion-container">
-						<div class="ac" data-header-menu>
-							<div class="ac-header ac-trigger">Области применения<svg class="header__info-svg" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path d="M13.0395 15.2705C12.6605 15.6732 12.0267 15.6919 11.6247 15.3122L7.8286 11.727C7.17084 11.1058 7.61048 10 8.51523 10L15.6856 10C16.5619 10 17.0144 11.0472 16.4138 11.6854L13.0395 15.2705Z" fill="#0E2245"></path>
-								</svg></div>
-							<div class="ac-panel"><a class="header__info-link ac-panel__link" href="#">Взрывоопасные помещения</a><a class="header__info-link ac-panel__link" href="#">Помещения с требованиями защиты электронного оборудования</a><a class="header__info-link ac-panel__link" href="#">Предприятия АПК и пищевые производства</a><a class="header__info-link ac-panel__link" href="#">Общественные пространства</a><a class="header__info-link ac-panel__link" href="#">Производственные и складские помещения</a><a class="header__info-link ac-panel__link" href="#">Объекты нефтегазовой промышленности</a><a class="header__info-link ac-panel__link" href="#">Суда и объекты судостроительной промышленности</a></div>
-						</div>
-					</li>
-					<li class="header__info-li accordion-container">
-						<div class="ac" data-header-menu>
-							<div class="ac-header ac-trigger">Информация и контакты<svg class="header__info-svg" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path d="M13.0395 15.2705C12.6605 15.6732 12.0267 15.6919 11.6247 15.3122L7.8286 11.727C7.17084 11.1058 7.61048 10 8.51523 10L15.6856 10C16.5619 10 17.0144 11.0472 16.4138 11.6854L13.0395 15.2705Z" fill="#0E2245"></path>
-								</svg></div>
-							<div class="ac-panel"><a class="header__info-link ac-panel__link" href="#">О компании</a><a class="header__info-link ac-panel__link" href="#">Производство</a><a class="header__info-link ac-panel__link" href="#">Полезная информация</a><a class="header__info-link ac-panel__link" href="#">Статьи</a><a class="header__info-link ac-panel__link" href="#">Инструкции</a><a class="header__info-link ac-panel__link" href="#">Вопрос-ответ</a></div>
-						</div>
-					</li>
-					<li class="header__info-li">Партнерам</li>
-				</ul>
+				<div class="accordion-container header__center header__info-ul">
+					<div class="ac header__info-li" data-header-menu>
+						<div class="ac-header ac-trigger">Области применения<svg class="header__info-svg" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M13.0395 15.2705C12.6605 15.6732 12.0267 15.6919 11.6247 15.3122L7.8286 11.727C7.17084 11.1058 7.61048 10 8.51523 10L15.6856 10C16.5619 10 17.0144 11.0472 16.4138 11.6854L13.0395 15.2705Z" fill="#0E2245"></path>
+							</svg></div>
+						<div class="ac-panel"><a class="header__info-link ac-panel__link" href="#">Взрывоопасные помещения</a><a class="header__info-link ac-panel__link" href="#">Помещения с требованиями защиты электронного оборудования</a><a class="header__info-link ac-panel__link" href="#">Предприятия АПК и пищевые производства</a><a class="header__info-link ac-panel__link" href="#">Общественные пространства</a><a class="header__info-link ac-panel__link" href="#">Производственные и складские помещения</a><a class="header__info-link ac-panel__link" href="#">Объекты нефтегазовой промышленности</a><a class="header__info-link ac-panel__link" href="#">Суда и объекты судостроительной промышленности</a></div>
+					</div>
+					<div class="ac header__info-li" data-header-menu>
+						<div class="ac-header ac-trigger">Информация и контакты<svg class="header__info-svg" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M13.0395 15.2705C12.6605 15.6732 12.0267 15.6919 11.6247 15.3122L7.8286 11.727C7.17084 11.1058 7.61048 10 8.51523 10L15.6856 10C16.5619 10 17.0144 11.0472 16.4138 11.6854L13.0395 15.2705Z" fill="#0E2245"></path>
+							</svg></div>
+						<div class="ac-panel"><a class="header__info-link ac-panel__link" href="#">О компании</a><a class="header__info-link ac-panel__link" href="#">Производство</a><a class="header__info-link ac-panel__link" href="#">Полезная информация</a><a class="header__info-link ac-panel__link" href="#">Статьи</a><a class="header__info-link ac-panel__link" href="#">Инструкции</a><a class="header__info-link ac-panel__link" href="#">Вопрос-ответ</a></div>
+					</div>
+					<li class="header__info-li"><a class="header__info-li-link" href="#">Партнерам</a></li>
+				</div>
 				<ul class="header__right-ul">
-					<li class="header__right-li header__line-vl header__line-vr"><button class="header__right-btn transparent-btn header__search">
+					<li class="header__right-li header__line-vl header__line-vr"><button class="header__right-btn transparent-btn header__search" data-no-overlay-target="open-search-modal">
 							<div class="transparent-btn__inner"><svg class="icon" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 									<path d="M14 5H20" stroke="url(#paint0_linear_1605_1275)" stroke-width="1.5" stroke-linecap="round"></path>
 									<path d="M14 8H17" stroke="url(#paint1_linear_1605_1275)" stroke-width="1.5" stroke-linecap="round"></path>
@@ -117,555 +123,326 @@
 							</div>
 						</button></li>
 				</ul>
-			</header>
-			<div class="header__contact-form contact-form" data-element="popup" data-form-target="contact-us"><button class="contact-form__close" data-action="close-popup"><svg class="contact-form__close-svg" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-						<path d="M6 6L18 18" stroke="#0E2245" stroke-width="1.5" stroke-linecap="round"></path>
-						<path d="M18 6L6 18" stroke="#0E2245" stroke-width="1.5" stroke-linecap="round"></path>
-					</svg></button>
-				<div class="contact-form__wrapper">
-					<div class="contact-form__inner" data-element="popup-content">
-						<div class="contact-form__header">
-							<h4 class="contact-form__title">связаться с нами</h4>
-						</div>
-						<form class="contact-form__inputs" id="header-form"><input class="contact-form__input" name="name" placeholder="Имя*" required><input class="contact-form__input" type="tel" name="tel" placeholder="Телефон*" data-mask-phone data-parsley-phone-required required>
-							<div class="contact-form__agreement">Нажимая кнопку «Отправить», я даю согласие на обработку <a class="contact-form__personal" href="#">персональных данных</a></div><button class="contact-form__submit" type="submit" value="Отправить" form="header-form"><span class="contact-form__submit-text">Отправить </span><svg class="contact-form__submit-svg" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path d="M21.2705 11.0193C21.6732 11.3983 21.6919 12.0321 21.3122 12.4342L18.727 15.1714C18.1058 15.8292 17 15.3895 17 14.4848L17 9.31443C17 8.43805 18.0472 7.98559 18.6854 8.58623L21.2705 11.0193Z" fill="white"></path>
-									<path d="M2 11C1.58579 11 1.25 11.3358 1.25 11.75C1.25 12.1642 1.58579 12.5 2 12.5L2 11ZM17 11L2 11L2 12.5L17 12.5L17 11Z" fill="white"></path>
-								</svg></button>
-						</form>
-					</div>
-					<div class="contact-form__success" data-element="popup-success"><svg class="contact-form__success-svg" width="160" height="160" viewbox="0 0 160 160" fill="none" xmlns="http://www.w3.org/2000/svg">
-							<rect width="160" height="160" fill="white"></rect>
-							<circle cx="80" cy="80" r="66.25" stroke="url(#paint0_linear_766_16456)" stroke-width="1.5"></circle>
-							<path d="M63 80.5451L71.3089 88.387C72.8596 89.8505 75.2857 89.8404 76.8241 88.3639L97 69" stroke="#0E2245" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-							<defs>
-								<lineargradient id="paint0_linear_766_16456" x1="80" y1="13" x2="80" y2="147" gradientunits="userSpaceOnUse">
-									<stop stop-color="#0184FF"></stop>
-									<stop offset="1" stop-color="#0184FF" stop-opacity="0"></stop>
-								</lineargradient>
-							</defs>
-						</svg>
-						<h4 class="contact-form__success-title">отправлено</h4>
-						<p class="contact-form__success-desc">Спасибо. Мы свяжемся с вами в ближайшее время.</p><button class="section-link contact-form__success-close" data-action="close-popup">
-							<div class="section-link__span">Закрыть</div><svg class="section-link__svg" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-								<path d="M21.2705 11.0193C21.6732 11.3983 21.6919 12.0321 21.3122 12.4342L18.727 15.1714C18.1058 15.8292 17 15.3895 17 14.4848L17 9.31443C17 8.43805 18.0472 7.98559 18.6854 8.58623L21.2705 11.0193Z" fill="white"></path>
-								<path d="M2 11C1.58579 11 1.25 11.3358 1.25 11.75C1.25 12.1642 1.58579 12.5 2 12.5L2 11ZM17 11L2 11L2 12.5L17 12.5L17 11Z" fill="white"></path>
-							</svg>
-						</button>
-					</div>
-				</div>
-			</div>
-			<div class="header__catalog-menu catalog-menu" data-element="popup">
-				<div class="catalog-menu__left" data-element="popup" data-catalog="mobile-menu">
-					<btn class="catalog-menu__back-btn mobile" data-action="close-popup"><svg class="catalog-menu__back-svg" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-							<path d="M13.0395 15.2705C12.6605 15.6732 12.0267 15.6919 11.6247 15.3122L7.8286 11.727C7.17084 11.1058 7.61048 10 8.51523 10L15.6856 10C16.5619 10 17.0144 11.0472 16.4138 11.6854L13.0395 15.2705Z" fill="white"></path>
-						</svg>Назад</btn>
-					<div class="separator-line mobile"></div>
-					<ul class="catalog-menu__list" data-element="popup" data-catalog="catalog-menu">
-						<li class="catalog-menu__list-item" data-catalog-section="1">
-							<div class="catalog-menu__list-link"><span class="catalog-menu__list__title">Требования к покрытию</span><svg class="catalog-menu__list-svg" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path d="M13.0395 15.2705C12.6605 15.6732 12.0267 15.6919 11.6247 15.3122L7.8286 11.727C7.17084 11.1058 7.61048 10 8.51523 10L15.6856 10C16.5619 10 17.0144 11.0472 16.4138 11.6854L13.0395 15.2705Z" fill="white"></path>
-								</svg></div>
-							<div class="separator-line mobile"></div>
-						</li>
-						<li class="catalog-menu__list-item" data-catalog-section="2">
-							<div class="catalog-menu__list-link"><span class="catalog-menu__list__title">Способ укладки</span><svg class="catalog-menu__list-svg" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path d="M13.0395 15.2705C12.6605 15.6732 12.0267 15.6919 11.6247 15.3122L7.8286 11.727C7.17084 11.1058 7.61048 10 8.51523 10L15.6856 10C16.5619 10 17.0144 11.0472 16.4138 11.6854L13.0395 15.2705Z" fill="white"></path>
-								</svg></div>
-							<div class="separator-line mobile"></div>
-						</li>
-						<li class="catalog-menu__list-item" data-catalog-section="3">
-							<div class="catalog-menu__list-link"><span class="catalog-menu__list__title">Тип вяжущего</span><svg class="catalog-menu__list-svg" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path d="M13.0395 15.2705C12.6605 15.6732 12.0267 15.6919 11.6247 15.3122L7.8286 11.727C7.17084 11.1058 7.61048 10 8.51523 10L15.6856 10C16.5619 10 17.0144 11.0472 16.4138 11.6854L13.0395 15.2705Z" fill="white"></path>
-								</svg></div>
-						</li>
-					</ul>
-				</div>
-				<div class="catalog-menu__center" data-element="popup" data-catalog-block="0">
-					<btn class="catalog-menu__back-btn mobile" data-catalog="mobile-submenu"><svg class="catalog-menu__back-svg" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-							<path d="M13.0395 15.2705C12.6605 15.6732 12.0267 15.6919 11.6247 15.3122L7.8286 11.727C7.17084 11.1058 7.61048 10 8.51523 10L15.6856 10C16.5619 10 17.0144 11.0472 16.4138 11.6854L13.0395 15.2705Z" fill="white"></path>
-						</svg>Назад</btn>
-					<div class="separator-line mobile"></div>
-					<div class="catalog-menu__center-block" data-catalog-block="1" data-element="popup"><a class="catalog-menu__center-link" href="#"><svg class="catalog-menu__center-svg" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-								<path d="M21.2705 11.0193C21.6732 11.3983 21.6919 12.0321 21.3122 12.4342L18.727 15.1714C18.1058 15.8292 17 15.3895 17 14.4848L17 9.31443C17 8.43805 18.0472 7.98559 18.6854 8.58623L21.2705 11.0193Z" fill="white"></path>
-								<path d="M2 11C1.58579 11 1.25 11.3358 1.25 11.75C1.25 12.1642 1.58579 12.5 2 12.5L2 11ZM17 11L2 11L2 12.5L17 12.5L17 11Z" fill="white"></path>
-							</svg>
-							<div class="catalog-menu__center-title">Антистатические полы и покрытия</div>
-						</a><a class="catalog-menu__center-link" href="#"><svg class="catalog-menu__center-svg" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-								<path d="M21.2705 11.0193C21.6732 11.3983 21.6919 12.0321 21.3122 12.4342L18.727 15.1714C18.1058 15.8292 17 15.3895 17 14.4848L17 9.31443C17 8.43805 18.0472 7.98559 18.6854 8.58623L21.2705 11.0193Z" fill="white"></path>
-								<path d="M2 11C1.58579 11 1.25 11.3358 1.25 11.75C1.25 12.1642 1.58579 12.5 2 12.5L2 11ZM17 11L2 11L2 12.5L17 12.5L17 11Z" fill="white"></path>
-							</svg>
-							<div class="catalog-menu__center-title">Безыскровые полы</div>
-						</a><a class="catalog-menu__center-link" href="#"><svg class="catalog-menu__center-svg" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-								<path d="M21.2705 11.0193C21.6732 11.3983 21.6919 12.0321 21.3122 12.4342L18.727 15.1714C18.1058 15.8292 17 15.3895 17 14.4848L17 9.31443C17 8.43805 18.0472 7.98559 18.6854 8.58623L21.2705 11.0193Z" fill="white"></path>
-								<path d="M2 11C1.58579 11 1.25 11.3358 1.25 11.75C1.25 12.1642 1.58579 12.5 2 12.5L2 11ZM17 11L2 11L2 12.5L17 12.5L17 11Z" fill="white"></path>
-							</svg>
-							<div class="catalog-menu__center-title">Полы и покрытия для защиты от излучений</div>
-						</a><a class="catalog-menu__center-link" href="#"><svg class="catalog-menu__center-svg" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-								<path d="M21.2705 11.0193C21.6732 11.3983 21.6919 12.0321 21.3122 12.4342L18.727 15.1714C18.1058 15.8292 17 15.3895 17 14.4848L17 9.31443C17 8.43805 18.0472 7.98559 18.6854 8.58623L21.2705 11.0193Z" fill="white"></path>
-								<path d="M2 11C1.58579 11 1.25 11.3358 1.25 11.75C1.25 12.1642 1.58579 12.5 2 12.5L2 11ZM17 11L2 11L2 12.5L17 12.5L17 11Z" fill="white"></path>
-							</svg>
-							<div class="catalog-menu__center-title">Жаростойкие бетоны</div>
-						</a><a class="catalog-menu__center-link" href="#"><svg class="catalog-menu__center-svg" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-								<path d="M21.2705 11.0193C21.6732 11.3983 21.6919 12.0321 21.3122 12.4342L18.727 15.1714C18.1058 15.8292 17 15.3895 17 14.4848L17 9.31443C17 8.43805 18.0472 7.98559 18.6854 8.58623L21.2705 11.0193Z" fill="white"></path>
-								<path d="M2 11C1.58579 11 1.25 11.3358 1.25 11.75C1.25 12.1642 1.58579 12.5 2 12.5L2 11ZM17 11L2 11L2 12.5L17 12.5L17 11Z" fill="white"></path>
-							</svg>
-							<div class="catalog-menu__center-title">Маслобензостойкие полы</div>
-						</a><a class="catalog-menu__center-link" href="#"><svg class="catalog-menu__center-svg" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-								<path d="M21.2705 11.0193C21.6732 11.3983 21.6919 12.0321 21.3122 12.4342L18.727 15.1714C18.1058 15.8292 17 15.3895 17 14.4848L17 9.31443C17 8.43805 18.0472 7.98559 18.6854 8.58623L21.2705 11.0193Z" fill="white"></path>
-								<path d="M2 11C1.58579 11 1.25 11.3358 1.25 11.75C1.25 12.1642 1.58579 12.5 2 12.5L2 11ZM17 11L2 11L2 12.5L17 12.5L17 11Z" fill="white"></path>
-							</svg>
-							<div class="catalog-menu__center-title">Химически стойкие полы</div>
-						</a><a class="catalog-menu__center-link" href="#"><svg class="catalog-menu__center-svg" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-								<path d="M21.2705 11.0193C21.6732 11.3983 21.6919 12.0321 21.3122 12.4342L18.727 15.1714C18.1058 15.8292 17 15.3895 17 14.4848L17 9.31443C17 8.43805 18.0472 7.98559 18.6854 8.58623L21.2705 11.0193Z" fill="white"></path>
-								<path d="M2 11C1.58579 11 1.25 11.3358 1.25 11.75C1.25 12.1642 1.58579 12.5 2 12.5L2 11ZM17 11L2 11L2 12.5L17 12.5L17 11Z" fill="white"></path>
-							</svg>
-							<div class="catalog-menu__center-title">Декоративные полы</div>
-						</a></div>
-					<div class="catalog-menu__center-block" data-catalog-block="2" data-element="popup"><a class="catalog-menu__center-link" href="#"><svg class="catalog-menu__center-svg" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-								<path d="M21.2705 11.0193C21.6732 11.3983 21.6919 12.0321 21.3122 12.4342L18.727 15.1714C18.1058 15.8292 17 15.3895 17 14.4848L17 9.31443C17 8.43805 18.0472 7.98559 18.6854 8.58623L21.2705 11.0193Z" fill="white"></path>
-								<path d="M2 11C1.58579 11 1.25 11.3358 1.25 11.75C1.25 12.1642 1.58579 12.5 2 12.5L2 11ZM17 11L2 11L2 12.5L17 12.5L17 11Z" fill="white"></path>
-							</svg>
-							<div class="catalog-menu__center-title">Наливные промышленные полы</div>
-						</a><a class="catalog-menu__center-link" href="#"><svg class="catalog-menu__center-svg" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-								<path d="M21.2705 11.0193C21.6732 11.3983 21.6919 12.0321 21.3122 12.4342L18.727 15.1714C18.1058 15.8292 17 15.3895 17 14.4848L17 9.31443C17 8.43805 18.0472 7.98559 18.6854 8.58623L21.2705 11.0193Z" fill="white"></path>
-								<path d="M2 11C1.58579 11 1.25 11.3358 1.25 11.75C1.25 12.1642 1.58579 12.5 2 12.5L2 11ZM17 11L2 11L2 12.5L17 12.5L17 11Z" fill="white"></path>
-							</svg>
-							<div class="catalog-menu__center-title">Бетонные промышленные полы</div>
-						</a><a class="catalog-menu__center-link" href="#"><svg class="catalog-menu__center-svg" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-								<path d="M21.2705 11.0193C21.6732 11.3983 21.6919 12.0321 21.3122 12.4342L18.727 15.1714C18.1058 15.8292 17 15.3895 17 14.4848L17 9.31443C17 8.43805 18.0472 7.98559 18.6854 8.58623L21.2705 11.0193Z" fill="white"></path>
-								<path d="M2 11C1.58579 11 1.25 11.3358 1.25 11.75C1.25 12.1642 1.58579 12.5 2 12.5L2 11ZM17 11L2 11L2 12.5L17 12.5L17 11Z" fill="white"></path>
-							</svg>
-							<div class="catalog-menu__center-title">Полы с упрочненным верхним слоем</div>
-						</a><a class="catalog-menu__center-link" href="#"><svg class="catalog-menu__center-svg" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-								<path d="M21.2705 11.0193C21.6732 11.3983 21.6919 12.0321 21.3122 12.4342L18.727 15.1714C18.1058 15.8292 17 15.3895 17 14.4848L17 9.31443C17 8.43805 18.0472 7.98559 18.6854 8.58623L21.2705 11.0193Z" fill="white"></path>
-								<path d="M2 11C1.58579 11 1.25 11.3358 1.25 11.75C1.25 12.1642 1.58579 12.5 2 12.5L2 11ZM17 11L2 11L2 12.5L17 12.5L17 11Z" fill="white"></path>
-							</svg>
-							<div class="catalog-menu__center-title">Краски</div>
-						</a><a class="catalog-menu__center-link" href="#"><svg class="catalog-menu__center-svg" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-								<path d="M21.2705 11.0193C21.6732 11.3983 21.6919 12.0321 21.3122 12.4342L18.727 15.1714C18.1058 15.8292 17 15.3895 17 14.4848L17 9.31443C17 8.43805 18.0472 7.98559 18.6854 8.58623L21.2705 11.0193Z" fill="white"></path>
-								<path d="M2 11C1.58579 11 1.25 11.3358 1.25 11.75C1.25 12.1642 1.58579 12.5 2 12.5L2 11ZM17 11L2 11L2 12.5L17 12.5L17 11Z" fill="white"></path>
-							</svg>
-							<div class="catalog-menu__center-title">Пропитки и грунтовки</div>
-						</a><a class="catalog-menu__center-link" href="#"><svg class="catalog-menu__center-svg" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-								<path d="M21.2705 11.0193C21.6732 11.3983 21.6919 12.0321 21.3122 12.4342L18.727 15.1714C18.1058 15.8292 17 15.3895 17 14.4848L17 9.31443C17 8.43805 18.0472 7.98559 18.6854 8.58623L21.2705 11.0193Z" fill="white"></path>
-								<path d="M2 11C1.58579 11 1.25 11.3358 1.25 11.75C1.25 12.1642 1.58579 12.5 2 12.5L2 11ZM17 11L2 11L2 12.5L17 12.5L17 11Z" fill="white"></path>
-							</svg>
-							<div class="catalog-menu__center-title">Химически стойкие полы</div>
-						</a><a class="catalog-menu__center-link" href="#"><svg class="catalog-menu__center-svg" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-								<path d="M21.2705 11.0193C21.6732 11.3983 21.6919 12.0321 21.3122 12.4342L18.727 15.1714C18.1058 15.8292 17 15.3895 17 14.4848L17 9.31443C17 8.43805 18.0472 7.98559 18.6854 8.58623L21.2705 11.0193Z" fill="white"></path>
-								<path d="M2 11C1.58579 11 1.25 11.3358 1.25 11.75C1.25 12.1642 1.58579 12.5 2 12.5L2 11ZM17 11L2 11L2 12.5L17 12.5L17 11Z" fill="white"></path>
-							</svg>
-							<div class="catalog-menu__center-title">Штукатурные покрытия</div>
-						</a></div>
-					<div class="catalog-menu__center-block" data-catalog-block="3" data-element="popup"><a class="catalog-menu__center-link" href="#"><svg class="catalog-menu__center-svg" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-								<path d="M21.2705 11.0193C21.6732 11.3983 21.6919 12.0321 21.3122 12.4342L18.727 15.1714C18.1058 15.8292 17 15.3895 17 14.4848L17 9.31443C17 8.43805 18.0472 7.98559 18.6854 8.58623L21.2705 11.0193Z" fill="white"></path>
-								<path d="M2 11C1.58579 11 1.25 11.3358 1.25 11.75C1.25 12.1642 1.58579 12.5 2 12.5L2 11ZM17 11L2 11L2 12.5L17 12.5L17 11Z" fill="white"></path>
-							</svg>
-							<div class="catalog-menu__center-title">Полы на основе эпоксидных смол</div>
-						</a><a class="catalog-menu__center-link" href="#"><svg class="catalog-menu__center-svg" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-								<path d="M21.2705 11.0193C21.6732 11.3983 21.6919 12.0321 21.3122 12.4342L18.727 15.1714C18.1058 15.8292 17 15.3895 17 14.4848L17 9.31443C17 8.43805 18.0472 7.98559 18.6854 8.58623L21.2705 11.0193Z" fill="white"></path>
-								<path d="M2 11C1.58579 11 1.25 11.3358 1.25 11.75C1.25 12.1642 1.58579 12.5 2 12.5L2 11ZM17 11L2 11L2 12.5L17 12.5L17 11Z" fill="white"></path>
-							</svg>
-							<div class="catalog-menu__center-title">Полы на основе полиуретановых смол</div>
-						</a><a class="catalog-menu__center-link" href="#"><svg class="catalog-menu__center-svg" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-								<path d="M21.2705 11.0193C21.6732 11.3983 21.6919 12.0321 21.3122 12.4342L18.727 15.1714C18.1058 15.8292 17 15.3895 17 14.4848L17 9.31443C17 8.43805 18.0472 7.98559 18.6854 8.58623L21.2705 11.0193Z" fill="white"></path>
-								<path d="M2 11C1.58579 11 1.25 11.3358 1.25 11.75C1.25 12.1642 1.58579 12.5 2 12.5L2 11ZM17 11L2 11L2 12.5L17 12.5L17 11Z" fill="white"></path>
-							</svg>
-							<div class="catalog-menu__center-title">Полы на комплексном вяжущем</div>
-						</a><a class="catalog-menu__center-link" href="#"><svg class="catalog-menu__center-svg" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-								<path d="M21.2705 11.0193C21.6732 11.3983 21.6919 12.0321 21.3122 12.4342L18.727 15.1714C18.1058 15.8292 17 15.3895 17 14.4848L17 9.31443C17 8.43805 18.0472 7.98559 18.6854 8.58623L21.2705 11.0193Z" fill="white"></path>
-								<path d="M2 11C1.58579 11 1.25 11.3358 1.25 11.75C1.25 12.1642 1.58579 12.5 2 12.5L2 11ZM17 11L2 11L2 12.5L17 12.5L17 11Z" fill="white"></path>
-							</svg>
-							<div class="catalog-menu__center-title">Полы на основе портландцемента</div>
-						</a><a class="catalog-menu__center-link" href="#"><svg class="catalog-menu__center-svg" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-								<path d="M21.2705 11.0193C21.6732 11.3983 21.6919 12.0321 21.3122 12.4342L18.727 15.1714C18.1058 15.8292 17 15.3895 17 14.4848L17 9.31443C17 8.43805 18.0472 7.98559 18.6854 8.58623L21.2705 11.0193Z" fill="white"></path>
-								<path d="M2 11C1.58579 11 1.25 11.3358 1.25 11.75C1.25 12.1642 1.58579 12.5 2 12.5L2 11ZM17 11L2 11L2 12.5L17 12.5L17 11Z" fill="white"></path>
-							</svg>
-							<div class="catalog-menu__center-title">Полы на основе магнезита</div>
-						</a></div>
-				</div>
-				<div class="catalog-menu__right">
-					<div class="catalog-menu__right-inner" data-element="popup">
-						<picture class="picture catalog-menu__right-image">
-							<source type="image/webp" srcset="assets/images/antistatic.webp"><img class="picture__img" src="assets/images/antistatic.png">
-						</picture>
-					</div>
-				</div>
-			</div>
-			<div class="header__cart contact-form contact-form_controls" data-element="popup" data-form-target="open-cart"><button class="contact-form__close" data-action="close-popup"><svg class="contact-form__close-svg" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-						<path d="M6 6L18 18" stroke="#0E2245" stroke-width="1.5" stroke-linecap="round"></path>
-						<path d="M18 6L6 18" stroke="#0E2245" stroke-width="1.5" stroke-linecap="round"></path>
-					</svg></button>
-				<div class="contact-form__wrapper" data-element="popup-content">
-					<div class="contact-form__inner contact-form__inner_controls">
-						<div class="contact-form__header">
-							<h4 class="contact-form__title" data-element="popup-title">корзина</h4>
-							<div class="separator-line contact-form__header-separator" data-element="popup-header-separator"></div>
-						</div>
-						<div class="header__cart-list-wrapper" data-element="scroll-event">
-							<ul class="header__cart-list">
-								<li class="header__cart-item" data-element="item">
-									<div class="header__cart-image-wrapper">
-										<picture class="picture header__cart-image">
-											<source type="image/webp" srcset="assets/images/catalog-card.webp"><img class="picture__img" src="assets/images/catalog-card.png">
-										</picture>
-									</div>
-									<div class="header__cart-desc">
-										<h4 class="header__cart-title">АЛЬФАПОЛ ПУ-4 ВН АСХ АЛЬФАПОЛ ПУ-4 ВН АСХ</h4>
-										<p class="header__cart-subtitle">Антистатический кислотостойкий щелочестойкий термостойкий полиуретан-цементный промышленный пол Антистатический кислотостойкий щелочестойкий термостойкий полиуретан-цементный промышленный пол</p>
-									</div><button class="header__cart-remove contact-form__close" data-action="remove-item"><svg class="header__cart-remove-svg contact-form__close-svg" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<path fill-rule="evenodd" clip-rule="evenodd" d="M17.0004 8.39999L6.9996 8.39999C6.44754 8.39999 6 8.84753 6 9.39959L6 17.4C6 19.0568 7.34315 20.4 9 20.4L15 20.4C15.7956 20.4 16.5587 20.0839 17.1213 19.5213C17.6839 18.9587 18 18.1956 18 17.4L18 9.39959C18 8.84753 17.5525 8.39999 17.0004 8.39999Z" stroke="#0E2245" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-											<path fill-rule="evenodd" clip-rule="evenodd" d="M15.5999 5.99991L14.7311 4.26351C14.528 3.85704 14.1127 3.60016 13.6583 3.59991L10.3415 3.59991C9.8871 3.60016 9.47182 3.85704 9.2687 4.26351L8.3999 5.99991L15.5999 5.99991Z" stroke="#0E2245" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-											<path d="M15.6 5.25C15.1857 5.25 14.85 5.58579 14.85 6C14.85 6.41421 15.1857 6.75 15.6 6.75L15.6 5.25ZM18 6.75C18.4142 6.75 18.75 6.41421 18.75 6C18.75 5.58579 18.4142 5.25 18 5.25L18 6.75ZM8.4 6.75C8.81421 6.75 9.15 6.41421 9.15 6C9.15 5.58579 8.81421 5.25 8.4 5.25L8.4 6.75ZM6 5.25C5.58579 5.25 5.25 5.58579 5.25 6C5.25 6.41421 5.58579 6.75 6 6.75L6 5.25ZM15.6 6.75L18 6.75L18 5.25L15.6 5.25L15.6 6.75ZM8.4 5.25L6 5.25L6 6.75L8.4 6.75L8.4 5.25Z" fill="#0E2245"></path>
-											<path d="M10.6 12L10.6 15.9996" stroke="url(#paint0_linear_951_33024)" stroke-width="1.5" stroke-linecap="round"></path>
-											<path d="M13.601 12L13.601 15.9996" stroke="url(#paint1_linear_951_33024)" stroke-width="1.5" stroke-linecap="round"></path>
-											<defs>
-												<lineargradient id="paint0_linear_951_33024" x1="10.6" y1="12" x2="10.6" y2="15.9996" gradientunits="userSpaceOnUse">
-													<stop stop-color="#0184FF"></stop>
-													<stop offset="1" stop-color="#0184FF" stop-opacity="0"></stop>
-												</lineargradient>
-												<lineargradient id="paint1_linear_951_33024" x1="13.601" y1="12" x2="13.601" y2="15.9996" gradientunits="userSpaceOnUse">
-													<stop stop-color="#0184FF"></stop>
-													<stop offset="1" stop-color="#0184FF" stop-opacity="0"></stop>
-												</lineargradient>
-											</defs>
+				<div class="header__catalog-menu catalog-menu" data-element="popup">
+					<div class="header__mobile-menu mobile-menu-section" data-mobile-menu data-element="popup">
+						<div class="header__mobile-menu-inner">
+							<ul class="header__mobile-menu-list" data-element="popup" data-catalog="catalog-menu">
+								<li class="catalog-menu__list-item" data-catalog-section="5"><button class="catalog-menu__list-link" data-mobile-submenu-button="catalog"><span class="catalog-menu__list__title">Каталог</span><svg class="catalog-menu__list-svg" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M13.0395 15.2705C12.6605 15.6732 12.0267 15.6919 11.6247 15.3122L7.8286 11.727C7.17084 11.1058 7.61048 10 8.51523 10L15.6856 10C16.5619 10 17.0144 11.0472 16.4138 11.6854L13.0395 15.2705Z" fill="white"></path>
 										</svg></button>
+									<div class="separator-line mobile"></div>
 								</li>
-								<li class="header__cart-item" data-element="item">
-									<div class="header__cart-image-wrapper">
-										<picture class="picture header__cart-image">
-											<source type="image/webp" srcset="assets/images/catalog-card.webp"><img class="picture__img" src="assets/images/catalog-card.png">
-										</picture>
-									</div>
-									<div class="header__cart-desc">
-										<h4 class="header__cart-title">АЛЬФАПОЛ ПУ-4 ВН АСХ</h4>
-										<p class="header__cart-subtitle">Антистатический кислотостойкий щелочестойкий термостойкий полиуретан-цементный промышленный пол</p>
-									</div><button class="header__cart-remove contact-form__close" data-action="remove-item"><svg class="header__cart-remove-svg contact-form__close-svg" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<path fill-rule="evenodd" clip-rule="evenodd" d="M17.0004 8.39999L6.9996 8.39999C6.44754 8.39999 6 8.84753 6 9.39959L6 17.4C6 19.0568 7.34315 20.4 9 20.4L15 20.4C15.7956 20.4 16.5587 20.0839 17.1213 19.5213C17.6839 18.9587 18 18.1956 18 17.4L18 9.39959C18 8.84753 17.5525 8.39999 17.0004 8.39999Z" stroke="#0E2245" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-											<path fill-rule="evenodd" clip-rule="evenodd" d="M15.5999 5.99991L14.7311 4.26351C14.528 3.85704 14.1127 3.60016 13.6583 3.59991L10.3415 3.59991C9.8871 3.60016 9.47182 3.85704 9.2687 4.26351L8.3999 5.99991L15.5999 5.99991Z" stroke="#0E2245" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-											<path d="M15.6 5.25C15.1857 5.25 14.85 5.58579 14.85 6C14.85 6.41421 15.1857 6.75 15.6 6.75L15.6 5.25ZM18 6.75C18.4142 6.75 18.75 6.41421 18.75 6C18.75 5.58579 18.4142 5.25 18 5.25L18 6.75ZM8.4 6.75C8.81421 6.75 9.15 6.41421 9.15 6C9.15 5.58579 8.81421 5.25 8.4 5.25L8.4 6.75ZM6 5.25C5.58579 5.25 5.25 5.58579 5.25 6C5.25 6.41421 5.58579 6.75 6 6.75L6 5.25ZM15.6 6.75L18 6.75L18 5.25L15.6 5.25L15.6 6.75ZM8.4 5.25L6 5.25L6 6.75L8.4 6.75L8.4 5.25Z" fill="#0E2245"></path>
-											<path d="M10.6 12L10.6 15.9996" stroke="url(#paint0_linear_951_33024)" stroke-width="1.5" stroke-linecap="round"></path>
-											<path d="M13.601 12L13.601 15.9996" stroke="url(#paint1_linear_951_33024)" stroke-width="1.5" stroke-linecap="round"></path>
-											<defs>
-												<lineargradient id="paint0_linear_951_33024" x1="10.6" y1="12" x2="10.6" y2="15.9996" gradientunits="userSpaceOnUse">
-													<stop stop-color="#0184FF"></stop>
-													<stop offset="1" stop-color="#0184FF" stop-opacity="0"></stop>
-												</lineargradient>
-												<lineargradient id="paint1_linear_951_33024" x1="13.601" y1="12" x2="13.601" y2="15.9996" gradientunits="userSpaceOnUse">
-													<stop stop-color="#0184FF"></stop>
-													<stop offset="1" stop-color="#0184FF" stop-opacity="0"></stop>
-												</lineargradient>
-											</defs>
+								<li class="catalog-menu__list-item" data-catalog-section="6"><button class="catalog-menu__list-link" data-mobile-submenu-button="usage"><span class="catalog-menu__list__title">Области применения</span><svg class="catalog-menu__list-svg" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M13.0395 15.2705C12.6605 15.6732 12.0267 15.6919 11.6247 15.3122L7.8286 11.727C7.17084 11.1058 7.61048 10 8.51523 10L15.6856 10C16.5619 10 17.0144 11.0472 16.4138 11.6854L13.0395 15.2705Z" fill="white"></path>
 										</svg></button>
+									<div class="separator-line mobile"></div>
 								</li>
-								<li class="header__cart-item" data-element="item">
-									<div class="header__cart-image-wrapper">
-										<picture class="picture header__cart-image">
-											<source type="image/webp" srcset="assets/images/catalog-card.webp"><img class="picture__img" src="assets/images/catalog-card.png">
-										</picture>
-									</div>
-									<div class="header__cart-desc">
-										<h4 class="header__cart-title">АЛЬФАПОЛ ПУ-4 ВН АСХ АЛЬФАПОЛ ПУ-4 ВН АСХ</h4>
-										<p class="header__cart-subtitle">Антистатический кислотостойкий щелочестойкий термостойкий полиуретан-цементный промышленный пол Антистатический кислотостойкий щелочестойкий термостойкий полиуретан-цементный промышленный пол</p>
-									</div><button class="header__cart-remove contact-form__close" data-action="remove-item"><svg class="header__cart-remove-svg contact-form__close-svg" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<path fill-rule="evenodd" clip-rule="evenodd" d="M17.0004 8.39999L6.9996 8.39999C6.44754 8.39999 6 8.84753 6 9.39959L6 17.4C6 19.0568 7.34315 20.4 9 20.4L15 20.4C15.7956 20.4 16.5587 20.0839 17.1213 19.5213C17.6839 18.9587 18 18.1956 18 17.4L18 9.39959C18 8.84753 17.5525 8.39999 17.0004 8.39999Z" stroke="#0E2245" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-											<path fill-rule="evenodd" clip-rule="evenodd" d="M15.5999 5.99991L14.7311 4.26351C14.528 3.85704 14.1127 3.60016 13.6583 3.59991L10.3415 3.59991C9.8871 3.60016 9.47182 3.85704 9.2687 4.26351L8.3999 5.99991L15.5999 5.99991Z" stroke="#0E2245" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-											<path d="M15.6 5.25C15.1857 5.25 14.85 5.58579 14.85 6C14.85 6.41421 15.1857 6.75 15.6 6.75L15.6 5.25ZM18 6.75C18.4142 6.75 18.75 6.41421 18.75 6C18.75 5.58579 18.4142 5.25 18 5.25L18 6.75ZM8.4 6.75C8.81421 6.75 9.15 6.41421 9.15 6C9.15 5.58579 8.81421 5.25 8.4 5.25L8.4 6.75ZM6 5.25C5.58579 5.25 5.25 5.58579 5.25 6C5.25 6.41421 5.58579 6.75 6 6.75L6 5.25ZM15.6 6.75L18 6.75L18 5.25L15.6 5.25L15.6 6.75ZM8.4 5.25L6 5.25L6 6.75L8.4 6.75L8.4 5.25Z" fill="#0E2245"></path>
-											<path d="M10.6 12L10.6 15.9996" stroke="url(#paint0_linear_951_33024)" stroke-width="1.5" stroke-linecap="round"></path>
-											<path d="M13.601 12L13.601 15.9996" stroke="url(#paint1_linear_951_33024)" stroke-width="1.5" stroke-linecap="round"></path>
-											<defs>
-												<lineargradient id="paint0_linear_951_33024" x1="10.6" y1="12" x2="10.6" y2="15.9996" gradientunits="userSpaceOnUse">
-													<stop stop-color="#0184FF"></stop>
-													<stop offset="1" stop-color="#0184FF" stop-opacity="0"></stop>
-												</lineargradient>
-												<lineargradient id="paint1_linear_951_33024" x1="13.601" y1="12" x2="13.601" y2="15.9996" gradientunits="userSpaceOnUse">
-													<stop stop-color="#0184FF"></stop>
-													<stop offset="1" stop-color="#0184FF" stop-opacity="0"></stop>
-												</lineargradient>
-											</defs>
+								<li class="catalog-menu__list-item" data-catalog-section="7"><button class="catalog-menu__list-link" data-mobile-submenu-button="info"><span class="catalog-menu__list__title">Информация и контакты</span><svg class="catalog-menu__list-svg" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M13.0395 15.2705C12.6605 15.6732 12.0267 15.6919 11.6247 15.3122L7.8286 11.727C7.17084 11.1058 7.61048 10 8.51523 10L15.6856 10C16.5619 10 17.0144 11.0472 16.4138 11.6854L13.0395 15.2705Z" fill="white"></path>
 										</svg></button>
+									<div class="separator-line mobile"></div>
 								</li>
-								<li class="header__cart-item" data-element="item">
-									<div class="header__cart-image-wrapper">
-										<picture class="picture header__cart-image">
-											<source type="image/webp" srcset="assets/images/catalog-card.webp"><img class="picture__img" src="assets/images/catalog-card.png">
-										</picture>
-									</div>
-									<div class="header__cart-desc">
-										<h4 class="header__cart-title">АЛЬФАПОЛ ПУ-4 ВН АСХ</h4>
-										<p class="header__cart-subtitle">Антистатический кислотостойкий щелочестойкий термостойкий полиуретан-цементный промышленный пол</p>
-									</div><button class="header__cart-remove contact-form__close" data-action="remove-item"><svg class="header__cart-remove-svg contact-form__close-svg" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<path fill-rule="evenodd" clip-rule="evenodd" d="M17.0004 8.39999L6.9996 8.39999C6.44754 8.39999 6 8.84753 6 9.39959L6 17.4C6 19.0568 7.34315 20.4 9 20.4L15 20.4C15.7956 20.4 16.5587 20.0839 17.1213 19.5213C17.6839 18.9587 18 18.1956 18 17.4L18 9.39959C18 8.84753 17.5525 8.39999 17.0004 8.39999Z" stroke="#0E2245" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-											<path fill-rule="evenodd" clip-rule="evenodd" d="M15.5999 5.99991L14.7311 4.26351C14.528 3.85704 14.1127 3.60016 13.6583 3.59991L10.3415 3.59991C9.8871 3.60016 9.47182 3.85704 9.2687 4.26351L8.3999 5.99991L15.5999 5.99991Z" stroke="#0E2245" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-											<path d="M15.6 5.25C15.1857 5.25 14.85 5.58579 14.85 6C14.85 6.41421 15.1857 6.75 15.6 6.75L15.6 5.25ZM18 6.75C18.4142 6.75 18.75 6.41421 18.75 6C18.75 5.58579 18.4142 5.25 18 5.25L18 6.75ZM8.4 6.75C8.81421 6.75 9.15 6.41421 9.15 6C9.15 5.58579 8.81421 5.25 8.4 5.25L8.4 6.75ZM6 5.25C5.58579 5.25 5.25 5.58579 5.25 6C5.25 6.41421 5.58579 6.75 6 6.75L6 5.25ZM15.6 6.75L18 6.75L18 5.25L15.6 5.25L15.6 6.75ZM8.4 5.25L6 5.25L6 6.75L8.4 6.75L8.4 5.25Z" fill="#0E2245"></path>
-											<path d="M10.6 12L10.6 15.9996" stroke="url(#paint0_linear_951_33024)" stroke-width="1.5" stroke-linecap="round"></path>
-											<path d="M13.601 12L13.601 15.9996" stroke="url(#paint1_linear_951_33024)" stroke-width="1.5" stroke-linecap="round"></path>
-											<defs>
-												<lineargradient id="paint0_linear_951_33024" x1="10.6" y1="12" x2="10.6" y2="15.9996" gradientunits="userSpaceOnUse">
-													<stop stop-color="#0184FF"></stop>
-													<stop offset="1" stop-color="#0184FF" stop-opacity="0"></stop>
-												</lineargradient>
-												<lineargradient id="paint1_linear_951_33024" x1="13.601" y1="12" x2="13.601" y2="15.9996" gradientunits="userSpaceOnUse">
-													<stop stop-color="#0184FF"></stop>
-													<stop offset="1" stop-color="#0184FF" stop-opacity="0"></stop>
-												</lineargradient>
-											</defs>
-										</svg></button>
-								</li>
-								<li class="header__cart-item" data-element="item">
-									<div class="header__cart-image-wrapper">
-										<picture class="picture header__cart-image">
-											<source type="image/webp" srcset="assets/images/catalog-card.webp"><img class="picture__img" src="assets/images/catalog-card.png">
-										</picture>
-									</div>
-									<div class="header__cart-desc">
-										<h4 class="header__cart-title">АЛЬФАПОЛ ПУ-4 ВН АСХ АЛЬФАПОЛ ПУ-4 ВН АСХ</h4>
-										<p class="header__cart-subtitle">Антистатический кислотостойкий щелочестойкий термостойкий полиуретан-цементный промышленный пол Антистатический кислотостойкий щелочестойкий термостойкий полиуретан-цементный промышленный пол</p>
-									</div><button class="header__cart-remove contact-form__close" data-action="remove-item"><svg class="header__cart-remove-svg contact-form__close-svg" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<path fill-rule="evenodd" clip-rule="evenodd" d="M17.0004 8.39999L6.9996 8.39999C6.44754 8.39999 6 8.84753 6 9.39959L6 17.4C6 19.0568 7.34315 20.4 9 20.4L15 20.4C15.7956 20.4 16.5587 20.0839 17.1213 19.5213C17.6839 18.9587 18 18.1956 18 17.4L18 9.39959C18 8.84753 17.5525 8.39999 17.0004 8.39999Z" stroke="#0E2245" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-											<path fill-rule="evenodd" clip-rule="evenodd" d="M15.5999 5.99991L14.7311 4.26351C14.528 3.85704 14.1127 3.60016 13.6583 3.59991L10.3415 3.59991C9.8871 3.60016 9.47182 3.85704 9.2687 4.26351L8.3999 5.99991L15.5999 5.99991Z" stroke="#0E2245" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-											<path d="M15.6 5.25C15.1857 5.25 14.85 5.58579 14.85 6C14.85 6.41421 15.1857 6.75 15.6 6.75L15.6 5.25ZM18 6.75C18.4142 6.75 18.75 6.41421 18.75 6C18.75 5.58579 18.4142 5.25 18 5.25L18 6.75ZM8.4 6.75C8.81421 6.75 9.15 6.41421 9.15 6C9.15 5.58579 8.81421 5.25 8.4 5.25L8.4 6.75ZM6 5.25C5.58579 5.25 5.25 5.58579 5.25 6C5.25 6.41421 5.58579 6.75 6 6.75L6 5.25ZM15.6 6.75L18 6.75L18 5.25L15.6 5.25L15.6 6.75ZM8.4 5.25L6 5.25L6 6.75L8.4 6.75L8.4 5.25Z" fill="#0E2245"></path>
-											<path d="M10.6 12L10.6 15.9996" stroke="url(#paint0_linear_951_33024)" stroke-width="1.5" stroke-linecap="round"></path>
-											<path d="M13.601 12L13.601 15.9996" stroke="url(#paint1_linear_951_33024)" stroke-width="1.5" stroke-linecap="round"></path>
-											<defs>
-												<lineargradient id="paint0_linear_951_33024" x1="10.6" y1="12" x2="10.6" y2="15.9996" gradientunits="userSpaceOnUse">
-													<stop stop-color="#0184FF"></stop>
-													<stop offset="1" stop-color="#0184FF" stop-opacity="0"></stop>
-												</lineargradient>
-												<lineargradient id="paint1_linear_951_33024" x1="13.601" y1="12" x2="13.601" y2="15.9996" gradientunits="userSpaceOnUse">
-													<stop stop-color="#0184FF"></stop>
-													<stop offset="1" stop-color="#0184FF" stop-opacity="0"></stop>
-												</lineargradient>
-											</defs>
-										</svg></button>
-								</li>
-								<li class="header__cart-item" data-element="item">
-									<div class="header__cart-image-wrapper">
-										<picture class="picture header__cart-image">
-											<source type="image/webp" srcset="assets/images/catalog-card.webp"><img class="picture__img" src="assets/images/catalog-card.png">
-										</picture>
-									</div>
-									<div class="header__cart-desc">
-										<h4 class="header__cart-title">АЛЬФАПОЛ ПУ-4 ВН АСХ</h4>
-										<p class="header__cart-subtitle">Антистатический кислотостойкий щелочестойкий термостойкий полиуретан-цементный промышленный пол</p>
-									</div><button class="header__cart-remove contact-form__close" data-action="remove-item"><svg class="header__cart-remove-svg contact-form__close-svg" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<path fill-rule="evenodd" clip-rule="evenodd" d="M17.0004 8.39999L6.9996 8.39999C6.44754 8.39999 6 8.84753 6 9.39959L6 17.4C6 19.0568 7.34315 20.4 9 20.4L15 20.4C15.7956 20.4 16.5587 20.0839 17.1213 19.5213C17.6839 18.9587 18 18.1956 18 17.4L18 9.39959C18 8.84753 17.5525 8.39999 17.0004 8.39999Z" stroke="#0E2245" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-											<path fill-rule="evenodd" clip-rule="evenodd" d="M15.5999 5.99991L14.7311 4.26351C14.528 3.85704 14.1127 3.60016 13.6583 3.59991L10.3415 3.59991C9.8871 3.60016 9.47182 3.85704 9.2687 4.26351L8.3999 5.99991L15.5999 5.99991Z" stroke="#0E2245" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-											<path d="M15.6 5.25C15.1857 5.25 14.85 5.58579 14.85 6C14.85 6.41421 15.1857 6.75 15.6 6.75L15.6 5.25ZM18 6.75C18.4142 6.75 18.75 6.41421 18.75 6C18.75 5.58579 18.4142 5.25 18 5.25L18 6.75ZM8.4 6.75C8.81421 6.75 9.15 6.41421 9.15 6C9.15 5.58579 8.81421 5.25 8.4 5.25L8.4 6.75ZM6 5.25C5.58579 5.25 5.25 5.58579 5.25 6C5.25 6.41421 5.58579 6.75 6 6.75L6 5.25ZM15.6 6.75L18 6.75L18 5.25L15.6 5.25L15.6 6.75ZM8.4 5.25L6 5.25L6 6.75L8.4 6.75L8.4 5.25Z" fill="#0E2245"></path>
-											<path d="M10.6 12L10.6 15.9996" stroke="url(#paint0_linear_951_33024)" stroke-width="1.5" stroke-linecap="round"></path>
-											<path d="M13.601 12L13.601 15.9996" stroke="url(#paint1_linear_951_33024)" stroke-width="1.5" stroke-linecap="round"></path>
-											<defs>
-												<lineargradient id="paint0_linear_951_33024" x1="10.6" y1="12" x2="10.6" y2="15.9996" gradientunits="userSpaceOnUse">
-													<stop stop-color="#0184FF"></stop>
-													<stop offset="1" stop-color="#0184FF" stop-opacity="0"></stop>
-												</lineargradient>
-												<lineargradient id="paint1_linear_951_33024" x1="13.601" y1="12" x2="13.601" y2="15.9996" gradientunits="userSpaceOnUse">
-													<stop stop-color="#0184FF"></stop>
-													<stop offset="1" stop-color="#0184FF" stop-opacity="0"></stop>
-												</lineargradient>
-											</defs>
-										</svg></button>
-								</li>
-								<li class="header__cart-item" data-element="item">
-									<div class="header__cart-image-wrapper">
-										<picture class="picture header__cart-image">
-											<source type="image/webp" srcset="assets/images/catalog-card.webp"><img class="picture__img" src="assets/images/catalog-card.png">
-										</picture>
-									</div>
-									<div class="header__cart-desc">
-										<h4 class="header__cart-title">АЛЬФАПОЛ ПУ-4 ВН АСХ АЛЬФАПОЛ ПУ-4 ВН АСХ</h4>
-										<p class="header__cart-subtitle">Антистатический кислотостойкий щелочестойкий термостойкий полиуретан-цементный промышленный пол Антистатический кислотостойкий щелочестойкий термостойкий полиуретан-цементный промышленный пол</p>
-									</div><button class="header__cart-remove contact-form__close" data-action="remove-item"><svg class="header__cart-remove-svg contact-form__close-svg" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<path fill-rule="evenodd" clip-rule="evenodd" d="M17.0004 8.39999L6.9996 8.39999C6.44754 8.39999 6 8.84753 6 9.39959L6 17.4C6 19.0568 7.34315 20.4 9 20.4L15 20.4C15.7956 20.4 16.5587 20.0839 17.1213 19.5213C17.6839 18.9587 18 18.1956 18 17.4L18 9.39959C18 8.84753 17.5525 8.39999 17.0004 8.39999Z" stroke="#0E2245" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-											<path fill-rule="evenodd" clip-rule="evenodd" d="M15.5999 5.99991L14.7311 4.26351C14.528 3.85704 14.1127 3.60016 13.6583 3.59991L10.3415 3.59991C9.8871 3.60016 9.47182 3.85704 9.2687 4.26351L8.3999 5.99991L15.5999 5.99991Z" stroke="#0E2245" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-											<path d="M15.6 5.25C15.1857 5.25 14.85 5.58579 14.85 6C14.85 6.41421 15.1857 6.75 15.6 6.75L15.6 5.25ZM18 6.75C18.4142 6.75 18.75 6.41421 18.75 6C18.75 5.58579 18.4142 5.25 18 5.25L18 6.75ZM8.4 6.75C8.81421 6.75 9.15 6.41421 9.15 6C9.15 5.58579 8.81421 5.25 8.4 5.25L8.4 6.75ZM6 5.25C5.58579 5.25 5.25 5.58579 5.25 6C5.25 6.41421 5.58579 6.75 6 6.75L6 5.25ZM15.6 6.75L18 6.75L18 5.25L15.6 5.25L15.6 6.75ZM8.4 5.25L6 5.25L6 6.75L8.4 6.75L8.4 5.25Z" fill="#0E2245"></path>
-											<path d="M10.6 12L10.6 15.9996" stroke="url(#paint0_linear_951_33024)" stroke-width="1.5" stroke-linecap="round"></path>
-											<path d="M13.601 12L13.601 15.9996" stroke="url(#paint1_linear_951_33024)" stroke-width="1.5" stroke-linecap="round"></path>
-											<defs>
-												<lineargradient id="paint0_linear_951_33024" x1="10.6" y1="12" x2="10.6" y2="15.9996" gradientunits="userSpaceOnUse">
-													<stop stop-color="#0184FF"></stop>
-													<stop offset="1" stop-color="#0184FF" stop-opacity="0"></stop>
-												</lineargradient>
-												<lineargradient id="paint1_linear_951_33024" x1="13.601" y1="12" x2="13.601" y2="15.9996" gradientunits="userSpaceOnUse">
-													<stop stop-color="#0184FF"></stop>
-													<stop offset="1" stop-color="#0184FF" stop-opacity="0"></stop>
-												</lineargradient>
-											</defs>
-										</svg></button>
-								</li>
-								<li class="header__cart-item" data-element="item">
-									<div class="header__cart-image-wrapper">
-										<picture class="picture header__cart-image">
-											<source type="image/webp" srcset="assets/images/catalog-card.webp"><img class="picture__img" src="assets/images/catalog-card.png">
-										</picture>
-									</div>
-									<div class="header__cart-desc">
-										<h4 class="header__cart-title">АЛЬФАПОЛ ПУ-4 ВН АСХ</h4>
-										<p class="header__cart-subtitle">Антистатический кислотостойкий щелочестойкий термостойкий полиуретан-цементный промышленный пол</p>
-									</div><button class="header__cart-remove contact-form__close" data-action="remove-item"><svg class="header__cart-remove-svg contact-form__close-svg" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<path fill-rule="evenodd" clip-rule="evenodd" d="M17.0004 8.39999L6.9996 8.39999C6.44754 8.39999 6 8.84753 6 9.39959L6 17.4C6 19.0568 7.34315 20.4 9 20.4L15 20.4C15.7956 20.4 16.5587 20.0839 17.1213 19.5213C17.6839 18.9587 18 18.1956 18 17.4L18 9.39959C18 8.84753 17.5525 8.39999 17.0004 8.39999Z" stroke="#0E2245" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-											<path fill-rule="evenodd" clip-rule="evenodd" d="M15.5999 5.99991L14.7311 4.26351C14.528 3.85704 14.1127 3.60016 13.6583 3.59991L10.3415 3.59991C9.8871 3.60016 9.47182 3.85704 9.2687 4.26351L8.3999 5.99991L15.5999 5.99991Z" stroke="#0E2245" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-											<path d="M15.6 5.25C15.1857 5.25 14.85 5.58579 14.85 6C14.85 6.41421 15.1857 6.75 15.6 6.75L15.6 5.25ZM18 6.75C18.4142 6.75 18.75 6.41421 18.75 6C18.75 5.58579 18.4142 5.25 18 5.25L18 6.75ZM8.4 6.75C8.81421 6.75 9.15 6.41421 9.15 6C9.15 5.58579 8.81421 5.25 8.4 5.25L8.4 6.75ZM6 5.25C5.58579 5.25 5.25 5.58579 5.25 6C5.25 6.41421 5.58579 6.75 6 6.75L6 5.25ZM15.6 6.75L18 6.75L18 5.25L15.6 5.25L15.6 6.75ZM8.4 5.25L6 5.25L6 6.75L8.4 6.75L8.4 5.25Z" fill="#0E2245"></path>
-											<path d="M10.6 12L10.6 15.9996" stroke="url(#paint0_linear_951_33024)" stroke-width="1.5" stroke-linecap="round"></path>
-											<path d="M13.601 12L13.601 15.9996" stroke="url(#paint1_linear_951_33024)" stroke-width="1.5" stroke-linecap="round"></path>
-											<defs>
-												<lineargradient id="paint0_linear_951_33024" x1="10.6" y1="12" x2="10.6" y2="15.9996" gradientunits="userSpaceOnUse">
-													<stop stop-color="#0184FF"></stop>
-													<stop offset="1" stop-color="#0184FF" stop-opacity="0"></stop>
-												</lineargradient>
-												<lineargradient id="paint1_linear_951_33024" x1="13.601" y1="12" x2="13.601" y2="15.9996" gradientunits="userSpaceOnUse">
-													<stop stop-color="#0184FF"></stop>
-													<stop offset="1" stop-color="#0184FF" stop-opacity="0"></stop>
-												</lineargradient>
-											</defs>
-										</svg></button>
-								</li>
-								<li class="header__cart-item" data-element="item">
-									<div class="header__cart-image-wrapper">
-										<picture class="picture header__cart-image">
-											<source type="image/webp" srcset="assets/images/catalog-card.webp"><img class="picture__img" src="assets/images/catalog-card.png">
-										</picture>
-									</div>
-									<div class="header__cart-desc">
-										<h4 class="header__cart-title">АЛЬФАПОЛ ПУ-4 ВН АСХ АЛЬФАПОЛ ПУ-4 ВН АСХ</h4>
-										<p class="header__cart-subtitle">Антистатический кислотостойкий щелочестойкий термостойкий полиуретан-цементный промышленный пол Антистатический кислотостойкий щелочестойкий термостойкий полиуретан-цементный промышленный пол</p>
-									</div><button class="header__cart-remove contact-form__close" data-action="remove-item"><svg class="header__cart-remove-svg contact-form__close-svg" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<path fill-rule="evenodd" clip-rule="evenodd" d="M17.0004 8.39999L6.9996 8.39999C6.44754 8.39999 6 8.84753 6 9.39959L6 17.4C6 19.0568 7.34315 20.4 9 20.4L15 20.4C15.7956 20.4 16.5587 20.0839 17.1213 19.5213C17.6839 18.9587 18 18.1956 18 17.4L18 9.39959C18 8.84753 17.5525 8.39999 17.0004 8.39999Z" stroke="#0E2245" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-											<path fill-rule="evenodd" clip-rule="evenodd" d="M15.5999 5.99991L14.7311 4.26351C14.528 3.85704 14.1127 3.60016 13.6583 3.59991L10.3415 3.59991C9.8871 3.60016 9.47182 3.85704 9.2687 4.26351L8.3999 5.99991L15.5999 5.99991Z" stroke="#0E2245" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-											<path d="M15.6 5.25C15.1857 5.25 14.85 5.58579 14.85 6C14.85 6.41421 15.1857 6.75 15.6 6.75L15.6 5.25ZM18 6.75C18.4142 6.75 18.75 6.41421 18.75 6C18.75 5.58579 18.4142 5.25 18 5.25L18 6.75ZM8.4 6.75C8.81421 6.75 9.15 6.41421 9.15 6C9.15 5.58579 8.81421 5.25 8.4 5.25L8.4 6.75ZM6 5.25C5.58579 5.25 5.25 5.58579 5.25 6C5.25 6.41421 5.58579 6.75 6 6.75L6 5.25ZM15.6 6.75L18 6.75L18 5.25L15.6 5.25L15.6 6.75ZM8.4 5.25L6 5.25L6 6.75L8.4 6.75L8.4 5.25Z" fill="#0E2245"></path>
-											<path d="M10.6 12L10.6 15.9996" stroke="url(#paint0_linear_951_33024)" stroke-width="1.5" stroke-linecap="round"></path>
-											<path d="M13.601 12L13.601 15.9996" stroke="url(#paint1_linear_951_33024)" stroke-width="1.5" stroke-linecap="round"></path>
-											<defs>
-												<lineargradient id="paint0_linear_951_33024" x1="10.6" y1="12" x2="10.6" y2="15.9996" gradientunits="userSpaceOnUse">
-													<stop stop-color="#0184FF"></stop>
-													<stop offset="1" stop-color="#0184FF" stop-opacity="0"></stop>
-												</lineargradient>
-												<lineargradient id="paint1_linear_951_33024" x1="13.601" y1="12" x2="13.601" y2="15.9996" gradientunits="userSpaceOnUse">
-													<stop stop-color="#0184FF"></stop>
-													<stop offset="1" stop-color="#0184FF" stop-opacity="0"></stop>
-												</lineargradient>
-											</defs>
-										</svg></button>
-								</li>
-								<li class="header__cart-item" data-element="item">
-									<div class="header__cart-image-wrapper">
-										<picture class="picture header__cart-image">
-											<source type="image/webp" srcset="assets/images/catalog-card.webp"><img class="picture__img" src="assets/images/catalog-card.png">
-										</picture>
-									</div>
-									<div class="header__cart-desc">
-										<h4 class="header__cart-title">АЛЬФАПОЛ ПУ-4 ВН АСХ</h4>
-										<p class="header__cart-subtitle">Антистатический кислотостойкий щелочестойкий термостойкий полиуретан-цементный промышленный пол</p>
-									</div><button class="header__cart-remove contact-form__close" data-action="remove-item"><svg class="header__cart-remove-svg contact-form__close-svg" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<path fill-rule="evenodd" clip-rule="evenodd" d="M17.0004 8.39999L6.9996 8.39999C6.44754 8.39999 6 8.84753 6 9.39959L6 17.4C6 19.0568 7.34315 20.4 9 20.4L15 20.4C15.7956 20.4 16.5587 20.0839 17.1213 19.5213C17.6839 18.9587 18 18.1956 18 17.4L18 9.39959C18 8.84753 17.5525 8.39999 17.0004 8.39999Z" stroke="#0E2245" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-											<path fill-rule="evenodd" clip-rule="evenodd" d="M15.5999 5.99991L14.7311 4.26351C14.528 3.85704 14.1127 3.60016 13.6583 3.59991L10.3415 3.59991C9.8871 3.60016 9.47182 3.85704 9.2687 4.26351L8.3999 5.99991L15.5999 5.99991Z" stroke="#0E2245" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-											<path d="M15.6 5.25C15.1857 5.25 14.85 5.58579 14.85 6C14.85 6.41421 15.1857 6.75 15.6 6.75L15.6 5.25ZM18 6.75C18.4142 6.75 18.75 6.41421 18.75 6C18.75 5.58579 18.4142 5.25 18 5.25L18 6.75ZM8.4 6.75C8.81421 6.75 9.15 6.41421 9.15 6C9.15 5.58579 8.81421 5.25 8.4 5.25L8.4 6.75ZM6 5.25C5.58579 5.25 5.25 5.58579 5.25 6C5.25 6.41421 5.58579 6.75 6 6.75L6 5.25ZM15.6 6.75L18 6.75L18 5.25L15.6 5.25L15.6 6.75ZM8.4 5.25L6 5.25L6 6.75L8.4 6.75L8.4 5.25Z" fill="#0E2245"></path>
-											<path d="M10.6 12L10.6 15.9996" stroke="url(#paint0_linear_951_33024)" stroke-width="1.5" stroke-linecap="round"></path>
-											<path d="M13.601 12L13.601 15.9996" stroke="url(#paint1_linear_951_33024)" stroke-width="1.5" stroke-linecap="round"></path>
-											<defs>
-												<lineargradient id="paint0_linear_951_33024" x1="10.6" y1="12" x2="10.6" y2="15.9996" gradientunits="userSpaceOnUse">
-													<stop stop-color="#0184FF"></stop>
-													<stop offset="1" stop-color="#0184FF" stop-opacity="0"></stop>
-												</lineargradient>
-												<lineargradient id="paint1_linear_951_33024" x1="13.601" y1="12" x2="13.601" y2="15.9996" gradientunits="userSpaceOnUse">
-													<stop stop-color="#0184FF"></stop>
-													<stop offset="1" stop-color="#0184FF" stop-opacity="0"></stop>
-												</lineargradient>
-											</defs>
-										</svg></button>
-								</li>
-								<li class="header__cart-item" data-element="item">
-									<div class="header__cart-image-wrapper">
-										<picture class="picture header__cart-image">
-											<source type="image/webp" srcset="assets/images/catalog-card.webp"><img class="picture__img" src="assets/images/catalog-card.png">
-										</picture>
-									</div>
-									<div class="header__cart-desc">
-										<h4 class="header__cart-title">АЛЬФАПОЛ ПУ-4 ВН АСХ АЛЬФАПОЛ ПУ-4 ВН АСХ</h4>
-										<p class="header__cart-subtitle">Антистатический кислотостойкий щелочестойкий термостойкий полиуретан-цементный промышленный пол Антистатический кислотостойкий щелочестойкий термостойкий полиуретан-цементный промышленный пол</p>
-									</div><button class="header__cart-remove contact-form__close" data-action="remove-item"><svg class="header__cart-remove-svg contact-form__close-svg" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<path fill-rule="evenodd" clip-rule="evenodd" d="M17.0004 8.39999L6.9996 8.39999C6.44754 8.39999 6 8.84753 6 9.39959L6 17.4C6 19.0568 7.34315 20.4 9 20.4L15 20.4C15.7956 20.4 16.5587 20.0839 17.1213 19.5213C17.6839 18.9587 18 18.1956 18 17.4L18 9.39959C18 8.84753 17.5525 8.39999 17.0004 8.39999Z" stroke="#0E2245" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-											<path fill-rule="evenodd" clip-rule="evenodd" d="M15.5999 5.99991L14.7311 4.26351C14.528 3.85704 14.1127 3.60016 13.6583 3.59991L10.3415 3.59991C9.8871 3.60016 9.47182 3.85704 9.2687 4.26351L8.3999 5.99991L15.5999 5.99991Z" stroke="#0E2245" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-											<path d="M15.6 5.25C15.1857 5.25 14.85 5.58579 14.85 6C14.85 6.41421 15.1857 6.75 15.6 6.75L15.6 5.25ZM18 6.75C18.4142 6.75 18.75 6.41421 18.75 6C18.75 5.58579 18.4142 5.25 18 5.25L18 6.75ZM8.4 6.75C8.81421 6.75 9.15 6.41421 9.15 6C9.15 5.58579 8.81421 5.25 8.4 5.25L8.4 6.75ZM6 5.25C5.58579 5.25 5.25 5.58579 5.25 6C5.25 6.41421 5.58579 6.75 6 6.75L6 5.25ZM15.6 6.75L18 6.75L18 5.25L15.6 5.25L15.6 6.75ZM8.4 5.25L6 5.25L6 6.75L8.4 6.75L8.4 5.25Z" fill="#0E2245"></path>
-											<path d="M10.6 12L10.6 15.9996" stroke="url(#paint0_linear_951_33024)" stroke-width="1.5" stroke-linecap="round"></path>
-											<path d="M13.601 12L13.601 15.9996" stroke="url(#paint1_linear_951_33024)" stroke-width="1.5" stroke-linecap="round"></path>
-											<defs>
-												<lineargradient id="paint0_linear_951_33024" x1="10.6" y1="12" x2="10.6" y2="15.9996" gradientunits="userSpaceOnUse">
-													<stop stop-color="#0184FF"></stop>
-													<stop offset="1" stop-color="#0184FF" stop-opacity="0"></stop>
-												</lineargradient>
-												<lineargradient id="paint1_linear_951_33024" x1="13.601" y1="12" x2="13.601" y2="15.9996" gradientunits="userSpaceOnUse">
-													<stop stop-color="#0184FF"></stop>
-													<stop offset="1" stop-color="#0184FF" stop-opacity="0"></stop>
-												</lineargradient>
-											</defs>
-										</svg></button>
-								</li>
-								<div class="header__cart-item" data-element="item">
-									<div class="header__cart-image-wrapper">
-										<picture class="picture header__cart-image">
-											<source type="image/webp" srcset="assets/images/catalog-card.webp"><img class="picture__img" src="assets/images/catalog-card.png">
-										</picture>
-									</div>
-									<div class="header__cart-desc">
-										<h4 class="header__cart-title">АЛЬФАПОЛ ПУ-4 ВН АСХ</h4>
-										<p class="header__cart-subtitle">Антистатический кислотостойкий щелочестойкий термостойкий полиуретан-цементный промышленный пол</p>
-									</div><button class="header__cart-remove contact-form__close" data-action="remove-item"><svg class="header__cart-remove-svg contact-form__close-svg" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<path fill-rule="evenodd" clip-rule="evenodd" d="M17.0004 8.39999L6.9996 8.39999C6.44754 8.39999 6 8.84753 6 9.39959L6 17.4C6 19.0568 7.34315 20.4 9 20.4L15 20.4C15.7956 20.4 16.5587 20.0839 17.1213 19.5213C17.6839 18.9587 18 18.1956 18 17.4L18 9.39959C18 8.84753 17.5525 8.39999 17.0004 8.39999Z" stroke="#0E2245" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-											<path fill-rule="evenodd" clip-rule="evenodd" d="M15.5999 5.99991L14.7311 4.26351C14.528 3.85704 14.1127 3.60016 13.6583 3.59991L10.3415 3.59991C9.8871 3.60016 9.47182 3.85704 9.2687 4.26351L8.3999 5.99991L15.5999 5.99991Z" stroke="#0E2245" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-											<path d="M15.6 5.25C15.1857 5.25 14.85 5.58579 14.85 6C14.85 6.41421 15.1857 6.75 15.6 6.75L15.6 5.25ZM18 6.75C18.4142 6.75 18.75 6.41421 18.75 6C18.75 5.58579 18.4142 5.25 18 5.25L18 6.75ZM8.4 6.75C8.81421 6.75 9.15 6.41421 9.15 6C9.15 5.58579 8.81421 5.25 8.4 5.25L8.4 6.75ZM6 5.25C5.58579 5.25 5.25 5.58579 5.25 6C5.25 6.41421 5.58579 6.75 6 6.75L6 5.25ZM15.6 6.75L18 6.75L18 5.25L15.6 5.25L15.6 6.75ZM8.4 5.25L6 5.25L6 6.75L8.4 6.75L8.4 5.25Z" fill="#0E2245"></path>
-											<path d="M10.6 12L10.6 15.9996" stroke="url(#paint0_linear_951_33024)" stroke-width="1.5" stroke-linecap="round"></path>
-											<path d="M13.601 12L13.601 15.9996" stroke="url(#paint1_linear_951_33024)" stroke-width="1.5" stroke-linecap="round"></path>
-											<defs>
-												<lineargradient id="paint0_linear_951_33024" x1="10.6" y1="12" x2="10.6" y2="15.9996" gradientunits="userSpaceOnUse">
-													<stop stop-color="#0184FF"></stop>
-													<stop offset="1" stop-color="#0184FF" stop-opacity="0"></stop>
-												</lineargradient>
-												<lineargradient id="paint1_linear_951_33024" x1="13.601" y1="12" x2="13.601" y2="15.9996" gradientunits="userSpaceOnUse">
-													<stop stop-color="#0184FF"></stop>
-													<stop offset="1" stop-color="#0184FF" stop-opacity="0"></stop>
-												</lineargradient>
-											</defs>
-										</svg></button>
-								</div>
+								<li class="catalog-menu__list-item" data-catalog-section="8"><a class="catalog-menu__list-link" href=""><span class="catalog-menu__list__title">Партнерам</span><svg class="catalog-menu__list-svg" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M13.0395 15.2705C12.6605 15.6732 12.0267 15.6919 11.6247 15.3122L7.8286 11.727C7.17084 11.1058 7.61048 10 8.51523 10L15.6856 10C16.5619 10 17.0144 11.0472 16.4138 11.6854L13.0395 15.2705Z" fill="white"></path>
+										</svg></a></li>
+								<div class="header__mobile-menu-contact-us"><button class="header__right-btn grey-btn connect" data-action="contact-us" data-client-target="contact-us">
+										<div class="grey-btn__inner"><svg class="icon" width="16" height="16" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<mask id="path-1-inside-1_966_29369" fill="white">
+													<rect x="0.667969" y="2.13379" width="14.6667" height="11.7333" rx="0.666667"></rect>
+												</mask>
+												<rect x="0.667969" y="2.13379" width="14.6667" height="11.7333" rx="0.666667" stroke="#0E2245" stroke-width="2" mask="url(#path-1-inside-1_966_29369)"></rect>
+												<path d="M2.86914 5.00049L8.00247 8.66716L13.1358 5.00049" stroke="url(#paint0_linear_966_29369)" stroke-linecap="round"></path>
+												<defs>
+													<lineargradient id="paint0_linear_966_29369" x1="13.0024" y1="4.66716" x2="3.66911" y2="6.66716" gradientunits="userSpaceOnUse">
+														<stop stop-color="#0184FF"></stop>
+														<stop offset="1" stop-color="#0184FF" stop-opacity="0"></stop>
+													</lineargradient>
+												</defs>
+											</svg>Связаться с нами</div>
+									</button></div>
 							</ul>
 						</div>
 					</div>
-					<div class="contact-form__controls header__cart-controls"><a class="section-link product-hero__cart-go-to" href="#">
-							<div class="section-link__span">Оформить заказ</div><svg class="section-link__svg" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-								<path d="M21.2705 11.0193C21.6732 11.3983 21.6919 12.0321 21.3122 12.4342L18.727 15.1714C18.1058 15.8292 17 15.3895 17 14.4848L17 9.31443C17 8.43805 18.0472 7.98559 18.6854 8.58623L21.2705 11.0193Z" fill="white"></path>
-								<path d="M2 11C1.58579 11 1.25 11.3358 1.25 11.75C1.25 12.1642 1.58579 12.5 2 12.5L2 11ZM17 11L2 11L2 12.5L17 12.5L17 11Z" fill="white"></path>
-							</svg>
-						</a></div>
-				</div>
-				<div class="header__cart-empty" data-element="popup-success">
-					<div class="header__cart-empty-wrapper"><svg class="header__cart-empty-svg" width="160" height="160" viewbox="0 0 160 160" fill="none" xmlns="http://www.w3.org/2000/svg">
-							<path d="M18 35.409L34.9091 94.5909H108.182M108.182 94.5909L130.727 15.6818H142M108.182 94.5909L118.6 112.822C118.981 113.489 118.499 114.318 117.731 114.318H34.9091" stroke="#0E2245" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-							<circle cx="43.3637" cy="136.864" r="8.45455" stroke="#0E2245" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></circle>
-							<circle cx="111" cy="136.864" r="8.45455" stroke="#0E2245" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></circle>
-							<path d="M57 35L86.1737 64.1737" stroke="url(#paint0_linear_741_18028)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-							<path d="M86.1738 35L57.0001 64.1737" stroke="url(#paint1_linear_741_18028)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-							<defs>
-								<lineargradient id="paint0_linear_741_18028" x1="71.5869" y1="39.5307" x2="71.5869" y2="66.8894" gradientunits="userSpaceOnUse">
-									<stop stop-color="#0184FF"></stop>
-									<stop offset="1" stop-color="#0184FF" stop-opacity="0"></stop>
-								</lineargradient>
-								<lineargradient id="paint1_linear_741_18028" x1="71.587" y1="39.5307" x2="71.587" y2="66.8894" gradientunits="userSpaceOnUse">
-									<stop stop-color="#0184FF"></stop>
-									<stop offset="1" stop-color="#0184FF" stop-opacity="0"></stop>
-								</lineargradient>
-							</defs>
-						</svg>
-						<h4 class="contact-form__title header__cart-empty-title">корзина пуста</h4><a class="section-link header__cart-empty-link" href="#">
-							<div class="section-link__span">Перейти в каталог</div><svg class="section-link__svg" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-								<path d="M21.2705 11.0193C21.6732 11.3983 21.6919 12.0321 21.3122 12.4342L18.727 15.1714C18.1058 15.8292 17 15.3895 17 14.4848L17 9.31443C17 8.43805 18.0472 7.98559 18.6854 8.58623L21.2705 11.0193Z" fill="white"></path>
-								<path d="M2 11C1.58579 11 1.25 11.3358 1.25 11.75C1.25 12.1642 1.58579 12.5 2 12.5L2 11ZM17 11L2 11L2 12.5L17 12.5L17 11Z" fill="white"></path>
-							</svg>
-						</a>
+					<div class="catalog-menu__left mobile-menu-section" data-element="popup" data-catalog="mobile-menu" data-mobile-submenu="catalog">
+						<btn class="catalog-menu__back-btn mobile" data-mobile-submenu-back="catalog"><svg class="catalog-menu__back-svg" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M13.0395 15.2705C12.6605 15.6732 12.0267 15.6919 11.6247 15.3122L7.8286 11.727C7.17084 11.1058 7.61048 10 8.51523 10L15.6856 10C16.5619 10 17.0144 11.0472 16.4138 11.6854L13.0395 15.2705Z" fill="white"></path>
+							</svg>Назад</btn>
+						<div class="separator-line mobile"></div>
+						<ul class="catalog-menu__list" data-element="popup" data-catalog="catalog-menu">
+							<li class="catalog-menu__list-item" data-catalog-section="1"><button class="catalog-menu__list-link" data-mobile-submenu-button="catalog-1"><span class="catalog-menu__list__title">Требования к покрытию</span><svg class="catalog-menu__list-svg" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M13.0395 15.2705C12.6605 15.6732 12.0267 15.6919 11.6247 15.3122L7.8286 11.727C7.17084 11.1058 7.61048 10 8.51523 10L15.6856 10C16.5619 10 17.0144 11.0472 16.4138 11.6854L13.0395 15.2705Z" fill="white"></path>
+									</svg></button>
+								<div class="separator-line mobile"></div>
+							</li>
+							<li class="catalog-menu__list-item" data-catalog-section="2"><button class="catalog-menu__list-link" data-mobile-submenu-button="catalog-2"><span class="catalog-menu__list__title">Способ укладки</span><svg class="catalog-menu__list-svg" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M13.0395 15.2705C12.6605 15.6732 12.0267 15.6919 11.6247 15.3122L7.8286 11.727C7.17084 11.1058 7.61048 10 8.51523 10L15.6856 10C16.5619 10 17.0144 11.0472 16.4138 11.6854L13.0395 15.2705Z" fill="white"></path>
+									</svg></button>
+								<div class="separator-line mobile"></div>
+							</li>
+							<li class="catalog-menu__list-item" data-catalog-section="3"><button class="catalog-menu__list-link" data-mobile-submenu-button="catalog-3"><span class="catalog-menu__list__title">Тип вяжущего</span><svg class="catalog-menu__list-svg" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M13.0395 15.2705C12.6605 15.6732 12.0267 15.6919 11.6247 15.3122L7.8286 11.727C7.17084 11.1058 7.61048 10 8.51523 10L15.6856 10C16.5619 10 17.0144 11.0472 16.4138 11.6854L13.0395 15.2705Z" fill="white"></path>
+									</svg></button></li>
+						</ul>
+					</div>
+					<div class="catalog-menu__center desktop" data-element="popup" data-catalog-block="0">
+						<div class="catalog-menu__center-block" data-catalog-block="1" data-element="popup" data-mobile-submenu="catalog-1"><a class="catalog-menu__center-link" href="#"><svg class="catalog-menu__center-svg" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M21.2705 11.0193C21.6732 11.3983 21.6919 12.0321 21.3122 12.4342L18.727 15.1714C18.1058 15.8292 17 15.3895 17 14.4848L17 9.31443C17 8.43805 18.0472 7.98559 18.6854 8.58623L21.2705 11.0193Z" fill="white"></path>
+									<path d="M2 11C1.58579 11 1.25 11.3358 1.25 11.75C1.25 12.1642 1.58579 12.5 2 12.5L2 11ZM17 11L2 11L2 12.5L17 12.5L17 11Z" fill="white"></path>
+								</svg>
+								<div class="catalog-menu__center-title">Антистатические полы и покрытия</div>
+							</a><a class="catalog-menu__center-link" href="#"><svg class="catalog-menu__center-svg" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M21.2705 11.0193C21.6732 11.3983 21.6919 12.0321 21.3122 12.4342L18.727 15.1714C18.1058 15.8292 17 15.3895 17 14.4848L17 9.31443C17 8.43805 18.0472 7.98559 18.6854 8.58623L21.2705 11.0193Z" fill="white"></path>
+									<path d="M2 11C1.58579 11 1.25 11.3358 1.25 11.75C1.25 12.1642 1.58579 12.5 2 12.5L2 11ZM17 11L2 11L2 12.5L17 12.5L17 11Z" fill="white"></path>
+								</svg>
+								<div class="catalog-menu__center-title">Безыскровые полы</div>
+							</a><a class="catalog-menu__center-link" href="#"><svg class="catalog-menu__center-svg" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M21.2705 11.0193C21.6732 11.3983 21.6919 12.0321 21.3122 12.4342L18.727 15.1714C18.1058 15.8292 17 15.3895 17 14.4848L17 9.31443C17 8.43805 18.0472 7.98559 18.6854 8.58623L21.2705 11.0193Z" fill="white"></path>
+									<path d="M2 11C1.58579 11 1.25 11.3358 1.25 11.75C1.25 12.1642 1.58579 12.5 2 12.5L2 11ZM17 11L2 11L2 12.5L17 12.5L17 11Z" fill="white"></path>
+								</svg>
+								<div class="catalog-menu__center-title">Полы и покрытия для защиты от излучений</div>
+							</a><a class="catalog-menu__center-link" href="#"><svg class="catalog-menu__center-svg" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M21.2705 11.0193C21.6732 11.3983 21.6919 12.0321 21.3122 12.4342L18.727 15.1714C18.1058 15.8292 17 15.3895 17 14.4848L17 9.31443C17 8.43805 18.0472 7.98559 18.6854 8.58623L21.2705 11.0193Z" fill="white"></path>
+									<path d="M2 11C1.58579 11 1.25 11.3358 1.25 11.75C1.25 12.1642 1.58579 12.5 2 12.5L2 11ZM17 11L2 11L2 12.5L17 12.5L17 11Z" fill="white"></path>
+								</svg>
+								<div class="catalog-menu__center-title">Жаростойкие бетоны</div>
+							</a><a class="catalog-menu__center-link" href="#"><svg class="catalog-menu__center-svg" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M21.2705 11.0193C21.6732 11.3983 21.6919 12.0321 21.3122 12.4342L18.727 15.1714C18.1058 15.8292 17 15.3895 17 14.4848L17 9.31443C17 8.43805 18.0472 7.98559 18.6854 8.58623L21.2705 11.0193Z" fill="white"></path>
+									<path d="M2 11C1.58579 11 1.25 11.3358 1.25 11.75C1.25 12.1642 1.58579 12.5 2 12.5L2 11ZM17 11L2 11L2 12.5L17 12.5L17 11Z" fill="white"></path>
+								</svg>
+								<div class="catalog-menu__center-title">Маслобензостойкие полы</div>
+							</a><a class="catalog-menu__center-link" href="#"><svg class="catalog-menu__center-svg" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M21.2705 11.0193C21.6732 11.3983 21.6919 12.0321 21.3122 12.4342L18.727 15.1714C18.1058 15.8292 17 15.3895 17 14.4848L17 9.31443C17 8.43805 18.0472 7.98559 18.6854 8.58623L21.2705 11.0193Z" fill="white"></path>
+									<path d="M2 11C1.58579 11 1.25 11.3358 1.25 11.75C1.25 12.1642 1.58579 12.5 2 12.5L2 11ZM17 11L2 11L2 12.5L17 12.5L17 11Z" fill="white"></path>
+								</svg>
+								<div class="catalog-menu__center-title">Химически стойкие полы</div>
+							</a><a class="catalog-menu__center-link" href="#"><svg class="catalog-menu__center-svg" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M21.2705 11.0193C21.6732 11.3983 21.6919 12.0321 21.3122 12.4342L18.727 15.1714C18.1058 15.8292 17 15.3895 17 14.4848L17 9.31443C17 8.43805 18.0472 7.98559 18.6854 8.58623L21.2705 11.0193Z" fill="white"></path>
+									<path d="M2 11C1.58579 11 1.25 11.3358 1.25 11.75C1.25 12.1642 1.58579 12.5 2 12.5L2 11ZM17 11L2 11L2 12.5L17 12.5L17 11Z" fill="white"></path>
+								</svg>
+								<div class="catalog-menu__center-title">Декоративные полы</div>
+							</a></div>
+						<div class="catalog-menu__center-block" data-catalog-block="2" data-element="popup" data-mobile-submenu="catalog-2"><a class="catalog-menu__center-link" href="#"><svg class="catalog-menu__center-svg" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M21.2705 11.0193C21.6732 11.3983 21.6919 12.0321 21.3122 12.4342L18.727 15.1714C18.1058 15.8292 17 15.3895 17 14.4848L17 9.31443C17 8.43805 18.0472 7.98559 18.6854 8.58623L21.2705 11.0193Z" fill="white"></path>
+									<path d="M2 11C1.58579 11 1.25 11.3358 1.25 11.75C1.25 12.1642 1.58579 12.5 2 12.5L2 11ZM17 11L2 11L2 12.5L17 12.5L17 11Z" fill="white"></path>
+								</svg>
+								<div class="catalog-menu__center-title">Наливные промышленные полы</div>
+							</a><a class="catalog-menu__center-link" href="#"><svg class="catalog-menu__center-svg" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M21.2705 11.0193C21.6732 11.3983 21.6919 12.0321 21.3122 12.4342L18.727 15.1714C18.1058 15.8292 17 15.3895 17 14.4848L17 9.31443C17 8.43805 18.0472 7.98559 18.6854 8.58623L21.2705 11.0193Z" fill="white"></path>
+									<path d="M2 11C1.58579 11 1.25 11.3358 1.25 11.75C1.25 12.1642 1.58579 12.5 2 12.5L2 11ZM17 11L2 11L2 12.5L17 12.5L17 11Z" fill="white"></path>
+								</svg>
+								<div class="catalog-menu__center-title">Бетонные промышленные полы</div>
+							</a><a class="catalog-menu__center-link" href="#"><svg class="catalog-menu__center-svg" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M21.2705 11.0193C21.6732 11.3983 21.6919 12.0321 21.3122 12.4342L18.727 15.1714C18.1058 15.8292 17 15.3895 17 14.4848L17 9.31443C17 8.43805 18.0472 7.98559 18.6854 8.58623L21.2705 11.0193Z" fill="white"></path>
+									<path d="M2 11C1.58579 11 1.25 11.3358 1.25 11.75C1.25 12.1642 1.58579 12.5 2 12.5L2 11ZM17 11L2 11L2 12.5L17 12.5L17 11Z" fill="white"></path>
+								</svg>
+								<div class="catalog-menu__center-title">Полы с упрочненным верхним слоем</div>
+							</a><a class="catalog-menu__center-link" href="#"><svg class="catalog-menu__center-svg" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M21.2705 11.0193C21.6732 11.3983 21.6919 12.0321 21.3122 12.4342L18.727 15.1714C18.1058 15.8292 17 15.3895 17 14.4848L17 9.31443C17 8.43805 18.0472 7.98559 18.6854 8.58623L21.2705 11.0193Z" fill="white"></path>
+									<path d="M2 11C1.58579 11 1.25 11.3358 1.25 11.75C1.25 12.1642 1.58579 12.5 2 12.5L2 11ZM17 11L2 11L2 12.5L17 12.5L17 11Z" fill="white"></path>
+								</svg>
+								<div class="catalog-menu__center-title">Краски</div>
+							</a><a class="catalog-menu__center-link" href="#"><svg class="catalog-menu__center-svg" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M21.2705 11.0193C21.6732 11.3983 21.6919 12.0321 21.3122 12.4342L18.727 15.1714C18.1058 15.8292 17 15.3895 17 14.4848L17 9.31443C17 8.43805 18.0472 7.98559 18.6854 8.58623L21.2705 11.0193Z" fill="white"></path>
+									<path d="M2 11C1.58579 11 1.25 11.3358 1.25 11.75C1.25 12.1642 1.58579 12.5 2 12.5L2 11ZM17 11L2 11L2 12.5L17 12.5L17 11Z" fill="white"></path>
+								</svg>
+								<div class="catalog-menu__center-title">Пропитки и грунтовки</div>
+							</a><a class="catalog-menu__center-link" href="#"><svg class="catalog-menu__center-svg" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M21.2705 11.0193C21.6732 11.3983 21.6919 12.0321 21.3122 12.4342L18.727 15.1714C18.1058 15.8292 17 15.3895 17 14.4848L17 9.31443C17 8.43805 18.0472 7.98559 18.6854 8.58623L21.2705 11.0193Z" fill="white"></path>
+									<path d="M2 11C1.58579 11 1.25 11.3358 1.25 11.75C1.25 12.1642 1.58579 12.5 2 12.5L2 11ZM17 11L2 11L2 12.5L17 12.5L17 11Z" fill="white"></path>
+								</svg>
+								<div class="catalog-menu__center-title">Химически стойкие полы</div>
+							</a><a class="catalog-menu__center-link" href="#"><svg class="catalog-menu__center-svg" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M21.2705 11.0193C21.6732 11.3983 21.6919 12.0321 21.3122 12.4342L18.727 15.1714C18.1058 15.8292 17 15.3895 17 14.4848L17 9.31443C17 8.43805 18.0472 7.98559 18.6854 8.58623L21.2705 11.0193Z" fill="white"></path>
+									<path d="M2 11C1.58579 11 1.25 11.3358 1.25 11.75C1.25 12.1642 1.58579 12.5 2 12.5L2 11ZM17 11L2 11L2 12.5L17 12.5L17 11Z" fill="white"></path>
+								</svg>
+								<div class="catalog-menu__center-title">Штукатурные покрытия</div>
+							</a></div>
+						<div class="catalog-menu__center-block" data-catalog-block="3" data-element="popup" data-mobile-submenu="catalog-3"><a class="catalog-menu__center-link" href="#"><svg class="catalog-menu__center-svg" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M21.2705 11.0193C21.6732 11.3983 21.6919 12.0321 21.3122 12.4342L18.727 15.1714C18.1058 15.8292 17 15.3895 17 14.4848L17 9.31443C17 8.43805 18.0472 7.98559 18.6854 8.58623L21.2705 11.0193Z" fill="white"></path>
+									<path d="M2 11C1.58579 11 1.25 11.3358 1.25 11.75C1.25 12.1642 1.58579 12.5 2 12.5L2 11ZM17 11L2 11L2 12.5L17 12.5L17 11Z" fill="white"></path>
+								</svg>
+								<div class="catalog-menu__center-title">Полы на основе эпоксидных смол</div>
+							</a><a class="catalog-menu__center-link" href="#"><svg class="catalog-menu__center-svg" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M21.2705 11.0193C21.6732 11.3983 21.6919 12.0321 21.3122 12.4342L18.727 15.1714C18.1058 15.8292 17 15.3895 17 14.4848L17 9.31443C17 8.43805 18.0472 7.98559 18.6854 8.58623L21.2705 11.0193Z" fill="white"></path>
+									<path d="M2 11C1.58579 11 1.25 11.3358 1.25 11.75C1.25 12.1642 1.58579 12.5 2 12.5L2 11ZM17 11L2 11L2 12.5L17 12.5L17 11Z" fill="white"></path>
+								</svg>
+								<div class="catalog-menu__center-title">Полы на основе полиуретановых смол</div>
+							</a><a class="catalog-menu__center-link" href="#"><svg class="catalog-menu__center-svg" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M21.2705 11.0193C21.6732 11.3983 21.6919 12.0321 21.3122 12.4342L18.727 15.1714C18.1058 15.8292 17 15.3895 17 14.4848L17 9.31443C17 8.43805 18.0472 7.98559 18.6854 8.58623L21.2705 11.0193Z" fill="white"></path>
+									<path d="M2 11C1.58579 11 1.25 11.3358 1.25 11.75C1.25 12.1642 1.58579 12.5 2 12.5L2 11ZM17 11L2 11L2 12.5L17 12.5L17 11Z" fill="white"></path>
+								</svg>
+								<div class="catalog-menu__center-title">Полы на комплексном вяжущем</div>
+							</a><a class="catalog-menu__center-link" href="#"><svg class="catalog-menu__center-svg" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M21.2705 11.0193C21.6732 11.3983 21.6919 12.0321 21.3122 12.4342L18.727 15.1714C18.1058 15.8292 17 15.3895 17 14.4848L17 9.31443C17 8.43805 18.0472 7.98559 18.6854 8.58623L21.2705 11.0193Z" fill="white"></path>
+									<path d="M2 11C1.58579 11 1.25 11.3358 1.25 11.75C1.25 12.1642 1.58579 12.5 2 12.5L2 11ZM17 11L2 11L2 12.5L17 12.5L17 11Z" fill="white"></path>
+								</svg>
+								<div class="catalog-menu__center-title">Полы на основе портландцемента</div>
+							</a><a class="catalog-menu__center-link" href="#"><svg class="catalog-menu__center-svg" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M21.2705 11.0193C21.6732 11.3983 21.6919 12.0321 21.3122 12.4342L18.727 15.1714C18.1058 15.8292 17 15.3895 17 14.4848L17 9.31443C17 8.43805 18.0472 7.98559 18.6854 8.58623L21.2705 11.0193Z" fill="white"></path>
+									<path d="M2 11C1.58579 11 1.25 11.3358 1.25 11.75C1.25 12.1642 1.58579 12.5 2 12.5L2 11ZM17 11L2 11L2 12.5L17 12.5L17 11Z" fill="white"></path>
+								</svg>
+								<div class="catalog-menu__center-title">Полы на основе магнезита</div>
+							</a></div>
+					</div>
+					<div class="catalog-menu__right">
+						<div class="catalog-menu__right-inner" data-element="popup">
+							<picture class="picture catalog-menu__right-image">
+								<source type="image/webp" srcset="assets/images/antistatic.webp"><img class="picture__img" src="assets/images/antistatic.png">
+							</picture>
+						</div>
+					</div>
+					<div class="header__mobile-menu-section mobile-menu-section" data-mobile-submenu="info" data-element="popup">
+						<div class="header__mobile-menu-section-inner">
+							<btn class="catalog-menu__back-btn mobile" data-mobile-submenu-back="info"><svg class="catalog-menu__back-svg" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M13.0395 15.2705C12.6605 15.6732 12.0267 15.6919 11.6247 15.3122L7.8286 11.727C7.17084 11.1058 7.61048 10 8.51523 10L15.6856 10C16.5619 10 17.0144 11.0472 16.4138 11.6854L13.0395 15.2705Z" fill="white"></path>
+								</svg>Назад</btn>
+							<div class="separator-line mobile"></div>
+							<ul class="header__mobile-menu-section-links">
+								<li class="header__mobile-menu-section-item"><a class="header__mobile-menu-section-link" href="#">О компании</a></li>
+								<li class="header__mobile-menu-section-item"><a class="header__mobile-menu-section-link" href="#">Производство</a></li>
+								<li class="header__mobile-menu-section-item"><a class="header__mobile-menu-section-link" href="#">Вакансии</a></li>
+								<li class="header__mobile-menu-section-item"><a class="header__mobile-menu-section-link" href="#">Статьи</a></li>
+								<li class="header__mobile-menu-section-item"><a class="header__mobile-menu-section-link" href="#">Контакты</a></li>
+								<li class="header__mobile-menu-section-item"><a class="header__mobile-menu-section-link" href="#">Инструкции</a></li>
+								<li class="header__mobile-menu-section-item"><a class="header__mobile-menu-section-link" href="#">Вопрос-ответ</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="header__mobile-menu-section mobile-menu-section" data-mobile-submenu="usage" data-element="popup">
+						<div class="header__mobile-menu-section-inner">
+							<btn class="catalog-menu__back-btn mobile" data-mobile-submenu-back="usage"><svg class="catalog-menu__back-svg" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M13.0395 15.2705C12.6605 15.6732 12.0267 15.6919 11.6247 15.3122L7.8286 11.727C7.17084 11.1058 7.61048 10 8.51523 10L15.6856 10C16.5619 10 17.0144 11.0472 16.4138 11.6854L13.0395 15.2705Z" fill="white"></path>
+								</svg>Назад</btn>
+							<div class="separator-line mobile"></div>
+							<ul class="header__mobile-menu-section-links">
+								<li class="header__mobile-menu-section-item"><a class="header__mobile-menu-section-link" href="#">Взрывоопасные помещения</a></li>
+								<li class="header__mobile-menu-section-item"><a class="header__mobile-menu-section-link" href="#">Помещения с требованиями защиты электронного оборудования</a></li>
+								<li class="header__mobile-menu-section-item"><a class="header__mobile-menu-section-link" href="#">Предприятия АПК и пищевые производства</a></li>
+								<li class="header__mobile-menu-section-item"><a class="header__mobile-menu-section-link" href="#">Общественные пространства</a></li>
+								<li class="header__mobile-menu-section-item"><a class="header__mobile-menu-section-link" href="#">Производственные и складские помещения</a></li>
+								<li class="header__mobile-menu-section-item"><a class="header__mobile-menu-section-link" href="#">Объекты нефтегазовой промышленности</a></li>
+								<li class="header__mobile-menu-section-item"><a class="header__mobile-menu-section-link" href="#">Суда и объекты судостроительной промышленности</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="catalog-menu__center mobile-menu-section mobile" data-element="popup" data-mobile-submenu="catalog-1">
+						<btn class="catalog-menu__back-btn mobile" data-mobile-submenu-back="catalog-1"><svg class="catalog-menu__back-svg" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M13.0395 15.2705C12.6605 15.6732 12.0267 15.6919 11.6247 15.3122L7.8286 11.727C7.17084 11.1058 7.61048 10 8.51523 10L15.6856 10C16.5619 10 17.0144 11.0472 16.4138 11.6854L13.0395 15.2705Z" fill="white"></path>
+							</svg>Назад</btn>
+						<div class="separator-line mobile"></div>
+						<div class="catalog-menu__center-block" data-catalog-block="1" data-element="popup"><a class="catalog-menu__center-link" href="#"><svg class="catalog-menu__center-svg" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M21.2705 11.0193C21.6732 11.3983 21.6919 12.0321 21.3122 12.4342L18.727 15.1714C18.1058 15.8292 17 15.3895 17 14.4848L17 9.31443C17 8.43805 18.0472 7.98559 18.6854 8.58623L21.2705 11.0193Z" fill="white"></path>
+									<path d="M2 11C1.58579 11 1.25 11.3358 1.25 11.75C1.25 12.1642 1.58579 12.5 2 12.5L2 11ZM17 11L2 11L2 12.5L17 12.5L17 11Z" fill="white"></path>
+								</svg>
+								<div class="catalog-menu__center-title">Антистатические полы и покрытия</div>
+							</a><a class="catalog-menu__center-link" href="#"><svg class="catalog-menu__center-svg" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M21.2705 11.0193C21.6732 11.3983 21.6919 12.0321 21.3122 12.4342L18.727 15.1714C18.1058 15.8292 17 15.3895 17 14.4848L17 9.31443C17 8.43805 18.0472 7.98559 18.6854 8.58623L21.2705 11.0193Z" fill="white"></path>
+									<path d="M2 11C1.58579 11 1.25 11.3358 1.25 11.75C1.25 12.1642 1.58579 12.5 2 12.5L2 11ZM17 11L2 11L2 12.5L17 12.5L17 11Z" fill="white"></path>
+								</svg>
+								<div class="catalog-menu__center-title">Безыскровые полы</div>
+							</a><a class="catalog-menu__center-link" href="#"><svg class="catalog-menu__center-svg" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M21.2705 11.0193C21.6732 11.3983 21.6919 12.0321 21.3122 12.4342L18.727 15.1714C18.1058 15.8292 17 15.3895 17 14.4848L17 9.31443C17 8.43805 18.0472 7.98559 18.6854 8.58623L21.2705 11.0193Z" fill="white"></path>
+									<path d="M2 11C1.58579 11 1.25 11.3358 1.25 11.75C1.25 12.1642 1.58579 12.5 2 12.5L2 11ZM17 11L2 11L2 12.5L17 12.5L17 11Z" fill="white"></path>
+								</svg>
+								<div class="catalog-menu__center-title">Полы и покрытия для защиты от излучений</div>
+							</a><a class="catalog-menu__center-link" href="#"><svg class="catalog-menu__center-svg" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M21.2705 11.0193C21.6732 11.3983 21.6919 12.0321 21.3122 12.4342L18.727 15.1714C18.1058 15.8292 17 15.3895 17 14.4848L17 9.31443C17 8.43805 18.0472 7.98559 18.6854 8.58623L21.2705 11.0193Z" fill="white"></path>
+									<path d="M2 11C1.58579 11 1.25 11.3358 1.25 11.75C1.25 12.1642 1.58579 12.5 2 12.5L2 11ZM17 11L2 11L2 12.5L17 12.5L17 11Z" fill="white"></path>
+								</svg>
+								<div class="catalog-menu__center-title">Жаростойкие бетоны</div>
+							</a><a class="catalog-menu__center-link" href="#"><svg class="catalog-menu__center-svg" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M21.2705 11.0193C21.6732 11.3983 21.6919 12.0321 21.3122 12.4342L18.727 15.1714C18.1058 15.8292 17 15.3895 17 14.4848L17 9.31443C17 8.43805 18.0472 7.98559 18.6854 8.58623L21.2705 11.0193Z" fill="white"></path>
+									<path d="M2 11C1.58579 11 1.25 11.3358 1.25 11.75C1.25 12.1642 1.58579 12.5 2 12.5L2 11ZM17 11L2 11L2 12.5L17 12.5L17 11Z" fill="white"></path>
+								</svg>
+								<div class="catalog-menu__center-title">Маслобензостойкие полы</div>
+							</a><a class="catalog-menu__center-link" href="#"><svg class="catalog-menu__center-svg" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M21.2705 11.0193C21.6732 11.3983 21.6919 12.0321 21.3122 12.4342L18.727 15.1714C18.1058 15.8292 17 15.3895 17 14.4848L17 9.31443C17 8.43805 18.0472 7.98559 18.6854 8.58623L21.2705 11.0193Z" fill="white"></path>
+									<path d="M2 11C1.58579 11 1.25 11.3358 1.25 11.75C1.25 12.1642 1.58579 12.5 2 12.5L2 11ZM17 11L2 11L2 12.5L17 12.5L17 11Z" fill="white"></path>
+								</svg>
+								<div class="catalog-menu__center-title">Химически стойкие полы</div>
+							</a><a class="catalog-menu__center-link" href="#"><svg class="catalog-menu__center-svg" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M21.2705 11.0193C21.6732 11.3983 21.6919 12.0321 21.3122 12.4342L18.727 15.1714C18.1058 15.8292 17 15.3895 17 14.4848L17 9.31443C17 8.43805 18.0472 7.98559 18.6854 8.58623L21.2705 11.0193Z" fill="white"></path>
+									<path d="M2 11C1.58579 11 1.25 11.3358 1.25 11.75C1.25 12.1642 1.58579 12.5 2 12.5L2 11ZM17 11L2 11L2 12.5L17 12.5L17 11Z" fill="white"></path>
+								</svg>
+								<div class="catalog-menu__center-title">Декоративные полы</div>
+							</a></div>
+					</div>
+					<div class="catalog-menu__center mobile-menu-section mobile" data-element="popup" data-mobile-submenu="catalog-2">
+						<btn class="catalog-menu__back-btn mobile" data-mobile-submenu-back="catalog-2"><svg class="catalog-menu__back-svg" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M13.0395 15.2705C12.6605 15.6732 12.0267 15.6919 11.6247 15.3122L7.8286 11.727C7.17084 11.1058 7.61048 10 8.51523 10L15.6856 10C16.5619 10 17.0144 11.0472 16.4138 11.6854L13.0395 15.2705Z" fill="white"></path>
+							</svg>Назад</btn>
+						<div class="separator-line mobile"></div>
+						<div class="catalog-menu__center-block" data-catalog-block="2" data-element="popup"><a class="catalog-menu__center-link" href="#"><svg class="catalog-menu__center-svg" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M21.2705 11.0193C21.6732 11.3983 21.6919 12.0321 21.3122 12.4342L18.727 15.1714C18.1058 15.8292 17 15.3895 17 14.4848L17 9.31443C17 8.43805 18.0472 7.98559 18.6854 8.58623L21.2705 11.0193Z" fill="white"></path>
+									<path d="M2 11C1.58579 11 1.25 11.3358 1.25 11.75C1.25 12.1642 1.58579 12.5 2 12.5L2 11ZM17 11L2 11L2 12.5L17 12.5L17 11Z" fill="white"></path>
+								</svg>
+								<div class="catalog-menu__center-title">Наливные промышленные полы</div>
+							</a><a class="catalog-menu__center-link" href="#"><svg class="catalog-menu__center-svg" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M21.2705 11.0193C21.6732 11.3983 21.6919 12.0321 21.3122 12.4342L18.727 15.1714C18.1058 15.8292 17 15.3895 17 14.4848L17 9.31443C17 8.43805 18.0472 7.98559 18.6854 8.58623L21.2705 11.0193Z" fill="white"></path>
+									<path d="M2 11C1.58579 11 1.25 11.3358 1.25 11.75C1.25 12.1642 1.58579 12.5 2 12.5L2 11ZM17 11L2 11L2 12.5L17 12.5L17 11Z" fill="white"></path>
+								</svg>
+								<div class="catalog-menu__center-title">Бетонные промышленные полы</div>
+							</a><a class="catalog-menu__center-link" href="#"><svg class="catalog-menu__center-svg" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M21.2705 11.0193C21.6732 11.3983 21.6919 12.0321 21.3122 12.4342L18.727 15.1714C18.1058 15.8292 17 15.3895 17 14.4848L17 9.31443C17 8.43805 18.0472 7.98559 18.6854 8.58623L21.2705 11.0193Z" fill="white"></path>
+									<path d="M2 11C1.58579 11 1.25 11.3358 1.25 11.75C1.25 12.1642 1.58579 12.5 2 12.5L2 11ZM17 11L2 11L2 12.5L17 12.5L17 11Z" fill="white"></path>
+								</svg>
+								<div class="catalog-menu__center-title">Полы с упрочненным верхним слоем</div>
+							</a><a class="catalog-menu__center-link" href="#"><svg class="catalog-menu__center-svg" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M21.2705 11.0193C21.6732 11.3983 21.6919 12.0321 21.3122 12.4342L18.727 15.1714C18.1058 15.8292 17 15.3895 17 14.4848L17 9.31443C17 8.43805 18.0472 7.98559 18.6854 8.58623L21.2705 11.0193Z" fill="white"></path>
+									<path d="M2 11C1.58579 11 1.25 11.3358 1.25 11.75C1.25 12.1642 1.58579 12.5 2 12.5L2 11ZM17 11L2 11L2 12.5L17 12.5L17 11Z" fill="white"></path>
+								</svg>
+								<div class="catalog-menu__center-title">Краски</div>
+							</a><a class="catalog-menu__center-link" href="#"><svg class="catalog-menu__center-svg" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M21.2705 11.0193C21.6732 11.3983 21.6919 12.0321 21.3122 12.4342L18.727 15.1714C18.1058 15.8292 17 15.3895 17 14.4848L17 9.31443C17 8.43805 18.0472 7.98559 18.6854 8.58623L21.2705 11.0193Z" fill="white"></path>
+									<path d="M2 11C1.58579 11 1.25 11.3358 1.25 11.75C1.25 12.1642 1.58579 12.5 2 12.5L2 11ZM17 11L2 11L2 12.5L17 12.5L17 11Z" fill="white"></path>
+								</svg>
+								<div class="catalog-menu__center-title">Пропитки и грунтовки</div>
+							</a><a class="catalog-menu__center-link" href="#"><svg class="catalog-menu__center-svg" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M21.2705 11.0193C21.6732 11.3983 21.6919 12.0321 21.3122 12.4342L18.727 15.1714C18.1058 15.8292 17 15.3895 17 14.4848L17 9.31443C17 8.43805 18.0472 7.98559 18.6854 8.58623L21.2705 11.0193Z" fill="white"></path>
+									<path d="M2 11C1.58579 11 1.25 11.3358 1.25 11.75C1.25 12.1642 1.58579 12.5 2 12.5L2 11ZM17 11L2 11L2 12.5L17 12.5L17 11Z" fill="white"></path>
+								</svg>
+								<div class="catalog-menu__center-title">Химически стойкие полы</div>
+							</a><a class="catalog-menu__center-link" href="#"><svg class="catalog-menu__center-svg" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M21.2705 11.0193C21.6732 11.3983 21.6919 12.0321 21.3122 12.4342L18.727 15.1714C18.1058 15.8292 17 15.3895 17 14.4848L17 9.31443C17 8.43805 18.0472 7.98559 18.6854 8.58623L21.2705 11.0193Z" fill="white"></path>
+									<path d="M2 11C1.58579 11 1.25 11.3358 1.25 11.75C1.25 12.1642 1.58579 12.5 2 12.5L2 11ZM17 11L2 11L2 12.5L17 12.5L17 11Z" fill="white"></path>
+								</svg>
+								<div class="catalog-menu__center-title">Штукатурные покрытия</div>
+							</a></div>
+					</div>
+					<div class="catalog-menu__center mobile-menu-section mobile" data-element="popup" data-mobile-submenu="catalog-3">
+						<btn class="catalog-menu__back-btn mobile" data-mobile-submenu-back="catalog-3"><svg class="catalog-menu__back-svg" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M13.0395 15.2705C12.6605 15.6732 12.0267 15.6919 11.6247 15.3122L7.8286 11.727C7.17084 11.1058 7.61048 10 8.51523 10L15.6856 10C16.5619 10 17.0144 11.0472 16.4138 11.6854L13.0395 15.2705Z" fill="white"></path>
+							</svg>Назад</btn>
+						<div class="separator-line mobile"></div>
+						<div class="catalog-menu__center-block" data-catalog-block="2" data-element="popup"><a class="catalog-menu__center-link" href="#"><svg class="catalog-menu__center-svg" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M21.2705 11.0193C21.6732 11.3983 21.6919 12.0321 21.3122 12.4342L18.727 15.1714C18.1058 15.8292 17 15.3895 17 14.4848L17 9.31443C17 8.43805 18.0472 7.98559 18.6854 8.58623L21.2705 11.0193Z" fill="white"></path>
+									<path d="M2 11C1.58579 11 1.25 11.3358 1.25 11.75C1.25 12.1642 1.58579 12.5 2 12.5L2 11ZM17 11L2 11L2 12.5L17 12.5L17 11Z" fill="white"></path>
+								</svg>
+								<div class="catalog-menu__center-title">Полы на основе эпоксидных смол</div>
+							</a><a class="catalog-menu__center-link" href="#"><svg class="catalog-menu__center-svg" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M21.2705 11.0193C21.6732 11.3983 21.6919 12.0321 21.3122 12.4342L18.727 15.1714C18.1058 15.8292 17 15.3895 17 14.4848L17 9.31443C17 8.43805 18.0472 7.98559 18.6854 8.58623L21.2705 11.0193Z" fill="white"></path>
+									<path d="M2 11C1.58579 11 1.25 11.3358 1.25 11.75C1.25 12.1642 1.58579 12.5 2 12.5L2 11ZM17 11L2 11L2 12.5L17 12.5L17 11Z" fill="white"></path>
+								</svg>
+								<div class="catalog-menu__center-title">Полы на основе полиуретановых смол</div>
+							</a><a class="catalog-menu__center-link" href="#"><svg class="catalog-menu__center-svg" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M21.2705 11.0193C21.6732 11.3983 21.6919 12.0321 21.3122 12.4342L18.727 15.1714C18.1058 15.8292 17 15.3895 17 14.4848L17 9.31443C17 8.43805 18.0472 7.98559 18.6854 8.58623L21.2705 11.0193Z" fill="white"></path>
+									<path d="M2 11C1.58579 11 1.25 11.3358 1.25 11.75C1.25 12.1642 1.58579 12.5 2 12.5L2 11ZM17 11L2 11L2 12.5L17 12.5L17 11Z" fill="white"></path>
+								</svg>
+								<div class="catalog-menu__center-title">Полы на комплексном вяжущем</div>
+							</a><a class="catalog-menu__center-link" href="#"><svg class="catalog-menu__center-svg" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M21.2705 11.0193C21.6732 11.3983 21.6919 12.0321 21.3122 12.4342L18.727 15.1714C18.1058 15.8292 17 15.3895 17 14.4848L17 9.31443C17 8.43805 18.0472 7.98559 18.6854 8.58623L21.2705 11.0193Z" fill="white"></path>
+									<path d="M2 11C1.58579 11 1.25 11.3358 1.25 11.75C1.25 12.1642 1.58579 12.5 2 12.5L2 11ZM17 11L2 11L2 12.5L17 12.5L17 11Z" fill="white"></path>
+								</svg>
+								<div class="catalog-menu__center-title">Полы на основе портландцемента</div>
+							</a><a class="catalog-menu__center-link" href="#"><svg class="catalog-menu__center-svg" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M21.2705 11.0193C21.6732 11.3983 21.6919 12.0321 21.3122 12.4342L18.727 15.1714C18.1058 15.8292 17 15.3895 17 14.4848L17 9.31443C17 8.43805 18.0472 7.98559 18.6854 8.58623L21.2705 11.0193Z" fill="white"></path>
+									<path d="M2 11C1.58579 11 1.25 11.3358 1.25 11.75C1.25 12.1642 1.58579 12.5 2 12.5L2 11ZM17 11L2 11L2 12.5L17 12.5L17 11Z" fill="white"></path>
+								</svg>
+								<div class="catalog-menu__center-title">Полы на основе магнезита</div>
+							</a></div>
 					</div>
 				</div>
-			</div>
+			</header>
 			<main class="main">
 				<div class="overlay submodal" data-element="submodal" data-action="close-submodal"></div>
 				<div class="overlay high" data-element="popup" data-action="close-popup"></div>
@@ -1269,6 +1046,351 @@
 						</div>
 					</div>
 				</section>
+				<div class="contact-form" data-element="popup" data-popup="about-popup" data-form-target="contact-us"><button class="contact-form__close" data-action="close-popup"><svg class="contact-form__close-svg" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M6 6L18 18" stroke="#0E2245" stroke-width="1.5" stroke-linecap="round"></path>
+							<path d="M18 6L6 18" stroke="#0E2245" stroke-width="1.5" stroke-linecap="round"></path>
+						</svg></button>
+					<div class="contact-form__wrapper">
+						<div class="contact-form__inner" data-element="popup-content">
+							<div class="contact-form__header">
+								<h4 class="contact-form__title contact-form__title_no-bottom">связаться с нами</h4>
+							</div>
+							<form class="contact-form__inputs" id="contact-us">
+								<div class="input-wrapper" data-input-parent="">
+									<div class="input-wrapper__placeholder">Имя или название организации*</div><input class="input contact-form__input" data-input="" autocomplete="off" required name="name" placeholder="Имя или название организации*"><svg class="input-wrapper-svg" width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<g opacity="0.3">
+											<path d="M5 5L15 15" stroke="#0E2245" stroke-width="1.5" stroke-linecap="round"></path>
+											<path d="M15 5L5 15" stroke="#0E2245" stroke-width="1.5" stroke-linecap="round"></path>
+										</g>
+									</svg>
+								</div>
+								<div class="input-wrapper" data-input-parent="">
+									<div class="input-wrapper__placeholder">Телефон*</div><input class="input contact-form__input" data-input="" autocomplete="off" required type="tel" name="tel" placeholder="Телефон*" data-mask-phone data-parsley-phone-required><svg class="input-wrapper-svg" width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<g opacity="0.3">
+											<path d="M5 5L15 15" stroke="#0E2245" stroke-width="1.5" stroke-linecap="round"></path>
+											<path d="M15 5L5 15" stroke="#0E2245" stroke-width="1.5" stroke-linecap="round"></path>
+										</g>
+									</svg>
+								</div>
+							</form>
+							<div class="contact-form__agreement">Нажимая кнопку «Отправить», я даю согласие на обработку <a class="contact-form__personal" href="#">персональных данных</a></div><button class="primary-button hover-btn contact-form__submit wide" form="contact-us" type="submit" value="Отправить">
+								<div class="hover-btn__bg dark-blue"></div>
+								<div class="hover-btn__content">
+									<div class="hover-btn__content-top primary-button__content">
+										<div class="primary-button__span">Отправить</div><svg class="primary-button__svg primary-button__svg_rotate" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M21.2705 11.0193C21.6732 11.3983 21.6919 12.0321 21.3122 12.4342L18.727 15.1714C18.1058 15.8292 17 15.3895 17 14.4848L17 9.31443C17 8.43805 18.0472 7.98559 18.6854 8.58623L21.2705 11.0193Z" fill="white"></path>
+											<path d="M2 11C1.58579 11 1.25 11.3358 1.25 11.75C1.25 12.1642 1.58579 12.5 2 12.5L2 11ZM17 11L2 11L2 12.5L17 12.5L17 11Z" fill="white"></path>
+										</svg>
+									</div>
+									<div class="hover-btn__content-bot primary-button__content">
+										<div class="primary-button__span">Отправить</div><svg class="primary-button__svg primary-button__svg_rotate" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M21.2705 11.0193C21.6732 11.3983 21.6919 12.0321 21.3122 12.4342L18.727 15.1714C18.1058 15.8292 17 15.3895 17 14.4848L17 9.31443C17 8.43805 18.0472 7.98559 18.6854 8.58623L21.2705 11.0193Z" fill="white"></path>
+											<path d="M2 11C1.58579 11 1.25 11.3358 1.25 11.75C1.25 12.1642 1.58579 12.5 2 12.5L2 11ZM17 11L2 11L2 12.5L17 12.5L17 11Z" fill="white"></path>
+										</svg>
+									</div>
+								</div>
+							</button>
+						</div>
+						<div class="contact-form__success" data-element="popup-success"><svg class="contact-form__success-svg" width="160" height="160" viewbox="0 0 160 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<rect width="160" height="160" fill="white"></rect>
+								<circle cx="80" cy="80" r="66.25" stroke="url(#paint0_linear_766_16456)" stroke-width="1.5"></circle>
+								<path d="M63 80.5451L71.3089 88.387C72.8596 89.8505 75.2857 89.8404 76.8241 88.3639L97 69" stroke="#0E2245" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+								<defs>
+									<lineargradient id="paint0_linear_766_16456" x1="80" y1="13" x2="80" y2="147" gradientunits="userSpaceOnUse">
+										<stop stop-color="#0184FF"></stop>
+										<stop offset="1" stop-color="#0184FF" stop-opacity="0"></stop>
+									</lineargradient>
+								</defs>
+							</svg>
+							<h4 class="contact-form__success-title">отправлено</h4>
+							<p class="contact-form__success-desc">Спасибо. Мы свяжемся с вами в ближайшее время.</p><button class="primary-button hover-btn contact-form__success-close" data-action="close-popup">
+								<div class="hover-btn__bg dark-blue"></div>
+								<div class="hover-btn__content">
+									<div class="hover-btn__content-top primary-button__content">
+										<div class="primary-button__span">Закрыть</div><svg class="primary-button__svg primary-button__svg_rotate" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M21.2705 11.0193C21.6732 11.3983 21.6919 12.0321 21.3122 12.4342L18.727 15.1714C18.1058 15.8292 17 15.3895 17 14.4848L17 9.31443C17 8.43805 18.0472 7.98559 18.6854 8.58623L21.2705 11.0193Z" fill="white"></path>
+											<path d="M2 11C1.58579 11 1.25 11.3358 1.25 11.75C1.25 12.1642 1.58579 12.5 2 12.5L2 11ZM17 11L2 11L2 12.5L17 12.5L17 11Z" fill="white"></path>
+										</svg>
+									</div>
+									<div class="hover-btn__content-bot primary-button__content">
+										<div class="primary-button__span">Закрыть</div><svg class="primary-button__svg primary-button__svg_rotate" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M21.2705 11.0193C21.6732 11.3983 21.6919 12.0321 21.3122 12.4342L18.727 15.1714C18.1058 15.8292 17 15.3895 17 14.4848L17 9.31443C17 8.43805 18.0472 7.98559 18.6854 8.58623L21.2705 11.0193Z" fill="white"></path>
+											<path d="M2 11C1.58579 11 1.25 11.3358 1.25 11.75C1.25 12.1642 1.58579 12.5 2 12.5L2 11ZM17 11L2 11L2 12.5L17 12.5L17 11Z" fill="white"></path>
+										</svg>
+									</div>
+								</div>
+							</button>
+						</div>
+					</div>
+				</div>
+				<div class="header__cart contact-form contact-form_controls" data-element="popup" data-form-target="open-cart"><button class="contact-form__close" data-action="close-popup"><svg class="contact-form__close-svg" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M6 6L18 18" stroke="#0E2245" stroke-width="1.5" stroke-linecap="round"></path>
+							<path d="M18 6L6 18" stroke="#0E2245" stroke-width="1.5" stroke-linecap="round"></path>
+						</svg></button>
+					<div class="contact-form__wrapper" data-element="popup-content">
+						<div class="contact-form__inner contact-form__inner_controls">
+							<div class="contact-form__header">
+								<h4 class="contact-form__title" data-element="popup-title">корзина</h4>
+								<div class="separator-line contact-form__header-separator" data-element="popup-header-separator"></div>
+							</div>
+							<div class="header__cart-list-wrapper" data-element="scroll-event">
+								<ul class="header__cart-list">
+									<li class="header__cart-item" data-element="item">
+										<div class="header__cart-image-wrapper">
+											<picture class="picture header__cart-image">
+												<source type="image/webp" srcset="assets/images/catalog-card.webp"><img class="picture__img" src="assets/images/catalog-card.png">
+											</picture>
+										</div>
+										<div class="header__cart-desc">
+											<h4 class="header__cart-title">АЛЬФАПОЛ ПУ-4 ВН АСХ АЛЬФАПОЛ ПУ-4 ВН АСХ</h4>
+											<p class="header__cart-subtitle">Антистатический кислотостойкий щелочестойкий термостойкий полиуретан-цементный промышленный пол Антистатический кислотостойкий щелочестойкий термостойкий полиуретан-цементный промышленный пол</p>
+										</div><button class="header__cart-remove contact-form__close" data-action="remove-item"><svg class="header__cart-remove-svg contact-form__close-svg" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path fill-rule="evenodd" clip-rule="evenodd" d="M17.0004 8.39999L6.9996 8.39999C6.44754 8.39999 6 8.84753 6 9.39959L6 17.4C6 19.0568 7.34315 20.4 9 20.4L15 20.4C15.7956 20.4 16.5587 20.0839 17.1213 19.5213C17.6839 18.9587 18 18.1956 18 17.4L18 9.39959C18 8.84753 17.5525 8.39999 17.0004 8.39999Z" stroke="#0E2245" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+												<path fill-rule="evenodd" clip-rule="evenodd" d="M15.5999 5.99991L14.7311 4.26351C14.528 3.85704 14.1127 3.60016 13.6583 3.59991L10.3415 3.59991C9.8871 3.60016 9.47182 3.85704 9.2687 4.26351L8.3999 5.99991L15.5999 5.99991Z" stroke="#0E2245" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+												<path d="M15.6 5.25C15.1857 5.25 14.85 5.58579 14.85 6C14.85 6.41421 15.1857 6.75 15.6 6.75L15.6 5.25ZM18 6.75C18.4142 6.75 18.75 6.41421 18.75 6C18.75 5.58579 18.4142 5.25 18 5.25L18 6.75ZM8.4 6.75C8.81421 6.75 9.15 6.41421 9.15 6C9.15 5.58579 8.81421 5.25 8.4 5.25L8.4 6.75ZM6 5.25C5.58579 5.25 5.25 5.58579 5.25 6C5.25 6.41421 5.58579 6.75 6 6.75L6 5.25ZM15.6 6.75L18 6.75L18 5.25L15.6 5.25L15.6 6.75ZM8.4 5.25L6 5.25L6 6.75L8.4 6.75L8.4 5.25Z" fill="#0E2245"></path>
+												<path d="M10.6 12L10.6 15.9996" stroke="url(#paint0_linear_951_33024)" stroke-width="1.5" stroke-linecap="round"></path>
+												<path d="M13.601 12L13.601 15.9996" stroke="url(#paint1_linear_951_33024)" stroke-width="1.5" stroke-linecap="round"></path>
+												<defs>
+													<lineargradient id="paint0_linear_951_33024" x1="10.6" y1="12" x2="10.6" y2="15.9996" gradientunits="userSpaceOnUse">
+														<stop stop-color="#0184FF"></stop>
+														<stop offset="1" stop-color="#0184FF" stop-opacity="0"></stop>
+													</lineargradient>
+													<lineargradient id="paint1_linear_951_33024" x1="13.601" y1="12" x2="13.601" y2="15.9996" gradientunits="userSpaceOnUse">
+														<stop stop-color="#0184FF"></stop>
+														<stop offset="1" stop-color="#0184FF" stop-opacity="0"></stop>
+													</lineargradient>
+												</defs>
+											</svg></button>
+									</li>
+									<li class="header__cart-item" data-element="item">
+										<div class="header__cart-image-wrapper">
+											<picture class="picture header__cart-image">
+												<source type="image/webp" srcset="assets/images/catalog-card.webp"><img class="picture__img" src="assets/images/catalog-card.png">
+											</picture>
+										</div>
+										<div class="header__cart-desc">
+											<h4 class="header__cart-title">АЛЬФАПОЛ ПУ-4 ВН АСХ АЛЬФАПОЛ ПУ-4 ВН АСХ</h4>
+											<p class="header__cart-subtitle">Антистатический кислотостойкий щелочестойкий термостойкий полиуретан-цементный промышленный пол Антистатический кислотостойкий щелочестойкий термостойкий полиуретан-цементный промышленный пол</p>
+										</div><button class="header__cart-remove contact-form__close" data-action="remove-item"><svg class="header__cart-remove-svg contact-form__close-svg" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path fill-rule="evenodd" clip-rule="evenodd" d="M17.0004 8.39999L6.9996 8.39999C6.44754 8.39999 6 8.84753 6 9.39959L6 17.4C6 19.0568 7.34315 20.4 9 20.4L15 20.4C15.7956 20.4 16.5587 20.0839 17.1213 19.5213C17.6839 18.9587 18 18.1956 18 17.4L18 9.39959C18 8.84753 17.5525 8.39999 17.0004 8.39999Z" stroke="#0E2245" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+												<path fill-rule="evenodd" clip-rule="evenodd" d="M15.5999 5.99991L14.7311 4.26351C14.528 3.85704 14.1127 3.60016 13.6583 3.59991L10.3415 3.59991C9.8871 3.60016 9.47182 3.85704 9.2687 4.26351L8.3999 5.99991L15.5999 5.99991Z" stroke="#0E2245" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+												<path d="M15.6 5.25C15.1857 5.25 14.85 5.58579 14.85 6C14.85 6.41421 15.1857 6.75 15.6 6.75L15.6 5.25ZM18 6.75C18.4142 6.75 18.75 6.41421 18.75 6C18.75 5.58579 18.4142 5.25 18 5.25L18 6.75ZM8.4 6.75C8.81421 6.75 9.15 6.41421 9.15 6C9.15 5.58579 8.81421 5.25 8.4 5.25L8.4 6.75ZM6 5.25C5.58579 5.25 5.25 5.58579 5.25 6C5.25 6.41421 5.58579 6.75 6 6.75L6 5.25ZM15.6 6.75L18 6.75L18 5.25L15.6 5.25L15.6 6.75ZM8.4 5.25L6 5.25L6 6.75L8.4 6.75L8.4 5.25Z" fill="#0E2245"></path>
+												<path d="M10.6 12L10.6 15.9996" stroke="url(#paint0_linear_951_33024)" stroke-width="1.5" stroke-linecap="round"></path>
+												<path d="M13.601 12L13.601 15.9996" stroke="url(#paint1_linear_951_33024)" stroke-width="1.5" stroke-linecap="round"></path>
+												<defs>
+													<lineargradient id="paint0_linear_951_33024" x1="10.6" y1="12" x2="10.6" y2="15.9996" gradientunits="userSpaceOnUse">
+														<stop stop-color="#0184FF"></stop>
+														<stop offset="1" stop-color="#0184FF" stop-opacity="0"></stop>
+													</lineargradient>
+													<lineargradient id="paint1_linear_951_33024" x1="13.601" y1="12" x2="13.601" y2="15.9996" gradientunits="userSpaceOnUse">
+														<stop stop-color="#0184FF"></stop>
+														<stop offset="1" stop-color="#0184FF" stop-opacity="0"></stop>
+													</lineargradient>
+												</defs>
+											</svg></button>
+									</li>
+									<li class="header__cart-item" data-element="item">
+										<div class="header__cart-image-wrapper">
+											<picture class="picture header__cart-image">
+												<source type="image/webp" srcset="assets/images/catalog-card.webp"><img class="picture__img" src="assets/images/catalog-card.png">
+											</picture>
+										</div>
+										<div class="header__cart-desc">
+											<h4 class="header__cart-title">АЛЬФАПОЛ ПУ-4 ВН АСХ АЛЬФАПОЛ ПУ-4 ВН АСХ</h4>
+											<p class="header__cart-subtitle">Антистатический кислотостойкий щелочестойкий термостойкий полиуретан-цементный промышленный пол Антистатический кислотостойкий щелочестойкий термостойкий полиуретан-цементный промышленный пол</p>
+										</div><button class="header__cart-remove contact-form__close" data-action="remove-item"><svg class="header__cart-remove-svg contact-form__close-svg" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path fill-rule="evenodd" clip-rule="evenodd" d="M17.0004 8.39999L6.9996 8.39999C6.44754 8.39999 6 8.84753 6 9.39959L6 17.4C6 19.0568 7.34315 20.4 9 20.4L15 20.4C15.7956 20.4 16.5587 20.0839 17.1213 19.5213C17.6839 18.9587 18 18.1956 18 17.4L18 9.39959C18 8.84753 17.5525 8.39999 17.0004 8.39999Z" stroke="#0E2245" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+												<path fill-rule="evenodd" clip-rule="evenodd" d="M15.5999 5.99991L14.7311 4.26351C14.528 3.85704 14.1127 3.60016 13.6583 3.59991L10.3415 3.59991C9.8871 3.60016 9.47182 3.85704 9.2687 4.26351L8.3999 5.99991L15.5999 5.99991Z" stroke="#0E2245" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+												<path d="M15.6 5.25C15.1857 5.25 14.85 5.58579 14.85 6C14.85 6.41421 15.1857 6.75 15.6 6.75L15.6 5.25ZM18 6.75C18.4142 6.75 18.75 6.41421 18.75 6C18.75 5.58579 18.4142 5.25 18 5.25L18 6.75ZM8.4 6.75C8.81421 6.75 9.15 6.41421 9.15 6C9.15 5.58579 8.81421 5.25 8.4 5.25L8.4 6.75ZM6 5.25C5.58579 5.25 5.25 5.58579 5.25 6C5.25 6.41421 5.58579 6.75 6 6.75L6 5.25ZM15.6 6.75L18 6.75L18 5.25L15.6 5.25L15.6 6.75ZM8.4 5.25L6 5.25L6 6.75L8.4 6.75L8.4 5.25Z" fill="#0E2245"></path>
+												<path d="M10.6 12L10.6 15.9996" stroke="url(#paint0_linear_951_33024)" stroke-width="1.5" stroke-linecap="round"></path>
+												<path d="M13.601 12L13.601 15.9996" stroke="url(#paint1_linear_951_33024)" stroke-width="1.5" stroke-linecap="round"></path>
+												<defs>
+													<lineargradient id="paint0_linear_951_33024" x1="10.6" y1="12" x2="10.6" y2="15.9996" gradientunits="userSpaceOnUse">
+														<stop stop-color="#0184FF"></stop>
+														<stop offset="1" stop-color="#0184FF" stop-opacity="0"></stop>
+													</lineargradient>
+													<lineargradient id="paint1_linear_951_33024" x1="13.601" y1="12" x2="13.601" y2="15.9996" gradientunits="userSpaceOnUse">
+														<stop stop-color="#0184FF"></stop>
+														<stop offset="1" stop-color="#0184FF" stop-opacity="0"></stop>
+													</lineargradient>
+												</defs>
+											</svg></button>
+									</li>
+									<li class="header__cart-item" data-element="item">
+										<div class="header__cart-image-wrapper">
+											<picture class="picture header__cart-image">
+												<source type="image/webp" srcset="assets/images/catalog-card.webp"><img class="picture__img" src="assets/images/catalog-card.png">
+											</picture>
+										</div>
+										<div class="header__cart-desc">
+											<h4 class="header__cart-title">АЛЬФАПОЛ ПУ-4 ВН АСХ АЛЬФАПОЛ ПУ-4 ВН АСХ</h4>
+											<p class="header__cart-subtitle">Антистатический кислотостойкий щелочестойкий термостойкий полиуретан-цементный промышленный пол Антистатический кислотостойкий щелочестойкий термостойкий полиуретан-цементный промышленный пол</p>
+										</div><button class="header__cart-remove contact-form__close" data-action="remove-item"><svg class="header__cart-remove-svg contact-form__close-svg" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path fill-rule="evenodd" clip-rule="evenodd" d="M17.0004 8.39999L6.9996 8.39999C6.44754 8.39999 6 8.84753 6 9.39959L6 17.4C6 19.0568 7.34315 20.4 9 20.4L15 20.4C15.7956 20.4 16.5587 20.0839 17.1213 19.5213C17.6839 18.9587 18 18.1956 18 17.4L18 9.39959C18 8.84753 17.5525 8.39999 17.0004 8.39999Z" stroke="#0E2245" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+												<path fill-rule="evenodd" clip-rule="evenodd" d="M15.5999 5.99991L14.7311 4.26351C14.528 3.85704 14.1127 3.60016 13.6583 3.59991L10.3415 3.59991C9.8871 3.60016 9.47182 3.85704 9.2687 4.26351L8.3999 5.99991L15.5999 5.99991Z" stroke="#0E2245" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+												<path d="M15.6 5.25C15.1857 5.25 14.85 5.58579 14.85 6C14.85 6.41421 15.1857 6.75 15.6 6.75L15.6 5.25ZM18 6.75C18.4142 6.75 18.75 6.41421 18.75 6C18.75 5.58579 18.4142 5.25 18 5.25L18 6.75ZM8.4 6.75C8.81421 6.75 9.15 6.41421 9.15 6C9.15 5.58579 8.81421 5.25 8.4 5.25L8.4 6.75ZM6 5.25C5.58579 5.25 5.25 5.58579 5.25 6C5.25 6.41421 5.58579 6.75 6 6.75L6 5.25ZM15.6 6.75L18 6.75L18 5.25L15.6 5.25L15.6 6.75ZM8.4 5.25L6 5.25L6 6.75L8.4 6.75L8.4 5.25Z" fill="#0E2245"></path>
+												<path d="M10.6 12L10.6 15.9996" stroke="url(#paint0_linear_951_33024)" stroke-width="1.5" stroke-linecap="round"></path>
+												<path d="M13.601 12L13.601 15.9996" stroke="url(#paint1_linear_951_33024)" stroke-width="1.5" stroke-linecap="round"></path>
+												<defs>
+													<lineargradient id="paint0_linear_951_33024" x1="10.6" y1="12" x2="10.6" y2="15.9996" gradientunits="userSpaceOnUse">
+														<stop stop-color="#0184FF"></stop>
+														<stop offset="1" stop-color="#0184FF" stop-opacity="0"></stop>
+													</lineargradient>
+													<lineargradient id="paint1_linear_951_33024" x1="13.601" y1="12" x2="13.601" y2="15.9996" gradientunits="userSpaceOnUse">
+														<stop stop-color="#0184FF"></stop>
+														<stop offset="1" stop-color="#0184FF" stop-opacity="0"></stop>
+													</lineargradient>
+												</defs>
+											</svg></button>
+									</li>
+									<li class="header__cart-item" data-element="item">
+										<div class="header__cart-image-wrapper">
+											<picture class="picture header__cart-image">
+												<source type="image/webp" srcset="assets/images/catalog-card.webp"><img class="picture__img" src="assets/images/catalog-card.png">
+											</picture>
+										</div>
+										<div class="header__cart-desc">
+											<h4 class="header__cart-title">АЛЬФАПОЛ ПУ-4 ВН АСХ АЛЬФАПОЛ ПУ-4 ВН АСХ</h4>
+											<p class="header__cart-subtitle">Антистатический кислотостойкий щелочестойкий термостойкий полиуретан-цементный промышленный пол Антистатический кислотостойкий щелочестойкий термостойкий полиуретан-цементный промышленный пол</p>
+										</div><button class="header__cart-remove contact-form__close" data-action="remove-item"><svg class="header__cart-remove-svg contact-form__close-svg" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path fill-rule="evenodd" clip-rule="evenodd" d="M17.0004 8.39999L6.9996 8.39999C6.44754 8.39999 6 8.84753 6 9.39959L6 17.4C6 19.0568 7.34315 20.4 9 20.4L15 20.4C15.7956 20.4 16.5587 20.0839 17.1213 19.5213C17.6839 18.9587 18 18.1956 18 17.4L18 9.39959C18 8.84753 17.5525 8.39999 17.0004 8.39999Z" stroke="#0E2245" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+												<path fill-rule="evenodd" clip-rule="evenodd" d="M15.5999 5.99991L14.7311 4.26351C14.528 3.85704 14.1127 3.60016 13.6583 3.59991L10.3415 3.59991C9.8871 3.60016 9.47182 3.85704 9.2687 4.26351L8.3999 5.99991L15.5999 5.99991Z" stroke="#0E2245" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+												<path d="M15.6 5.25C15.1857 5.25 14.85 5.58579 14.85 6C14.85 6.41421 15.1857 6.75 15.6 6.75L15.6 5.25ZM18 6.75C18.4142 6.75 18.75 6.41421 18.75 6C18.75 5.58579 18.4142 5.25 18 5.25L18 6.75ZM8.4 6.75C8.81421 6.75 9.15 6.41421 9.15 6C9.15 5.58579 8.81421 5.25 8.4 5.25L8.4 6.75ZM6 5.25C5.58579 5.25 5.25 5.58579 5.25 6C5.25 6.41421 5.58579 6.75 6 6.75L6 5.25ZM15.6 6.75L18 6.75L18 5.25L15.6 5.25L15.6 6.75ZM8.4 5.25L6 5.25L6 6.75L8.4 6.75L8.4 5.25Z" fill="#0E2245"></path>
+												<path d="M10.6 12L10.6 15.9996" stroke="url(#paint0_linear_951_33024)" stroke-width="1.5" stroke-linecap="round"></path>
+												<path d="M13.601 12L13.601 15.9996" stroke="url(#paint1_linear_951_33024)" stroke-width="1.5" stroke-linecap="round"></path>
+												<defs>
+													<lineargradient id="paint0_linear_951_33024" x1="10.6" y1="12" x2="10.6" y2="15.9996" gradientunits="userSpaceOnUse">
+														<stop stop-color="#0184FF"></stop>
+														<stop offset="1" stop-color="#0184FF" stop-opacity="0"></stop>
+													</lineargradient>
+													<lineargradient id="paint1_linear_951_33024" x1="13.601" y1="12" x2="13.601" y2="15.9996" gradientunits="userSpaceOnUse">
+														<stop stop-color="#0184FF"></stop>
+														<stop offset="1" stop-color="#0184FF" stop-opacity="0"></stop>
+													</lineargradient>
+												</defs>
+											</svg></button>
+									</li>
+									<li class="header__cart-item" data-element="item">
+										<div class="header__cart-image-wrapper">
+											<picture class="picture header__cart-image">
+												<source type="image/webp" srcset="assets/images/catalog-card.webp"><img class="picture__img" src="assets/images/catalog-card.png">
+											</picture>
+										</div>
+										<div class="header__cart-desc">
+											<h4 class="header__cart-title">АЛЬФАПОЛ ПУ-4 ВН АСХ АЛЬФАПОЛ ПУ-4 ВН АСХ</h4>
+											<p class="header__cart-subtitle">Антистатический кислотостойкий щелочестойкий термостойкий полиуретан-цементный промышленный пол Антистатический кислотостойкий щелочестойкий термостойкий полиуретан-цементный промышленный пол</p>
+										</div><button class="header__cart-remove contact-form__close" data-action="remove-item"><svg class="header__cart-remove-svg contact-form__close-svg" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path fill-rule="evenodd" clip-rule="evenodd" d="M17.0004 8.39999L6.9996 8.39999C6.44754 8.39999 6 8.84753 6 9.39959L6 17.4C6 19.0568 7.34315 20.4 9 20.4L15 20.4C15.7956 20.4 16.5587 20.0839 17.1213 19.5213C17.6839 18.9587 18 18.1956 18 17.4L18 9.39959C18 8.84753 17.5525 8.39999 17.0004 8.39999Z" stroke="#0E2245" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+												<path fill-rule="evenodd" clip-rule="evenodd" d="M15.5999 5.99991L14.7311 4.26351C14.528 3.85704 14.1127 3.60016 13.6583 3.59991L10.3415 3.59991C9.8871 3.60016 9.47182 3.85704 9.2687 4.26351L8.3999 5.99991L15.5999 5.99991Z" stroke="#0E2245" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+												<path d="M15.6 5.25C15.1857 5.25 14.85 5.58579 14.85 6C14.85 6.41421 15.1857 6.75 15.6 6.75L15.6 5.25ZM18 6.75C18.4142 6.75 18.75 6.41421 18.75 6C18.75 5.58579 18.4142 5.25 18 5.25L18 6.75ZM8.4 6.75C8.81421 6.75 9.15 6.41421 9.15 6C9.15 5.58579 8.81421 5.25 8.4 5.25L8.4 6.75ZM6 5.25C5.58579 5.25 5.25 5.58579 5.25 6C5.25 6.41421 5.58579 6.75 6 6.75L6 5.25ZM15.6 6.75L18 6.75L18 5.25L15.6 5.25L15.6 6.75ZM8.4 5.25L6 5.25L6 6.75L8.4 6.75L8.4 5.25Z" fill="#0E2245"></path>
+												<path d="M10.6 12L10.6 15.9996" stroke="url(#paint0_linear_951_33024)" stroke-width="1.5" stroke-linecap="round"></path>
+												<path d="M13.601 12L13.601 15.9996" stroke="url(#paint1_linear_951_33024)" stroke-width="1.5" stroke-linecap="round"></path>
+												<defs>
+													<lineargradient id="paint0_linear_951_33024" x1="10.6" y1="12" x2="10.6" y2="15.9996" gradientunits="userSpaceOnUse">
+														<stop stop-color="#0184FF"></stop>
+														<stop offset="1" stop-color="#0184FF" stop-opacity="0"></stop>
+													</lineargradient>
+													<lineargradient id="paint1_linear_951_33024" x1="13.601" y1="12" x2="13.601" y2="15.9996" gradientunits="userSpaceOnUse">
+														<stop stop-color="#0184FF"></stop>
+														<stop offset="1" stop-color="#0184FF" stop-opacity="0"></stop>
+													</lineargradient>
+												</defs>
+											</svg></button>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="contact-form__controls header__cart-controls"><a class="primary-button hover-btn wide" href="#">
+								<div class="hover-btn__bg dark-blue"></div>
+								<div class="hover-btn__content">
+									<div class="hover-btn__content-top primary-button__content">
+										<div class="primary-button__span">Оформить заказ</div><svg class="primary-button__svg primary-button__svg_rotate" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M21.2705 11.0193C21.6732 11.3983 21.6919 12.0321 21.3122 12.4342L18.727 15.1714C18.1058 15.8292 17 15.3895 17 14.4848L17 9.31443C17 8.43805 18.0472 7.98559 18.6854 8.58623L21.2705 11.0193Z" fill="white"></path>
+											<path d="M2 11C1.58579 11 1.25 11.3358 1.25 11.75C1.25 12.1642 1.58579 12.5 2 12.5L2 11ZM17 11L2 11L2 12.5L17 12.5L17 11Z" fill="white"></path>
+										</svg>
+									</div>
+									<div class="hover-btn__content-bot primary-button__content">
+										<div class="primary-button__span">Оформить заказ</div><svg class="primary-button__svg primary-button__svg_rotate" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M21.2705 11.0193C21.6732 11.3983 21.6919 12.0321 21.3122 12.4342L18.727 15.1714C18.1058 15.8292 17 15.3895 17 14.4848L17 9.31443C17 8.43805 18.0472 7.98559 18.6854 8.58623L21.2705 11.0193Z" fill="white"></path>
+											<path d="M2 11C1.58579 11 1.25 11.3358 1.25 11.75C1.25 12.1642 1.58579 12.5 2 12.5L2 11ZM17 11L2 11L2 12.5L17 12.5L17 11Z" fill="white"></path>
+										</svg>
+									</div>
+								</div>
+							</a></div>
+					</div>
+					<div class="header__cart-empty" data-element="popup-success">
+						<div class="header__cart-empty-wrapper"><svg class="header__cart-empty-svg" width="160" height="160" viewbox="0 0 160 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M18 35.409L34.9091 94.5909H108.182M108.182 94.5909L130.727 15.6818H142M108.182 94.5909L118.6 112.822C118.981 113.489 118.499 114.318 117.731 114.318H34.9091" stroke="#0E2245" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+								<circle cx="43.3637" cy="136.864" r="8.45455" stroke="#0E2245" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></circle>
+								<circle cx="111" cy="136.864" r="8.45455" stroke="#0E2245" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></circle>
+								<path d="M57 35L86.1737 64.1737" stroke="url(#paint0_linear_741_18028)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+								<path d="M86.1738 35L57.0001 64.1737" stroke="url(#paint1_linear_741_18028)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+								<defs>
+									<lineargradient id="paint0_linear_741_18028" x1="71.5869" y1="39.5307" x2="71.5869" y2="66.8894" gradientunits="userSpaceOnUse">
+										<stop stop-color="#0184FF"></stop>
+										<stop offset="1" stop-color="#0184FF" stop-opacity="0"></stop>
+									</lineargradient>
+									<lineargradient id="paint1_linear_741_18028" x1="71.587" y1="39.5307" x2="71.587" y2="66.8894" gradientunits="userSpaceOnUse">
+										<stop stop-color="#0184FF"></stop>
+										<stop offset="1" stop-color="#0184FF" stop-opacity="0"></stop>
+									</lineargradient>
+								</defs>
+							</svg>
+							<h4 class="contact-form__title header__cart-empty-title">корзина пуста</h4><a class="primary-button hover-btn header__cart-empty-link" href="#">
+								<div class="hover-btn__bg dark-blue"></div>
+								<div class="hover-btn__content">
+									<div class="hover-btn__content-top primary-button__content">
+										<div class="primary-button__span">Перейти в каталог</div><svg class="primary-button__svg primary-button__svg_rotate" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M21.2705 11.0193C21.6732 11.3983 21.6919 12.0321 21.3122 12.4342L18.727 15.1714C18.1058 15.8292 17 15.3895 17 14.4848L17 9.31443C17 8.43805 18.0472 7.98559 18.6854 8.58623L21.2705 11.0193Z" fill="white"></path>
+											<path d="M2 11C1.58579 11 1.25 11.3358 1.25 11.75C1.25 12.1642 1.58579 12.5 2 12.5L2 11ZM17 11L2 11L2 12.5L17 12.5L17 11Z" fill="white"></path>
+										</svg>
+									</div>
+									<div class="hover-btn__content-bot primary-button__content">
+										<div class="primary-button__span">Перейти в каталог</div><svg class="primary-button__svg primary-button__svg_rotate" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M21.2705 11.0193C21.6732 11.3983 21.6919 12.0321 21.3122 12.4342L18.727 15.1714C18.1058 15.8292 17 15.3895 17 14.4848L17 9.31443C17 8.43805 18.0472 7.98559 18.6854 8.58623L21.2705 11.0193Z" fill="white"></path>
+											<path d="M2 11C1.58579 11 1.25 11.3358 1.25 11.75C1.25 12.1642 1.58579 12.5 2 12.5L2 11ZM17 11L2 11L2 12.5L17 12.5L17 11Z" fill="white"></path>
+										</svg>
+									</div>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="modal-search" data-no-overlay-modal="open-search-modal" data-element="popup">
+					<div class="modal-search__inner" data-content>
+						<h2 class="modal-search__title">поиск</h2>
+						<form class="search-results__form">
+							<div class="input-wrapper" data-input-parent="">
+								<div class="input-wrapper__placeholder">Что вы хотите найти?</div><input class="input" data-input="" autocomplete="off" required placeholder="Что вы хотите найти?"><svg class="input-wrapper-svg" width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<g opacity="0.3">
+										<path d="M5 5L15 15" stroke="#0E2245" stroke-width="1.5" stroke-linecap="round"></path>
+										<path d="M15 5L5 15" stroke="#0E2245" stroke-width="1.5" stroke-linecap="round"></path>
+									</g>
+								</svg>
+							</div>
+							<div class="search-results__form-btn"><button class="primary-button hover-btn">
+									<div class="hover-btn__bg dark-blue"></div>
+									<div class="hover-btn__content">
+										<div class="hover-btn__content-top primary-button__content">
+											<div class="primary-button__span">Поиск</div><svg class="primary-button__svg primary-button__svg_rotate" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M21.2705 11.0193C21.6732 11.3983 21.6919 12.0321 21.3122 12.4342L18.727 15.1714C18.1058 15.8292 17 15.3895 17 14.4848L17 9.31443C17 8.43805 18.0472 7.98559 18.6854 8.58623L21.2705 11.0193Z" fill="white"></path>
+												<path d="M2 11C1.58579 11 1.25 11.3358 1.25 11.75C1.25 12.1642 1.58579 12.5 2 12.5L2 11ZM17 11L2 11L2 12.5L17 12.5L17 11Z" fill="white"></path>
+											</svg>
+										</div>
+										<div class="hover-btn__content-bot primary-button__content">
+											<div class="primary-button__span">Поиск</div><svg class="primary-button__svg primary-button__svg_rotate" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M21.2705 11.0193C21.6732 11.3983 21.6919 12.0321 21.3122 12.4342L18.727 15.1714C18.1058 15.8292 17 15.3895 17 14.4848L17 9.31443C17 8.43805 18.0472 7.98559 18.6854 8.58623L21.2705 11.0193Z" fill="white"></path>
+												<path d="M2 11C1.58579 11 1.25 11.3358 1.25 11.75C1.25 12.1642 1.58579 12.5 2 12.5L2 11ZM17 11L2 11L2 12.5L17 12.5L17 11Z" fill="white"></path>
+											</svg>
+										</div>
+									</div>
+								</button></div>
+						</form><button class="contact-form__close" data-action="close-popup"><svg class="contact-form__close-svg" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M6 6L18 18" stroke="#0E2245" stroke-width="1.5" stroke-linecap="round"></path>
+								<path d="M18 6L6 18" stroke="#0E2245" stroke-width="1.5" stroke-linecap="round"></path>
+							</svg></button>
+					</div>
+				</div>
 			</main>
 			<footer class="footer">
 				<div class="footer__inner">
