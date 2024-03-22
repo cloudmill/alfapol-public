@@ -1251,8 +1251,8 @@
 									</div>
 								</div>
 								<div class="product-form__input-wrapper">
-									<div class="textarea-wrapper"><label class="input-wrapper textarea-label textarea_blue one-storied-desktop" for="product-form-msg" data-input-parent="">
-											<div class="input-wrapper__placeholder">Сопроводительное письмо</div><textarea class="input input_textarea textarea_blue one-storied-desktop" data-input="" autocomplete="off" data-parsley-errors-container="#product-form-msg-error" id="product-form-msg" type="text" name="message" placeholder="Сопроводительное письмо" maxlength="255" data-text-area="textarea" rows="1" wrap="soft"></textarea>
+									<div class="textarea-wrapper"><label class="input-wrapper textarea-label textarea_blue two-storied-desktop" for="product-form-msg" data-input-parent="">
+											<div class="input-wrapper__placeholder">Сопроводительное письмо</div><textarea class="input input_textarea textarea_blue two-storied-desktop" data-input="" autocomplete="off" data-parsley-errors-container="#product-form-msg-error" id="product-form-msg" type="text" name="message" placeholder="Сопроводительное письмо" data-text-area="textarea" rows="1" wrap="soft"></textarea>
 										</label>
 										<div id="product-form-msg-error"></div>
 									</div>
@@ -1328,7 +1328,7 @@
 							</div>
 							<form class="contact-form__inputs" id="vacancy-production-form" data-element="vacation-form">
 								<div class="input-wrapper" data-input-parent="">
-									<div class="input-wrapper__placeholder">Имя или название организации</div><input class="input contact-form__input" data-input="" autocomplete="off" required name="name" placeholder="Имя или название организации"><svg class="input-wrapper-svg" width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<div class="input-wrapper__placeholder">Имя*</div><input class="input contact-form__input" data-input="" autocomplete="off" required name="name" placeholder="Имя*"><svg class="input-wrapper-svg" width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
 										<g opacity="0.3">
 											<path d="M5 5L15 15" stroke="#0E2245" stroke-width="1.5" stroke-linecap="round"></path>
 											<path d="M15 5L5 15" stroke="#0E2245" stroke-width="1.5" stroke-linecap="round"></path>
@@ -1344,7 +1344,7 @@
 									</svg>
 								</div>
 								<div class="textarea-wrapper"><label class="input-wrapper textarea-label contact-form__text-area" for="production-textarea" data-input-parent="">
-										<div class="input-wrapper__placeholder">Сопроводительное письмо</div><textarea class="input input_textarea contact-form__text-area" data-input="" autocomplete="off" data-parsley-errors-container="#production-textarea-error" name="contact-form-text-area" placeholder="Сопроводительное письмо" maxlength="255" id="production-textarea"></textarea>
+										<div class="input-wrapper__placeholder">Сопроводительное письмо</div><textarea class="input input_textarea contact-form__text-area" data-input="" autocomplete="off" data-parsley-errors-container="#production-textarea-error" name="contact-form-text-area" placeholder="Сопроводительное письмо" id="production-textarea"></textarea>
 									</label>
 									<div id="production-textarea-error"></div>
 								</div>
@@ -1392,18 +1392,8 @@
 							<p class="contact-form__success-desc">Спасибо. Мы свяжемся с вами в ближайшее время.</p><button class="primary-button hover-btn contact-form__success-close" data-action="close-popup">
 								<div class="hover-btn__bg dark-blue"></div>
 								<div class="hover-btn__content">
-									<div class="hover-btn__content-top primary-button__content">
-										<div class="primary-button__span">Закрыть</div><svg class="primary-button__svg primary-button__svg_rotate" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<path d="M21.2705 11.0193C21.6732 11.3983 21.6919 12.0321 21.3122 12.4342L18.727 15.1714C18.1058 15.8292 17 15.3895 17 14.4848L17 9.31443C17 8.43805 18.0472 7.98559 18.6854 8.58623L21.2705 11.0193Z" fill="white"></path>
-											<path d="M2 11C1.58579 11 1.25 11.3358 1.25 11.75C1.25 12.1642 1.58579 12.5 2 12.5L2 11ZM17 11L2 11L2 12.5L17 12.5L17 11Z" fill="white"></path>
-										</svg>
-									</div>
-									<div class="hover-btn__content-bot primary-button__content">
-										<div class="primary-button__span">Закрыть</div><svg class="primary-button__svg primary-button__svg_rotate" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<path d="M21.2705 11.0193C21.6732 11.3983 21.6919 12.0321 21.3122 12.4342L18.727 15.1714C18.1058 15.8292 17 15.3895 17 14.4848L17 9.31443C17 8.43805 18.0472 7.98559 18.6854 8.58623L21.2705 11.0193Z" fill="white"></path>
-											<path d="M2 11C1.58579 11 1.25 11.3358 1.25 11.75C1.25 12.1642 1.58579 12.5 2 12.5L2 11ZM17 11L2 11L2 12.5L17 12.5L17 11Z" fill="white"></path>
-										</svg>
-									</div>
+									<div class="hover-btn__content-top primary-button__content">Закрыть</div>
+									<div class="hover-btn__content-bot primary-button__content">Закрыть</div>
 								</div>
 							</button>
 						</div>
@@ -1421,7 +1411,7 @@
 							</div>
 							<form class="contact-form__inputs" id="vacancy-office-form" data-element="vacation-form">
 								<div class="input-wrapper" data-input-parent="">
-									<div class="input-wrapper__placeholder">Имя или название организации</div><input class="input contact-form__input" data-input="" autocomplete="off" required name="name" placeholder="Имя или название организации"><svg class="input-wrapper-svg" width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<div class="input-wrapper__placeholder">Имя*</div><input class="input contact-form__input" data-input="" autocomplete="off" required name="name" placeholder="Имя*"><svg class="input-wrapper-svg" width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
 										<g opacity="0.3">
 											<path d="M5 5L15 15" stroke="#0E2245" stroke-width="1.5" stroke-linecap="round"></path>
 											<path d="M15 5L5 15" stroke="#0E2245" stroke-width="1.5" stroke-linecap="round"></path>
@@ -1437,7 +1427,7 @@
 									</svg>
 								</div>
 								<div class="textarea-wrapper"><label class="input-wrapper textarea-label contact-form__text-area" for="office-textarea" data-input-parent="">
-										<div class="input-wrapper__placeholder">Сопроводительное письмо</div><textarea class="input input_textarea contact-form__text-area" data-input="" autocomplete="off" data-parsley-errors-container="#office-textarea-error" name="contact-form-text-area" placeholder="Сопроводительное письмо" maxlength="255" id="office-textarea"></textarea>
+										<div class="input-wrapper__placeholder">Сопроводительное письмо</div><textarea class="input input_textarea contact-form__text-area" data-input="" autocomplete="off" data-parsley-errors-container="#office-textarea-error" name="contact-form-text-area" placeholder="Сопроводительное письмо" id="office-textarea"></textarea>
 									</label>
 									<div id="office-textarea-error"></div>
 								</div>
@@ -1485,18 +1475,8 @@
 							<p class="contact-form__success-desc">Спасибо. Мы свяжемся с вами в ближайшее время.</p><button class="primary-button hover-btn contact-form__success-close" data-action="close-popup">
 								<div class="hover-btn__bg dark-blue"></div>
 								<div class="hover-btn__content">
-									<div class="hover-btn__content-top primary-button__content">
-										<div class="primary-button__span">Закрыть</div><svg class="primary-button__svg primary-button__svg_rotate" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<path d="M21.2705 11.0193C21.6732 11.3983 21.6919 12.0321 21.3122 12.4342L18.727 15.1714C18.1058 15.8292 17 15.3895 17 14.4848L17 9.31443C17 8.43805 18.0472 7.98559 18.6854 8.58623L21.2705 11.0193Z" fill="white"></path>
-											<path d="M2 11C1.58579 11 1.25 11.3358 1.25 11.75C1.25 12.1642 1.58579 12.5 2 12.5L2 11ZM17 11L2 11L2 12.5L17 12.5L17 11Z" fill="white"></path>
-										</svg>
-									</div>
-									<div class="hover-btn__content-bot primary-button__content">
-										<div class="primary-button__span">Закрыть</div><svg class="primary-button__svg primary-button__svg_rotate" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<path d="M21.2705 11.0193C21.6732 11.3983 21.6919 12.0321 21.3122 12.4342L18.727 15.1714C18.1058 15.8292 17 15.3895 17 14.4848L17 9.31443C17 8.43805 18.0472 7.98559 18.6854 8.58623L21.2705 11.0193Z" fill="white"></path>
-											<path d="M2 11C1.58579 11 1.25 11.3358 1.25 11.75C1.25 12.1642 1.58579 12.5 2 12.5L2 11ZM17 11L2 11L2 12.5L17 12.5L17 11Z" fill="white"></path>
-										</svg>
-									</div>
+									<div class="hover-btn__content-top primary-button__content">Закрыть</div>
+									<div class="hover-btn__content-bot primary-button__content">Закрыть</div>
 								</div>
 							</button>
 						</div>
@@ -1562,18 +1542,8 @@
 							<p class="contact-form__success-desc">Спасибо. Мы свяжемся с вами в ближайшее время.</p><button class="primary-button hover-btn contact-form__success-close" data-action="close-popup">
 								<div class="hover-btn__bg dark-blue"></div>
 								<div class="hover-btn__content">
-									<div class="hover-btn__content-top primary-button__content">
-										<div class="primary-button__span">Закрыть</div><svg class="primary-button__svg primary-button__svg_rotate" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<path d="M21.2705 11.0193C21.6732 11.3983 21.6919 12.0321 21.3122 12.4342L18.727 15.1714C18.1058 15.8292 17 15.3895 17 14.4848L17 9.31443C17 8.43805 18.0472 7.98559 18.6854 8.58623L21.2705 11.0193Z" fill="white"></path>
-											<path d="M2 11C1.58579 11 1.25 11.3358 1.25 11.75C1.25 12.1642 1.58579 12.5 2 12.5L2 11ZM17 11L2 11L2 12.5L17 12.5L17 11Z" fill="white"></path>
-										</svg>
-									</div>
-									<div class="hover-btn__content-bot primary-button__content">
-										<div class="primary-button__span">Закрыть</div><svg class="primary-button__svg primary-button__svg_rotate" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<path d="M21.2705 11.0193C21.6732 11.3983 21.6919 12.0321 21.3122 12.4342L18.727 15.1714C18.1058 15.8292 17 15.3895 17 14.4848L17 9.31443C17 8.43805 18.0472 7.98559 18.6854 8.58623L21.2705 11.0193Z" fill="white"></path>
-											<path d="M2 11C1.58579 11 1.25 11.3358 1.25 11.75C1.25 12.1642 1.58579 12.5 2 12.5L2 11ZM17 11L2 11L2 12.5L17 12.5L17 11Z" fill="white"></path>
-										</svg>
-									</div>
+									<div class="hover-btn__content-top primary-button__content">Закрыть</div>
+									<div class="hover-btn__content-bot primary-button__content">Закрыть</div>
 								</div>
 							</button>
 						</div>
