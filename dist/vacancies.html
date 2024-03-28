@@ -448,6 +448,182 @@
 				<div class="overlay submodal" data-element="submodal" data-action="close-submodal"></div>
 				<div class="overlay high" data-element="popup" data-action="close-popup"></div>
 				<div class="overlay low" data-element="popup" data-action="close-popup"></div>
+				<div class="contact-form" data-element="popup" data-form-target="apply-vacation-production"><button class="contact-form__close" data-action="close-popup"><svg class="contact-form__close-svg" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M6 6L18 18" stroke="#0E2245" stroke-width="1.5" stroke-linecap="round"></path>
+							<path d="M18 6L6 18" stroke="#0E2245" stroke-width="1.5" stroke-linecap="round"></path>
+						</svg></button>
+					<div class="contact-form__wrapper">
+						<div class="contact-form__inner" data-element="popup-content">
+							<div class="contact-form__header">
+								<h4 class="contact-form__title">откликнуться на вакансию</h4>
+								<div id="about-subtitle"></div>
+							</div>
+							<form class="contact-form__inputs" id="vacancy-production-form" data-element="vacation-form">
+								<div class="input-wrapper" data-input-parent="" data-lenis-prevent="true">
+									<div class="input-wrapper__placeholder">Имя*</div><input class="input contact-form__input" data-input="" name="input" autocomplete="no" data-lenis-prevent="true" required placeholder="Имя*" maxlength="50"><svg class="input-wrapper-svg" width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<g opacity="0.3">
+											<path d="M5 5L15 15" stroke="#0E2245" stroke-width="1.5" stroke-linecap="round"></path>
+											<path d="M15 5L5 15" stroke="#0E2245" stroke-width="1.5" stroke-linecap="round"></path>
+										</g>
+									</svg>
+								</div>
+								<div class="input-wrapper" data-input-parent="" data-lenis-prevent="true">
+									<div class="input-wrapper__placeholder">Телефон*</div><input class="input contact-form__input" data-input="" name="input" autocomplete="no" data-lenis-prevent="true" required type="tel" placeholder="Телефон*" data-mask-phone data-parsley-phone-required><svg class="input-wrapper-svg" width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<g opacity="0.3">
+											<path d="M5 5L15 15" stroke="#0E2245" stroke-width="1.5" stroke-linecap="round"></path>
+											<path d="M15 5L5 15" stroke="#0E2245" stroke-width="1.5" stroke-linecap="round"></path>
+										</g>
+									</svg>
+								</div>
+								<div class="textarea-wrapper input-wrapper" data-input-parent="" data-lenis-prevent="true"><label class="textarea-label contact-form__text-area" for="production-textarea">
+										<div class="input-wrapper__placeholder">Сопроводительное письмо</div><textarea class="input input_textarea contact-form__text-area" data-input="" autocomplete="no" data-parsley-errors-container="#production-textarea-error" data-lenis-prevent="true" name="contact-form-text-area" placeholder="Сопроводительное письмо" id="production-textarea"></textarea>
+									</label><svg class="input-wrapper-svg" width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<g opacity="0.3">
+											<path d="M5 5L15 15" stroke="#0E2245" stroke-width="1.5" stroke-linecap="round"></path>
+											<path d="M15 5L5 15" stroke="#0E2245" stroke-width="1.5" stroke-linecap="round"></path>
+										</g>
+									</svg>
+									<div id="production-textarea-error"></div>
+								</div>
+							</form>
+							<div class="add-attachment__wrapper" data-element="add-files-block">
+								<ul class="add-attachment__files added" data-element="file-list">
+									<li class="add-attachment__file" data-element="file">
+										<div class="add-attachment__file-name">resume.pdf</div><button class="add-attachment__file-remove" data-action="remove-file"></button>
+									</li>
+								</ul><label class="add-attachment__btn" for="add-file-undefined" data-action="attach-file">
+									<div class="add-attachment__icon"></div>
+									<div class="add-attachment__text">Прикрепить резюме</div><input class="add-attachment__input" id="add-file-undefined" type="file" name="file">
+								</label>
+							</div>
+							<div class="contact-form__agreement">Нажимая кнопку «Отправить», я даю согласие на обработку <a class="contact-form__personal" href="#">персональных данных</a></div><button class="primary-button hover-btn wide contact-form__submit" form="vacancy-production-form" type="submit" value="Отправить">
+								<div class="hover-btn__bg dark-blue"></div>
+								<div class="hover-btn__content">
+									<div class="hover-btn__content-top primary-button__content">
+										<div class="primary-button__span">Отправить</div><svg class="primary-button__svg primary-button__svg_rotate" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M21.2705 11.0193C21.6732 11.3983 21.6919 12.0321 21.3122 12.4342L18.727 15.1714C18.1058 15.8292 17 15.3895 17 14.4848L17 9.31443C17 8.43805 18.0472 7.98559 18.6854 8.58623L21.2705 11.0193Z" fill="white"></path>
+											<path d="M2 11C1.58579 11 1.25 11.3358 1.25 11.75C1.25 12.1642 1.58579 12.5 2 12.5L2 11ZM17 11L2 11L2 12.5L17 12.5L17 11Z" fill="white"></path>
+										</svg>
+									</div>
+									<div class="hover-btn__content-bot primary-button__content">
+										<div class="primary-button__span">Отправить</div><svg class="primary-button__svg primary-button__svg_rotate" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M21.2705 11.0193C21.6732 11.3983 21.6919 12.0321 21.3122 12.4342L18.727 15.1714C18.1058 15.8292 17 15.3895 17 14.4848L17 9.31443C17 8.43805 18.0472 7.98559 18.6854 8.58623L21.2705 11.0193Z" fill="white"></path>
+											<path d="M2 11C1.58579 11 1.25 11.3358 1.25 11.75C1.25 12.1642 1.58579 12.5 2 12.5L2 11ZM17 11L2 11L2 12.5L17 12.5L17 11Z" fill="white"></path>
+										</svg>
+									</div>
+								</div>
+							</button>
+						</div>
+						<div class="contact-form__success" data-element="popup-success"><svg class="contact-form__success-svg" width="160" height="160" viewbox="0 0 160 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<rect width="160" height="160" fill="white"></rect>
+								<circle cx="80" cy="80" r="66.25" stroke="url(#paint0_linear_766_16456)" stroke-width="1.5"></circle>
+								<path d="M63 80.5451L71.3089 88.387C72.8596 89.8505 75.2857 89.8404 76.8241 88.3639L97 69" stroke="#0E2245" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+								<defs>
+									<lineargradient id="paint0_linear_766_16456" x1="80" y1="13" x2="80" y2="147" gradientunits="userSpaceOnUse">
+										<stop stop-color="#0184FF"></stop>
+										<stop offset="1" stop-color="#0184FF" stop-opacity="0"></stop>
+									</lineargradient>
+								</defs>
+							</svg>
+							<h4 class="contact-form__success-title">отправлено</h4>
+							<p class="contact-form__success-desc">Спасибо. Мы свяжемся с вами в ближайшее время.</p><button class="primary-button hover-btn contact-form__success-close" data-action="close-popup">
+								<div class="hover-btn__bg dark-blue"></div>
+								<div class="hover-btn__content">
+									<div class="hover-btn__content-top primary-button__content">Закрыть</div>
+									<div class="hover-btn__content-bot primary-button__content">Закрыть</div>
+								</div>
+							</button>
+						</div>
+					</div>
+				</div>
+				<div class="contact-form" data-element="popup" data-form-target="apply-vacation-office"><button class="contact-form__close" data-action="close-popup"><svg class="contact-form__close-svg" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M6 6L18 18" stroke="#0E2245" stroke-width="1.5" stroke-linecap="round"></path>
+							<path d="M18 6L6 18" stroke="#0E2245" stroke-width="1.5" stroke-linecap="round"></path>
+						</svg></button>
+					<div class="contact-form__wrapper">
+						<div class="contact-form__inner" data-element="popup-content">
+							<div class="contact-form__header">
+								<h4 class="contact-form__title">откликнуться на вакансию</h4>
+								<div id="about-subtitle"></div>
+							</div>
+							<form class="contact-form__inputs" id="vacancy-office-form" data-element="vacation-form">
+								<div class="input-wrapper" data-input-parent="" data-lenis-prevent="true">
+									<div class="input-wrapper__placeholder">Имя*</div><input class="input contact-form__input" data-input="" name="input" autocomplete="no" data-lenis-prevent="true" required placeholder="Имя*" maxlength="50"><svg class="input-wrapper-svg" width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<g opacity="0.3">
+											<path d="M5 5L15 15" stroke="#0E2245" stroke-width="1.5" stroke-linecap="round"></path>
+											<path d="M15 5L5 15" stroke="#0E2245" stroke-width="1.5" stroke-linecap="round"></path>
+										</g>
+									</svg>
+								</div>
+								<div class="input-wrapper" data-input-parent="" data-lenis-prevent="true">
+									<div class="input-wrapper__placeholder">Телефон*</div><input class="input contact-form__input" data-input="" name="input" autocomplete="no" data-lenis-prevent="true" required type="tel" placeholder="Телефон*" data-mask-phone data-parsley-phone-required><svg class="input-wrapper-svg" width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<g opacity="0.3">
+											<path d="M5 5L15 15" stroke="#0E2245" stroke-width="1.5" stroke-linecap="round"></path>
+											<path d="M15 5L5 15" stroke="#0E2245" stroke-width="1.5" stroke-linecap="round"></path>
+										</g>
+									</svg>
+								</div>
+								<div class="textarea-wrapper input-wrapper" data-input-parent="" data-lenis-prevent="true"><label class="textarea-label contact-form__text-area" for="office-textarea">
+										<div class="input-wrapper__placeholder">Сопроводительное письмо</div><textarea class="input input_textarea contact-form__text-area" data-input="" autocomplete="no" data-parsley-errors-container="#office-textarea-error" data-lenis-prevent="true" name="contact-form-text-area" placeholder="Сопроводительное письмо" id="office-textarea"></textarea>
+									</label><svg class="input-wrapper-svg" width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<g opacity="0.3">
+											<path d="M5 5L15 15" stroke="#0E2245" stroke-width="1.5" stroke-linecap="round"></path>
+											<path d="M15 5L5 15" stroke="#0E2245" stroke-width="1.5" stroke-linecap="round"></path>
+										</g>
+									</svg>
+									<div id="office-textarea-error"></div>
+								</div>
+							</form>
+							<div class="add-attachment__wrapper" data-element="add-files-block">
+								<ul class="add-attachment__files added" data-element="file-list">
+									<li class="add-attachment__file" data-element="file">
+										<div class="add-attachment__file-name">resume.pdf</div><button class="add-attachment__file-remove" data-action="remove-file"></button>
+									</li>
+								</ul><label class="add-attachment__btn" for="add-file-undefined" data-action="attach-file">
+									<div class="add-attachment__icon"></div>
+									<div class="add-attachment__text">Прикрепить резюме</div><input class="add-attachment__input" id="add-file-undefined" type="file" name="file">
+								</label>
+							</div>
+							<div class="contact-form__agreement">Нажимая кнопку «Отправить», я даю согласие на обработку <a class="contact-form__personal" href="#">персональных данных</a></div><button class="primary-button hover-btn wide contact-form__submit" form="vacancy-office-form" type="submit" value="Отправить">
+								<div class="hover-btn__bg dark-blue"></div>
+								<div class="hover-btn__content">
+									<div class="hover-btn__content-top primary-button__content">
+										<div class="primary-button__span">Отправить</div><svg class="primary-button__svg primary-button__svg_rotate" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M21.2705 11.0193C21.6732 11.3983 21.6919 12.0321 21.3122 12.4342L18.727 15.1714C18.1058 15.8292 17 15.3895 17 14.4848L17 9.31443C17 8.43805 18.0472 7.98559 18.6854 8.58623L21.2705 11.0193Z" fill="white"></path>
+											<path d="M2 11C1.58579 11 1.25 11.3358 1.25 11.75C1.25 12.1642 1.58579 12.5 2 12.5L2 11ZM17 11L2 11L2 12.5L17 12.5L17 11Z" fill="white"></path>
+										</svg>
+									</div>
+									<div class="hover-btn__content-bot primary-button__content">
+										<div class="primary-button__span">Отправить</div><svg class="primary-button__svg primary-button__svg_rotate" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M21.2705 11.0193C21.6732 11.3983 21.6919 12.0321 21.3122 12.4342L18.727 15.1714C18.1058 15.8292 17 15.3895 17 14.4848L17 9.31443C17 8.43805 18.0472 7.98559 18.6854 8.58623L21.2705 11.0193Z" fill="white"></path>
+											<path d="M2 11C1.58579 11 1.25 11.3358 1.25 11.75C1.25 12.1642 1.58579 12.5 2 12.5L2 11ZM17 11L2 11L2 12.5L17 12.5L17 11Z" fill="white"></path>
+										</svg>
+									</div>
+								</div>
+							</button>
+						</div>
+						<div class="contact-form__success" data-element="popup-success"><svg class="contact-form__success-svg" width="160" height="160" viewbox="0 0 160 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<rect width="160" height="160" fill="white"></rect>
+								<circle cx="80" cy="80" r="66.25" stroke="url(#paint0_linear_766_16456)" stroke-width="1.5"></circle>
+								<path d="M63 80.5451L71.3089 88.387C72.8596 89.8505 75.2857 89.8404 76.8241 88.3639L97 69" stroke="#0E2245" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+								<defs>
+									<lineargradient id="paint0_linear_766_16456" x1="80" y1="13" x2="80" y2="147" gradientunits="userSpaceOnUse">
+										<stop stop-color="#0184FF"></stop>
+										<stop offset="1" stop-color="#0184FF" stop-opacity="0"></stop>
+									</lineargradient>
+								</defs>
+							</svg>
+							<h4 class="contact-form__success-title">отправлено</h4>
+							<p class="contact-form__success-desc">Спасибо. Мы свяжемся с вами в ближайшее время.</p><button class="primary-button hover-btn contact-form__success-close" data-action="close-popup">
+								<div class="hover-btn__bg dark-blue"></div>
+								<div class="hover-btn__content">
+									<div class="hover-btn__content-top primary-button__content">Закрыть</div>
+									<div class="hover-btn__content-bot primary-button__content">Закрыть</div>
+								</div>
+							</button>
+						</div>
+					</div>
+				</div>
 				<section class="section about-company__hero">
 					<div class="about-company__hero-inner">
 						<div class="breadcrumbs about-company__breadcrumbs">
@@ -1322,182 +1498,6 @@
 						</div>
 					</div>
 				</section>
-				<div class="contact-form" data-element="popup" data-form-target="apply-vacation-production"><button class="contact-form__close" data-action="close-popup"><svg class="contact-form__close-svg" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-							<path d="M6 6L18 18" stroke="#0E2245" stroke-width="1.5" stroke-linecap="round"></path>
-							<path d="M18 6L6 18" stroke="#0E2245" stroke-width="1.5" stroke-linecap="round"></path>
-						</svg></button>
-					<div class="contact-form__wrapper">
-						<div class="contact-form__inner" data-element="popup-content">
-							<div class="contact-form__header">
-								<h4 class="contact-form__title">откликнуться на вакансию</h4>
-								<div id="about-subtitle"></div>
-							</div>
-							<form class="contact-form__inputs" id="vacancy-production-form" data-element="vacation-form">
-								<div class="input-wrapper" data-input-parent="" data-lenis-prevent="true">
-									<div class="input-wrapper__placeholder">Имя*</div><input class="input contact-form__input" data-input="" name="input" autocomplete="no" data-lenis-prevent="true" required placeholder="Имя*" maxlength="50"><svg class="input-wrapper-svg" width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<g opacity="0.3">
-											<path d="M5 5L15 15" stroke="#0E2245" stroke-width="1.5" stroke-linecap="round"></path>
-											<path d="M15 5L5 15" stroke="#0E2245" stroke-width="1.5" stroke-linecap="round"></path>
-										</g>
-									</svg>
-								</div>
-								<div class="input-wrapper" data-input-parent="" data-lenis-prevent="true">
-									<div class="input-wrapper__placeholder">Телефон*</div><input class="input contact-form__input" data-input="" name="input" autocomplete="no" data-lenis-prevent="true" required type="tel" placeholder="Телефон*" data-mask-phone data-parsley-phone-required><svg class="input-wrapper-svg" width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<g opacity="0.3">
-											<path d="M5 5L15 15" stroke="#0E2245" stroke-width="1.5" stroke-linecap="round"></path>
-											<path d="M15 5L5 15" stroke="#0E2245" stroke-width="1.5" stroke-linecap="round"></path>
-										</g>
-									</svg>
-								</div>
-								<div class="textarea-wrapper input-wrapper" data-input-parent="" data-lenis-prevent="true"><label class="textarea-label contact-form__text-area" for="production-textarea">
-										<div class="input-wrapper__placeholder">Сопроводительное письмо</div><textarea class="input input_textarea contact-form__text-area" data-input="" autocomplete="no" data-parsley-errors-container="#production-textarea-error" data-lenis-prevent="true" name="contact-form-text-area" placeholder="Сопроводительное письмо" id="production-textarea"></textarea>
-									</label><svg class="input-wrapper-svg" width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<g opacity="0.3">
-											<path d="M5 5L15 15" stroke="#0E2245" stroke-width="1.5" stroke-linecap="round"></path>
-											<path d="M15 5L5 15" stroke="#0E2245" stroke-width="1.5" stroke-linecap="round"></path>
-										</g>
-									</svg>
-									<div id="production-textarea-error"></div>
-								</div>
-							</form>
-							<div class="add-attachment__wrapper" data-element="add-files-block">
-								<ul class="add-attachment__files added" data-element="file-list">
-									<li class="add-attachment__file" data-element="file">
-										<div class="add-attachment__file-name">resume.pdf</div><button class="add-attachment__file-remove" data-action="remove-file"></button>
-									</li>
-								</ul><label class="add-attachment__btn" for="add-file-undefined" data-action="attach-file">
-									<div class="add-attachment__icon"></div>
-									<div class="add-attachment__text">Прикрепить резюме</div><input class="add-attachment__input" id="add-file-undefined" type="file" name="file">
-								</label>
-							</div>
-							<div class="contact-form__agreement">Нажимая кнопку «Отправить», я даю согласие на обработку <a class="contact-form__personal" href="#">персональных данных</a></div><button class="primary-button hover-btn wide contact-form__submit" form="vacancy-production-form" type="submit" value="Отправить">
-								<div class="hover-btn__bg dark-blue"></div>
-								<div class="hover-btn__content">
-									<div class="hover-btn__content-top primary-button__content">
-										<div class="primary-button__span">Отправить</div><svg class="primary-button__svg primary-button__svg_rotate" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<path d="M21.2705 11.0193C21.6732 11.3983 21.6919 12.0321 21.3122 12.4342L18.727 15.1714C18.1058 15.8292 17 15.3895 17 14.4848L17 9.31443C17 8.43805 18.0472 7.98559 18.6854 8.58623L21.2705 11.0193Z" fill="white"></path>
-											<path d="M2 11C1.58579 11 1.25 11.3358 1.25 11.75C1.25 12.1642 1.58579 12.5 2 12.5L2 11ZM17 11L2 11L2 12.5L17 12.5L17 11Z" fill="white"></path>
-										</svg>
-									</div>
-									<div class="hover-btn__content-bot primary-button__content">
-										<div class="primary-button__span">Отправить</div><svg class="primary-button__svg primary-button__svg_rotate" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<path d="M21.2705 11.0193C21.6732 11.3983 21.6919 12.0321 21.3122 12.4342L18.727 15.1714C18.1058 15.8292 17 15.3895 17 14.4848L17 9.31443C17 8.43805 18.0472 7.98559 18.6854 8.58623L21.2705 11.0193Z" fill="white"></path>
-											<path d="M2 11C1.58579 11 1.25 11.3358 1.25 11.75C1.25 12.1642 1.58579 12.5 2 12.5L2 11ZM17 11L2 11L2 12.5L17 12.5L17 11Z" fill="white"></path>
-										</svg>
-									</div>
-								</div>
-							</button>
-						</div>
-						<div class="contact-form__success" data-element="popup-success"><svg class="contact-form__success-svg" width="160" height="160" viewbox="0 0 160 160" fill="none" xmlns="http://www.w3.org/2000/svg">
-								<rect width="160" height="160" fill="white"></rect>
-								<circle cx="80" cy="80" r="66.25" stroke="url(#paint0_linear_766_16456)" stroke-width="1.5"></circle>
-								<path d="M63 80.5451L71.3089 88.387C72.8596 89.8505 75.2857 89.8404 76.8241 88.3639L97 69" stroke="#0E2245" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-								<defs>
-									<lineargradient id="paint0_linear_766_16456" x1="80" y1="13" x2="80" y2="147" gradientunits="userSpaceOnUse">
-										<stop stop-color="#0184FF"></stop>
-										<stop offset="1" stop-color="#0184FF" stop-opacity="0"></stop>
-									</lineargradient>
-								</defs>
-							</svg>
-							<h4 class="contact-form__success-title">отправлено</h4>
-							<p class="contact-form__success-desc">Спасибо. Мы свяжемся с вами в ближайшее время.</p><button class="primary-button hover-btn contact-form__success-close" data-action="close-popup">
-								<div class="hover-btn__bg dark-blue"></div>
-								<div class="hover-btn__content">
-									<div class="hover-btn__content-top primary-button__content">Закрыть</div>
-									<div class="hover-btn__content-bot primary-button__content">Закрыть</div>
-								</div>
-							</button>
-						</div>
-					</div>
-				</div>
-				<div class="contact-form" data-element="popup" data-form-target="apply-vacation-office"><button class="contact-form__close" data-action="close-popup"><svg class="contact-form__close-svg" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-							<path d="M6 6L18 18" stroke="#0E2245" stroke-width="1.5" stroke-linecap="round"></path>
-							<path d="M18 6L6 18" stroke="#0E2245" stroke-width="1.5" stroke-linecap="round"></path>
-						</svg></button>
-					<div class="contact-form__wrapper">
-						<div class="contact-form__inner" data-element="popup-content">
-							<div class="contact-form__header">
-								<h4 class="contact-form__title">откликнуться на вакансию</h4>
-								<div id="about-subtitle"></div>
-							</div>
-							<form class="contact-form__inputs" id="vacancy-office-form" data-element="vacation-form">
-								<div class="input-wrapper" data-input-parent="" data-lenis-prevent="true">
-									<div class="input-wrapper__placeholder">Имя*</div><input class="input contact-form__input" data-input="" name="input" autocomplete="no" data-lenis-prevent="true" required placeholder="Имя*" maxlength="50"><svg class="input-wrapper-svg" width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<g opacity="0.3">
-											<path d="M5 5L15 15" stroke="#0E2245" stroke-width="1.5" stroke-linecap="round"></path>
-											<path d="M15 5L5 15" stroke="#0E2245" stroke-width="1.5" stroke-linecap="round"></path>
-										</g>
-									</svg>
-								</div>
-								<div class="input-wrapper" data-input-parent="" data-lenis-prevent="true">
-									<div class="input-wrapper__placeholder">Телефон*</div><input class="input contact-form__input" data-input="" name="input" autocomplete="no" data-lenis-prevent="true" required type="tel" placeholder="Телефон*" data-mask-phone data-parsley-phone-required><svg class="input-wrapper-svg" width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<g opacity="0.3">
-											<path d="M5 5L15 15" stroke="#0E2245" stroke-width="1.5" stroke-linecap="round"></path>
-											<path d="M15 5L5 15" stroke="#0E2245" stroke-width="1.5" stroke-linecap="round"></path>
-										</g>
-									</svg>
-								</div>
-								<div class="textarea-wrapper input-wrapper" data-input-parent="" data-lenis-prevent="true"><label class="textarea-label contact-form__text-area" for="office-textarea">
-										<div class="input-wrapper__placeholder">Сопроводительное письмо</div><textarea class="input input_textarea contact-form__text-area" data-input="" autocomplete="no" data-parsley-errors-container="#office-textarea-error" data-lenis-prevent="true" name="contact-form-text-area" placeholder="Сопроводительное письмо" id="office-textarea"></textarea>
-									</label><svg class="input-wrapper-svg" width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<g opacity="0.3">
-											<path d="M5 5L15 15" stroke="#0E2245" stroke-width="1.5" stroke-linecap="round"></path>
-											<path d="M15 5L5 15" stroke="#0E2245" stroke-width="1.5" stroke-linecap="round"></path>
-										</g>
-									</svg>
-									<div id="office-textarea-error"></div>
-								</div>
-							</form>
-							<div class="add-attachment__wrapper" data-element="add-files-block">
-								<ul class="add-attachment__files added" data-element="file-list">
-									<li class="add-attachment__file" data-element="file">
-										<div class="add-attachment__file-name">resume.pdf</div><button class="add-attachment__file-remove" data-action="remove-file"></button>
-									</li>
-								</ul><label class="add-attachment__btn" for="add-file-undefined" data-action="attach-file">
-									<div class="add-attachment__icon"></div>
-									<div class="add-attachment__text">Прикрепить резюме</div><input class="add-attachment__input" id="add-file-undefined" type="file" name="file">
-								</label>
-							</div>
-							<div class="contact-form__agreement">Нажимая кнопку «Отправить», я даю согласие на обработку <a class="contact-form__personal" href="#">персональных данных</a></div><button class="primary-button hover-btn wide contact-form__submit" form="vacancy-office-form" type="submit" value="Отправить">
-								<div class="hover-btn__bg dark-blue"></div>
-								<div class="hover-btn__content">
-									<div class="hover-btn__content-top primary-button__content">
-										<div class="primary-button__span">Отправить</div><svg class="primary-button__svg primary-button__svg_rotate" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<path d="M21.2705 11.0193C21.6732 11.3983 21.6919 12.0321 21.3122 12.4342L18.727 15.1714C18.1058 15.8292 17 15.3895 17 14.4848L17 9.31443C17 8.43805 18.0472 7.98559 18.6854 8.58623L21.2705 11.0193Z" fill="white"></path>
-											<path d="M2 11C1.58579 11 1.25 11.3358 1.25 11.75C1.25 12.1642 1.58579 12.5 2 12.5L2 11ZM17 11L2 11L2 12.5L17 12.5L17 11Z" fill="white"></path>
-										</svg>
-									</div>
-									<div class="hover-btn__content-bot primary-button__content">
-										<div class="primary-button__span">Отправить</div><svg class="primary-button__svg primary-button__svg_rotate" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<path d="M21.2705 11.0193C21.6732 11.3983 21.6919 12.0321 21.3122 12.4342L18.727 15.1714C18.1058 15.8292 17 15.3895 17 14.4848L17 9.31443C17 8.43805 18.0472 7.98559 18.6854 8.58623L21.2705 11.0193Z" fill="white"></path>
-											<path d="M2 11C1.58579 11 1.25 11.3358 1.25 11.75C1.25 12.1642 1.58579 12.5 2 12.5L2 11ZM17 11L2 11L2 12.5L17 12.5L17 11Z" fill="white"></path>
-										</svg>
-									</div>
-								</div>
-							</button>
-						</div>
-						<div class="contact-form__success" data-element="popup-success"><svg class="contact-form__success-svg" width="160" height="160" viewbox="0 0 160 160" fill="none" xmlns="http://www.w3.org/2000/svg">
-								<rect width="160" height="160" fill="white"></rect>
-								<circle cx="80" cy="80" r="66.25" stroke="url(#paint0_linear_766_16456)" stroke-width="1.5"></circle>
-								<path d="M63 80.5451L71.3089 88.387C72.8596 89.8505 75.2857 89.8404 76.8241 88.3639L97 69" stroke="#0E2245" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-								<defs>
-									<lineargradient id="paint0_linear_766_16456" x1="80" y1="13" x2="80" y2="147" gradientunits="userSpaceOnUse">
-										<stop stop-color="#0184FF"></stop>
-										<stop offset="1" stop-color="#0184FF" stop-opacity="0"></stop>
-									</lineargradient>
-								</defs>
-							</svg>
-							<h4 class="contact-form__success-title">отправлено</h4>
-							<p class="contact-form__success-desc">Спасибо. Мы свяжемся с вами в ближайшее время.</p><button class="primary-button hover-btn contact-form__success-close" data-action="close-popup">
-								<div class="hover-btn__bg dark-blue"></div>
-								<div class="hover-btn__content">
-									<div class="hover-btn__content-top primary-button__content">Закрыть</div>
-									<div class="hover-btn__content-bot primary-button__content">Закрыть</div>
-								</div>
-							</button>
-						</div>
-					</div>
-				</div>
 				<div class="contact-form" data-element="popup" data-popup="about-popup" data-form-target="contact-us"><button class="contact-form__close" data-action="close-popup"><svg class="contact-form__close-svg" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 							<path d="M6 6L18 18" stroke="#0E2245" stroke-width="1.5" stroke-linecap="round"></path>
 							<path d="M18 6L6 18" stroke="#0E2245" stroke-width="1.5" stroke-linecap="round"></path>
