@@ -8,6 +8,7 @@
 		<link href="./assets/images/favicon.svg" rel="icon" type="image/x-icon">
 		<meta property="og:image" content="./assets/images/opengraph.jpg">
 		<link rel="apple-touch-icon" sizes="180x180" href="./assets/images/appletouch_180_180.svg">
+		<meta name="format-detection" content="telephone=no">
 		<script defer="defer" src="assets/vendor.js"></script>
 		<script defer="defer" src="assets/app.js"></script>
 		<link href="styles.css" rel="stylesheet">
@@ -60,63 +61,127 @@
 					<li class="header__info-li"><a class="header__info-li-link" href="#">Партнерам</a></li>
 				</div>
 				<ul class="header__right-ul">
-					<li class="header__right-li header__line-vl header__line-vr"><button class="header__right-btn transparent-btn header__search" data-client-target="open-search-modal">
-							<div class="transparent-btn__inner"><svg class="icon" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path d="M14 5H20" stroke="url(#paint0_linear_1605_1275)" stroke-width="1.5" stroke-linecap="round"></path>
-									<path d="M14 8H17" stroke="url(#paint1_linear_1605_1275)" stroke-width="1.5" stroke-linecap="round"></path>
-									<path d="M21 11.5C21 16.75 16.75 21 11.5 21C6.25 21 2 16.75 2 11.5C2 6.25 6.25 2 11.5 2" stroke="#0E2245" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-									<path d="M21.4286 21.4286L18.8572 18.8572" stroke="#0E2245" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path>
-									<defs>
-										<lineargradient id="paint0_linear_1605_1275" x1="19.9221" y1="4.90909" x2="15.2105" y2="7.07257" gradientunits="userSpaceOnUse">
-											<stop stop-color="#0184FF"></stop>
-											<stop offset="1" stop-color="#0184FF" stop-opacity="0"></stop>
-										</lineargradient>
-										<lineargradient id="paint1_linear_1605_1275" x1="16.961" y1="7.90909" x2="14.2514" y2="8.53121" gradientunits="userSpaceOnUse">
-											<stop stop-color="#0184FF"></stop>
-											<stop offset="1" stop-color="#0184FF" stop-opacity="0"></stop>
-										</lineargradient>
-									</defs>
-								</svg></div>
+					<li class="header__right-li header__line-vl header__line-vr"><button class="header__right-btn hover-btn transparent-btn header__search" data-client-target="open-search-modal">
+							<div class="hover-btn__bg grey"></div>
+							<div class="hover-btn__content">
+								<div class="hover-btn__content-top transparent-btn__inner"><svg class="icon" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M14 5H20" stroke="url(#paint0_linear_1605_1275)" stroke-width="1.5" stroke-linecap="round"></path>
+										<path d="M14 8H17" stroke="url(#paint1_linear_1605_1275)" stroke-width="1.5" stroke-linecap="round"></path>
+										<path d="M21 11.5C21 16.75 16.75 21 11.5 21C6.25 21 2 16.75 2 11.5C2 6.25 6.25 2 11.5 2" stroke="#0E2245" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+										<path d="M21.4286 21.4286L18.8572 18.8572" stroke="#0E2245" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path>
+										<defs>
+											<lineargradient id="paint0_linear_1605_1275" x1="19.9221" y1="4.90909" x2="15.2105" y2="7.07257" gradientunits="userSpaceOnUse">
+												<stop stop-color="#0184FF"></stop>
+												<stop offset="1" stop-color="#0184FF" stop-opacity="0"></stop>
+											</lineargradient>
+											<lineargradient id="paint1_linear_1605_1275" x1="16.961" y1="7.90909" x2="14.2514" y2="8.53121" gradientunits="userSpaceOnUse">
+												<stop stop-color="#0184FF"></stop>
+												<stop offset="1" stop-color="#0184FF" stop-opacity="0"></stop>
+											</lineargradient>
+										</defs>
+									</svg></div>
+								<div class="hover-btn__content-bot transparent-btn__inner"><svg class="icon" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M14 5H20" stroke="url(#paint0_linear_1605_1275)" stroke-width="1.5" stroke-linecap="round"></path>
+										<path d="M14 8H17" stroke="url(#paint1_linear_1605_1275)" stroke-width="1.5" stroke-linecap="round"></path>
+										<path d="M21 11.5C21 16.75 16.75 21 11.5 21C6.25 21 2 16.75 2 11.5C2 6.25 6.25 2 11.5 2" stroke="#0E2245" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+										<path d="M21.4286 21.4286L18.8572 18.8572" stroke="#0E2245" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path>
+										<defs>
+											<lineargradient id="paint0_linear_1605_1275" x1="19.9221" y1="4.90909" x2="15.2105" y2="7.07257" gradientunits="userSpaceOnUse">
+												<stop stop-color="#0184FF"></stop>
+												<stop offset="1" stop-color="#0184FF" stop-opacity="0"></stop>
+											</lineargradient>
+											<lineargradient id="paint1_linear_1605_1275" x1="16.961" y1="7.90909" x2="14.2514" y2="8.53121" gradientunits="userSpaceOnUse">
+												<stop stop-color="#0184FF"></stop>
+												<stop offset="1" stop-color="#0184FF" stop-opacity="0"></stop>
+											</lineargradient>
+										</defs>
+									</svg></div>
+							</div>
 						</button></li>
-					<li class="header__right-li"><button class="header__right-btn grey-btn cart" data-action="open-cart" data-client-target="open-cart">
-							<div class="grey-btn__inner"><svg class="icon" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<g clip-path="url(#clip0_1605_1285)">
-										<path d="M1 4.5L4 15H17M17 15L21 1H23M17 15L18.1451 17.0039C18.526 17.6705 18.0446 18.5 17.2768 18.5H4" stroke="#0E2245" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-										<path d="M6 5H14" stroke="url(#paint0_linear_1605_1285)" stroke-width="1.5" stroke-linecap="round"></path>
-										<circle cx="5.5" cy="22.5" r="1.5" fill="#0E2245"></circle>
-										<circle cx="17.5" cy="22.5" r="1.5" fill="#0E2245"></circle>
-									</g>
-									<defs>
-										<lineargradient id="paint0_linear_1605_1285" x1="13.8961" y1="4.90909" x2="8.36332" y2="8.29649" gradientunits="userSpaceOnUse">
-											<stop stop-color="#0184FF"></stop>
-											<stop offset="1" stop-color="#0184FF" stop-opacity="0"></stop>
-										</lineargradient>
-										<clippath id="clip0_1605_1285">
-											<rect width="24" height="24" fill="white"></rect>
-										</clippath>
-									</defs>
-								</svg></div>
-							<div class="cart__counter">0</div>
+					<li class="header__right-li"><button class="header__right-btn hover-btn grey-btn header__search" data-action="open-cart" data-client-target="open-cart">
+							<div class="hover-btn__bg grey"></div>
+							<div class="hover-btn__content">
+								<div class="hover-btn__content-top grey-btn__inner">
+									<div class="cart__counter show">0</div><svg class="icon" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<g clip-path="url(#clip0_1605_1285)">
+											<path d="M1 4.5L4 15H17M17 15L21 1H23M17 15L18.1451 17.0039C18.526 17.6705 18.0446 18.5 17.2768 18.5H4" stroke="#0E2245" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+											<path d="M6 5H14" stroke="url(#paint0_linear_1605_1285)" stroke-width="1.5" stroke-linecap="round"></path>
+											<circle cx="5.5" cy="22.5" r="1.5" fill="#0E2245"></circle>
+											<circle cx="17.5" cy="22.5" r="1.5" fill="#0E2245"></circle>
+										</g>
+										<defs>
+											<lineargradient id="paint0_linear_1605_1285" x1="13.8961" y1="4.90909" x2="8.36332" y2="8.29649" gradientunits="userSpaceOnUse">
+												<stop stop-color="#0184FF"></stop>
+												<stop offset="1" stop-color="#0184FF" stop-opacity="0"></stop>
+											</lineargradient>
+											<clippath id="clip0_1605_1285">
+												<rect width="24" height="24" fill="white"></rect>
+											</clippath>
+										</defs>
+									</svg>
+								</div>
+								<div class="hover-btn__content-bot grey-btn__inner">
+									<div class="cart__counter show">0</div><svg class="icon" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<g clip-path="url(#clip0_1605_1285)">
+											<path d="M1 4.5L4 15H17M17 15L21 1H23M17 15L18.1451 17.0039C18.526 17.6705 18.0446 18.5 17.2768 18.5H4" stroke="#0E2245" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+											<path d="M6 5H14" stroke="url(#paint0_linear_1605_1285)" stroke-width="1.5" stroke-linecap="round"></path>
+											<circle cx="5.5" cy="22.5" r="1.5" fill="#0E2245"></circle>
+											<circle cx="17.5" cy="22.5" r="1.5" fill="#0E2245"></circle>
+										</g>
+										<defs>
+											<lineargradient id="paint0_linear_1605_1285" x1="13.8961" y1="4.90909" x2="8.36332" y2="8.29649" gradientunits="userSpaceOnUse">
+												<stop stop-color="#0184FF"></stop>
+												<stop offset="1" stop-color="#0184FF" stop-opacity="0"></stop>
+											</lineargradient>
+											<clippath id="clip0_1605_1285">
+												<rect width="24" height="24" fill="white"></rect>
+											</clippath>
+										</defs>
+									</svg>
+								</div>
+							</div>
 						</button></li>
-					<li class="header__right-li header__line-vl header__line-vr"><a class="header__right-btn transparent-btn whatsapp" href="https://api.whatsapp.com/send/?phone=79119500282&amp;text=%D0%94%D0%BE%D0%B1%D1%80%D1%8B%D0%B9+%D0%B4%D0%B5%D0%BD%D1%8C%21+%D0%9F%D0%B5%D1%80%D0%B5%D0%B4%D0%BE+%D0%BC%D0%BD%D0%BE%D0%B9+%D1%81%D1%82%D0%BE%D0%B8%D1%82+%D0%B7%D0%B0%D0%B4%D0%B0%D1%87%D0%B0%3A&amp;type=phone_number&amp;app_absent=0" target="_blank">
-							<div class="transparent-btn__inner"><svg class="icon" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path d="M2 22L3.41254 16.8642C2.5409 15.3608 2.08289 13.6567 2.08373 11.9092C2.08624 6.44583 6.55329 2 12.0419 2C14.7053 2.00083 17.2056 3.03333 19.0862 4.90667C20.9659 6.78 22.0008 9.27 22 11.9183C21.9975 17.3825 17.5304 21.8283 12.0419 21.8283C10.3756 21.8275 8.73365 21.4117 7.27924 20.6217L2 22ZM7.52374 18.8275C8.92707 19.6567 10.2668 20.1533 12.0385 20.1542C16.6002 20.1542 20.3162 16.4592 20.3187 11.9167C20.3204 7.365 16.622 3.675 12.0452 3.67333C7.4802 3.67333 3.76673 7.36833 3.76505 11.91C3.76421 13.7642 4.31014 15.1525 5.22699 16.605L4.39052 19.645L7.52374 18.8275ZM17.0582 14.2742C16.9962 14.1708 16.8304 14.1092 16.5809 13.985C16.3322 13.8608 15.1089 13.2617 14.8803 13.1792C14.6526 13.0967 14.4868 13.055 14.3202 13.3033C14.1544 13.5508 13.6771 14.1092 13.5323 14.2742C13.3874 14.4392 13.2417 14.46 12.993 14.3358C12.7444 14.2117 11.9422 13.9508 10.9919 13.1067C10.2525 12.45 9.75266 11.6392 9.6078 11.3908C9.46295 11.1433 9.59273 11.0092 9.71665 10.8858C9.82885 10.775 9.96533 10.5967 10.0901 10.4517C10.2165 10.3083 10.2576 10.205 10.3413 10.0392C10.4242 9.87417 10.3832 9.72917 10.3204 9.605C10.2576 9.48167 9.76019 8.2625 9.55338 7.76667C9.35075 7.28417 9.14561 7.34917 8.99322 7.34167L8.51595 7.33333C8.35016 7.33333 8.08055 7.395 7.8528 7.64333C7.62505 7.89167 6.982 8.49 6.982 9.70917C6.982 10.9283 7.87373 12.1058 7.99765 12.2708C8.12241 12.4358 9.75182 14.9375 12.2478 16.01C12.8415 16.265 13.3054 16.4175 13.6662 16.5317C14.2624 16.72 14.805 16.6933 15.2337 16.63C15.7118 16.5592 16.7057 16.0308 16.9133 15.4525C17.121 14.8733 17.121 14.3775 17.0582 14.2742Z" fill="#65BC54"></path>
-								</svg></div>
+					<li class="header__right-li header__line-vl header__line-vr"><a class="header__right-btn hover-btn transparent-btn header__search" href="https://api.whatsapp.com/send/?phone=79119500282&amp;text=%D0%94%D0%BE%D0%B1%D1%80%D1%8B%D0%B9+%D0%B4%D0%B5%D0%BD%D1%8C%21+%D0%9F%D0%B5%D1%80%D0%B5%D0%B4%D0%BE+%D0%BC%D0%BD%D0%BE%D0%B9+%D1%81%D1%82%D0%BE%D0%B8%D1%82+%D0%B7%D0%B0%D0%B4%D0%B0%D1%87%D0%B0%3A&amp;type=phone_number&amp;app_absent=0" target="_blank" data-client-target="open-search-modal">
+							<div class="hover-btn__bg grey"></div>
+							<div class="hover-btn__content">
+								<div class="hover-btn__content-top transparent-btn__inner"><svg class="icon" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M2 22L3.41254 16.8642C2.5409 15.3608 2.08289 13.6567 2.08373 11.9092C2.08624 6.44583 6.55329 2 12.0419 2C14.7053 2.00083 17.2056 3.03333 19.0862 4.90667C20.9659 6.78 22.0008 9.27 22 11.9183C21.9975 17.3825 17.5304 21.8283 12.0419 21.8283C10.3756 21.8275 8.73365 21.4117 7.27924 20.6217L2 22ZM7.52374 18.8275C8.92707 19.6567 10.2668 20.1533 12.0385 20.1542C16.6002 20.1542 20.3162 16.4592 20.3187 11.9167C20.3204 7.365 16.622 3.675 12.0452 3.67333C7.4802 3.67333 3.76673 7.36833 3.76505 11.91C3.76421 13.7642 4.31014 15.1525 5.22699 16.605L4.39052 19.645L7.52374 18.8275ZM17.0582 14.2742C16.9962 14.1708 16.8304 14.1092 16.5809 13.985C16.3322 13.8608 15.1089 13.2617 14.8803 13.1792C14.6526 13.0967 14.4868 13.055 14.3202 13.3033C14.1544 13.5508 13.6771 14.1092 13.5323 14.2742C13.3874 14.4392 13.2417 14.46 12.993 14.3358C12.7444 14.2117 11.9422 13.9508 10.9919 13.1067C10.2525 12.45 9.75266 11.6392 9.6078 11.3908C9.46295 11.1433 9.59273 11.0092 9.71665 10.8858C9.82885 10.775 9.96533 10.5967 10.0901 10.4517C10.2165 10.3083 10.2576 10.205 10.3413 10.0392C10.4242 9.87417 10.3832 9.72917 10.3204 9.605C10.2576 9.48167 9.76019 8.2625 9.55338 7.76667C9.35075 7.28417 9.14561 7.34917 8.99322 7.34167L8.51595 7.33333C8.35016 7.33333 8.08055 7.395 7.8528 7.64333C7.62505 7.89167 6.982 8.49 6.982 9.70917C6.982 10.9283 7.87373 12.1058 7.99765 12.2708C8.12241 12.4358 9.75182 14.9375 12.2478 16.01C12.8415 16.265 13.3054 16.4175 13.6662 16.5317C14.2624 16.72 14.805 16.6933 15.2337 16.63C15.7118 16.5592 16.7057 16.0308 16.9133 15.4525C17.121 14.8733 17.121 14.3775 17.0582 14.2742Z" fill="#65BC54"></path>
+									</svg></div>
+								<div class="hover-btn__content-bot transparent-btn__inner"><svg class="icon" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M2 22L3.41254 16.8642C2.5409 15.3608 2.08289 13.6567 2.08373 11.9092C2.08624 6.44583 6.55329 2 12.0419 2C14.7053 2.00083 17.2056 3.03333 19.0862 4.90667C20.9659 6.78 22.0008 9.27 22 11.9183C21.9975 17.3825 17.5304 21.8283 12.0419 21.8283C10.3756 21.8275 8.73365 21.4117 7.27924 20.6217L2 22ZM7.52374 18.8275C8.92707 19.6567 10.2668 20.1533 12.0385 20.1542C16.6002 20.1542 20.3162 16.4592 20.3187 11.9167C20.3204 7.365 16.622 3.675 12.0452 3.67333C7.4802 3.67333 3.76673 7.36833 3.76505 11.91C3.76421 13.7642 4.31014 15.1525 5.22699 16.605L4.39052 19.645L7.52374 18.8275ZM17.0582 14.2742C16.9962 14.1708 16.8304 14.1092 16.5809 13.985C16.3322 13.8608 15.1089 13.2617 14.8803 13.1792C14.6526 13.0967 14.4868 13.055 14.3202 13.3033C14.1544 13.5508 13.6771 14.1092 13.5323 14.2742C13.3874 14.4392 13.2417 14.46 12.993 14.3358C12.7444 14.2117 11.9422 13.9508 10.9919 13.1067C10.2525 12.45 9.75266 11.6392 9.6078 11.3908C9.46295 11.1433 9.59273 11.0092 9.71665 10.8858C9.82885 10.775 9.96533 10.5967 10.0901 10.4517C10.2165 10.3083 10.2576 10.205 10.3413 10.0392C10.4242 9.87417 10.3832 9.72917 10.3204 9.605C10.2576 9.48167 9.76019 8.2625 9.55338 7.76667C9.35075 7.28417 9.14561 7.34917 8.99322 7.34167L8.51595 7.33333C8.35016 7.33333 8.08055 7.395 7.8528 7.64333C7.62505 7.89167 6.982 8.49 6.982 9.70917C6.982 10.9283 7.87373 12.1058 7.99765 12.2708C8.12241 12.4358 9.75182 14.9375 12.2478 16.01C12.8415 16.265 13.3054 16.4175 13.6662 16.5317C14.2624 16.72 14.805 16.6933 15.2337 16.63C15.7118 16.5592 16.7057 16.0308 16.9133 15.4525C17.121 14.8733 17.121 14.3775 17.0582 14.2742Z" fill="#65BC54"></path>
+									</svg></div>
+							</div>
 						</a></li>
-					<li class="header__right-li desktop"><button class="header__right-btn grey-btn connect" data-action="contact-us" data-client-target="contact-us">
-							<div class="grey-btn__inner"><svg class="icon" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<mask id="path-1-inside-1_1605_1297" fill="white">
-										<rect x="1" y="3.19995" width="22" height="17.6" rx="1"></rect>
-									</mask>
-									<rect x="1" y="3.19995" width="22" height="17.6" rx="1" stroke="#0E2245" stroke-width="3" mask="url(#path-1-inside-1_1605_1297)"></rect>
-									<path d="M4.30005 7.5L12 13L19.7 7.5" stroke="url(#paint0_linear_1605_1297)" stroke-width="1.5" stroke-linecap="round"></path>
-									<defs>
-										<lineargradient id="paint0_linear_1605_1297" x1="19.5" y1="7" x2="5.5" y2="10" gradientunits="userSpaceOnUse">
-											<stop stop-color="#0184FF"></stop>
-											<stop offset="1" stop-color="#0184FF" stop-opacity="0"></stop>
-										</lineargradient>
-									</defs>
-								</svg>Связаться с нами</div>
+					<li class="header__right-li contact-us desktop"><button class="header__right-btn hover-btn grey-btn connect" data-action="contact-us" data-client-target="contact-us">
+							<div class="hover-btn__bg grey"></div>
+							<div class="hover-btn__content">
+								<div class="hover-btn__content-top grey-btn__inner"><svg class="icon" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<mask id="path-1-inside-1_1605_1297" fill="white">
+											<rect x="1" y="3.19995" width="22" height="17.6" rx="1"></rect>
+										</mask>
+										<rect x="1" y="3.19995" width="22" height="17.6" rx="1" stroke="#0E2245" stroke-width="3" mask="url(#path-1-inside-1_1605_1297)"></rect>
+										<path d="M4.30005 7.5L12 13L19.7 7.5" stroke="url(#paint0_linear_1605_1297)" stroke-width="1.5" stroke-linecap="round"></path>
+										<defs>
+											<lineargradient id="paint0_linear_1605_1297" x1="19.5" y1="7" x2="5.5" y2="10" gradientunits="userSpaceOnUse">
+												<stop stop-color="#0184FF"></stop>
+												<stop offset="1" stop-color="#0184FF" stop-opacity="0"></stop>
+											</lineargradient>
+										</defs>
+									</svg>Связаться с нами</div>
+								<div class="hover-btn__content-bot grey-btn__inner"><svg class="icon" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<mask id="path-1-inside-1_1605_1297" fill="white">
+											<rect x="1" y="3.19995" width="22" height="17.6" rx="1"></rect>
+										</mask>
+										<rect x="1" y="3.19995" width="22" height="17.6" rx="1" stroke="#0E2245" stroke-width="3" mask="url(#path-1-inside-1_1605_1297)"></rect>
+										<path d="M4.30005 7.5L12 13L19.7 7.5" stroke="url(#paint0_linear_1605_1297)" stroke-width="1.5" stroke-linecap="round"></path>
+										<defs>
+											<lineargradient id="paint0_linear_1605_1297" x1="19.5" y1="7" x2="5.5" y2="10" gradientunits="userSpaceOnUse">
+												<stop stop-color="#0184FF"></stop>
+												<stop offset="1" stop-color="#0184FF" stop-opacity="0"></stop>
+											</lineargradient>
+										</defs>
+									</svg>Связаться с нами</div>
+							</div>
 						</button></li>
 					<li class="header__right-li mobile"><button class="header__right-btn grey-btn menu-mobile" data-btn="menu-mobile-btn" data-element="popup">
 							<div class="grey-btn__inner burger-btn">
@@ -486,11 +551,28 @@
 							</div>
 							<div class="contacts__card-address">196135, Санкт-Петербург, ул. Ленсовета, 5<div class="contacts__card-schedule">9–18 Мск<div class="contacts__card-schedule-divider"></div>Сб, вс — выходной</div>
 							</div>
-							<div class="contacts__card-links"><a class="contacts__card-link" href="tel:88003505876">
-									<div class="contacts__card-link-icon contacts__card-link-icon_phone"></div>8 800 350-58-76
-								</a><a class="contacts__card-link" href="mailto:info@alfapol.ru">
-									<div class="contacts__card-link-icon contacts__card-link-icon_email"></div>info@alfapol.ru
-								</a></div><button class="primary-button hover-btn mobile" data-action="ymap-popup-show" data-ymap-content="office" data-title="головной офис" data-coords="59.859542,30.328265">
+							<div class="contacts__card-links"><a class="contacts__card-link" href="tel:88003505876"><svg class="contacts__card-link-icon" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M3.94438 8.27653C3.39136 7.06216 3.35536 6.15562 3.87038 5.44798C4.20238 4.89727 5.66642 3.48199 6.38244 3.49898C6.50944 3.50898 6.68045 3.61392 6.86245 3.79283C7.45247 4.36754 8.9145 6.29755 9.05451 6.65836C9.10751 6.90824 8.98251 7.14212 8.7565 7.53392C8.45549 8.05665 8.04348 8.77228 8.39049 9.72679C9.17951 11.6568 10.3875 13.213 11.9816 14.3534C12.1136 14.4474 12.2656 14.4933 12.4176 14.4933C12.6516 14.4933 12.8816 14.3834 13.0276 14.1795C13.2686 13.8427 13.1916 13.3749 12.8546 13.133C11.4936 12.1615 10.4595 10.8242 9.79053 9.18807C9.69952 8.9392 9.79153 8.7423 10.0565 8.28153C10.3255 7.81377 10.6946 7.1731 10.5235 6.35252C10.3645 5.58991 8.38249 3.17915 7.91048 2.71838C7.46747 2.28661 6.99546 2.04673 6.47944 2.00375C4.8384 1.8968 2.92735 4.10867 2.62334 4.61741C1.80732 5.72984 1.79232 7.1711 2.57934 8.89722C2.75135 9.27502 3.19436 9.43994 3.57237 9.26903C3.94938 9.09711 4.11538 8.65334 3.94438 8.27653Z" fill="url(#paint0_linear_285_6218)"></path>
+										<path d="M21.2834 16.084C20.8223 15.6133 18.4133 13.6323 17.6473 13.4734C16.6752 13.2715 15.9022 13.7532 15.3422 14.1061L15.1112 14.249C14.7562 14.4629 14.6422 14.9236 14.8552 15.2775C15.0692 15.6333 15.5302 15.7462 15.8852 15.5333L16.1412 15.3744C16.6472 15.0556 16.9792 14.8617 17.2983 14.9296C17.7023 15.0816 19.6353 16.5438 20.2113 17.1335C20.3883 17.3144 20.4923 17.4853 20.5013 17.5763C20.5283 18.3499 19.0313 19.8371 18.5043 20.156C17.8283 20.6407 16.9202 20.6057 15.7002 20.039C12.6841 18.7857 7.94401 14.5448 5.34895 10.7778C5.11494 10.4369 4.64793 10.353 4.30592 10.5849C3.96491 10.8197 3.87891 11.2865 4.11391 11.6273C6.89198 15.6603 11.8301 20.055 15.0952 21.4103C15.9442 21.8061 16.7282 22 17.4343 22C18.1443 22 18.7753 21.8041 19.3133 21.4163C19.5963 21.2544 22.0634 19.3294 21.9984 17.4873C21.9574 17.0006 21.7174 16.5278 21.2834 16.084Z" fill="#0184FF"></path>
+										<defs>
+											<lineargradient id="paint0_linear_285_6218" x1="3" y1="4" x2="11.5" y2="12.5" gradientunits="userSpaceOnUse">
+												<stop stop-color="#0184FF"></stop>
+												<stop offset="1" stop-color="#0184FF" stop-opacity="0"></stop>
+											</lineargradient>
+										</defs>
+									</svg>8 800 350-58-76</a><a class="contacts__card-link" href="mailto:info@alfapol.ru"><svg class="contacts__card-link-icon" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<mask id="path-1-inside-1_285_6224" fill="white">
+											<rect x="1" y="3.20001" width="22" height="17.6" rx="1"></rect>
+										</mask>
+										<rect x="1" y="3.20001" width="22" height="17.6" rx="1" stroke="#0184FF" stroke-width="3" mask="url(#path-1-inside-1_285_6224)"></rect>
+										<path d="M4.2998 7.5L11.9998 13L19.6998 7.5" stroke="url(#paint0_linear_285_6224)" stroke-width="1.5" stroke-linecap="round"></path>
+										<defs>
+											<lineargradient id="paint0_linear_285_6224" x1="19.4998" y1="7" x2="5.49976" y2="10" gradientunits="userSpaceOnUse">
+												<stop stop-color="#0184FF"></stop>
+												<stop offset="1" stop-color="#0184FF" stop-opacity="0"></stop>
+											</lineargradient>
+										</defs>
+									</svg>info@alfapol.ru</a></div><button class="primary-button hover-btn mobile" data-action="ymap-popup-show" data-ymap-content="office" data-title="головной офис" data-coords="59.859542,30.328265">
 								<div class="hover-btn__bg dark-blue"></div>
 								<div class="hover-btn__content">
 									<div class="hover-btn__content-top primary-button__content">
@@ -531,11 +613,28 @@
 							</div>
 							<div class="contacts__card-address">196600, Санкт-Петербург, город Пушкин, ул. Автомобильная, д.9, лит.А<div class="contacts__card-schedule">9–18 Мск<div class="contacts__card-schedule-divider"></div>Сб, вс — выходной</div>
 							</div>
-							<div class="contacts__card-links"><a class="contacts__card-link" href="tel:88003505876">
-									<div class="contacts__card-link-icon contacts__card-link-icon_phone"></div>8 800 350-58-76
-								</a><a class="contacts__card-link" href="mailto:info@alfapol.ru">
-									<div class="contacts__card-link-icon contacts__card-link-icon_email"></div>info@alfapol.ru
-								</a></div><button class="primary-button hover-btn mobile" data-action="ymap-popup-show" data-ymap-content="factory" data-title="завод и склад" data-coords="59.731151,30.440393" data-submodal="">
+							<div class="contacts__card-links"><a class="contacts__card-link" href="tel:88003505876"><svg class="contacts__card-link-icon" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M3.94438 8.27653C3.39136 7.06216 3.35536 6.15562 3.87038 5.44798C4.20238 4.89727 5.66642 3.48199 6.38244 3.49898C6.50944 3.50898 6.68045 3.61392 6.86245 3.79283C7.45247 4.36754 8.9145 6.29755 9.05451 6.65836C9.10751 6.90824 8.98251 7.14212 8.7565 7.53392C8.45549 8.05665 8.04348 8.77228 8.39049 9.72679C9.17951 11.6568 10.3875 13.213 11.9816 14.3534C12.1136 14.4474 12.2656 14.4933 12.4176 14.4933C12.6516 14.4933 12.8816 14.3834 13.0276 14.1795C13.2686 13.8427 13.1916 13.3749 12.8546 13.133C11.4936 12.1615 10.4595 10.8242 9.79053 9.18807C9.69952 8.9392 9.79153 8.7423 10.0565 8.28153C10.3255 7.81377 10.6946 7.1731 10.5235 6.35252C10.3645 5.58991 8.38249 3.17915 7.91048 2.71838C7.46747 2.28661 6.99546 2.04673 6.47944 2.00375C4.8384 1.8968 2.92735 4.10867 2.62334 4.61741C1.80732 5.72984 1.79232 7.1711 2.57934 8.89722C2.75135 9.27502 3.19436 9.43994 3.57237 9.26903C3.94938 9.09711 4.11538 8.65334 3.94438 8.27653Z" fill="url(#paint0_linear_285_6218)"></path>
+										<path d="M21.2834 16.084C20.8223 15.6133 18.4133 13.6323 17.6473 13.4734C16.6752 13.2715 15.9022 13.7532 15.3422 14.1061L15.1112 14.249C14.7562 14.4629 14.6422 14.9236 14.8552 15.2775C15.0692 15.6333 15.5302 15.7462 15.8852 15.5333L16.1412 15.3744C16.6472 15.0556 16.9792 14.8617 17.2983 14.9296C17.7023 15.0816 19.6353 16.5438 20.2113 17.1335C20.3883 17.3144 20.4923 17.4853 20.5013 17.5763C20.5283 18.3499 19.0313 19.8371 18.5043 20.156C17.8283 20.6407 16.9202 20.6057 15.7002 20.039C12.6841 18.7857 7.94401 14.5448 5.34895 10.7778C5.11494 10.4369 4.64793 10.353 4.30592 10.5849C3.96491 10.8197 3.87891 11.2865 4.11391 11.6273C6.89198 15.6603 11.8301 20.055 15.0952 21.4103C15.9442 21.8061 16.7282 22 17.4343 22C18.1443 22 18.7753 21.8041 19.3133 21.4163C19.5963 21.2544 22.0634 19.3294 21.9984 17.4873C21.9574 17.0006 21.7174 16.5278 21.2834 16.084Z" fill="#0184FF"></path>
+										<defs>
+											<lineargradient id="paint0_linear_285_6218" x1="3" y1="4" x2="11.5" y2="12.5" gradientunits="userSpaceOnUse">
+												<stop stop-color="#0184FF"></stop>
+												<stop offset="1" stop-color="#0184FF" stop-opacity="0"></stop>
+											</lineargradient>
+										</defs>
+									</svg>8 800 350-58-76</a><a class="contacts__card-link" href="mailto:info@alfapol.ru"><svg class="contacts__card-link-icon" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<mask id="path-1-inside-1_285_6224" fill="white">
+											<rect x="1" y="3.20001" width="22" height="17.6" rx="1"></rect>
+										</mask>
+										<rect x="1" y="3.20001" width="22" height="17.6" rx="1" stroke="#0184FF" stroke-width="3" mask="url(#path-1-inside-1_285_6224)"></rect>
+										<path d="M4.2998 7.5L11.9998 13L19.6998 7.5" stroke="url(#paint0_linear_285_6224)" stroke-width="1.5" stroke-linecap="round"></path>
+										<defs>
+											<lineargradient id="paint0_linear_285_6224" x1="19.4998" y1="7" x2="5.49976" y2="10" gradientunits="userSpaceOnUse">
+												<stop stop-color="#0184FF"></stop>
+												<stop offset="1" stop-color="#0184FF" stop-opacity="0"></stop>
+											</lineargradient>
+										</defs>
+									</svg>info@alfapol.ru</a></div><button class="primary-button hover-btn mobile" data-action="ymap-popup-show" data-ymap-content="factory" data-title="завод и склад" data-coords="59.731151,30.440393" data-submodal="">
 								<div class="hover-btn__bg dark-blue"></div>
 								<div class="hover-btn__content">
 									<div class="hover-btn__content-top primary-button__content">
@@ -559,38 +658,85 @@
 							<div class="contacts__department-title">Маркетинг и реклама</div>
 							<div class="contacts__department-info">
 								<div class="contacts__department-person">Алиса Рыжова</div>
-								<div class="contacts__department-links"><a class="contacts__card-link contacts__department-link" href="#">
-										<div class="contacts__card-link-icon contacts__card-link-icon_email"></div><span>ag@alfapol.ru</span>
-									</a></div>
+								<div class="contacts__department-links"><a class="contacts__card-link contacts__department-link" href="mailto:ag@alfapol.ru"><svg class="contacts__card-link-icon" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<mask id="path-1-inside-1_285_6224" fill="white">
+												<rect x="1" y="3.20001" width="22" height="17.6" rx="1"></rect>
+											</mask>
+											<rect x="1" y="3.20001" width="22" height="17.6" rx="1" stroke="#0184FF" stroke-width="3" mask="url(#path-1-inside-1_285_6224)"></rect>
+											<path d="M4.2998 7.5L11.9998 13L19.6998 7.5" stroke="url(#paint0_linear_285_6224)" stroke-width="1.5" stroke-linecap="round"></path>
+											<defs>
+												<lineargradient id="paint0_linear_285_6224" x1="19.4998" y1="7" x2="5.49976" y2="10" gradientunits="userSpaceOnUse">
+													<stop stop-color="#0184FF"></stop>
+													<stop offset="1" stop-color="#0184FF" stop-opacity="0"></stop>
+												</lineargradient>
+											</defs>
+										</svg><span>ag@alfapol.ru</span></a></div>
 							</div>
 						</li>
 						<li class="contacts__department">
 							<div class="contacts__department-title">Офис-менеджер</div>
 							<div class="contacts__department-info">
 								<div class="contacts__department-person">Вотинова Ирина Николаевна</div>
-								<div class="contacts__department-links"><a class="contacts__card-link contacts__department-link" href="#">
-										<div class="contacts__card-link-icon contacts__card-link-icon_phone"></div><span>+7 (812) 371-29-11</span>
-									</a><a class="contacts__card-link contacts__department-link" href="#">
-										<div class="contacts__card-link-icon contacts__card-link-icon_email"></div><span>office@alfapol.ru</span>
-									</a></div>
+								<div class="contacts__department-links"><a class="contacts__card-link contacts__department-link" href="tel:+7 (812) 371-29-11"><svg class="contacts__card-link-icon" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M3.94438 8.27653C3.39136 7.06216 3.35536 6.15562 3.87038 5.44798C4.20238 4.89727 5.66642 3.48199 6.38244 3.49898C6.50944 3.50898 6.68045 3.61392 6.86245 3.79283C7.45247 4.36754 8.9145 6.29755 9.05451 6.65836C9.10751 6.90824 8.98251 7.14212 8.7565 7.53392C8.45549 8.05665 8.04348 8.77228 8.39049 9.72679C9.17951 11.6568 10.3875 13.213 11.9816 14.3534C12.1136 14.4474 12.2656 14.4933 12.4176 14.4933C12.6516 14.4933 12.8816 14.3834 13.0276 14.1795C13.2686 13.8427 13.1916 13.3749 12.8546 13.133C11.4936 12.1615 10.4595 10.8242 9.79053 9.18807C9.69952 8.9392 9.79153 8.7423 10.0565 8.28153C10.3255 7.81377 10.6946 7.1731 10.5235 6.35252C10.3645 5.58991 8.38249 3.17915 7.91048 2.71838C7.46747 2.28661 6.99546 2.04673 6.47944 2.00375C4.8384 1.8968 2.92735 4.10867 2.62334 4.61741C1.80732 5.72984 1.79232 7.1711 2.57934 8.89722C2.75135 9.27502 3.19436 9.43994 3.57237 9.26903C3.94938 9.09711 4.11538 8.65334 3.94438 8.27653Z" fill="url(#paint0_linear_285_6218)"></path>
+											<path d="M21.2834 16.084C20.8223 15.6133 18.4133 13.6323 17.6473 13.4734C16.6752 13.2715 15.9022 13.7532 15.3422 14.1061L15.1112 14.249C14.7562 14.4629 14.6422 14.9236 14.8552 15.2775C15.0692 15.6333 15.5302 15.7462 15.8852 15.5333L16.1412 15.3744C16.6472 15.0556 16.9792 14.8617 17.2983 14.9296C17.7023 15.0816 19.6353 16.5438 20.2113 17.1335C20.3883 17.3144 20.4923 17.4853 20.5013 17.5763C20.5283 18.3499 19.0313 19.8371 18.5043 20.156C17.8283 20.6407 16.9202 20.6057 15.7002 20.039C12.6841 18.7857 7.94401 14.5448 5.34895 10.7778C5.11494 10.4369 4.64793 10.353 4.30592 10.5849C3.96491 10.8197 3.87891 11.2865 4.11391 11.6273C6.89198 15.6603 11.8301 20.055 15.0952 21.4103C15.9442 21.8061 16.7282 22 17.4343 22C18.1443 22 18.7753 21.8041 19.3133 21.4163C19.5963 21.2544 22.0634 19.3294 21.9984 17.4873C21.9574 17.0006 21.7174 16.5278 21.2834 16.084Z" fill="#0184FF"></path>
+											<defs>
+												<lineargradient id="paint0_linear_285_6218" x1="3" y1="4" x2="11.5" y2="12.5" gradientunits="userSpaceOnUse">
+													<stop stop-color="#0184FF"></stop>
+													<stop offset="1" stop-color="#0184FF" stop-opacity="0"></stop>
+												</lineargradient>
+											</defs>
+										</svg><span>+7 (812) 371-29-11</span></a><a class="contacts__card-link contacts__department-link" href="mailto:office@alfapol.ru"><svg class="contacts__card-link-icon" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<mask id="path-1-inside-1_285_6224" fill="white">
+												<rect x="1" y="3.20001" width="22" height="17.6" rx="1"></rect>
+											</mask>
+											<rect x="1" y="3.20001" width="22" height="17.6" rx="1" stroke="#0184FF" stroke-width="3" mask="url(#path-1-inside-1_285_6224)"></rect>
+											<path d="M4.2998 7.5L11.9998 13L19.6998 7.5" stroke="url(#paint0_linear_285_6224)" stroke-width="1.5" stroke-linecap="round"></path>
+											<defs>
+												<lineargradient id="paint0_linear_285_6224" x1="19.4998" y1="7" x2="5.49976" y2="10" gradientunits="userSpaceOnUse">
+													<stop stop-color="#0184FF"></stop>
+													<stop offset="1" stop-color="#0184FF" stop-opacity="0"></stop>
+												</lineargradient>
+											</defs>
+										</svg><span>office@alfapol.ru</span></a></div>
 							</div>
 						</li>
 						<li class="contacts__department">
 							<div class="contacts__department-title">Исполнительный директор</div>
 							<div class="contacts__department-info">
 								<div class="contacts__department-person">Собкалов Геннадий Григорьевич</div>
-								<div class="contacts__department-links"><a class="contacts__card-link contacts__department-link" href="#">
-										<div class="contacts__card-link-icon contacts__card-link-icon_email"></div><span>sgg@alfapol.ru</span>
-									</a></div>
+								<div class="contacts__department-links"><a class="contacts__card-link contacts__department-link" href="mailto:sgg@alfapol.ru"><svg class="contacts__card-link-icon" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<mask id="path-1-inside-1_285_6224" fill="white">
+												<rect x="1" y="3.20001" width="22" height="17.6" rx="1"></rect>
+											</mask>
+											<rect x="1" y="3.20001" width="22" height="17.6" rx="1" stroke="#0184FF" stroke-width="3" mask="url(#path-1-inside-1_285_6224)"></rect>
+											<path d="M4.2998 7.5L11.9998 13L19.6998 7.5" stroke="url(#paint0_linear_285_6224)" stroke-width="1.5" stroke-linecap="round"></path>
+											<defs>
+												<lineargradient id="paint0_linear_285_6224" x1="19.4998" y1="7" x2="5.49976" y2="10" gradientunits="userSpaceOnUse">
+													<stop stop-color="#0184FF"></stop>
+													<stop offset="1" stop-color="#0184FF" stop-opacity="0"></stop>
+												</lineargradient>
+											</defs>
+										</svg><span>sgg@alfapol.ru</span></a></div>
 							</div>
 						</li>
 						<li class="contacts__department">
 							<div class="contacts__department-title">Снабжение и логистика</div>
 							<div class="contacts__department-info">
 								<div class="contacts__department-person">Иванова Надежда</div>
-								<div class="contacts__department-links"><a class="contacts__card-link contacts__department-link" href="#">
-										<div class="contacts__card-link-icon contacts__card-link-icon_email"></div><span>snab@alfapol.ru</span>
-									</a></div>
+								<div class="contacts__department-links"><a class="contacts__card-link contacts__department-link" href="mailto:snab@alfapol.ru"><svg class="contacts__card-link-icon" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<mask id="path-1-inside-1_285_6224" fill="white">
+												<rect x="1" y="3.20001" width="22" height="17.6" rx="1"></rect>
+											</mask>
+											<rect x="1" y="3.20001" width="22" height="17.6" rx="1" stroke="#0184FF" stroke-width="3" mask="url(#path-1-inside-1_285_6224)"></rect>
+											<path d="M4.2998 7.5L11.9998 13L19.6998 7.5" stroke="url(#paint0_linear_285_6224)" stroke-width="1.5" stroke-linecap="round"></path>
+											<defs>
+												<lineargradient id="paint0_linear_285_6224" x1="19.4998" y1="7" x2="5.49976" y2="10" gradientunits="userSpaceOnUse">
+													<stop stop-color="#0184FF"></stop>
+													<stop offset="1" stop-color="#0184FF" stop-opacity="0"></stop>
+												</lineargradient>
+											</defs>
+										</svg><span>snab@alfapol.ru</span></a></div>
 							</div>
 						</li>
 					</ul>
@@ -618,13 +764,39 @@
 										</picture>
 										<div class="sales-department__slide-info">
 											<h4 class="sales-department__slide-title">Убиенных Татьяна</h4>
-											<div class="sales-department__slide-contacts"><a class="sales-department__slide-link sales-department__slide-link" href="tel:+7 958 523-72-86">
-													<div class="sales-department__slide-link-icon sales-department__slide-link-icon_phone"></div><span>+7 958 523-72-86</span>
-												</a><a class="sales-department__slide-link sales-department__slide-link" href="mailto:tu@alfapol.ru">
-													<div class="sales-department__slide-link-icon sales-department__slide-link-icon_email"></div><span>tu@alfapol.ru</span>
-												</a><a class="sales-department__slide-link sales-department__slide-link" href="skype:tu@alfapol.ru">
-													<div class="sales-department__slide-link-icon sales-department__slide-link-icon_skype"></div><span>tu@alfapol.ru</span>
-												</a></div>
+											<div class="sales-department__slide-contacts"><a class="sales-department__slide-link sales-department__slide-link" href="tel:+7 958 523-72-86"><svg class="sales-department__slide-link-icon" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<rect width="24" height="24" rx="4" fill="#0184FF"></rect>
+														<path d="M5.95828 9.2074C5.54352 8.29662 5.51652 7.61672 5.90278 7.08599C6.15179 6.67295 7.24982 5.61149 7.78683 5.62424C7.88208 5.63173 8.01034 5.71044 8.14684 5.84462C8.58935 6.27565 9.68588 7.72316 9.79088 7.99377C9.83063 8.18118 9.73688 8.35659 9.56738 8.65044C9.34162 9.04249 9.03261 9.57921 9.29287 10.2951C9.88463 11.7426 10.7907 12.9098 11.9862 13.7651C12.0852 13.8355 12.1992 13.87 12.3132 13.87C12.4887 13.87 12.6612 13.7876 12.7707 13.6346C12.9515 13.382 12.8937 13.0312 12.641 12.8498C11.6202 12.1212 10.8447 11.1182 10.3429 9.89105C10.2746 9.7044 10.3436 9.55672 10.5424 9.21115C10.7442 8.86033 11.0209 8.37983 10.8927 7.76439C10.7734 7.19243 9.28687 5.38436 8.93286 5.03879C8.6006 4.71495 8.24659 4.53505 7.85958 4.50281C6.6288 4.4226 5.19551 6.0815 4.96751 6.46306C4.35549 7.29738 4.34424 8.37833 4.93451 9.67291C5.06351 9.95627 5.39577 10.08 5.67928 9.95177C5.96203 9.82284 6.08654 9.49001 5.95828 9.2074Z" fill="url(#paint0_linear_1329_45240)"></path>
+														<path d="M18.9628 15.063C18.617 14.71 16.8102 13.2242 16.2357 13.105C15.5067 12.9536 14.9269 13.3149 14.5069 13.5795L14.3336 13.6867C14.0674 13.8472 13.9819 14.1927 14.1416 14.4581C14.3021 14.725 14.6479 14.8097 14.9142 14.65L15.1062 14.5308C15.4857 14.2917 15.7347 14.1463 15.9739 14.1972C16.2769 14.3112 17.7267 15.4079 18.1587 15.8501C18.2915 15.9858 18.3695 16.114 18.3762 16.1822C18.3965 16.7624 17.2737 17.8778 16.8785 18.117C16.3714 18.4805 15.6904 18.4543 14.7754 18.0293C12.5133 17.0892 8.95825 13.9086 7.01195 11.0833C6.83645 10.8277 6.48619 10.7647 6.22968 10.9386C5.97393 11.1148 5.90943 11.4649 6.08568 11.7205C8.16923 14.7452 11.8728 18.0413 14.3216 19.0577C14.9584 19.3546 15.5464 19.5 16.0759 19.5C16.6084 19.5 17.0817 19.3531 17.4852 19.0622C17.6975 18.9408 19.5478 17.497 19.499 16.1155C19.4683 15.7504 19.2883 15.3959 18.9628 15.063Z" fill="white"></path>
+														<defs>
+															<lineargradient id="paint0_linear_1329_45240" x1="5.25" y1="6" x2="11.625" y2="12.375" gradientunits="userSpaceOnUse">
+																<stop stop-color="white"></stop>
+																<stop offset="1" stop-color="white" stop-opacity="0"></stop>
+															</lineargradient>
+														</defs>
+													</svg><span>+7 958 523-72-86</span></a><a class="sales-department__slide-link sales-department__slide-link" href="mailto:tu@alfapol.ru"> <svg class="sales-department__slide-link-icon" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<rect width="24" height="24" rx="4" fill="#0184FF"></rect>
+														<mask id="path-2-inside-1_1329_45248" fill="white">
+															<rect x="3.75" y="5.40002" width="16.5" height="13.2" rx="1"></rect>
+														</mask>
+														<rect x="3.75" y="5.40002" width="16.5" height="13.2" rx="1" stroke="white" stroke-width="3" mask="url(#path-2-inside-1_1329_45248)"></rect>
+														<path d="M6.22461 8.625L11.9996 12.75L17.7746 8.625" stroke="url(#paint0_linear_1329_45248)" stroke-width="1.5" stroke-linecap="round"></path>
+														<defs>
+															<lineargradient id="paint0_linear_1329_45248" x1="17.6246" y1="8.25" x2="7.12457" y2="10.5" gradientunits="userSpaceOnUse">
+																<stop stop-color="white"></stop>
+																<stop offset="1" stop-color="white" stop-opacity="0"></stop>
+															</lineargradient>
+														</defs>
+													</svg><span>tu@alfapol.ru</span></a><a class="sales-department__slide-link sales-department__slide-link" href="skype:tu@alfapol.ru"> <svg class="sales-department__slide-link-icon" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<g clip-path="url(#clip0_1329_45255)">
+															<path fill-rule="evenodd" clip-rule="evenodd" d="M17.9985 17.5191C17.4694 18.2591 16.6875 18.8434 15.6716 19.2579C14.6683 19.6697 13.4661 19.8797 12.0958 19.8797C10.4518 19.8797 9.07331 19.5945 7.9965 19.0311C7.22737 18.6221 6.59381 18.0684 6.11269 17.3812C5.62594 16.6912 5.38031 16.0056 5.38031 15.342C5.38031 14.9302 5.54119 14.5714 5.85731 14.2778C6.17063 13.9856 6.57281 13.8396 7.05244 13.8396C7.44469 13.8396 7.78481 13.9551 8.05988 14.1846C8.32369 14.4058 8.54944 14.7326 8.7315 15.1513C8.93475 15.6103 9.15487 15.9971 9.38775 16.299C9.6135 16.5939 9.93675 16.8401 10.3487 17.0334C10.7636 17.2254 11.3237 17.3256 12.0109 17.3256C12.9577 17.3256 13.7338 17.1253 14.3166 16.7331C14.8881 16.3506 15.1646 15.8887 15.1646 15.324C15.1646 14.8802 15.0193 14.5298 14.7229 14.2543C14.4096 13.9678 13.9989 13.7452 13.5009 13.5894C12.9802 13.4308 12.2747 13.257 11.4013 13.0761C10.2118 12.8257 9.20288 12.5293 8.40131 12.1914C7.58006 11.8479 6.91819 11.3707 6.43425 10.7739C5.94319 10.1661 5.69344 9.40519 5.69344 8.51062C5.69344 7.65937 5.95444 6.89006 6.471 6.22781C6.98175 5.56988 7.72969 5.05519 8.69344 4.70606C9.64313 4.35975 10.7721 4.18444 12.0519 4.18444C13.0736 4.18444 13.9725 4.30125 14.7231 4.53225C15.4779 4.76325 16.113 5.07469 16.6125 5.46C17.1163 5.84944 17.4917 6.26269 17.7259 6.69394C17.9629 7.12931 18.0844 7.56187 18.0844 7.98075C18.0844 8.38425 17.9263 8.75138 17.6145 9.06994C17.3012 9.39262 16.9046 9.55538 16.4391 9.55538C16.0157 9.55538 15.6827 9.45244 15.4541 9.25219C15.2396 9.06431 15.0167 8.77219 14.7698 8.355C14.4848 7.82081 14.139 7.39931 13.7424 7.10156C13.3571 6.81225 12.7151 6.6675 11.8303 6.6675C11.0119 6.6675 10.3431 6.82894 9.84769 7.15012C9.37069 7.45762 9.138 7.81219 9.138 8.23237C9.138 8.48831 9.21281 8.70394 9.36806 8.8875C9.52894 9.08494 9.759 9.25481 10.0496 9.39937C10.3502 9.54825 10.6607 9.66788 10.971 9.75131C11.2884 9.83887 11.8219 9.96825 12.5543 10.1353C13.4812 10.3301 14.3323 10.5512 15.0844 10.7891C15.8477 11.0284 16.5054 11.3233 17.0443 11.6696C17.5918 12.0216 18.0249 12.4723 18.3341 13.0119C18.6431 13.5559 18.7999 14.2236 18.7999 15.0011C18.8001 15.9304 18.5291 16.7777 17.9985 17.5191ZM23.31 14.5477C23.4836 13.7661 23.5738 12.9564 23.5738 12.1245C23.5738 5.89256 18.4502 0.838875 12.1269 0.838875C11.4609 0.838875 10.8075 0.895875 10.1698 1.00444C9.14681 0.368625 7.93594 0 6.63919 0C2.97169 0 0 2.9295 0 6.54638C0 7.75388 0.333 8.88338 0.911625 9.85706C0.760687 10.5887 0.68025 11.3483 0.68025 12.1245C0.68025 18.3592 5.80538 23.4116 12.1271 23.4116C12.8439 23.4116 13.5439 23.3462 14.2239 23.2224C15.1594 23.7176 16.2262 24 17.3621 24C21.0283 24 24 21.069 24 17.4551C24 16.4104 23.7516 15.4241 23.31 14.5477Z" fill="#0184FF"></path>
+														</g>
+														<defs>
+															<clippath id="clip0_1329_45255">
+																<rect width="24" height="24" fill="white"></rect>
+															</clippath>
+														</defs>
+													</svg><span>tu@alfapol.ru</span></a></div>
 										</div>
 									</div>
 								</div>
@@ -635,13 +807,39 @@
 										</picture>
 										<div class="sales-department__slide-info">
 											<h4 class="sales-department__slide-title">Захаров Евгений</h4>
-											<div class="sales-department__slide-contacts"><a class="sales-department__slide-link sales-department__slide-link" href="tel:+7 958 523-72-86">
-													<div class="sales-department__slide-link-icon sales-department__slide-link-icon_phone"></div><span>+7 958 523-72-86</span>
-												</a><a class="sales-department__slide-link sales-department__slide-link" href="mailto:tu@alfapol.ru">
-													<div class="sales-department__slide-link-icon sales-department__slide-link-icon_email"></div><span>tu@alfapol.ru</span>
-												</a><a class="sales-department__slide-link sales-department__slide-link" href="skype:tu@alfapol.ru">
-													<div class="sales-department__slide-link-icon sales-department__slide-link-icon_skype"></div><span>tu@alfapol.ru</span>
-												</a></div>
+											<div class="sales-department__slide-contacts"><a class="sales-department__slide-link sales-department__slide-link" href="tel:+7 958 523-72-86"><svg class="sales-department__slide-link-icon" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<rect width="24" height="24" rx="4" fill="#0184FF"></rect>
+														<path d="M5.95828 9.2074C5.54352 8.29662 5.51652 7.61672 5.90278 7.08599C6.15179 6.67295 7.24982 5.61149 7.78683 5.62424C7.88208 5.63173 8.01034 5.71044 8.14684 5.84462C8.58935 6.27565 9.68588 7.72316 9.79088 7.99377C9.83063 8.18118 9.73688 8.35659 9.56738 8.65044C9.34162 9.04249 9.03261 9.57921 9.29287 10.2951C9.88463 11.7426 10.7907 12.9098 11.9862 13.7651C12.0852 13.8355 12.1992 13.87 12.3132 13.87C12.4887 13.87 12.6612 13.7876 12.7707 13.6346C12.9515 13.382 12.8937 13.0312 12.641 12.8498C11.6202 12.1212 10.8447 11.1182 10.3429 9.89105C10.2746 9.7044 10.3436 9.55672 10.5424 9.21115C10.7442 8.86033 11.0209 8.37983 10.8927 7.76439C10.7734 7.19243 9.28687 5.38436 8.93286 5.03879C8.6006 4.71495 8.24659 4.53505 7.85958 4.50281C6.6288 4.4226 5.19551 6.0815 4.96751 6.46306C4.35549 7.29738 4.34424 8.37833 4.93451 9.67291C5.06351 9.95627 5.39577 10.08 5.67928 9.95177C5.96203 9.82284 6.08654 9.49001 5.95828 9.2074Z" fill="url(#paint0_linear_1329_45240)"></path>
+														<path d="M18.9628 15.063C18.617 14.71 16.8102 13.2242 16.2357 13.105C15.5067 12.9536 14.9269 13.3149 14.5069 13.5795L14.3336 13.6867C14.0674 13.8472 13.9819 14.1927 14.1416 14.4581C14.3021 14.725 14.6479 14.8097 14.9142 14.65L15.1062 14.5308C15.4857 14.2917 15.7347 14.1463 15.9739 14.1972C16.2769 14.3112 17.7267 15.4079 18.1587 15.8501C18.2915 15.9858 18.3695 16.114 18.3762 16.1822C18.3965 16.7624 17.2737 17.8778 16.8785 18.117C16.3714 18.4805 15.6904 18.4543 14.7754 18.0293C12.5133 17.0892 8.95825 13.9086 7.01195 11.0833C6.83645 10.8277 6.48619 10.7647 6.22968 10.9386C5.97393 11.1148 5.90943 11.4649 6.08568 11.7205C8.16923 14.7452 11.8728 18.0413 14.3216 19.0577C14.9584 19.3546 15.5464 19.5 16.0759 19.5C16.6084 19.5 17.0817 19.3531 17.4852 19.0622C17.6975 18.9408 19.5478 17.497 19.499 16.1155C19.4683 15.7504 19.2883 15.3959 18.9628 15.063Z" fill="white"></path>
+														<defs>
+															<lineargradient id="paint0_linear_1329_45240" x1="5.25" y1="6" x2="11.625" y2="12.375" gradientunits="userSpaceOnUse">
+																<stop stop-color="white"></stop>
+																<stop offset="1" stop-color="white" stop-opacity="0"></stop>
+															</lineargradient>
+														</defs>
+													</svg><span>+7 958 523-72-86</span></a><a class="sales-department__slide-link sales-department__slide-link" href="mailto:tu@alfapol.ru"> <svg class="sales-department__slide-link-icon" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<rect width="24" height="24" rx="4" fill="#0184FF"></rect>
+														<mask id="path-2-inside-1_1329_45248" fill="white">
+															<rect x="3.75" y="5.40002" width="16.5" height="13.2" rx="1"></rect>
+														</mask>
+														<rect x="3.75" y="5.40002" width="16.5" height="13.2" rx="1" stroke="white" stroke-width="3" mask="url(#path-2-inside-1_1329_45248)"></rect>
+														<path d="M6.22461 8.625L11.9996 12.75L17.7746 8.625" stroke="url(#paint0_linear_1329_45248)" stroke-width="1.5" stroke-linecap="round"></path>
+														<defs>
+															<lineargradient id="paint0_linear_1329_45248" x1="17.6246" y1="8.25" x2="7.12457" y2="10.5" gradientunits="userSpaceOnUse">
+																<stop stop-color="white"></stop>
+																<stop offset="1" stop-color="white" stop-opacity="0"></stop>
+															</lineargradient>
+														</defs>
+													</svg><span>tu@alfapol.ru</span></a><a class="sales-department__slide-link sales-department__slide-link" href="skype:tu@alfapol.ru"> <svg class="sales-department__slide-link-icon" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<g clip-path="url(#clip0_1329_45255)">
+															<path fill-rule="evenodd" clip-rule="evenodd" d="M17.9985 17.5191C17.4694 18.2591 16.6875 18.8434 15.6716 19.2579C14.6683 19.6697 13.4661 19.8797 12.0958 19.8797C10.4518 19.8797 9.07331 19.5945 7.9965 19.0311C7.22737 18.6221 6.59381 18.0684 6.11269 17.3812C5.62594 16.6912 5.38031 16.0056 5.38031 15.342C5.38031 14.9302 5.54119 14.5714 5.85731 14.2778C6.17063 13.9856 6.57281 13.8396 7.05244 13.8396C7.44469 13.8396 7.78481 13.9551 8.05988 14.1846C8.32369 14.4058 8.54944 14.7326 8.7315 15.1513C8.93475 15.6103 9.15487 15.9971 9.38775 16.299C9.6135 16.5939 9.93675 16.8401 10.3487 17.0334C10.7636 17.2254 11.3237 17.3256 12.0109 17.3256C12.9577 17.3256 13.7338 17.1253 14.3166 16.7331C14.8881 16.3506 15.1646 15.8887 15.1646 15.324C15.1646 14.8802 15.0193 14.5298 14.7229 14.2543C14.4096 13.9678 13.9989 13.7452 13.5009 13.5894C12.9802 13.4308 12.2747 13.257 11.4013 13.0761C10.2118 12.8257 9.20288 12.5293 8.40131 12.1914C7.58006 11.8479 6.91819 11.3707 6.43425 10.7739C5.94319 10.1661 5.69344 9.40519 5.69344 8.51062C5.69344 7.65937 5.95444 6.89006 6.471 6.22781C6.98175 5.56988 7.72969 5.05519 8.69344 4.70606C9.64313 4.35975 10.7721 4.18444 12.0519 4.18444C13.0736 4.18444 13.9725 4.30125 14.7231 4.53225C15.4779 4.76325 16.113 5.07469 16.6125 5.46C17.1163 5.84944 17.4917 6.26269 17.7259 6.69394C17.9629 7.12931 18.0844 7.56187 18.0844 7.98075C18.0844 8.38425 17.9263 8.75138 17.6145 9.06994C17.3012 9.39262 16.9046 9.55538 16.4391 9.55538C16.0157 9.55538 15.6827 9.45244 15.4541 9.25219C15.2396 9.06431 15.0167 8.77219 14.7698 8.355C14.4848 7.82081 14.139 7.39931 13.7424 7.10156C13.3571 6.81225 12.7151 6.6675 11.8303 6.6675C11.0119 6.6675 10.3431 6.82894 9.84769 7.15012C9.37069 7.45762 9.138 7.81219 9.138 8.23237C9.138 8.48831 9.21281 8.70394 9.36806 8.8875C9.52894 9.08494 9.759 9.25481 10.0496 9.39937C10.3502 9.54825 10.6607 9.66788 10.971 9.75131C11.2884 9.83887 11.8219 9.96825 12.5543 10.1353C13.4812 10.3301 14.3323 10.5512 15.0844 10.7891C15.8477 11.0284 16.5054 11.3233 17.0443 11.6696C17.5918 12.0216 18.0249 12.4723 18.3341 13.0119C18.6431 13.5559 18.7999 14.2236 18.7999 15.0011C18.8001 15.9304 18.5291 16.7777 17.9985 17.5191ZM23.31 14.5477C23.4836 13.7661 23.5738 12.9564 23.5738 12.1245C23.5738 5.89256 18.4502 0.838875 12.1269 0.838875C11.4609 0.838875 10.8075 0.895875 10.1698 1.00444C9.14681 0.368625 7.93594 0 6.63919 0C2.97169 0 0 2.9295 0 6.54638C0 7.75388 0.333 8.88338 0.911625 9.85706C0.760687 10.5887 0.68025 11.3483 0.68025 12.1245C0.68025 18.3592 5.80538 23.4116 12.1271 23.4116C12.8439 23.4116 13.5439 23.3462 14.2239 23.2224C15.1594 23.7176 16.2262 24 17.3621 24C21.0283 24 24 21.069 24 17.4551C24 16.4104 23.7516 15.4241 23.31 14.5477Z" fill="#0184FF"></path>
+														</g>
+														<defs>
+															<clippath id="clip0_1329_45255">
+																<rect width="24" height="24" fill="white"></rect>
+															</clippath>
+														</defs>
+													</svg><span>tu@alfapol.ru</span></a></div>
 										</div>
 									</div>
 								</div>
@@ -652,13 +850,39 @@
 										</picture>
 										<div class="sales-department__slide-info">
 											<h4 class="sales-department__slide-title">Михайлова Вероника</h4>
-											<div class="sales-department__slide-contacts"><a class="sales-department__slide-link sales-department__slide-link" href="tel:+7 958 523-72-86">
-													<div class="sales-department__slide-link-icon sales-department__slide-link-icon_phone"></div><span>+7 958 523-72-86</span>
-												</a><a class="sales-department__slide-link sales-department__slide-link" href="mailto:tu@alfapol.ru">
-													<div class="sales-department__slide-link-icon sales-department__slide-link-icon_email"></div><span>tu@alfapol.ru</span>
-												</a><a class="sales-department__slide-link sales-department__slide-link" href="skype:tu@alfapol.ru">
-													<div class="sales-department__slide-link-icon sales-department__slide-link-icon_skype"></div><span>tu@alfapol.ru</span>
-												</a></div>
+											<div class="sales-department__slide-contacts"><a class="sales-department__slide-link sales-department__slide-link" href="tel:+7 958 523-72-86"><svg class="sales-department__slide-link-icon" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<rect width="24" height="24" rx="4" fill="#0184FF"></rect>
+														<path d="M5.95828 9.2074C5.54352 8.29662 5.51652 7.61672 5.90278 7.08599C6.15179 6.67295 7.24982 5.61149 7.78683 5.62424C7.88208 5.63173 8.01034 5.71044 8.14684 5.84462C8.58935 6.27565 9.68588 7.72316 9.79088 7.99377C9.83063 8.18118 9.73688 8.35659 9.56738 8.65044C9.34162 9.04249 9.03261 9.57921 9.29287 10.2951C9.88463 11.7426 10.7907 12.9098 11.9862 13.7651C12.0852 13.8355 12.1992 13.87 12.3132 13.87C12.4887 13.87 12.6612 13.7876 12.7707 13.6346C12.9515 13.382 12.8937 13.0312 12.641 12.8498C11.6202 12.1212 10.8447 11.1182 10.3429 9.89105C10.2746 9.7044 10.3436 9.55672 10.5424 9.21115C10.7442 8.86033 11.0209 8.37983 10.8927 7.76439C10.7734 7.19243 9.28687 5.38436 8.93286 5.03879C8.6006 4.71495 8.24659 4.53505 7.85958 4.50281C6.6288 4.4226 5.19551 6.0815 4.96751 6.46306C4.35549 7.29738 4.34424 8.37833 4.93451 9.67291C5.06351 9.95627 5.39577 10.08 5.67928 9.95177C5.96203 9.82284 6.08654 9.49001 5.95828 9.2074Z" fill="url(#paint0_linear_1329_45240)"></path>
+														<path d="M18.9628 15.063C18.617 14.71 16.8102 13.2242 16.2357 13.105C15.5067 12.9536 14.9269 13.3149 14.5069 13.5795L14.3336 13.6867C14.0674 13.8472 13.9819 14.1927 14.1416 14.4581C14.3021 14.725 14.6479 14.8097 14.9142 14.65L15.1062 14.5308C15.4857 14.2917 15.7347 14.1463 15.9739 14.1972C16.2769 14.3112 17.7267 15.4079 18.1587 15.8501C18.2915 15.9858 18.3695 16.114 18.3762 16.1822C18.3965 16.7624 17.2737 17.8778 16.8785 18.117C16.3714 18.4805 15.6904 18.4543 14.7754 18.0293C12.5133 17.0892 8.95825 13.9086 7.01195 11.0833C6.83645 10.8277 6.48619 10.7647 6.22968 10.9386C5.97393 11.1148 5.90943 11.4649 6.08568 11.7205C8.16923 14.7452 11.8728 18.0413 14.3216 19.0577C14.9584 19.3546 15.5464 19.5 16.0759 19.5C16.6084 19.5 17.0817 19.3531 17.4852 19.0622C17.6975 18.9408 19.5478 17.497 19.499 16.1155C19.4683 15.7504 19.2883 15.3959 18.9628 15.063Z" fill="white"></path>
+														<defs>
+															<lineargradient id="paint0_linear_1329_45240" x1="5.25" y1="6" x2="11.625" y2="12.375" gradientunits="userSpaceOnUse">
+																<stop stop-color="white"></stop>
+																<stop offset="1" stop-color="white" stop-opacity="0"></stop>
+															</lineargradient>
+														</defs>
+													</svg><span>+7 958 523-72-86</span></a><a class="sales-department__slide-link sales-department__slide-link" href="mailto:tu@alfapol.ru"> <svg class="sales-department__slide-link-icon" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<rect width="24" height="24" rx="4" fill="#0184FF"></rect>
+														<mask id="path-2-inside-1_1329_45248" fill="white">
+															<rect x="3.75" y="5.40002" width="16.5" height="13.2" rx="1"></rect>
+														</mask>
+														<rect x="3.75" y="5.40002" width="16.5" height="13.2" rx="1" stroke="white" stroke-width="3" mask="url(#path-2-inside-1_1329_45248)"></rect>
+														<path d="M6.22461 8.625L11.9996 12.75L17.7746 8.625" stroke="url(#paint0_linear_1329_45248)" stroke-width="1.5" stroke-linecap="round"></path>
+														<defs>
+															<lineargradient id="paint0_linear_1329_45248" x1="17.6246" y1="8.25" x2="7.12457" y2="10.5" gradientunits="userSpaceOnUse">
+																<stop stop-color="white"></stop>
+																<stop offset="1" stop-color="white" stop-opacity="0"></stop>
+															</lineargradient>
+														</defs>
+													</svg><span>tu@alfapol.ru</span></a><a class="sales-department__slide-link sales-department__slide-link" href="skype:tu@alfapol.ru"> <svg class="sales-department__slide-link-icon" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<g clip-path="url(#clip0_1329_45255)">
+															<path fill-rule="evenodd" clip-rule="evenodd" d="M17.9985 17.5191C17.4694 18.2591 16.6875 18.8434 15.6716 19.2579C14.6683 19.6697 13.4661 19.8797 12.0958 19.8797C10.4518 19.8797 9.07331 19.5945 7.9965 19.0311C7.22737 18.6221 6.59381 18.0684 6.11269 17.3812C5.62594 16.6912 5.38031 16.0056 5.38031 15.342C5.38031 14.9302 5.54119 14.5714 5.85731 14.2778C6.17063 13.9856 6.57281 13.8396 7.05244 13.8396C7.44469 13.8396 7.78481 13.9551 8.05988 14.1846C8.32369 14.4058 8.54944 14.7326 8.7315 15.1513C8.93475 15.6103 9.15487 15.9971 9.38775 16.299C9.6135 16.5939 9.93675 16.8401 10.3487 17.0334C10.7636 17.2254 11.3237 17.3256 12.0109 17.3256C12.9577 17.3256 13.7338 17.1253 14.3166 16.7331C14.8881 16.3506 15.1646 15.8887 15.1646 15.324C15.1646 14.8802 15.0193 14.5298 14.7229 14.2543C14.4096 13.9678 13.9989 13.7452 13.5009 13.5894C12.9802 13.4308 12.2747 13.257 11.4013 13.0761C10.2118 12.8257 9.20288 12.5293 8.40131 12.1914C7.58006 11.8479 6.91819 11.3707 6.43425 10.7739C5.94319 10.1661 5.69344 9.40519 5.69344 8.51062C5.69344 7.65937 5.95444 6.89006 6.471 6.22781C6.98175 5.56988 7.72969 5.05519 8.69344 4.70606C9.64313 4.35975 10.7721 4.18444 12.0519 4.18444C13.0736 4.18444 13.9725 4.30125 14.7231 4.53225C15.4779 4.76325 16.113 5.07469 16.6125 5.46C17.1163 5.84944 17.4917 6.26269 17.7259 6.69394C17.9629 7.12931 18.0844 7.56187 18.0844 7.98075C18.0844 8.38425 17.9263 8.75138 17.6145 9.06994C17.3012 9.39262 16.9046 9.55538 16.4391 9.55538C16.0157 9.55538 15.6827 9.45244 15.4541 9.25219C15.2396 9.06431 15.0167 8.77219 14.7698 8.355C14.4848 7.82081 14.139 7.39931 13.7424 7.10156C13.3571 6.81225 12.7151 6.6675 11.8303 6.6675C11.0119 6.6675 10.3431 6.82894 9.84769 7.15012C9.37069 7.45762 9.138 7.81219 9.138 8.23237C9.138 8.48831 9.21281 8.70394 9.36806 8.8875C9.52894 9.08494 9.759 9.25481 10.0496 9.39937C10.3502 9.54825 10.6607 9.66788 10.971 9.75131C11.2884 9.83887 11.8219 9.96825 12.5543 10.1353C13.4812 10.3301 14.3323 10.5512 15.0844 10.7891C15.8477 11.0284 16.5054 11.3233 17.0443 11.6696C17.5918 12.0216 18.0249 12.4723 18.3341 13.0119C18.6431 13.5559 18.7999 14.2236 18.7999 15.0011C18.8001 15.9304 18.5291 16.7777 17.9985 17.5191ZM23.31 14.5477C23.4836 13.7661 23.5738 12.9564 23.5738 12.1245C23.5738 5.89256 18.4502 0.838875 12.1269 0.838875C11.4609 0.838875 10.8075 0.895875 10.1698 1.00444C9.14681 0.368625 7.93594 0 6.63919 0C2.97169 0 0 2.9295 0 6.54638C0 7.75388 0.333 8.88338 0.911625 9.85706C0.760687 10.5887 0.68025 11.3483 0.68025 12.1245C0.68025 18.3592 5.80538 23.4116 12.1271 23.4116C12.8439 23.4116 13.5439 23.3462 14.2239 23.2224C15.1594 23.7176 16.2262 24 17.3621 24C21.0283 24 24 21.069 24 17.4551C24 16.4104 23.7516 15.4241 23.31 14.5477Z" fill="#0184FF"></path>
+														</g>
+														<defs>
+															<clippath id="clip0_1329_45255">
+																<rect width="24" height="24" fill="white"></rect>
+															</clippath>
+														</defs>
+													</svg><span>tu@alfapol.ru</span></a></div>
 										</div>
 									</div>
 								</div>
@@ -669,13 +893,39 @@
 										</picture>
 										<div class="sales-department__slide-info">
 											<h4 class="sales-department__slide-title">Рябцев Сергей</h4>
-											<div class="sales-department__slide-contacts"><a class="sales-department__slide-link sales-department__slide-link" href="tel:+7 958 523-72-86">
-													<div class="sales-department__slide-link-icon sales-department__slide-link-icon_phone"></div><span>+7 958 523-72-86</span>
-												</a><a class="sales-department__slide-link sales-department__slide-link" href="mailto:tu@alfapol.ru">
-													<div class="sales-department__slide-link-icon sales-department__slide-link-icon_email"></div><span>tu@alfapol.ru</span>
-												</a><a class="sales-department__slide-link sales-department__slide-link" href="skype:tu@alfapol.ru">
-													<div class="sales-department__slide-link-icon sales-department__slide-link-icon_skype"></div><span>tu@alfapol.ru</span>
-												</a></div>
+											<div class="sales-department__slide-contacts"><a class="sales-department__slide-link sales-department__slide-link" href="tel:+7 958 523-72-86"><svg class="sales-department__slide-link-icon" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<rect width="24" height="24" rx="4" fill="#0184FF"></rect>
+														<path d="M5.95828 9.2074C5.54352 8.29662 5.51652 7.61672 5.90278 7.08599C6.15179 6.67295 7.24982 5.61149 7.78683 5.62424C7.88208 5.63173 8.01034 5.71044 8.14684 5.84462C8.58935 6.27565 9.68588 7.72316 9.79088 7.99377C9.83063 8.18118 9.73688 8.35659 9.56738 8.65044C9.34162 9.04249 9.03261 9.57921 9.29287 10.2951C9.88463 11.7426 10.7907 12.9098 11.9862 13.7651C12.0852 13.8355 12.1992 13.87 12.3132 13.87C12.4887 13.87 12.6612 13.7876 12.7707 13.6346C12.9515 13.382 12.8937 13.0312 12.641 12.8498C11.6202 12.1212 10.8447 11.1182 10.3429 9.89105C10.2746 9.7044 10.3436 9.55672 10.5424 9.21115C10.7442 8.86033 11.0209 8.37983 10.8927 7.76439C10.7734 7.19243 9.28687 5.38436 8.93286 5.03879C8.6006 4.71495 8.24659 4.53505 7.85958 4.50281C6.6288 4.4226 5.19551 6.0815 4.96751 6.46306C4.35549 7.29738 4.34424 8.37833 4.93451 9.67291C5.06351 9.95627 5.39577 10.08 5.67928 9.95177C5.96203 9.82284 6.08654 9.49001 5.95828 9.2074Z" fill="url(#paint0_linear_1329_45240)"></path>
+														<path d="M18.9628 15.063C18.617 14.71 16.8102 13.2242 16.2357 13.105C15.5067 12.9536 14.9269 13.3149 14.5069 13.5795L14.3336 13.6867C14.0674 13.8472 13.9819 14.1927 14.1416 14.4581C14.3021 14.725 14.6479 14.8097 14.9142 14.65L15.1062 14.5308C15.4857 14.2917 15.7347 14.1463 15.9739 14.1972C16.2769 14.3112 17.7267 15.4079 18.1587 15.8501C18.2915 15.9858 18.3695 16.114 18.3762 16.1822C18.3965 16.7624 17.2737 17.8778 16.8785 18.117C16.3714 18.4805 15.6904 18.4543 14.7754 18.0293C12.5133 17.0892 8.95825 13.9086 7.01195 11.0833C6.83645 10.8277 6.48619 10.7647 6.22968 10.9386C5.97393 11.1148 5.90943 11.4649 6.08568 11.7205C8.16923 14.7452 11.8728 18.0413 14.3216 19.0577C14.9584 19.3546 15.5464 19.5 16.0759 19.5C16.6084 19.5 17.0817 19.3531 17.4852 19.0622C17.6975 18.9408 19.5478 17.497 19.499 16.1155C19.4683 15.7504 19.2883 15.3959 18.9628 15.063Z" fill="white"></path>
+														<defs>
+															<lineargradient id="paint0_linear_1329_45240" x1="5.25" y1="6" x2="11.625" y2="12.375" gradientunits="userSpaceOnUse">
+																<stop stop-color="white"></stop>
+																<stop offset="1" stop-color="white" stop-opacity="0"></stop>
+															</lineargradient>
+														</defs>
+													</svg><span>+7 958 523-72-86</span></a><a class="sales-department__slide-link sales-department__slide-link" href="mailto:tu@alfapol.ru"> <svg class="sales-department__slide-link-icon" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<rect width="24" height="24" rx="4" fill="#0184FF"></rect>
+														<mask id="path-2-inside-1_1329_45248" fill="white">
+															<rect x="3.75" y="5.40002" width="16.5" height="13.2" rx="1"></rect>
+														</mask>
+														<rect x="3.75" y="5.40002" width="16.5" height="13.2" rx="1" stroke="white" stroke-width="3" mask="url(#path-2-inside-1_1329_45248)"></rect>
+														<path d="M6.22461 8.625L11.9996 12.75L17.7746 8.625" stroke="url(#paint0_linear_1329_45248)" stroke-width="1.5" stroke-linecap="round"></path>
+														<defs>
+															<lineargradient id="paint0_linear_1329_45248" x1="17.6246" y1="8.25" x2="7.12457" y2="10.5" gradientunits="userSpaceOnUse">
+																<stop stop-color="white"></stop>
+																<stop offset="1" stop-color="white" stop-opacity="0"></stop>
+															</lineargradient>
+														</defs>
+													</svg><span>tu@alfapol.ru</span></a><a class="sales-department__slide-link sales-department__slide-link" href="skype:tu@alfapol.ru"> <svg class="sales-department__slide-link-icon" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<g clip-path="url(#clip0_1329_45255)">
+															<path fill-rule="evenodd" clip-rule="evenodd" d="M17.9985 17.5191C17.4694 18.2591 16.6875 18.8434 15.6716 19.2579C14.6683 19.6697 13.4661 19.8797 12.0958 19.8797C10.4518 19.8797 9.07331 19.5945 7.9965 19.0311C7.22737 18.6221 6.59381 18.0684 6.11269 17.3812C5.62594 16.6912 5.38031 16.0056 5.38031 15.342C5.38031 14.9302 5.54119 14.5714 5.85731 14.2778C6.17063 13.9856 6.57281 13.8396 7.05244 13.8396C7.44469 13.8396 7.78481 13.9551 8.05988 14.1846C8.32369 14.4058 8.54944 14.7326 8.7315 15.1513C8.93475 15.6103 9.15487 15.9971 9.38775 16.299C9.6135 16.5939 9.93675 16.8401 10.3487 17.0334C10.7636 17.2254 11.3237 17.3256 12.0109 17.3256C12.9577 17.3256 13.7338 17.1253 14.3166 16.7331C14.8881 16.3506 15.1646 15.8887 15.1646 15.324C15.1646 14.8802 15.0193 14.5298 14.7229 14.2543C14.4096 13.9678 13.9989 13.7452 13.5009 13.5894C12.9802 13.4308 12.2747 13.257 11.4013 13.0761C10.2118 12.8257 9.20288 12.5293 8.40131 12.1914C7.58006 11.8479 6.91819 11.3707 6.43425 10.7739C5.94319 10.1661 5.69344 9.40519 5.69344 8.51062C5.69344 7.65937 5.95444 6.89006 6.471 6.22781C6.98175 5.56988 7.72969 5.05519 8.69344 4.70606C9.64313 4.35975 10.7721 4.18444 12.0519 4.18444C13.0736 4.18444 13.9725 4.30125 14.7231 4.53225C15.4779 4.76325 16.113 5.07469 16.6125 5.46C17.1163 5.84944 17.4917 6.26269 17.7259 6.69394C17.9629 7.12931 18.0844 7.56187 18.0844 7.98075C18.0844 8.38425 17.9263 8.75138 17.6145 9.06994C17.3012 9.39262 16.9046 9.55538 16.4391 9.55538C16.0157 9.55538 15.6827 9.45244 15.4541 9.25219C15.2396 9.06431 15.0167 8.77219 14.7698 8.355C14.4848 7.82081 14.139 7.39931 13.7424 7.10156C13.3571 6.81225 12.7151 6.6675 11.8303 6.6675C11.0119 6.6675 10.3431 6.82894 9.84769 7.15012C9.37069 7.45762 9.138 7.81219 9.138 8.23237C9.138 8.48831 9.21281 8.70394 9.36806 8.8875C9.52894 9.08494 9.759 9.25481 10.0496 9.39937C10.3502 9.54825 10.6607 9.66788 10.971 9.75131C11.2884 9.83887 11.8219 9.96825 12.5543 10.1353C13.4812 10.3301 14.3323 10.5512 15.0844 10.7891C15.8477 11.0284 16.5054 11.3233 17.0443 11.6696C17.5918 12.0216 18.0249 12.4723 18.3341 13.0119C18.6431 13.5559 18.7999 14.2236 18.7999 15.0011C18.8001 15.9304 18.5291 16.7777 17.9985 17.5191ZM23.31 14.5477C23.4836 13.7661 23.5738 12.9564 23.5738 12.1245C23.5738 5.89256 18.4502 0.838875 12.1269 0.838875C11.4609 0.838875 10.8075 0.895875 10.1698 1.00444C9.14681 0.368625 7.93594 0 6.63919 0C2.97169 0 0 2.9295 0 6.54638C0 7.75388 0.333 8.88338 0.911625 9.85706C0.760687 10.5887 0.68025 11.3483 0.68025 12.1245C0.68025 18.3592 5.80538 23.4116 12.1271 23.4116C12.8439 23.4116 13.5439 23.3462 14.2239 23.2224C15.1594 23.7176 16.2262 24 17.3621 24C21.0283 24 24 21.069 24 17.4551C24 16.4104 23.7516 15.4241 23.31 14.5477Z" fill="#0184FF"></path>
+														</g>
+														<defs>
+															<clippath id="clip0_1329_45255">
+																<rect width="24" height="24" fill="white"></rect>
+															</clippath>
+														</defs>
+													</svg><span>tu@alfapol.ru</span></a></div>
 										</div>
 									</div>
 								</div>
@@ -686,13 +936,39 @@
 										</picture>
 										<div class="sales-department__slide-info">
 											<h4 class="sales-department__slide-title">Убиенных Татьяна</h4>
-											<div class="sales-department__slide-contacts"><a class="sales-department__slide-link sales-department__slide-link" href="tel:+7 958 523-72-86">
-													<div class="sales-department__slide-link-icon sales-department__slide-link-icon_phone"></div><span>+7 958 523-72-86</span>
-												</a><a class="sales-department__slide-link sales-department__slide-link" href="mailto:tu@alfapol.ru">
-													<div class="sales-department__slide-link-icon sales-department__slide-link-icon_email"></div><span>tu@alfapol.ru</span>
-												</a><a class="sales-department__slide-link sales-department__slide-link" href="skype:tu@alfapol.ru">
-													<div class="sales-department__slide-link-icon sales-department__slide-link-icon_skype"></div><span>tu@alfapol.ru</span>
-												</a></div>
+											<div class="sales-department__slide-contacts"><a class="sales-department__slide-link sales-department__slide-link" href="tel:+7 958 523-72-86"><svg class="sales-department__slide-link-icon" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<rect width="24" height="24" rx="4" fill="#0184FF"></rect>
+														<path d="M5.95828 9.2074C5.54352 8.29662 5.51652 7.61672 5.90278 7.08599C6.15179 6.67295 7.24982 5.61149 7.78683 5.62424C7.88208 5.63173 8.01034 5.71044 8.14684 5.84462C8.58935 6.27565 9.68588 7.72316 9.79088 7.99377C9.83063 8.18118 9.73688 8.35659 9.56738 8.65044C9.34162 9.04249 9.03261 9.57921 9.29287 10.2951C9.88463 11.7426 10.7907 12.9098 11.9862 13.7651C12.0852 13.8355 12.1992 13.87 12.3132 13.87C12.4887 13.87 12.6612 13.7876 12.7707 13.6346C12.9515 13.382 12.8937 13.0312 12.641 12.8498C11.6202 12.1212 10.8447 11.1182 10.3429 9.89105C10.2746 9.7044 10.3436 9.55672 10.5424 9.21115C10.7442 8.86033 11.0209 8.37983 10.8927 7.76439C10.7734 7.19243 9.28687 5.38436 8.93286 5.03879C8.6006 4.71495 8.24659 4.53505 7.85958 4.50281C6.6288 4.4226 5.19551 6.0815 4.96751 6.46306C4.35549 7.29738 4.34424 8.37833 4.93451 9.67291C5.06351 9.95627 5.39577 10.08 5.67928 9.95177C5.96203 9.82284 6.08654 9.49001 5.95828 9.2074Z" fill="url(#paint0_linear_1329_45240)"></path>
+														<path d="M18.9628 15.063C18.617 14.71 16.8102 13.2242 16.2357 13.105C15.5067 12.9536 14.9269 13.3149 14.5069 13.5795L14.3336 13.6867C14.0674 13.8472 13.9819 14.1927 14.1416 14.4581C14.3021 14.725 14.6479 14.8097 14.9142 14.65L15.1062 14.5308C15.4857 14.2917 15.7347 14.1463 15.9739 14.1972C16.2769 14.3112 17.7267 15.4079 18.1587 15.8501C18.2915 15.9858 18.3695 16.114 18.3762 16.1822C18.3965 16.7624 17.2737 17.8778 16.8785 18.117C16.3714 18.4805 15.6904 18.4543 14.7754 18.0293C12.5133 17.0892 8.95825 13.9086 7.01195 11.0833C6.83645 10.8277 6.48619 10.7647 6.22968 10.9386C5.97393 11.1148 5.90943 11.4649 6.08568 11.7205C8.16923 14.7452 11.8728 18.0413 14.3216 19.0577C14.9584 19.3546 15.5464 19.5 16.0759 19.5C16.6084 19.5 17.0817 19.3531 17.4852 19.0622C17.6975 18.9408 19.5478 17.497 19.499 16.1155C19.4683 15.7504 19.2883 15.3959 18.9628 15.063Z" fill="white"></path>
+														<defs>
+															<lineargradient id="paint0_linear_1329_45240" x1="5.25" y1="6" x2="11.625" y2="12.375" gradientunits="userSpaceOnUse">
+																<stop stop-color="white"></stop>
+																<stop offset="1" stop-color="white" stop-opacity="0"></stop>
+															</lineargradient>
+														</defs>
+													</svg><span>+7 958 523-72-86</span></a><a class="sales-department__slide-link sales-department__slide-link" href="mailto:tu@alfapol.ru"> <svg class="sales-department__slide-link-icon" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<rect width="24" height="24" rx="4" fill="#0184FF"></rect>
+														<mask id="path-2-inside-1_1329_45248" fill="white">
+															<rect x="3.75" y="5.40002" width="16.5" height="13.2" rx="1"></rect>
+														</mask>
+														<rect x="3.75" y="5.40002" width="16.5" height="13.2" rx="1" stroke="white" stroke-width="3" mask="url(#path-2-inside-1_1329_45248)"></rect>
+														<path d="M6.22461 8.625L11.9996 12.75L17.7746 8.625" stroke="url(#paint0_linear_1329_45248)" stroke-width="1.5" stroke-linecap="round"></path>
+														<defs>
+															<lineargradient id="paint0_linear_1329_45248" x1="17.6246" y1="8.25" x2="7.12457" y2="10.5" gradientunits="userSpaceOnUse">
+																<stop stop-color="white"></stop>
+																<stop offset="1" stop-color="white" stop-opacity="0"></stop>
+															</lineargradient>
+														</defs>
+													</svg><span>tu@alfapol.ru</span></a><a class="sales-department__slide-link sales-department__slide-link" href="skype:tu@alfapol.ru"> <svg class="sales-department__slide-link-icon" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<g clip-path="url(#clip0_1329_45255)">
+															<path fill-rule="evenodd" clip-rule="evenodd" d="M17.9985 17.5191C17.4694 18.2591 16.6875 18.8434 15.6716 19.2579C14.6683 19.6697 13.4661 19.8797 12.0958 19.8797C10.4518 19.8797 9.07331 19.5945 7.9965 19.0311C7.22737 18.6221 6.59381 18.0684 6.11269 17.3812C5.62594 16.6912 5.38031 16.0056 5.38031 15.342C5.38031 14.9302 5.54119 14.5714 5.85731 14.2778C6.17063 13.9856 6.57281 13.8396 7.05244 13.8396C7.44469 13.8396 7.78481 13.9551 8.05988 14.1846C8.32369 14.4058 8.54944 14.7326 8.7315 15.1513C8.93475 15.6103 9.15487 15.9971 9.38775 16.299C9.6135 16.5939 9.93675 16.8401 10.3487 17.0334C10.7636 17.2254 11.3237 17.3256 12.0109 17.3256C12.9577 17.3256 13.7338 17.1253 14.3166 16.7331C14.8881 16.3506 15.1646 15.8887 15.1646 15.324C15.1646 14.8802 15.0193 14.5298 14.7229 14.2543C14.4096 13.9678 13.9989 13.7452 13.5009 13.5894C12.9802 13.4308 12.2747 13.257 11.4013 13.0761C10.2118 12.8257 9.20288 12.5293 8.40131 12.1914C7.58006 11.8479 6.91819 11.3707 6.43425 10.7739C5.94319 10.1661 5.69344 9.40519 5.69344 8.51062C5.69344 7.65937 5.95444 6.89006 6.471 6.22781C6.98175 5.56988 7.72969 5.05519 8.69344 4.70606C9.64313 4.35975 10.7721 4.18444 12.0519 4.18444C13.0736 4.18444 13.9725 4.30125 14.7231 4.53225C15.4779 4.76325 16.113 5.07469 16.6125 5.46C17.1163 5.84944 17.4917 6.26269 17.7259 6.69394C17.9629 7.12931 18.0844 7.56187 18.0844 7.98075C18.0844 8.38425 17.9263 8.75138 17.6145 9.06994C17.3012 9.39262 16.9046 9.55538 16.4391 9.55538C16.0157 9.55538 15.6827 9.45244 15.4541 9.25219C15.2396 9.06431 15.0167 8.77219 14.7698 8.355C14.4848 7.82081 14.139 7.39931 13.7424 7.10156C13.3571 6.81225 12.7151 6.6675 11.8303 6.6675C11.0119 6.6675 10.3431 6.82894 9.84769 7.15012C9.37069 7.45762 9.138 7.81219 9.138 8.23237C9.138 8.48831 9.21281 8.70394 9.36806 8.8875C9.52894 9.08494 9.759 9.25481 10.0496 9.39937C10.3502 9.54825 10.6607 9.66788 10.971 9.75131C11.2884 9.83887 11.8219 9.96825 12.5543 10.1353C13.4812 10.3301 14.3323 10.5512 15.0844 10.7891C15.8477 11.0284 16.5054 11.3233 17.0443 11.6696C17.5918 12.0216 18.0249 12.4723 18.3341 13.0119C18.6431 13.5559 18.7999 14.2236 18.7999 15.0011C18.8001 15.9304 18.5291 16.7777 17.9985 17.5191ZM23.31 14.5477C23.4836 13.7661 23.5738 12.9564 23.5738 12.1245C23.5738 5.89256 18.4502 0.838875 12.1269 0.838875C11.4609 0.838875 10.8075 0.895875 10.1698 1.00444C9.14681 0.368625 7.93594 0 6.63919 0C2.97169 0 0 2.9295 0 6.54638C0 7.75388 0.333 8.88338 0.911625 9.85706C0.760687 10.5887 0.68025 11.3483 0.68025 12.1245C0.68025 18.3592 5.80538 23.4116 12.1271 23.4116C12.8439 23.4116 13.5439 23.3462 14.2239 23.2224C15.1594 23.7176 16.2262 24 17.3621 24C21.0283 24 24 21.069 24 17.4551C24 16.4104 23.7516 15.4241 23.31 14.5477Z" fill="#0184FF"></path>
+														</g>
+														<defs>
+															<clippath id="clip0_1329_45255">
+																<rect width="24" height="24" fill="white"></rect>
+															</clippath>
+														</defs>
+													</svg><span>tu@alfapol.ru</span></a></div>
 										</div>
 									</div>
 								</div>
@@ -703,13 +979,39 @@
 										</picture>
 										<div class="sales-department__slide-info">
 											<h4 class="sales-department__slide-title">Захаров Евгений</h4>
-											<div class="sales-department__slide-contacts"><a class="sales-department__slide-link sales-department__slide-link" href="tel:+7 958 523-72-86">
-													<div class="sales-department__slide-link-icon sales-department__slide-link-icon_phone"></div><span>+7 958 523-72-86</span>
-												</a><a class="sales-department__slide-link sales-department__slide-link" href="mailto:tu@alfapol.ru">
-													<div class="sales-department__slide-link-icon sales-department__slide-link-icon_email"></div><span>tu@alfapol.ru</span>
-												</a><a class="sales-department__slide-link sales-department__slide-link" href="skype:tu@alfapol.ru">
-													<div class="sales-department__slide-link-icon sales-department__slide-link-icon_skype"></div><span>tu@alfapol.ru</span>
-												</a></div>
+											<div class="sales-department__slide-contacts"><a class="sales-department__slide-link sales-department__slide-link" href="tel:+7 958 523-72-86"><svg class="sales-department__slide-link-icon" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<rect width="24" height="24" rx="4" fill="#0184FF"></rect>
+														<path d="M5.95828 9.2074C5.54352 8.29662 5.51652 7.61672 5.90278 7.08599C6.15179 6.67295 7.24982 5.61149 7.78683 5.62424C7.88208 5.63173 8.01034 5.71044 8.14684 5.84462C8.58935 6.27565 9.68588 7.72316 9.79088 7.99377C9.83063 8.18118 9.73688 8.35659 9.56738 8.65044C9.34162 9.04249 9.03261 9.57921 9.29287 10.2951C9.88463 11.7426 10.7907 12.9098 11.9862 13.7651C12.0852 13.8355 12.1992 13.87 12.3132 13.87C12.4887 13.87 12.6612 13.7876 12.7707 13.6346C12.9515 13.382 12.8937 13.0312 12.641 12.8498C11.6202 12.1212 10.8447 11.1182 10.3429 9.89105C10.2746 9.7044 10.3436 9.55672 10.5424 9.21115C10.7442 8.86033 11.0209 8.37983 10.8927 7.76439C10.7734 7.19243 9.28687 5.38436 8.93286 5.03879C8.6006 4.71495 8.24659 4.53505 7.85958 4.50281C6.6288 4.4226 5.19551 6.0815 4.96751 6.46306C4.35549 7.29738 4.34424 8.37833 4.93451 9.67291C5.06351 9.95627 5.39577 10.08 5.67928 9.95177C5.96203 9.82284 6.08654 9.49001 5.95828 9.2074Z" fill="url(#paint0_linear_1329_45240)"></path>
+														<path d="M18.9628 15.063C18.617 14.71 16.8102 13.2242 16.2357 13.105C15.5067 12.9536 14.9269 13.3149 14.5069 13.5795L14.3336 13.6867C14.0674 13.8472 13.9819 14.1927 14.1416 14.4581C14.3021 14.725 14.6479 14.8097 14.9142 14.65L15.1062 14.5308C15.4857 14.2917 15.7347 14.1463 15.9739 14.1972C16.2769 14.3112 17.7267 15.4079 18.1587 15.8501C18.2915 15.9858 18.3695 16.114 18.3762 16.1822C18.3965 16.7624 17.2737 17.8778 16.8785 18.117C16.3714 18.4805 15.6904 18.4543 14.7754 18.0293C12.5133 17.0892 8.95825 13.9086 7.01195 11.0833C6.83645 10.8277 6.48619 10.7647 6.22968 10.9386C5.97393 11.1148 5.90943 11.4649 6.08568 11.7205C8.16923 14.7452 11.8728 18.0413 14.3216 19.0577C14.9584 19.3546 15.5464 19.5 16.0759 19.5C16.6084 19.5 17.0817 19.3531 17.4852 19.0622C17.6975 18.9408 19.5478 17.497 19.499 16.1155C19.4683 15.7504 19.2883 15.3959 18.9628 15.063Z" fill="white"></path>
+														<defs>
+															<lineargradient id="paint0_linear_1329_45240" x1="5.25" y1="6" x2="11.625" y2="12.375" gradientunits="userSpaceOnUse">
+																<stop stop-color="white"></stop>
+																<stop offset="1" stop-color="white" stop-opacity="0"></stop>
+															</lineargradient>
+														</defs>
+													</svg><span>+7 958 523-72-86</span></a><a class="sales-department__slide-link sales-department__slide-link" href="mailto:tu@alfapol.ru"> <svg class="sales-department__slide-link-icon" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<rect width="24" height="24" rx="4" fill="#0184FF"></rect>
+														<mask id="path-2-inside-1_1329_45248" fill="white">
+															<rect x="3.75" y="5.40002" width="16.5" height="13.2" rx="1"></rect>
+														</mask>
+														<rect x="3.75" y="5.40002" width="16.5" height="13.2" rx="1" stroke="white" stroke-width="3" mask="url(#path-2-inside-1_1329_45248)"></rect>
+														<path d="M6.22461 8.625L11.9996 12.75L17.7746 8.625" stroke="url(#paint0_linear_1329_45248)" stroke-width="1.5" stroke-linecap="round"></path>
+														<defs>
+															<lineargradient id="paint0_linear_1329_45248" x1="17.6246" y1="8.25" x2="7.12457" y2="10.5" gradientunits="userSpaceOnUse">
+																<stop stop-color="white"></stop>
+																<stop offset="1" stop-color="white" stop-opacity="0"></stop>
+															</lineargradient>
+														</defs>
+													</svg><span>tu@alfapol.ru</span></a><a class="sales-department__slide-link sales-department__slide-link" href="skype:tu@alfapol.ru"> <svg class="sales-department__slide-link-icon" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<g clip-path="url(#clip0_1329_45255)">
+															<path fill-rule="evenodd" clip-rule="evenodd" d="M17.9985 17.5191C17.4694 18.2591 16.6875 18.8434 15.6716 19.2579C14.6683 19.6697 13.4661 19.8797 12.0958 19.8797C10.4518 19.8797 9.07331 19.5945 7.9965 19.0311C7.22737 18.6221 6.59381 18.0684 6.11269 17.3812C5.62594 16.6912 5.38031 16.0056 5.38031 15.342C5.38031 14.9302 5.54119 14.5714 5.85731 14.2778C6.17063 13.9856 6.57281 13.8396 7.05244 13.8396C7.44469 13.8396 7.78481 13.9551 8.05988 14.1846C8.32369 14.4058 8.54944 14.7326 8.7315 15.1513C8.93475 15.6103 9.15487 15.9971 9.38775 16.299C9.6135 16.5939 9.93675 16.8401 10.3487 17.0334C10.7636 17.2254 11.3237 17.3256 12.0109 17.3256C12.9577 17.3256 13.7338 17.1253 14.3166 16.7331C14.8881 16.3506 15.1646 15.8887 15.1646 15.324C15.1646 14.8802 15.0193 14.5298 14.7229 14.2543C14.4096 13.9678 13.9989 13.7452 13.5009 13.5894C12.9802 13.4308 12.2747 13.257 11.4013 13.0761C10.2118 12.8257 9.20288 12.5293 8.40131 12.1914C7.58006 11.8479 6.91819 11.3707 6.43425 10.7739C5.94319 10.1661 5.69344 9.40519 5.69344 8.51062C5.69344 7.65937 5.95444 6.89006 6.471 6.22781C6.98175 5.56988 7.72969 5.05519 8.69344 4.70606C9.64313 4.35975 10.7721 4.18444 12.0519 4.18444C13.0736 4.18444 13.9725 4.30125 14.7231 4.53225C15.4779 4.76325 16.113 5.07469 16.6125 5.46C17.1163 5.84944 17.4917 6.26269 17.7259 6.69394C17.9629 7.12931 18.0844 7.56187 18.0844 7.98075C18.0844 8.38425 17.9263 8.75138 17.6145 9.06994C17.3012 9.39262 16.9046 9.55538 16.4391 9.55538C16.0157 9.55538 15.6827 9.45244 15.4541 9.25219C15.2396 9.06431 15.0167 8.77219 14.7698 8.355C14.4848 7.82081 14.139 7.39931 13.7424 7.10156C13.3571 6.81225 12.7151 6.6675 11.8303 6.6675C11.0119 6.6675 10.3431 6.82894 9.84769 7.15012C9.37069 7.45762 9.138 7.81219 9.138 8.23237C9.138 8.48831 9.21281 8.70394 9.36806 8.8875C9.52894 9.08494 9.759 9.25481 10.0496 9.39937C10.3502 9.54825 10.6607 9.66788 10.971 9.75131C11.2884 9.83887 11.8219 9.96825 12.5543 10.1353C13.4812 10.3301 14.3323 10.5512 15.0844 10.7891C15.8477 11.0284 16.5054 11.3233 17.0443 11.6696C17.5918 12.0216 18.0249 12.4723 18.3341 13.0119C18.6431 13.5559 18.7999 14.2236 18.7999 15.0011C18.8001 15.9304 18.5291 16.7777 17.9985 17.5191ZM23.31 14.5477C23.4836 13.7661 23.5738 12.9564 23.5738 12.1245C23.5738 5.89256 18.4502 0.838875 12.1269 0.838875C11.4609 0.838875 10.8075 0.895875 10.1698 1.00444C9.14681 0.368625 7.93594 0 6.63919 0C2.97169 0 0 2.9295 0 6.54638C0 7.75388 0.333 8.88338 0.911625 9.85706C0.760687 10.5887 0.68025 11.3483 0.68025 12.1245C0.68025 18.3592 5.80538 23.4116 12.1271 23.4116C12.8439 23.4116 13.5439 23.3462 14.2239 23.2224C15.1594 23.7176 16.2262 24 17.3621 24C21.0283 24 24 21.069 24 17.4551C24 16.4104 23.7516 15.4241 23.31 14.5477Z" fill="#0184FF"></path>
+														</g>
+														<defs>
+															<clippath id="clip0_1329_45255">
+																<rect width="24" height="24" fill="white"></rect>
+															</clippath>
+														</defs>
+													</svg><span>tu@alfapol.ru</span></a></div>
 										</div>
 									</div>
 								</div>
@@ -720,13 +1022,39 @@
 										</picture>
 										<div class="sales-department__slide-info">
 											<h4 class="sales-department__slide-title">Михайлова Вероника</h4>
-											<div class="sales-department__slide-contacts"><a class="sales-department__slide-link sales-department__slide-link" href="tel:+7 958 523-72-86">
-													<div class="sales-department__slide-link-icon sales-department__slide-link-icon_phone"></div><span>+7 958 523-72-86</span>
-												</a><a class="sales-department__slide-link sales-department__slide-link" href="mailto:tu@alfapol.ru">
-													<div class="sales-department__slide-link-icon sales-department__slide-link-icon_email"></div><span>tu@alfapol.ru</span>
-												</a><a class="sales-department__slide-link sales-department__slide-link" href="skype:tu@alfapol.ru">
-													<div class="sales-department__slide-link-icon sales-department__slide-link-icon_skype"></div><span>tu@alfapol.ru</span>
-												</a></div>
+											<div class="sales-department__slide-contacts"><a class="sales-department__slide-link sales-department__slide-link" href="tel:+7 958 523-72-86"><svg class="sales-department__slide-link-icon" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<rect width="24" height="24" rx="4" fill="#0184FF"></rect>
+														<path d="M5.95828 9.2074C5.54352 8.29662 5.51652 7.61672 5.90278 7.08599C6.15179 6.67295 7.24982 5.61149 7.78683 5.62424C7.88208 5.63173 8.01034 5.71044 8.14684 5.84462C8.58935 6.27565 9.68588 7.72316 9.79088 7.99377C9.83063 8.18118 9.73688 8.35659 9.56738 8.65044C9.34162 9.04249 9.03261 9.57921 9.29287 10.2951C9.88463 11.7426 10.7907 12.9098 11.9862 13.7651C12.0852 13.8355 12.1992 13.87 12.3132 13.87C12.4887 13.87 12.6612 13.7876 12.7707 13.6346C12.9515 13.382 12.8937 13.0312 12.641 12.8498C11.6202 12.1212 10.8447 11.1182 10.3429 9.89105C10.2746 9.7044 10.3436 9.55672 10.5424 9.21115C10.7442 8.86033 11.0209 8.37983 10.8927 7.76439C10.7734 7.19243 9.28687 5.38436 8.93286 5.03879C8.6006 4.71495 8.24659 4.53505 7.85958 4.50281C6.6288 4.4226 5.19551 6.0815 4.96751 6.46306C4.35549 7.29738 4.34424 8.37833 4.93451 9.67291C5.06351 9.95627 5.39577 10.08 5.67928 9.95177C5.96203 9.82284 6.08654 9.49001 5.95828 9.2074Z" fill="url(#paint0_linear_1329_45240)"></path>
+														<path d="M18.9628 15.063C18.617 14.71 16.8102 13.2242 16.2357 13.105C15.5067 12.9536 14.9269 13.3149 14.5069 13.5795L14.3336 13.6867C14.0674 13.8472 13.9819 14.1927 14.1416 14.4581C14.3021 14.725 14.6479 14.8097 14.9142 14.65L15.1062 14.5308C15.4857 14.2917 15.7347 14.1463 15.9739 14.1972C16.2769 14.3112 17.7267 15.4079 18.1587 15.8501C18.2915 15.9858 18.3695 16.114 18.3762 16.1822C18.3965 16.7624 17.2737 17.8778 16.8785 18.117C16.3714 18.4805 15.6904 18.4543 14.7754 18.0293C12.5133 17.0892 8.95825 13.9086 7.01195 11.0833C6.83645 10.8277 6.48619 10.7647 6.22968 10.9386C5.97393 11.1148 5.90943 11.4649 6.08568 11.7205C8.16923 14.7452 11.8728 18.0413 14.3216 19.0577C14.9584 19.3546 15.5464 19.5 16.0759 19.5C16.6084 19.5 17.0817 19.3531 17.4852 19.0622C17.6975 18.9408 19.5478 17.497 19.499 16.1155C19.4683 15.7504 19.2883 15.3959 18.9628 15.063Z" fill="white"></path>
+														<defs>
+															<lineargradient id="paint0_linear_1329_45240" x1="5.25" y1="6" x2="11.625" y2="12.375" gradientunits="userSpaceOnUse">
+																<stop stop-color="white"></stop>
+																<stop offset="1" stop-color="white" stop-opacity="0"></stop>
+															</lineargradient>
+														</defs>
+													</svg><span>+7 958 523-72-86</span></a><a class="sales-department__slide-link sales-department__slide-link" href="mailto:tu@alfapol.ru"> <svg class="sales-department__slide-link-icon" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<rect width="24" height="24" rx="4" fill="#0184FF"></rect>
+														<mask id="path-2-inside-1_1329_45248" fill="white">
+															<rect x="3.75" y="5.40002" width="16.5" height="13.2" rx="1"></rect>
+														</mask>
+														<rect x="3.75" y="5.40002" width="16.5" height="13.2" rx="1" stroke="white" stroke-width="3" mask="url(#path-2-inside-1_1329_45248)"></rect>
+														<path d="M6.22461 8.625L11.9996 12.75L17.7746 8.625" stroke="url(#paint0_linear_1329_45248)" stroke-width="1.5" stroke-linecap="round"></path>
+														<defs>
+															<lineargradient id="paint0_linear_1329_45248" x1="17.6246" y1="8.25" x2="7.12457" y2="10.5" gradientunits="userSpaceOnUse">
+																<stop stop-color="white"></stop>
+																<stop offset="1" stop-color="white" stop-opacity="0"></stop>
+															</lineargradient>
+														</defs>
+													</svg><span>tu@alfapol.ru</span></a><a class="sales-department__slide-link sales-department__slide-link" href="skype:tu@alfapol.ru"> <svg class="sales-department__slide-link-icon" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<g clip-path="url(#clip0_1329_45255)">
+															<path fill-rule="evenodd" clip-rule="evenodd" d="M17.9985 17.5191C17.4694 18.2591 16.6875 18.8434 15.6716 19.2579C14.6683 19.6697 13.4661 19.8797 12.0958 19.8797C10.4518 19.8797 9.07331 19.5945 7.9965 19.0311C7.22737 18.6221 6.59381 18.0684 6.11269 17.3812C5.62594 16.6912 5.38031 16.0056 5.38031 15.342C5.38031 14.9302 5.54119 14.5714 5.85731 14.2778C6.17063 13.9856 6.57281 13.8396 7.05244 13.8396C7.44469 13.8396 7.78481 13.9551 8.05988 14.1846C8.32369 14.4058 8.54944 14.7326 8.7315 15.1513C8.93475 15.6103 9.15487 15.9971 9.38775 16.299C9.6135 16.5939 9.93675 16.8401 10.3487 17.0334C10.7636 17.2254 11.3237 17.3256 12.0109 17.3256C12.9577 17.3256 13.7338 17.1253 14.3166 16.7331C14.8881 16.3506 15.1646 15.8887 15.1646 15.324C15.1646 14.8802 15.0193 14.5298 14.7229 14.2543C14.4096 13.9678 13.9989 13.7452 13.5009 13.5894C12.9802 13.4308 12.2747 13.257 11.4013 13.0761C10.2118 12.8257 9.20288 12.5293 8.40131 12.1914C7.58006 11.8479 6.91819 11.3707 6.43425 10.7739C5.94319 10.1661 5.69344 9.40519 5.69344 8.51062C5.69344 7.65937 5.95444 6.89006 6.471 6.22781C6.98175 5.56988 7.72969 5.05519 8.69344 4.70606C9.64313 4.35975 10.7721 4.18444 12.0519 4.18444C13.0736 4.18444 13.9725 4.30125 14.7231 4.53225C15.4779 4.76325 16.113 5.07469 16.6125 5.46C17.1163 5.84944 17.4917 6.26269 17.7259 6.69394C17.9629 7.12931 18.0844 7.56187 18.0844 7.98075C18.0844 8.38425 17.9263 8.75138 17.6145 9.06994C17.3012 9.39262 16.9046 9.55538 16.4391 9.55538C16.0157 9.55538 15.6827 9.45244 15.4541 9.25219C15.2396 9.06431 15.0167 8.77219 14.7698 8.355C14.4848 7.82081 14.139 7.39931 13.7424 7.10156C13.3571 6.81225 12.7151 6.6675 11.8303 6.6675C11.0119 6.6675 10.3431 6.82894 9.84769 7.15012C9.37069 7.45762 9.138 7.81219 9.138 8.23237C9.138 8.48831 9.21281 8.70394 9.36806 8.8875C9.52894 9.08494 9.759 9.25481 10.0496 9.39937C10.3502 9.54825 10.6607 9.66788 10.971 9.75131C11.2884 9.83887 11.8219 9.96825 12.5543 10.1353C13.4812 10.3301 14.3323 10.5512 15.0844 10.7891C15.8477 11.0284 16.5054 11.3233 17.0443 11.6696C17.5918 12.0216 18.0249 12.4723 18.3341 13.0119C18.6431 13.5559 18.7999 14.2236 18.7999 15.0011C18.8001 15.9304 18.5291 16.7777 17.9985 17.5191ZM23.31 14.5477C23.4836 13.7661 23.5738 12.9564 23.5738 12.1245C23.5738 5.89256 18.4502 0.838875 12.1269 0.838875C11.4609 0.838875 10.8075 0.895875 10.1698 1.00444C9.14681 0.368625 7.93594 0 6.63919 0C2.97169 0 0 2.9295 0 6.54638C0 7.75388 0.333 8.88338 0.911625 9.85706C0.760687 10.5887 0.68025 11.3483 0.68025 12.1245C0.68025 18.3592 5.80538 23.4116 12.1271 23.4116C12.8439 23.4116 13.5439 23.3462 14.2239 23.2224C15.1594 23.7176 16.2262 24 17.3621 24C21.0283 24 24 21.069 24 17.4551C24 16.4104 23.7516 15.4241 23.31 14.5477Z" fill="#0184FF"></path>
+														</g>
+														<defs>
+															<clippath id="clip0_1329_45255">
+																<rect width="24" height="24" fill="white"></rect>
+															</clippath>
+														</defs>
+													</svg><span>tu@alfapol.ru</span></a></div>
 										</div>
 									</div>
 								</div>
@@ -737,13 +1065,39 @@
 										</picture>
 										<div class="sales-department__slide-info">
 											<h4 class="sales-department__slide-title">Рябцев Сергей</h4>
-											<div class="sales-department__slide-contacts"><a class="sales-department__slide-link sales-department__slide-link" href="tel:+7 958 523-72-86">
-													<div class="sales-department__slide-link-icon sales-department__slide-link-icon_phone"></div><span>+7 958 523-72-86</span>
-												</a><a class="sales-department__slide-link sales-department__slide-link" href="mailto:tu@alfapol.ru">
-													<div class="sales-department__slide-link-icon sales-department__slide-link-icon_email"></div><span>tu@alfapol.ru</span>
-												</a><a class="sales-department__slide-link sales-department__slide-link" href="skype:tu@alfapol.ru">
-													<div class="sales-department__slide-link-icon sales-department__slide-link-icon_skype"></div><span>tu@alfapol.ru</span>
-												</a></div>
+											<div class="sales-department__slide-contacts"><a class="sales-department__slide-link sales-department__slide-link" href="tel:+7 958 523-72-86"><svg class="sales-department__slide-link-icon" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<rect width="24" height="24" rx="4" fill="#0184FF"></rect>
+														<path d="M5.95828 9.2074C5.54352 8.29662 5.51652 7.61672 5.90278 7.08599C6.15179 6.67295 7.24982 5.61149 7.78683 5.62424C7.88208 5.63173 8.01034 5.71044 8.14684 5.84462C8.58935 6.27565 9.68588 7.72316 9.79088 7.99377C9.83063 8.18118 9.73688 8.35659 9.56738 8.65044C9.34162 9.04249 9.03261 9.57921 9.29287 10.2951C9.88463 11.7426 10.7907 12.9098 11.9862 13.7651C12.0852 13.8355 12.1992 13.87 12.3132 13.87C12.4887 13.87 12.6612 13.7876 12.7707 13.6346C12.9515 13.382 12.8937 13.0312 12.641 12.8498C11.6202 12.1212 10.8447 11.1182 10.3429 9.89105C10.2746 9.7044 10.3436 9.55672 10.5424 9.21115C10.7442 8.86033 11.0209 8.37983 10.8927 7.76439C10.7734 7.19243 9.28687 5.38436 8.93286 5.03879C8.6006 4.71495 8.24659 4.53505 7.85958 4.50281C6.6288 4.4226 5.19551 6.0815 4.96751 6.46306C4.35549 7.29738 4.34424 8.37833 4.93451 9.67291C5.06351 9.95627 5.39577 10.08 5.67928 9.95177C5.96203 9.82284 6.08654 9.49001 5.95828 9.2074Z" fill="url(#paint0_linear_1329_45240)"></path>
+														<path d="M18.9628 15.063C18.617 14.71 16.8102 13.2242 16.2357 13.105C15.5067 12.9536 14.9269 13.3149 14.5069 13.5795L14.3336 13.6867C14.0674 13.8472 13.9819 14.1927 14.1416 14.4581C14.3021 14.725 14.6479 14.8097 14.9142 14.65L15.1062 14.5308C15.4857 14.2917 15.7347 14.1463 15.9739 14.1972C16.2769 14.3112 17.7267 15.4079 18.1587 15.8501C18.2915 15.9858 18.3695 16.114 18.3762 16.1822C18.3965 16.7624 17.2737 17.8778 16.8785 18.117C16.3714 18.4805 15.6904 18.4543 14.7754 18.0293C12.5133 17.0892 8.95825 13.9086 7.01195 11.0833C6.83645 10.8277 6.48619 10.7647 6.22968 10.9386C5.97393 11.1148 5.90943 11.4649 6.08568 11.7205C8.16923 14.7452 11.8728 18.0413 14.3216 19.0577C14.9584 19.3546 15.5464 19.5 16.0759 19.5C16.6084 19.5 17.0817 19.3531 17.4852 19.0622C17.6975 18.9408 19.5478 17.497 19.499 16.1155C19.4683 15.7504 19.2883 15.3959 18.9628 15.063Z" fill="white"></path>
+														<defs>
+															<lineargradient id="paint0_linear_1329_45240" x1="5.25" y1="6" x2="11.625" y2="12.375" gradientunits="userSpaceOnUse">
+																<stop stop-color="white"></stop>
+																<stop offset="1" stop-color="white" stop-opacity="0"></stop>
+															</lineargradient>
+														</defs>
+													</svg><span>+7 958 523-72-86</span></a><a class="sales-department__slide-link sales-department__slide-link" href="mailto:tu@alfapol.ru"> <svg class="sales-department__slide-link-icon" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<rect width="24" height="24" rx="4" fill="#0184FF"></rect>
+														<mask id="path-2-inside-1_1329_45248" fill="white">
+															<rect x="3.75" y="5.40002" width="16.5" height="13.2" rx="1"></rect>
+														</mask>
+														<rect x="3.75" y="5.40002" width="16.5" height="13.2" rx="1" stroke="white" stroke-width="3" mask="url(#path-2-inside-1_1329_45248)"></rect>
+														<path d="M6.22461 8.625L11.9996 12.75L17.7746 8.625" stroke="url(#paint0_linear_1329_45248)" stroke-width="1.5" stroke-linecap="round"></path>
+														<defs>
+															<lineargradient id="paint0_linear_1329_45248" x1="17.6246" y1="8.25" x2="7.12457" y2="10.5" gradientunits="userSpaceOnUse">
+																<stop stop-color="white"></stop>
+																<stop offset="1" stop-color="white" stop-opacity="0"></stop>
+															</lineargradient>
+														</defs>
+													</svg><span>tu@alfapol.ru</span></a><a class="sales-department__slide-link sales-department__slide-link" href="skype:tu@alfapol.ru"> <svg class="sales-department__slide-link-icon" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<g clip-path="url(#clip0_1329_45255)">
+															<path fill-rule="evenodd" clip-rule="evenodd" d="M17.9985 17.5191C17.4694 18.2591 16.6875 18.8434 15.6716 19.2579C14.6683 19.6697 13.4661 19.8797 12.0958 19.8797C10.4518 19.8797 9.07331 19.5945 7.9965 19.0311C7.22737 18.6221 6.59381 18.0684 6.11269 17.3812C5.62594 16.6912 5.38031 16.0056 5.38031 15.342C5.38031 14.9302 5.54119 14.5714 5.85731 14.2778C6.17063 13.9856 6.57281 13.8396 7.05244 13.8396C7.44469 13.8396 7.78481 13.9551 8.05988 14.1846C8.32369 14.4058 8.54944 14.7326 8.7315 15.1513C8.93475 15.6103 9.15487 15.9971 9.38775 16.299C9.6135 16.5939 9.93675 16.8401 10.3487 17.0334C10.7636 17.2254 11.3237 17.3256 12.0109 17.3256C12.9577 17.3256 13.7338 17.1253 14.3166 16.7331C14.8881 16.3506 15.1646 15.8887 15.1646 15.324C15.1646 14.8802 15.0193 14.5298 14.7229 14.2543C14.4096 13.9678 13.9989 13.7452 13.5009 13.5894C12.9802 13.4308 12.2747 13.257 11.4013 13.0761C10.2118 12.8257 9.20288 12.5293 8.40131 12.1914C7.58006 11.8479 6.91819 11.3707 6.43425 10.7739C5.94319 10.1661 5.69344 9.40519 5.69344 8.51062C5.69344 7.65937 5.95444 6.89006 6.471 6.22781C6.98175 5.56988 7.72969 5.05519 8.69344 4.70606C9.64313 4.35975 10.7721 4.18444 12.0519 4.18444C13.0736 4.18444 13.9725 4.30125 14.7231 4.53225C15.4779 4.76325 16.113 5.07469 16.6125 5.46C17.1163 5.84944 17.4917 6.26269 17.7259 6.69394C17.9629 7.12931 18.0844 7.56187 18.0844 7.98075C18.0844 8.38425 17.9263 8.75138 17.6145 9.06994C17.3012 9.39262 16.9046 9.55538 16.4391 9.55538C16.0157 9.55538 15.6827 9.45244 15.4541 9.25219C15.2396 9.06431 15.0167 8.77219 14.7698 8.355C14.4848 7.82081 14.139 7.39931 13.7424 7.10156C13.3571 6.81225 12.7151 6.6675 11.8303 6.6675C11.0119 6.6675 10.3431 6.82894 9.84769 7.15012C9.37069 7.45762 9.138 7.81219 9.138 8.23237C9.138 8.48831 9.21281 8.70394 9.36806 8.8875C9.52894 9.08494 9.759 9.25481 10.0496 9.39937C10.3502 9.54825 10.6607 9.66788 10.971 9.75131C11.2884 9.83887 11.8219 9.96825 12.5543 10.1353C13.4812 10.3301 14.3323 10.5512 15.0844 10.7891C15.8477 11.0284 16.5054 11.3233 17.0443 11.6696C17.5918 12.0216 18.0249 12.4723 18.3341 13.0119C18.6431 13.5559 18.7999 14.2236 18.7999 15.0011C18.8001 15.9304 18.5291 16.7777 17.9985 17.5191ZM23.31 14.5477C23.4836 13.7661 23.5738 12.9564 23.5738 12.1245C23.5738 5.89256 18.4502 0.838875 12.1269 0.838875C11.4609 0.838875 10.8075 0.895875 10.1698 1.00444C9.14681 0.368625 7.93594 0 6.63919 0C2.97169 0 0 2.9295 0 6.54638C0 7.75388 0.333 8.88338 0.911625 9.85706C0.760687 10.5887 0.68025 11.3483 0.68025 12.1245C0.68025 18.3592 5.80538 23.4116 12.1271 23.4116C12.8439 23.4116 13.5439 23.3462 14.2239 23.2224C15.1594 23.7176 16.2262 24 17.3621 24C21.0283 24 24 21.069 24 17.4551C24 16.4104 23.7516 15.4241 23.31 14.5477Z" fill="#0184FF"></path>
+														</g>
+														<defs>
+															<clippath id="clip0_1329_45255">
+																<rect width="24" height="24" fill="white"></rect>
+															</clippath>
+														</defs>
+													</svg><span>tu@alfapol.ru</span></a></div>
 										</div>
 									</div>
 								</div>
@@ -1270,7 +1624,7 @@
 							</svg></button>
 					</div>
 				</div>
-				<div class="modal-search__results" data-lenis-prevent="true">
+				<div class="modal-search__results" data-lenis-prevent="true" data-element="popup">
 					<div class="modal-search__results-inner">
 						<div class="modal-search__results-list catalog__goods" data-catalog-chapter="catalog-products"><a class="catalog-card" href="#">
 								<div class="catalog-card__illustration">

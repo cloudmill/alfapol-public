@@ -8,6 +8,7 @@
 		<link href="./assets/images/favicon.svg" rel="icon" type="image/x-icon">
 		<meta property="og:image" content="./assets/images/opengraph.jpg">
 		<link rel="apple-touch-icon" sizes="180x180" href="./assets/images/appletouch_180_180.svg">
+		<meta name="format-detection" content="telephone=no">
 		<script defer="defer" src="assets/vendor.js"></script>
 		<script defer="defer" src="assets/app.js"></script>
 		<link href="styles.css" rel="stylesheet">
@@ -60,63 +61,127 @@
 					<li class="header__info-li"><a class="header__info-li-link" href="#">Партнерам</a></li>
 				</div>
 				<ul class="header__right-ul">
-					<li class="header__right-li header__line-vl header__line-vr"><button class="header__right-btn transparent-btn header__search" data-client-target="open-search-modal">
-							<div class="transparent-btn__inner"><svg class="icon" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path d="M14 5H20" stroke="url(#paint0_linear_1605_1275)" stroke-width="1.5" stroke-linecap="round"></path>
-									<path d="M14 8H17" stroke="url(#paint1_linear_1605_1275)" stroke-width="1.5" stroke-linecap="round"></path>
-									<path d="M21 11.5C21 16.75 16.75 21 11.5 21C6.25 21 2 16.75 2 11.5C2 6.25 6.25 2 11.5 2" stroke="#0E2245" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-									<path d="M21.4286 21.4286L18.8572 18.8572" stroke="#0E2245" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path>
-									<defs>
-										<lineargradient id="paint0_linear_1605_1275" x1="19.9221" y1="4.90909" x2="15.2105" y2="7.07257" gradientunits="userSpaceOnUse">
-											<stop stop-color="#0184FF"></stop>
-											<stop offset="1" stop-color="#0184FF" stop-opacity="0"></stop>
-										</lineargradient>
-										<lineargradient id="paint1_linear_1605_1275" x1="16.961" y1="7.90909" x2="14.2514" y2="8.53121" gradientunits="userSpaceOnUse">
-											<stop stop-color="#0184FF"></stop>
-											<stop offset="1" stop-color="#0184FF" stop-opacity="0"></stop>
-										</lineargradient>
-									</defs>
-								</svg></div>
+					<li class="header__right-li header__line-vl header__line-vr"><button class="header__right-btn hover-btn transparent-btn header__search" data-client-target="open-search-modal">
+							<div class="hover-btn__bg grey"></div>
+							<div class="hover-btn__content">
+								<div class="hover-btn__content-top transparent-btn__inner"><svg class="icon" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M14 5H20" stroke="url(#paint0_linear_1605_1275)" stroke-width="1.5" stroke-linecap="round"></path>
+										<path d="M14 8H17" stroke="url(#paint1_linear_1605_1275)" stroke-width="1.5" stroke-linecap="round"></path>
+										<path d="M21 11.5C21 16.75 16.75 21 11.5 21C6.25 21 2 16.75 2 11.5C2 6.25 6.25 2 11.5 2" stroke="#0E2245" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+										<path d="M21.4286 21.4286L18.8572 18.8572" stroke="#0E2245" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path>
+										<defs>
+											<lineargradient id="paint0_linear_1605_1275" x1="19.9221" y1="4.90909" x2="15.2105" y2="7.07257" gradientunits="userSpaceOnUse">
+												<stop stop-color="#0184FF"></stop>
+												<stop offset="1" stop-color="#0184FF" stop-opacity="0"></stop>
+											</lineargradient>
+											<lineargradient id="paint1_linear_1605_1275" x1="16.961" y1="7.90909" x2="14.2514" y2="8.53121" gradientunits="userSpaceOnUse">
+												<stop stop-color="#0184FF"></stop>
+												<stop offset="1" stop-color="#0184FF" stop-opacity="0"></stop>
+											</lineargradient>
+										</defs>
+									</svg></div>
+								<div class="hover-btn__content-bot transparent-btn__inner"><svg class="icon" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M14 5H20" stroke="url(#paint0_linear_1605_1275)" stroke-width="1.5" stroke-linecap="round"></path>
+										<path d="M14 8H17" stroke="url(#paint1_linear_1605_1275)" stroke-width="1.5" stroke-linecap="round"></path>
+										<path d="M21 11.5C21 16.75 16.75 21 11.5 21C6.25 21 2 16.75 2 11.5C2 6.25 6.25 2 11.5 2" stroke="#0E2245" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+										<path d="M21.4286 21.4286L18.8572 18.8572" stroke="#0E2245" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path>
+										<defs>
+											<lineargradient id="paint0_linear_1605_1275" x1="19.9221" y1="4.90909" x2="15.2105" y2="7.07257" gradientunits="userSpaceOnUse">
+												<stop stop-color="#0184FF"></stop>
+												<stop offset="1" stop-color="#0184FF" stop-opacity="0"></stop>
+											</lineargradient>
+											<lineargradient id="paint1_linear_1605_1275" x1="16.961" y1="7.90909" x2="14.2514" y2="8.53121" gradientunits="userSpaceOnUse">
+												<stop stop-color="#0184FF"></stop>
+												<stop offset="1" stop-color="#0184FF" stop-opacity="0"></stop>
+											</lineargradient>
+										</defs>
+									</svg></div>
+							</div>
 						</button></li>
-					<li class="header__right-li"><button class="header__right-btn grey-btn cart" data-action="open-cart" data-client-target="open-cart">
-							<div class="grey-btn__inner"><svg class="icon" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<g clip-path="url(#clip0_1605_1285)">
-										<path d="M1 4.5L4 15H17M17 15L21 1H23M17 15L18.1451 17.0039C18.526 17.6705 18.0446 18.5 17.2768 18.5H4" stroke="#0E2245" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-										<path d="M6 5H14" stroke="url(#paint0_linear_1605_1285)" stroke-width="1.5" stroke-linecap="round"></path>
-										<circle cx="5.5" cy="22.5" r="1.5" fill="#0E2245"></circle>
-										<circle cx="17.5" cy="22.5" r="1.5" fill="#0E2245"></circle>
-									</g>
-									<defs>
-										<lineargradient id="paint0_linear_1605_1285" x1="13.8961" y1="4.90909" x2="8.36332" y2="8.29649" gradientunits="userSpaceOnUse">
-											<stop stop-color="#0184FF"></stop>
-											<stop offset="1" stop-color="#0184FF" stop-opacity="0"></stop>
-										</lineargradient>
-										<clippath id="clip0_1605_1285">
-											<rect width="24" height="24" fill="white"></rect>
-										</clippath>
-									</defs>
-								</svg></div>
-							<div class="cart__counter">0</div>
+					<li class="header__right-li"><button class="header__right-btn hover-btn grey-btn header__search" data-action="open-cart" data-client-target="open-cart">
+							<div class="hover-btn__bg grey"></div>
+							<div class="hover-btn__content">
+								<div class="hover-btn__content-top grey-btn__inner">
+									<div class="cart__counter show">0</div><svg class="icon" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<g clip-path="url(#clip0_1605_1285)">
+											<path d="M1 4.5L4 15H17M17 15L21 1H23M17 15L18.1451 17.0039C18.526 17.6705 18.0446 18.5 17.2768 18.5H4" stroke="#0E2245" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+											<path d="M6 5H14" stroke="url(#paint0_linear_1605_1285)" stroke-width="1.5" stroke-linecap="round"></path>
+											<circle cx="5.5" cy="22.5" r="1.5" fill="#0E2245"></circle>
+											<circle cx="17.5" cy="22.5" r="1.5" fill="#0E2245"></circle>
+										</g>
+										<defs>
+											<lineargradient id="paint0_linear_1605_1285" x1="13.8961" y1="4.90909" x2="8.36332" y2="8.29649" gradientunits="userSpaceOnUse">
+												<stop stop-color="#0184FF"></stop>
+												<stop offset="1" stop-color="#0184FF" stop-opacity="0"></stop>
+											</lineargradient>
+											<clippath id="clip0_1605_1285">
+												<rect width="24" height="24" fill="white"></rect>
+											</clippath>
+										</defs>
+									</svg>
+								</div>
+								<div class="hover-btn__content-bot grey-btn__inner">
+									<div class="cart__counter show">0</div><svg class="icon" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<g clip-path="url(#clip0_1605_1285)">
+											<path d="M1 4.5L4 15H17M17 15L21 1H23M17 15L18.1451 17.0039C18.526 17.6705 18.0446 18.5 17.2768 18.5H4" stroke="#0E2245" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+											<path d="M6 5H14" stroke="url(#paint0_linear_1605_1285)" stroke-width="1.5" stroke-linecap="round"></path>
+											<circle cx="5.5" cy="22.5" r="1.5" fill="#0E2245"></circle>
+											<circle cx="17.5" cy="22.5" r="1.5" fill="#0E2245"></circle>
+										</g>
+										<defs>
+											<lineargradient id="paint0_linear_1605_1285" x1="13.8961" y1="4.90909" x2="8.36332" y2="8.29649" gradientunits="userSpaceOnUse">
+												<stop stop-color="#0184FF"></stop>
+												<stop offset="1" stop-color="#0184FF" stop-opacity="0"></stop>
+											</lineargradient>
+											<clippath id="clip0_1605_1285">
+												<rect width="24" height="24" fill="white"></rect>
+											</clippath>
+										</defs>
+									</svg>
+								</div>
+							</div>
 						</button></li>
-					<li class="header__right-li header__line-vl header__line-vr"><a class="header__right-btn transparent-btn whatsapp" href="https://api.whatsapp.com/send/?phone=79119500282&amp;text=%D0%94%D0%BE%D0%B1%D1%80%D1%8B%D0%B9+%D0%B4%D0%B5%D0%BD%D1%8C%21+%D0%9F%D0%B5%D1%80%D0%B5%D0%B4%D0%BE+%D0%BC%D0%BD%D0%BE%D0%B9+%D1%81%D1%82%D0%BE%D0%B8%D1%82+%D0%B7%D0%B0%D0%B4%D0%B0%D1%87%D0%B0%3A&amp;type=phone_number&amp;app_absent=0" target="_blank">
-							<div class="transparent-btn__inner"><svg class="icon" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path d="M2 22L3.41254 16.8642C2.5409 15.3608 2.08289 13.6567 2.08373 11.9092C2.08624 6.44583 6.55329 2 12.0419 2C14.7053 2.00083 17.2056 3.03333 19.0862 4.90667C20.9659 6.78 22.0008 9.27 22 11.9183C21.9975 17.3825 17.5304 21.8283 12.0419 21.8283C10.3756 21.8275 8.73365 21.4117 7.27924 20.6217L2 22ZM7.52374 18.8275C8.92707 19.6567 10.2668 20.1533 12.0385 20.1542C16.6002 20.1542 20.3162 16.4592 20.3187 11.9167C20.3204 7.365 16.622 3.675 12.0452 3.67333C7.4802 3.67333 3.76673 7.36833 3.76505 11.91C3.76421 13.7642 4.31014 15.1525 5.22699 16.605L4.39052 19.645L7.52374 18.8275ZM17.0582 14.2742C16.9962 14.1708 16.8304 14.1092 16.5809 13.985C16.3322 13.8608 15.1089 13.2617 14.8803 13.1792C14.6526 13.0967 14.4868 13.055 14.3202 13.3033C14.1544 13.5508 13.6771 14.1092 13.5323 14.2742C13.3874 14.4392 13.2417 14.46 12.993 14.3358C12.7444 14.2117 11.9422 13.9508 10.9919 13.1067C10.2525 12.45 9.75266 11.6392 9.6078 11.3908C9.46295 11.1433 9.59273 11.0092 9.71665 10.8858C9.82885 10.775 9.96533 10.5967 10.0901 10.4517C10.2165 10.3083 10.2576 10.205 10.3413 10.0392C10.4242 9.87417 10.3832 9.72917 10.3204 9.605C10.2576 9.48167 9.76019 8.2625 9.55338 7.76667C9.35075 7.28417 9.14561 7.34917 8.99322 7.34167L8.51595 7.33333C8.35016 7.33333 8.08055 7.395 7.8528 7.64333C7.62505 7.89167 6.982 8.49 6.982 9.70917C6.982 10.9283 7.87373 12.1058 7.99765 12.2708C8.12241 12.4358 9.75182 14.9375 12.2478 16.01C12.8415 16.265 13.3054 16.4175 13.6662 16.5317C14.2624 16.72 14.805 16.6933 15.2337 16.63C15.7118 16.5592 16.7057 16.0308 16.9133 15.4525C17.121 14.8733 17.121 14.3775 17.0582 14.2742Z" fill="#65BC54"></path>
-								</svg></div>
+					<li class="header__right-li header__line-vl header__line-vr"><a class="header__right-btn hover-btn transparent-btn header__search" href="https://api.whatsapp.com/send/?phone=79119500282&amp;text=%D0%94%D0%BE%D0%B1%D1%80%D1%8B%D0%B9+%D0%B4%D0%B5%D0%BD%D1%8C%21+%D0%9F%D0%B5%D1%80%D0%B5%D0%B4%D0%BE+%D0%BC%D0%BD%D0%BE%D0%B9+%D1%81%D1%82%D0%BE%D0%B8%D1%82+%D0%B7%D0%B0%D0%B4%D0%B0%D1%87%D0%B0%3A&amp;type=phone_number&amp;app_absent=0" target="_blank" data-client-target="open-search-modal">
+							<div class="hover-btn__bg grey"></div>
+							<div class="hover-btn__content">
+								<div class="hover-btn__content-top transparent-btn__inner"><svg class="icon" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M2 22L3.41254 16.8642C2.5409 15.3608 2.08289 13.6567 2.08373 11.9092C2.08624 6.44583 6.55329 2 12.0419 2C14.7053 2.00083 17.2056 3.03333 19.0862 4.90667C20.9659 6.78 22.0008 9.27 22 11.9183C21.9975 17.3825 17.5304 21.8283 12.0419 21.8283C10.3756 21.8275 8.73365 21.4117 7.27924 20.6217L2 22ZM7.52374 18.8275C8.92707 19.6567 10.2668 20.1533 12.0385 20.1542C16.6002 20.1542 20.3162 16.4592 20.3187 11.9167C20.3204 7.365 16.622 3.675 12.0452 3.67333C7.4802 3.67333 3.76673 7.36833 3.76505 11.91C3.76421 13.7642 4.31014 15.1525 5.22699 16.605L4.39052 19.645L7.52374 18.8275ZM17.0582 14.2742C16.9962 14.1708 16.8304 14.1092 16.5809 13.985C16.3322 13.8608 15.1089 13.2617 14.8803 13.1792C14.6526 13.0967 14.4868 13.055 14.3202 13.3033C14.1544 13.5508 13.6771 14.1092 13.5323 14.2742C13.3874 14.4392 13.2417 14.46 12.993 14.3358C12.7444 14.2117 11.9422 13.9508 10.9919 13.1067C10.2525 12.45 9.75266 11.6392 9.6078 11.3908C9.46295 11.1433 9.59273 11.0092 9.71665 10.8858C9.82885 10.775 9.96533 10.5967 10.0901 10.4517C10.2165 10.3083 10.2576 10.205 10.3413 10.0392C10.4242 9.87417 10.3832 9.72917 10.3204 9.605C10.2576 9.48167 9.76019 8.2625 9.55338 7.76667C9.35075 7.28417 9.14561 7.34917 8.99322 7.34167L8.51595 7.33333C8.35016 7.33333 8.08055 7.395 7.8528 7.64333C7.62505 7.89167 6.982 8.49 6.982 9.70917C6.982 10.9283 7.87373 12.1058 7.99765 12.2708C8.12241 12.4358 9.75182 14.9375 12.2478 16.01C12.8415 16.265 13.3054 16.4175 13.6662 16.5317C14.2624 16.72 14.805 16.6933 15.2337 16.63C15.7118 16.5592 16.7057 16.0308 16.9133 15.4525C17.121 14.8733 17.121 14.3775 17.0582 14.2742Z" fill="#65BC54"></path>
+									</svg></div>
+								<div class="hover-btn__content-bot transparent-btn__inner"><svg class="icon" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M2 22L3.41254 16.8642C2.5409 15.3608 2.08289 13.6567 2.08373 11.9092C2.08624 6.44583 6.55329 2 12.0419 2C14.7053 2.00083 17.2056 3.03333 19.0862 4.90667C20.9659 6.78 22.0008 9.27 22 11.9183C21.9975 17.3825 17.5304 21.8283 12.0419 21.8283C10.3756 21.8275 8.73365 21.4117 7.27924 20.6217L2 22ZM7.52374 18.8275C8.92707 19.6567 10.2668 20.1533 12.0385 20.1542C16.6002 20.1542 20.3162 16.4592 20.3187 11.9167C20.3204 7.365 16.622 3.675 12.0452 3.67333C7.4802 3.67333 3.76673 7.36833 3.76505 11.91C3.76421 13.7642 4.31014 15.1525 5.22699 16.605L4.39052 19.645L7.52374 18.8275ZM17.0582 14.2742C16.9962 14.1708 16.8304 14.1092 16.5809 13.985C16.3322 13.8608 15.1089 13.2617 14.8803 13.1792C14.6526 13.0967 14.4868 13.055 14.3202 13.3033C14.1544 13.5508 13.6771 14.1092 13.5323 14.2742C13.3874 14.4392 13.2417 14.46 12.993 14.3358C12.7444 14.2117 11.9422 13.9508 10.9919 13.1067C10.2525 12.45 9.75266 11.6392 9.6078 11.3908C9.46295 11.1433 9.59273 11.0092 9.71665 10.8858C9.82885 10.775 9.96533 10.5967 10.0901 10.4517C10.2165 10.3083 10.2576 10.205 10.3413 10.0392C10.4242 9.87417 10.3832 9.72917 10.3204 9.605C10.2576 9.48167 9.76019 8.2625 9.55338 7.76667C9.35075 7.28417 9.14561 7.34917 8.99322 7.34167L8.51595 7.33333C8.35016 7.33333 8.08055 7.395 7.8528 7.64333C7.62505 7.89167 6.982 8.49 6.982 9.70917C6.982 10.9283 7.87373 12.1058 7.99765 12.2708C8.12241 12.4358 9.75182 14.9375 12.2478 16.01C12.8415 16.265 13.3054 16.4175 13.6662 16.5317C14.2624 16.72 14.805 16.6933 15.2337 16.63C15.7118 16.5592 16.7057 16.0308 16.9133 15.4525C17.121 14.8733 17.121 14.3775 17.0582 14.2742Z" fill="#65BC54"></path>
+									</svg></div>
+							</div>
 						</a></li>
-					<li class="header__right-li desktop"><button class="header__right-btn grey-btn connect" data-action="contact-us" data-client-target="contact-us">
-							<div class="grey-btn__inner"><svg class="icon" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<mask id="path-1-inside-1_1605_1297" fill="white">
-										<rect x="1" y="3.19995" width="22" height="17.6" rx="1"></rect>
-									</mask>
-									<rect x="1" y="3.19995" width="22" height="17.6" rx="1" stroke="#0E2245" stroke-width="3" mask="url(#path-1-inside-1_1605_1297)"></rect>
-									<path d="M4.30005 7.5L12 13L19.7 7.5" stroke="url(#paint0_linear_1605_1297)" stroke-width="1.5" stroke-linecap="round"></path>
-									<defs>
-										<lineargradient id="paint0_linear_1605_1297" x1="19.5" y1="7" x2="5.5" y2="10" gradientunits="userSpaceOnUse">
-											<stop stop-color="#0184FF"></stop>
-											<stop offset="1" stop-color="#0184FF" stop-opacity="0"></stop>
-										</lineargradient>
-									</defs>
-								</svg>Связаться с нами</div>
+					<li class="header__right-li contact-us desktop"><button class="header__right-btn hover-btn grey-btn connect" data-action="contact-us" data-client-target="contact-us">
+							<div class="hover-btn__bg grey"></div>
+							<div class="hover-btn__content">
+								<div class="hover-btn__content-top grey-btn__inner"><svg class="icon" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<mask id="path-1-inside-1_1605_1297" fill="white">
+											<rect x="1" y="3.19995" width="22" height="17.6" rx="1"></rect>
+										</mask>
+										<rect x="1" y="3.19995" width="22" height="17.6" rx="1" stroke="#0E2245" stroke-width="3" mask="url(#path-1-inside-1_1605_1297)"></rect>
+										<path d="M4.30005 7.5L12 13L19.7 7.5" stroke="url(#paint0_linear_1605_1297)" stroke-width="1.5" stroke-linecap="round"></path>
+										<defs>
+											<lineargradient id="paint0_linear_1605_1297" x1="19.5" y1="7" x2="5.5" y2="10" gradientunits="userSpaceOnUse">
+												<stop stop-color="#0184FF"></stop>
+												<stop offset="1" stop-color="#0184FF" stop-opacity="0"></stop>
+											</lineargradient>
+										</defs>
+									</svg>Связаться с нами</div>
+								<div class="hover-btn__content-bot grey-btn__inner"><svg class="icon" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<mask id="path-1-inside-1_1605_1297" fill="white">
+											<rect x="1" y="3.19995" width="22" height="17.6" rx="1"></rect>
+										</mask>
+										<rect x="1" y="3.19995" width="22" height="17.6" rx="1" stroke="#0E2245" stroke-width="3" mask="url(#path-1-inside-1_1605_1297)"></rect>
+										<path d="M4.30005 7.5L12 13L19.7 7.5" stroke="url(#paint0_linear_1605_1297)" stroke-width="1.5" stroke-linecap="round"></path>
+										<defs>
+											<lineargradient id="paint0_linear_1605_1297" x1="19.5" y1="7" x2="5.5" y2="10" gradientunits="userSpaceOnUse">
+												<stop stop-color="#0184FF"></stop>
+												<stop offset="1" stop-color="#0184FF" stop-opacity="0"></stop>
+											</lineargradient>
+										</defs>
+									</svg>Связаться с нами</div>
+							</div>
 						</button></li>
 					<li class="header__right-li mobile"><button class="header__right-btn grey-btn menu-mobile" data-btn="menu-mobile-btn" data-element="popup">
 							<div class="grey-btn__inner burger-btn">
@@ -533,9 +598,9 @@
 							</div>
 						</div>
 						<div class="main-hero__controls">
-							<div class="main-hero__buttons"><button class="main-hero__btn left"><svg class="main-hero__btn-svg" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<div class="main-hero__buttons"><button class="slider-button main-hero__btn left"><svg class="slider-button__svg" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 										<path d="M9.72946 10.9602C9.3268 11.3392 9.30814 11.973 9.68781 12.3751L13.273 16.1711C13.8942 16.8289 15 16.3892 15 15.4845L15 8.31415C15 7.43778 13.9528 6.98532 13.3146 7.58595L9.72946 10.9602Z" fill="#0E2245"></path>
-									</svg></button><button class="main-hero__btn right main-hero__btn-right"><svg class="main-hero__btn-svg" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									</svg></button><button class="slider-button main-hero__btn right"><svg class="slider-button__svg" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 										<path d="M9.72946 10.9602C9.3268 11.3392 9.30814 11.973 9.68781 12.3751L13.273 16.1711C13.8942 16.8289 15 16.3892 15 15.4845L15 8.31415C15 7.43778 13.9528 6.98532 13.3146 7.58595L9.72946 10.9602Z" fill="#0E2245"></path>
 									</svg></button></div>
 							<div class="main-hero__pagination"></div>
@@ -699,22 +764,11 @@
 										<picture class="picture production-slider__bg mobile">
 											<source type="image/webp" srcset="assets/images/antistatic-m.webp"><img class="picture__img" src="assets/images/antistatic-m.png">
 										</picture>
-										<div class="production-slider__icon"><svg class="production-slider__icon-svg" width="80" height="80" viewbox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-												<path d="M28.3262 39.4326L39.1663 14V30.2602L50.4234 26.5078L39.1663 50.2727V35.2633L28.3262 39.4326Z" stroke="url(#paint0_linear_72_9931)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-												<path d="M59.1785 39.0153L65.0154 26.7854L57.5107 29.287L63.3477 16.5012" stroke="#0184FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-												<path d="M20.8215 39.0153L14.9846 26.7854L22.4893 29.287L16.6523 16.5012" stroke="#0184FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-												<path d="M14 61.4316H20.5M40 61.4316L35.0527 66.3789M40 61.4316H33.5M40 61.4316H46.5M27 61.4316L22.0527 66.3789M27 61.4316H33.5M27 61.4316H20.5M33.5 61.4316L28.5527 66.3789M20.5 61.4316L15.5527 66.3789M53 61.4316L48.0527 66.3789M53 61.4316H46.5M53 61.4316H59.5M46.5 61.4316L41.5527 66.3789M59.5 61.4316H66L61.0527 66.3789M59.5 61.4316L54.5527 66.3789" stroke="url(#paint1_linear_72_9931)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-												<defs>
-													<lineargradient id="paint0_linear_72_9931" x1="35.7667" y1="52.1008" x2="33.3651" y2="16.7576" gradientunits="userSpaceOnUse">
-														<stop stop-color="#0184FF"></stop>
-														<stop offset="1" stop-color="#0184FF" stop-opacity="0"></stop>
-													</lineargradient>
-													<lineargradient id="paint1_linear_72_9931" x1="40" y1="60.8789" x2="40" y2="66.8789" gradientunits="userSpaceOnUse">
-														<stop stop-color="#0E2245"></stop>
-														<stop offset="1" stop-color="#0E2245" stop-opacity="0"></stop>
-													</lineargradient>
-												</defs>
-											</svg></div>
+										<div class="production-slider__icon">
+											<picture class="picture">
+												<source type="image/webp" srcset="assets/images/antistatic-icon.webp"><img class="picture__img" src="assets/images/antistatic-icon.png">
+											</picture>
+										</div>
 										<div class="production-slider__desc">
 											<div class="production-slider__desc-inner">
 												<h6 class="production-slider__title">Антистатические полы и покрытия</h6><svg class="production-slider__arrow-svg" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -733,21 +787,11 @@
 										<picture class="picture production-slider__bg mobile">
 											<source type="image/webp" srcset="assets/images/non-sparking-m.webp"><img class="picture__img" src="assets/images/non-sparking-m.png">
 										</picture>
-										<div class="production-slider__icon"><svg class="production-slider__icon-svg" width="80" height="80" viewbox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-												<path fill-rule="evenodd" clip-rule="evenodd" d="M39.7135 24.0669C35.2026 28.0941 35.9619 28.4965 35.828 31.584C35.7443 33.514 34.9448 34.2901 34.3574 34.6006C33.4583 35.0757 31.9424 34.2274 31.9424 33.6422C30.6066 36.6815 31.2633 40.4665 33.7288 42.7261C34.3342 43.2811 35.0493 43.7348 35.8307 44.0826C36.2545 41.4167 38.1021 39.4102 40.3168 39.4102C42.3882 39.4102 44.1376 41.165 44.7028 43.5726C45.3498 43.1553 45.9312 42.6388 46.4152 42.0176C49.041 38.6481 47.4687 33.7936 44.0903 30.3768C39.4458 25.6784 39.7135 24.0669 39.7135 24.0669Z" stroke="#0E2245" stroke-width="1.5" stroke-linejoin="round"></path>
-												<path d="M55.5462 19.6484C51.6314 15.5518 46.1137 13 40 13C28.1259 13 18.5 22.6259 18.5 34.5C18.5 40.0862 20.6304 45.1747 24.1231 48.9976M55.5462 19.6484C59.2346 23.5083 61.5 28.7396 61.5 34.5C61.5 46.3741 51.8741 56 40 56C33.712 56 28.0545 53.3007 24.1231 48.9976M55.5462 19.6484L24.1231 48.9976" stroke="url(#paint0_linear_72_9947)" stroke-width="1.5"></path>
-												<path d="M14 61.4316H20.5M40 61.4316L35.0527 66.3789M40 61.4316H33.5M40 61.4316H46.5M27 61.4316L22.0527 66.3789M27 61.4316H33.5M27 61.4316H20.5M33.5 61.4316L28.5527 66.3789M20.5 61.4316L15.5527 66.3789M53 61.4316L48.0527 66.3789M53 61.4316H46.5M53 61.4316H59.5M46.5 61.4316L41.5527 66.3789M59.5 61.4316H66L61.0527 66.3789M59.5 61.4316L54.5527 66.3789" stroke="url(#paint1_linear_72_9947)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-												<defs>
-													<lineargradient id="paint0_linear_72_9947" x1="39.6692" y1="13" x2="41.0281" y2="53.704" gradientunits="userSpaceOnUse">
-														<stop stop-color="#0184FF"></stop>
-														<stop offset="1" stop-color="#0184FF" stop-opacity="0"></stop>
-													</lineargradient>
-													<lineargradient id="paint1_linear_72_9947" x1="40" y1="60.8789" x2="40" y2="66.8789" gradientunits="userSpaceOnUse">
-														<stop stop-color="#0E2245"></stop>
-														<stop offset="1" stop-color="#0E2245" stop-opacity="0"></stop>
-													</lineargradient>
-												</defs>
-											</svg></div>
+										<div class="production-slider__icon">
+											<picture class="picture">
+												<source type="image/webp" srcset="assets/images/non-sparking-icon.webp"><img class="picture__img" src="assets/images/non-sparking-icon.png">
+											</picture>
+										</div>
 										<div class="production-slider__desc">
 											<div class="production-slider__desc-inner">
 												<h6 class="production-slider__title">Безыскровые полы</h6><svg class="production-slider__arrow-svg" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -766,31 +810,11 @@
 										<picture class="picture production-slider__bg mobile">
 											<source type="image/webp" srcset="assets/images/antistatic-m.webp"><img class="picture__img" src="assets/images/antistatic-m.png">
 										</picture>
-										<div class="production-slider__icon"><svg class="production-slider__icon-svg" width="80" height="80" viewbox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-												<path d="M14 61.4316H20.5M40 61.4316L35.0527 66.3789M40 61.4316H33.5M40 61.4316H46.5M27 61.4316L22.0527 66.3789M27 61.4316H33.5M27 61.4316H20.5M33.5 61.4316L28.5527 66.3789M20.5 61.4316L15.5527 66.3789M53 61.4316L48.0527 66.3789M53 61.4316H46.5M53 61.4316H59.5M46.5 61.4316L41.5527 66.3789M59.5 61.4316H66L61.0527 66.3789M59.5 61.4316L54.5527 66.3789" stroke="url(#paint0_linear_72_9955)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-												<path d="M44.0906 28.0097L50.915 16.1895C47.7034 14.3304 43.9776 13.2617 40.0002 13.2617C36.0229 13.2617 32.2971 14.3304 29.085 16.1889L35.9099 28.0097C37.114 27.3127 38.5085 26.9072 40.0002 26.9072C41.492 26.9072 42.8865 27.3127 44.0906 28.0097Z" stroke="url(#paint1_linear_72_9955)" stroke-width="1.5" stroke-linejoin="round"></path>
-												<path d="M31.813 35.0952H18.1675C18.1675 43.1755 22.5608 50.2253 29.085 54.0007L35.9099 42.1799C33.463 40.7646 31.813 38.1251 31.813 35.0952Z" stroke="url(#paint2_linear_72_9955)" stroke-width="1.5" stroke-linejoin="round"></path>
-												<path d="M48.1872 35.0952C48.1872 38.1251 46.5372 40.7646 44.0903 42.1799L50.9147 54.0002C57.4394 50.2253 61.8327 43.1755 61.8327 35.0952H48.1872Z" stroke="url(#paint3_linear_72_9955)" stroke-width="1.5" stroke-linejoin="round"></path>
-												<path d="M34.542 35.0942C34.542 32.0785 36.9845 29.636 40.0002 29.636C43.0158 29.636 45.4584 32.0785 45.4584 35.0942C45.4584 38.1098 43.0158 40.5524 40.0002 40.5524C36.9845 40.5524 34.542 38.1098 34.542 35.0942Z" stroke="#0E2245" stroke-width="1.5"></path>
-												<defs>
-													<lineargradient id="paint0_linear_72_9955" x1="40" y1="60.8789" x2="40" y2="66.8789" gradientunits="userSpaceOnUse">
-														<stop stop-color="#0E2245"></stop>
-														<stop offset="1" stop-color="#0E2245" stop-opacity="0"></stop>
-													</lineargradient>
-													<lineargradient id="paint1_linear_72_9955" x1="40.0002" y1="11.9347" x2="40.7826" y2="26.1841" gradientunits="userSpaceOnUse">
-														<stop stop-color="#0184FF"></stop>
-														<stop offset="1" stop-color="#0184FF" stop-opacity="0"></stop>
-													</lineargradient>
-													<lineargradient id="paint2_linear_72_9955" x1="21.9317" y1="49.9545" x2="32.8483" y2="39.9364" gradientunits="userSpaceOnUse">
-														<stop stop-color="#0184FF"></stop>
-														<stop offset="1" stop-color="#0184FF" stop-opacity="0"></stop>
-													</lineargradient>
-													<lineargradient id="paint3_linear_72_9955" x1="59.9506" y1="45.8138" x2="46.939" y2="39.9328" gradientunits="userSpaceOnUse">
-														<stop stop-color="#0184FF"></stop>
-														<stop offset="1" stop-color="#0184FF" stop-opacity="0"></stop>
-													</lineargradient>
-												</defs>
-											</svg></div>
+										<div class="production-slider__icon">
+											<picture class="picture">
+												<source type="image/webp" srcset="assets/images/radiation-icon.webp"><img class="picture__img" src="assets/images/radiation-icon.png">
+											</picture>
+										</div>
 										<div class="production-slider__desc">
 											<div class="production-slider__desc-inner">
 												<h6 class="production-slider__title">Полы и покрытия для защиты от излучений</h6><svg class="production-slider__arrow-svg" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -809,26 +833,11 @@
 										<picture class="picture production-slider__bg mobile">
 											<source type="image/webp" srcset="assets/images/heat-m.webp"><img class="picture__img" src="assets/images/heat-m.png">
 										</picture>
-										<div class="production-slider__icon"><svg class="production-slider__icon-svg" width="80" height="80" viewbox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-												<path d="M14 61.4316H20.5M40 61.4316L35.0527 66.3789M40 61.4316H33.5M40 61.4316H46.5M27 61.4316L22.0527 66.3789M27 61.4316H33.5M27 61.4316H20.5M33.5 61.4316L28.5527 66.3789M20.5 61.4316L15.5527 66.3789M53 61.4316L48.0527 66.3789M53 61.4316H46.5M53 61.4316H59.5M46.5 61.4316L41.5527 66.3789M59.5 61.4316H66L61.0527 66.3789M59.5 61.4316L54.5527 66.3789" stroke="url(#paint0_linear_72_9974)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-												<path d="M40.572 43.641C40.8254 43.46 40.8841 43.1079 40.7031 42.8545C38.9581 40.4115 38.9581 37.6374 40.7372 34.4351C42.7168 30.8717 42.7168 27.6318 40.7031 24.8126C40.5221 24.5592 40.17 24.5005 39.9166 24.6815C39.6632 24.8625 39.6046 25.2146 39.7856 25.468C41.5306 27.911 41.5306 30.6851 39.7515 33.8874C37.7718 37.4508 37.7718 40.6907 39.7856 43.5099C39.9665 43.7633 40.3187 43.822 40.572 43.641Z" fill="#0E2245"></path>
-												<path d="M31.5511 43.641C31.8045 43.46 31.8631 43.1079 31.6821 42.8545C29.9371 40.4115 29.9371 37.6374 31.7162 34.4351C33.6959 30.8717 33.6959 27.6318 31.6821 24.8126C31.5012 24.5592 31.149 24.5005 30.8957 24.6815C30.6423 24.8625 30.5836 25.2146 30.7646 25.468C32.5096 27.911 32.5096 30.6851 30.7305 33.8874C28.7509 37.4508 28.7509 40.6907 30.7646 43.5099C30.9456 43.7633 31.2977 43.822 31.5511 43.641Z" fill="#0E2245"></path>
-												<path d="M49.593 43.641C49.8464 43.46 49.9051 43.1079 49.7241 42.8545C47.9791 40.4115 47.9791 37.6374 49.7582 34.4351C51.7378 30.8717 51.7378 27.6318 49.7241 24.8126C49.5431 24.5592 49.191 24.5005 48.9376 24.6815C48.6842 24.8625 48.6255 25.2146 48.8065 25.468C50.5516 27.911 50.5516 30.6851 48.7725 33.8874C46.7928 37.4508 46.7928 40.6907 48.8065 43.5099C48.9875 43.7633 49.3396 43.822 49.593 43.641Z" fill="#0E2245"></path>
-												<path d="M40.572 43.641C40.8254 43.46 40.8841 43.1079 40.7031 42.8545C38.9581 40.4115 38.9581 37.6374 40.7372 34.4351C42.7168 30.8717 42.7168 27.6318 40.7031 24.8126C40.5221 24.5592 40.17 24.5005 39.9166 24.6815C39.6632 24.8625 39.6046 25.2146 39.7856 25.468C41.5306 27.911 41.5306 30.6851 39.7515 33.8874C37.7718 37.4508 37.7718 40.6907 39.7856 43.5099C39.9665 43.7633 40.3187 43.822 40.572 43.641Z" stroke="#0E2245" stroke-width="0.5"></path>
-												<path d="M31.5511 43.641C31.8045 43.46 31.8631 43.1079 31.6821 42.8545C29.9371 40.4115 29.9371 37.6374 31.7162 34.4351C33.6959 30.8717 33.6959 27.6318 31.6821 24.8126C31.5012 24.5592 31.149 24.5005 30.8957 24.6815C30.6423 24.8625 30.5836 25.2146 30.7646 25.468C32.5096 27.911 32.5096 30.6851 30.7305 33.8874C28.7509 37.4508 28.7509 40.6907 30.7646 43.5099C30.9456 43.7633 31.2977 43.822 31.5511 43.641Z" stroke="#0E2245" stroke-width="0.5"></path>
-												<path d="M49.593 43.641C49.8464 43.46 49.9051 43.1079 49.7241 42.8545C47.9791 40.4115 47.9791 37.6374 49.7582 34.4351C51.7378 30.8717 51.7378 27.6318 49.7241 24.8126C49.5431 24.5592 49.191 24.5005 48.9376 24.6815C48.6842 24.8625 48.6255 25.2146 48.8065 25.468C50.5516 27.911 50.5516 30.6851 48.7725 33.8874C46.7928 37.4508 46.7928 40.6907 48.8065 43.5099C48.9875 43.7633 49.3396 43.822 49.593 43.641Z" stroke="#0E2245" stroke-width="0.5"></path>
-												<rect x="19.25" y="13.75" width="41.5" height="41.5" rx="1.25" stroke="url(#paint1_linear_72_9974)" stroke-width="1.5"></rect>
-												<defs>
-													<lineargradient id="paint0_linear_72_9974" x1="40" y1="60.8789" x2="40" y2="66.8789" gradientunits="userSpaceOnUse">
-														<stop stop-color="#0E2245"></stop>
-														<stop offset="1" stop-color="#0E2245" stop-opacity="0"></stop>
-													</lineargradient>
-													<lineargradient id="paint1_linear_72_9974" x1="40" y1="13" x2="39.9788" y2="59.7211" gradientunits="userSpaceOnUse">
-														<stop stop-color="#0184FF"></stop>
-														<stop offset="1" stop-color="#0184FF" stop-opacity="0"></stop>
-													</lineargradient>
-												</defs>
-											</svg></div>
+										<div class="production-slider__icon">
+											<picture class="picture">
+												<source type="image/webp" srcset="assets/images/heat-icon.webp"><img class="picture__img" src="assets/images/heat-icon.png">
+											</picture>
+										</div>
 										<div class="production-slider__desc">
 											<div class="production-slider__desc-inner">
 												<h6 class="production-slider__title">Жаростойкие бетоны</h6><svg class="production-slider__arrow-svg" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -847,25 +856,11 @@
 										<picture class="picture production-slider__bg mobile">
 											<source type="image/webp" srcset="assets/images/antistatic-m.webp"><img class="picture__img" src="assets/images/antistatic-m.png">
 										</picture>
-										<div class="production-slider__icon"><svg class="production-slider__icon-svg" width="80" height="80" viewbox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-												<path d="M30.1526 20.7512H31.8984V18.0507C31.8995 16.9767 32.3266 15.947 33.086 15.1876C33.8454 14.4282 34.8751 14.0011 35.9491 14H52.8271C54.438 14.0018 55.9824 14.6425 57.1215 15.7816C58.2606 16.9207 58.9013 18.4651 58.9031 20.0761V49.7812C58.9013 51.3922 58.2606 52.9366 57.1215 54.0757C55.9824 55.2148 54.438 55.8555 52.8271 55.8573H29.8731C28.2621 55.8555 26.7177 55.2148 25.5786 54.0757C24.4395 52.9366 23.7988 51.3922 23.797 49.7812V27.1067M30.1526 20.7512L27.6499 18.2485C27.5233 18.122 27.1726 18.0509 27.1726 18.0509C27.1726 18.0509 26.8219 18.122 26.6953 18.2485L21.2943 23.6495C21.1678 23.7761 21.0967 23.9477 21.0967 24.1268C21.0967 24.3058 21.1678 24.4775 21.2943 24.6041L23.797 27.1067M30.1526 20.7512L23.797 27.1067M48.9998 16.7005H37.1271C36.59 16.7005 36.0748 16.9139 35.695 17.2937C35.3152 17.6735 35.1018 18.1887 35.1018 18.7258V20.7512H44.1099C44.3761 20.7519 44.6397 20.6999 44.8856 20.598C45.1316 20.4962 45.3548 20.3465 45.5425 20.1577L47.6495 18.0507L48.9998 16.7005Z" stroke="url(#paint0_linear_941_41850)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-												<path d="M47.1468 31.553H35.5537M47.1468 31.553V45.0553M47.1468 31.553L53 26M35.5537 31.553V45.0553M35.5537 31.553L30 26M35.5537 45.0553C40.0811 45.0553 42.6194 45.0553 47.1468 45.0553M35.5537 45.0553L30 51M47.1468 45.0553L53 51" stroke="url(#paint1_radial_941_41850)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-												<path d="M14 61.4316H20.5M40 61.4316L35.0527 66.3789M40 61.4316H33.5M40 61.4316H46.5M27 61.4316L22.0527 66.3789M27 61.4316H33.5M27 61.4316H20.5M33.5 61.4316L28.5527 66.3789M20.5 61.4316L15.5527 66.3789M53 61.4316L48.0527 66.3789M53 61.4316H46.5M53 61.4316H59.5M46.5 61.4316L41.5527 66.3789M59.5 61.4316H66L61.0527 66.3789M59.5 61.4316L54.5527 66.3789" stroke="url(#paint2_linear_941_41850)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-												<defs>
-													<lineargradient id="paint0_linear_941_41850" x1="19.9998" y1="11.5" x2="58.9998" y2="57.5" gradientunits="userSpaceOnUse">
-														<stop stop-color="#0184FF"></stop>
-														<stop offset="0.958566" stop-color="#0184FF" stop-opacity="0"></stop>
-													</lineargradient>
-													<radialgradient id="paint1_radial_941_41850" cx="0" cy="0" r="1" gradientunits="userSpaceOnUse" gradienttransform="translate(41.5 38.5) rotate(90) scale(17.5 16.1)">
-														<stop stop-color="#0184FF"></stop>
-														<stop offset="1" stop-color="#0184FF" stop-opacity="0"></stop>
-													</radialgradient>
-													<lineargradient id="paint2_linear_941_41850" x1="40" y1="60.8789" x2="40" y2="66.8789" gradientunits="userSpaceOnUse">
-														<stop stop-color="#0E2245"></stop>
-														<stop offset="1" stop-color="#0E2245" stop-opacity="0"></stop>
-													</lineargradient>
-												</defs>
-											</svg></div>
+										<div class="production-slider__icon">
+											<picture class="picture">
+												<source type="image/webp" srcset="assets/images/oil-icon.webp"><img class="picture__img" src="assets/images/oil-icon.png">
+											</picture>
+										</div>
 										<div class="production-slider__desc">
 											<div class="production-slider__desc-inner">
 												<h6 class="production-slider__title">Маслобензостойкие полы</h6><svg class="production-slider__arrow-svg" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -884,20 +879,11 @@
 										<picture class="picture production-slider__bg mobile">
 											<source type="image/webp" srcset="assets/images/antistatic-m.webp"><img class="picture__img" src="assets/images/antistatic-m.png">
 										</picture>
-										<div class="production-slider__icon"><svg class="production-slider__icon-svg" width="80" height="80" viewbox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-												<path d="M14 61.4316H20.5M40 61.4316L35.0527 66.3789M40 61.4316H33.5M40 61.4316H46.5M27 61.4316L22.0527 66.3789M27 61.4316H33.5M27 61.4316H20.5M33.5 61.4316L28.5527 66.3789M20.5 61.4316L15.5527 66.3789M53 61.4316L48.0527 66.3789M53 61.4316H46.5M53 61.4316H59.5M46.5 61.4316L41.5527 66.3789M59.5 61.4316H66L61.0527 66.3789M59.5 61.4316L54.5527 66.3789" stroke="url(#paint0_linear_941_42131)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-												<path fill-rule="evenodd" clip-rule="evenodd" d="M33.5114 14.2319C32.2799 14.2319 31.2816 15.2302 31.2816 16.4617C31.2816 17.6931 32.2799 18.6914 33.5114 18.6914C33.9144 18.6914 34.2411 19.0181 34.2411 19.4212V28.7774C34.2411 28.9116 34.2051 29.0434 34.1368 29.159L19.8476 53.3407C19.1583 54.5073 19.9992 55.981 21.3542 55.981H58.6902C60.0453 55.981 60.8862 54.5073 60.1969 53.3407L45.9077 29.159C45.8394 29.0434 45.8034 28.9116 45.8034 28.7774V19.4212C45.8034 19.0181 46.1301 18.6914 46.5331 18.6914C47.7646 18.6914 48.7629 17.6931 48.7629 16.4617C48.7629 15.2302 47.7646 14.2319 46.5331 14.2319H33.5114ZM32.7816 16.4617C32.7816 16.0587 33.1083 15.7319 33.5114 15.7319H46.5331C46.9361 15.7319 47.2629 16.0587 47.2629 16.4617C47.2629 16.8647 46.9361 17.1914 46.5331 17.1914C45.3017 17.1914 44.3034 18.1897 44.3034 19.4212V28.7774C44.3034 29.1801 44.4114 29.5754 44.6163 29.9221L52.1424 42.6585C49.4345 43.3551 46.6059 43.4713 43.843 42.995L35.7436 41.5986C33.3697 41.1893 30.9658 41.1666 28.5952 41.4856L35.4282 29.9221C35.633 29.5754 35.7411 29.1801 35.7411 28.7774V19.4212C35.7411 18.1897 34.7428 17.1914 33.5114 17.1914C33.1083 17.1914 32.7816 16.8647 32.7816 16.4617ZM27.6037 43.1635L21.139 54.1038C21.0405 54.2704 21.1607 54.481 21.3542 54.481H58.6902C58.8838 54.481 59.004 54.2704 58.9055 54.1038L52.9345 43.999C49.8953 44.8471 46.7029 45.0102 43.5881 44.4732L35.4888 43.0767C32.8783 42.6267 30.2186 42.6758 27.6037 43.1635Z" fill="url(#paint1_linear_941_42131)"></path>
-												<defs>
-													<lineargradient id="paint0_linear_941_42131" x1="40" y1="60.8789" x2="40" y2="66.8789" gradientunits="userSpaceOnUse">
-														<stop stop-color="#0E2245"></stop>
-														<stop offset="1" stop-color="#0E2245" stop-opacity="0"></stop>
-													</lineargradient>
-													<lineargradient id="paint1_linear_941_42131" x1="40.0222" y1="14.2319" x2="39.0271" y2="58.264" gradientunits="userSpaceOnUse">
-														<stop stop-color="#0184FF"></stop>
-														<stop offset="1" stop-color="#0184FF" stop-opacity="0"></stop>
-													</lineargradient>
-												</defs>
-											</svg></div>
+										<div class="production-slider__icon">
+											<picture class="picture">
+												<source type="image/webp" srcset="assets/images/chemistry-icon.webp"><img class="picture__img" src="assets/images/chemistry-icon.png">
+											</picture>
+										</div>
 										<div class="production-slider__desc">
 											<div class="production-slider__desc-inner">
 												<h6 class="production-slider__title">Химически стойкие полы</h6><svg class="production-slider__arrow-svg" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -916,27 +902,11 @@
 										<picture class="picture production-slider__bg mobile">
 											<source type="image/webp" srcset="assets/images/antistatic-m.webp"><img class="picture__img" src="assets/images/antistatic-m.png">
 										</picture>
-										<div class="production-slider__icon"><svg class="production-slider__icon-svg" width="80" height="80" viewbox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-												<path fill-rule="evenodd" clip-rule="evenodd" d="M21.2124 17.1887C20.7982 17.1887 20.4624 17.5245 20.4624 17.9387C20.4624 18.3529 20.7982 18.6887 21.2124 18.6887L27.0933 18.6887C27.5075 18.6887 27.8433 18.3529 27.8433 17.9387C27.8433 17.5245 27.5075 17.1887 27.0933 17.1887H21.2124ZM15.3316 24.4292C14.9174 24.4292 14.5816 24.765 14.5816 25.1792C14.5816 25.5934 14.9174 25.9292 15.3316 25.9292H27.0153C27.4295 25.9292 27.7653 25.5934 27.7653 25.1792C27.7653 24.765 27.4295 24.4292 27.0153 24.4292H15.3316ZM10.1709 39.6601C10.1709 39.2459 10.5067 38.9101 10.9209 38.9101L27.0934 38.9101C27.5076 38.9101 27.8434 39.2459 27.8434 39.6601C27.8434 40.0743 27.5076 40.4101 27.0934 40.4101L10.9209 40.4101C10.5067 40.4101 10.1709 40.0743 10.1709 39.6601ZM18.272 31.6696C17.8578 31.6696 17.522 32.0054 17.522 32.4196C17.522 32.8339 17.8578 33.1696 18.272 33.1696L27.0934 33.1696C27.5076 33.1696 27.8434 32.8339 27.8434 32.4196C27.8434 32.0054 27.5076 31.6696 27.0934 31.6696L18.272 31.6696Z" fill="url(#paint0_linear_941_42388)"></path>
-												<path d="M48.0715 46.626C50.6322 48.903 52.2336 52.1793 52.2336 55.8182C52.2336 62.6679 46.5468 68.25 39.4952 68.25C32.4437 68.25 26.7568 62.6679 26.7568 55.8182C26.7568 52.1793 28.3582 48.903 30.9189 46.626L30.4205 46.0656L30.9189 46.626C31.6431 45.9821 32.1522 45.0531 32.1522 44.009V18.9091C32.1522 14.9714 35.4234 11.75 39.4952 11.75C43.567 11.75 46.8382 14.9714 46.8382 18.9091V44.009C46.8382 45.0531 47.3473 45.9821 48.0715 46.626Z" stroke="#0184FF" stroke-width="1.5"></path>
-												<path d="M39.4951 55.5117L39.4951 29.8838" stroke="url(#paint1_linear_941_42388)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-												<path d="M53.0984 32.7845C53.2666 33.0034 53.5938 33.0541 53.8292 32.8977C56.0991 31.3897 58.6768 31.3895 61.6526 32.9266C64.9638 34.6369 67.9743 34.6367 70.5938 32.8964C70.8293 32.74 70.8838 32.4358 70.7156 32.2168C70.5474 31.9979 70.2202 31.9472 69.9848 32.1036C67.7148 33.6116 65.1371 33.6118 62.1614 32.0748C58.8501 30.3645 55.8396 30.3647 53.2201 32.1049C52.9847 32.2613 52.9302 32.5656 53.0984 32.7845Z" fill="#0E2245"></path>
-												<path d="M53.0978 24.9896C53.266 25.2086 53.5932 25.2593 53.8286 25.1029C56.0986 23.5948 58.6762 23.5946 61.652 25.1317C64.9632 26.842 67.9738 26.8418 70.5932 25.1016C70.8287 24.9452 70.8832 24.6409 70.715 24.422C70.5468 24.2031 70.2196 24.1524 69.9842 24.3088C67.7142 25.8168 65.1365 25.817 62.1608 24.2799C58.8496 22.5696 55.839 22.5698 53.2195 24.31C52.9841 24.4665 52.9296 24.7707 53.0978 24.9896Z" fill="#0E2245"></path>
-												<path d="M53.099 40.5794C53.2671 40.7983 53.5943 40.849 53.8298 40.6926C56.0997 39.1846 58.6774 39.1844 61.6532 40.7214C64.9644 42.4317 67.9749 42.4315 70.5944 40.6913C70.8298 40.5349 70.8844 40.2306 70.7162 40.0117C70.548 39.7928 70.2208 39.7421 69.9853 39.8985C67.7154 41.4065 65.1377 41.4067 62.162 39.8696C58.8507 38.1593 55.8402 38.1595 53.2207 39.8998C52.9853 40.0562 52.9308 40.3604 53.099 40.5794Z" fill="#0E2245"></path>
-												<path d="M53.0984 32.7845C53.2666 33.0034 53.5938 33.0541 53.8292 32.8977C56.0991 31.3897 58.6768 31.3895 61.6526 32.9266C64.9638 34.6369 67.9743 34.6367 70.5938 32.8964C70.8293 32.74 70.8838 32.4358 70.7156 32.2168C70.5474 31.9979 70.2202 31.9472 69.9848 32.1036C67.7148 33.6116 65.1371 33.6118 62.1614 32.0748C58.8501 30.3645 55.8396 30.3647 53.2201 32.1049C52.9847 32.2613 52.9302 32.5656 53.0984 32.7845Z" stroke="#0E2245" stroke-width="0.5"></path>
-												<path d="M53.0978 24.9896C53.266 25.2086 53.5932 25.2593 53.8286 25.1029C56.0986 23.5948 58.6762 23.5946 61.652 25.1317C64.9632 26.842 67.9738 26.8418 70.5932 25.1016C70.8287 24.9452 70.8832 24.6409 70.715 24.422C70.5468 24.2031 70.2196 24.1524 69.9842 24.3088C67.7142 25.8168 65.1365 25.817 62.1608 24.2799C58.8496 22.5696 55.839 22.5698 53.2195 24.31C52.9841 24.4665 52.9296 24.7707 53.0978 24.9896Z" stroke="#0E2245" stroke-width="0.5"></path>
-												<path d="M53.099 40.5794C53.2671 40.7983 53.5943 40.849 53.8298 40.6926C56.0997 39.1846 58.6774 39.1844 61.6532 40.7214C64.9644 42.4317 67.9749 42.4315 70.5944 40.6913C70.8298 40.5349 70.8844 40.2306 70.7162 40.0117C70.548 39.7928 70.2208 39.7421 69.9853 39.8985C67.7154 41.4065 65.1377 41.4067 62.162 39.8696C58.8507 38.1593 55.8402 38.1595 53.2207 39.8998C52.9853 40.0562 52.9308 40.3604 53.099 40.5794Z" stroke="#0E2245" stroke-width="0.5"></path>
-												<defs>
-													<lineargradient id="paint0_linear_941_42388" x1="10.5243" y1="38.6239" x2="27.4899" y2="38.6239" gradientunits="userSpaceOnUse">
-														<stop stop-color="#0184FF"></stop>
-														<stop offset="1" stop-color="#0184FF" stop-opacity="0"></stop>
-													</lineargradient>
-													<lineargradient id="paint1_linear_941_42388" x1="39.9951" y1="29.8838" x2="39.9951" y2="55.5117" gradientunits="userSpaceOnUse">
-														<stop stop-color="#0E2245" stop-opacity="0"></stop>
-														<stop offset="1" stop-color="#0E2245"></stop>
-													</lineargradient>
-												</defs>
-											</svg></div>
+										<div class="production-slider__icon">
+											<picture class="picture">
+												<source type="image/webp" srcset="assets/images/thermo-icon.webp"><img class="picture__img" src="assets/images/thermo-icon.png">
+											</picture>
+										</div>
 										<div class="production-slider__desc">
 											<div class="production-slider__desc-inner">
 												<h6 class="production-slider__title">Термостойкие полы</h6><svg class="production-slider__arrow-svg" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -955,16 +925,11 @@
 										<picture class="picture production-slider__bg mobile">
 											<source type="image/webp" srcset="assets/images/antistatic-m.webp"><img class="picture__img" src="assets/images/antistatic-m.png">
 										</picture>
-										<div class="production-slider__icon"><svg class="production-slider__icon-svg" width="80" height="80" viewbox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-												<circle cx="25.6093" cy="25.6093" r="4.35349" stroke="#0E2245" stroke-width="1.5"></circle>
-												<path fill-rule="evenodd" clip-rule="evenodd" d="M16.4186 15.814H63.5814C63.9153 15.814 64.186 16.0847 64.186 16.4186V42.7248L54.6842 35.2118C53.339 34.1481 51.4111 34.2581 50.1955 35.4678L41.8844 43.7391L37.0358 39.9296C35.8709 39.0143 34.2463 38.9626 33.0256 39.8018L15.814 51.6348V16.4186C15.814 16.0847 16.0847 15.814 16.4186 15.814ZM15.814 53.8361V63.5814C15.814 63.9153 16.0847 64.186 16.4186 64.186H63.3829L41.3827 45.6518L35.9151 41.3559C35.3743 40.931 34.62 40.9069 34.0532 41.2966L15.814 53.8361ZM64.186 62.4908V45.0373L53.5592 36.6346C52.9346 36.1408 52.0395 36.1919 51.4751 36.7535L43.2968 44.8926L64.186 62.4908ZM14 16.4186C14 15.0828 15.0828 14 16.4186 14H63.5814C64.9172 14 66 15.0828 66 16.4186V63.5814C66 64.9172 64.9172 66 63.5814 66H16.4186C15.0828 66 14 64.9172 14 63.5814V16.4186Z" fill="url(#paint0_linear_941_42777)"></path>
-												<defs>
-													<lineargradient id="paint0_linear_941_42777" x1="40" y1="14" x2="39.9743" y2="70.5" gradientunits="userSpaceOnUse">
-														<stop stop-color="#0184FF"></stop>
-														<stop offset="1" stop-color="#0184FF" stop-opacity="0"></stop>
-													</lineargradient>
-												</defs>
-											</svg></div>
+										<div class="production-slider__icon">
+											<picture class="picture">
+												<source type="image/webp" srcset="assets/images/decor-icon.webp"><img class="picture__img" src="assets/images/decor-icon.png">
+											</picture>
+										</div>
 										<div class="production-slider__desc">
 											<div class="production-slider__desc-inner">
 												<h6 class="production-slider__title">Декоративные полы</h6><svg class="production-slider__arrow-svg" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -987,22 +952,11 @@
 										<picture class="picture production-slider__bg mobile">
 											<source type="image/webp" srcset="assets/images/antistatic-m.webp"><img class="picture__img" src="assets/images/antistatic-m.png">
 										</picture>
-										<div class="production-slider__icon"><svg class="production-slider__icon-svg" width="80" height="80" viewbox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-												<path d="M28.3262 39.4326L39.1663 14V30.2602L50.4234 26.5078L39.1663 50.2727V35.2633L28.3262 39.4326Z" stroke="url(#paint0_linear_72_9931)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-												<path d="M59.1785 39.0153L65.0154 26.7854L57.5107 29.287L63.3477 16.5012" stroke="#0184FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-												<path d="M20.8215 39.0153L14.9846 26.7854L22.4893 29.287L16.6523 16.5012" stroke="#0184FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-												<path d="M14 61.4316H20.5M40 61.4316L35.0527 66.3789M40 61.4316H33.5M40 61.4316H46.5M27 61.4316L22.0527 66.3789M27 61.4316H33.5M27 61.4316H20.5M33.5 61.4316L28.5527 66.3789M20.5 61.4316L15.5527 66.3789M53 61.4316L48.0527 66.3789M53 61.4316H46.5M53 61.4316H59.5M46.5 61.4316L41.5527 66.3789M59.5 61.4316H66L61.0527 66.3789M59.5 61.4316L54.5527 66.3789" stroke="url(#paint1_linear_72_9931)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-												<defs>
-													<lineargradient id="paint0_linear_72_9931" x1="35.7667" y1="52.1008" x2="33.3651" y2="16.7576" gradientunits="userSpaceOnUse">
-														<stop stop-color="#0184FF"></stop>
-														<stop offset="1" stop-color="#0184FF" stop-opacity="0"></stop>
-													</lineargradient>
-													<lineargradient id="paint1_linear_72_9931" x1="40" y1="60.8789" x2="40" y2="66.8789" gradientunits="userSpaceOnUse">
-														<stop stop-color="#0E2245"></stop>
-														<stop offset="1" stop-color="#0E2245" stop-opacity="0"></stop>
-													</lineargradient>
-												</defs>
-											</svg></div>
+										<div class="production-slider__icon">
+											<picture class="picture">
+												<source type="image/webp" srcset="assets/images/antistatic-icon.webp"><img class="picture__img" src="assets/images/antistatic-icon.png">
+											</picture>
+										</div>
 										<div class="production-slider__desc">
 											<div class="production-slider__desc-inner">
 												<h6 class="production-slider__title">Антистатические полы и покрытия</h6><svg class="production-slider__arrow-svg" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1022,21 +976,11 @@
 										<picture class="picture production-slider__bg mobile">
 											<source type="image/webp" srcset="assets/images/non-sparking-m.webp"><img class="picture__img" src="assets/images/non-sparking-m.png">
 										</picture>
-										<div class="production-slider__icon"><svg class="production-slider__icon-svg" width="80" height="80" viewbox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-												<path fill-rule="evenodd" clip-rule="evenodd" d="M39.7135 24.0669C35.2026 28.0941 35.9619 28.4965 35.828 31.584C35.7443 33.514 34.9448 34.2901 34.3574 34.6006C33.4583 35.0757 31.9424 34.2274 31.9424 33.6422C30.6066 36.6815 31.2633 40.4665 33.7288 42.7261C34.3342 43.2811 35.0493 43.7348 35.8307 44.0826C36.2545 41.4167 38.1021 39.4102 40.3168 39.4102C42.3882 39.4102 44.1376 41.165 44.7028 43.5726C45.3498 43.1553 45.9312 42.6388 46.4152 42.0176C49.041 38.6481 47.4687 33.7936 44.0903 30.3768C39.4458 25.6784 39.7135 24.0669 39.7135 24.0669Z" stroke="#0E2245" stroke-width="1.5" stroke-linejoin="round"></path>
-												<path d="M55.5462 19.6484C51.6314 15.5518 46.1137 13 40 13C28.1259 13 18.5 22.6259 18.5 34.5C18.5 40.0862 20.6304 45.1747 24.1231 48.9976M55.5462 19.6484C59.2346 23.5083 61.5 28.7396 61.5 34.5C61.5 46.3741 51.8741 56 40 56C33.712 56 28.0545 53.3007 24.1231 48.9976M55.5462 19.6484L24.1231 48.9976" stroke="url(#paint0_linear_72_9947)" stroke-width="1.5"></path>
-												<path d="M14 61.4316H20.5M40 61.4316L35.0527 66.3789M40 61.4316H33.5M40 61.4316H46.5M27 61.4316L22.0527 66.3789M27 61.4316H33.5M27 61.4316H20.5M33.5 61.4316L28.5527 66.3789M20.5 61.4316L15.5527 66.3789M53 61.4316L48.0527 66.3789M53 61.4316H46.5M53 61.4316H59.5M46.5 61.4316L41.5527 66.3789M59.5 61.4316H66L61.0527 66.3789M59.5 61.4316L54.5527 66.3789" stroke="url(#paint1_linear_72_9947)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-												<defs>
-													<lineargradient id="paint0_linear_72_9947" x1="39.6692" y1="13" x2="41.0281" y2="53.704" gradientunits="userSpaceOnUse">
-														<stop stop-color="#0184FF"></stop>
-														<stop offset="1" stop-color="#0184FF" stop-opacity="0"></stop>
-													</lineargradient>
-													<lineargradient id="paint1_linear_72_9947" x1="40" y1="60.8789" x2="40" y2="66.8789" gradientunits="userSpaceOnUse">
-														<stop stop-color="#0E2245"></stop>
-														<stop offset="1" stop-color="#0E2245" stop-opacity="0"></stop>
-													</lineargradient>
-												</defs>
-											</svg></div>
+										<div class="production-slider__icon">
+											<picture class="picture">
+												<source type="image/webp" srcset="assets/images/non-sparking-icon.webp"><img class="picture__img" src="assets/images/non-sparking-icon.png">
+											</picture>
+										</div>
 										<div class="production-slider__desc">
 											<div class="production-slider__desc-inner">
 												<h6 class="production-slider__title">Безыскровые полы</h6><svg class="production-slider__arrow-svg" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1056,31 +1000,11 @@
 										<picture class="picture production-slider__bg mobile">
 											<source type="image/webp" srcset="assets/images/antistatic-m.webp"><img class="picture__img" src="assets/images/antistatic-m.png">
 										</picture>
-										<div class="production-slider__icon"><svg class="production-slider__icon-svg" width="80" height="80" viewbox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-												<path d="M14 61.4316H20.5M40 61.4316L35.0527 66.3789M40 61.4316H33.5M40 61.4316H46.5M27 61.4316L22.0527 66.3789M27 61.4316H33.5M27 61.4316H20.5M33.5 61.4316L28.5527 66.3789M20.5 61.4316L15.5527 66.3789M53 61.4316L48.0527 66.3789M53 61.4316H46.5M53 61.4316H59.5M46.5 61.4316L41.5527 66.3789M59.5 61.4316H66L61.0527 66.3789M59.5 61.4316L54.5527 66.3789" stroke="url(#paint0_linear_72_9955)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-												<path d="M44.0906 28.0097L50.915 16.1895C47.7034 14.3304 43.9776 13.2617 40.0002 13.2617C36.0229 13.2617 32.2971 14.3304 29.085 16.1889L35.9099 28.0097C37.114 27.3127 38.5085 26.9072 40.0002 26.9072C41.492 26.9072 42.8865 27.3127 44.0906 28.0097Z" stroke="url(#paint1_linear_72_9955)" stroke-width="1.5" stroke-linejoin="round"></path>
-												<path d="M31.813 35.0952H18.1675C18.1675 43.1755 22.5608 50.2253 29.085 54.0007L35.9099 42.1799C33.463 40.7646 31.813 38.1251 31.813 35.0952Z" stroke="url(#paint2_linear_72_9955)" stroke-width="1.5" stroke-linejoin="round"></path>
-												<path d="M48.1872 35.0952C48.1872 38.1251 46.5372 40.7646 44.0903 42.1799L50.9147 54.0002C57.4394 50.2253 61.8327 43.1755 61.8327 35.0952H48.1872Z" stroke="url(#paint3_linear_72_9955)" stroke-width="1.5" stroke-linejoin="round"></path>
-												<path d="M34.542 35.0942C34.542 32.0785 36.9845 29.636 40.0002 29.636C43.0158 29.636 45.4584 32.0785 45.4584 35.0942C45.4584 38.1098 43.0158 40.5524 40.0002 40.5524C36.9845 40.5524 34.542 38.1098 34.542 35.0942Z" stroke="#0E2245" stroke-width="1.5"></path>
-												<defs>
-													<lineargradient id="paint0_linear_72_9955" x1="40" y1="60.8789" x2="40" y2="66.8789" gradientunits="userSpaceOnUse">
-														<stop stop-color="#0E2245"></stop>
-														<stop offset="1" stop-color="#0E2245" stop-opacity="0"></stop>
-													</lineargradient>
-													<lineargradient id="paint1_linear_72_9955" x1="40.0002" y1="11.9347" x2="40.7826" y2="26.1841" gradientunits="userSpaceOnUse">
-														<stop stop-color="#0184FF"></stop>
-														<stop offset="1" stop-color="#0184FF" stop-opacity="0"></stop>
-													</lineargradient>
-													<lineargradient id="paint2_linear_72_9955" x1="21.9317" y1="49.9545" x2="32.8483" y2="39.9364" gradientunits="userSpaceOnUse">
-														<stop stop-color="#0184FF"></stop>
-														<stop offset="1" stop-color="#0184FF" stop-opacity="0"></stop>
-													</lineargradient>
-													<lineargradient id="paint3_linear_72_9955" x1="59.9506" y1="45.8138" x2="46.939" y2="39.9328" gradientunits="userSpaceOnUse">
-														<stop stop-color="#0184FF"></stop>
-														<stop offset="1" stop-color="#0184FF" stop-opacity="0"></stop>
-													</lineargradient>
-												</defs>
-											</svg></div>
+										<div class="production-slider__icon">
+											<picture class="picture">
+												<source type="image/webp" srcset="assets/images/radiation-icon.webp"><img class="picture__img" src="assets/images/radiation-icon.png">
+											</picture>
+										</div>
 										<div class="production-slider__desc">
 											<div class="production-slider__desc-inner">
 												<h6 class="production-slider__title">Полы и покрытия для защиты от излучений</h6><svg class="production-slider__arrow-svg" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1100,26 +1024,11 @@
 										<picture class="picture production-slider__bg mobile">
 											<source type="image/webp" srcset="assets/images/heat-m.webp"><img class="picture__img" src="assets/images/heat-m.png">
 										</picture>
-										<div class="production-slider__icon"><svg class="production-slider__icon-svg" width="80" height="80" viewbox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-												<path d="M14 61.4316H20.5M40 61.4316L35.0527 66.3789M40 61.4316H33.5M40 61.4316H46.5M27 61.4316L22.0527 66.3789M27 61.4316H33.5M27 61.4316H20.5M33.5 61.4316L28.5527 66.3789M20.5 61.4316L15.5527 66.3789M53 61.4316L48.0527 66.3789M53 61.4316H46.5M53 61.4316H59.5M46.5 61.4316L41.5527 66.3789M59.5 61.4316H66L61.0527 66.3789M59.5 61.4316L54.5527 66.3789" stroke="url(#paint0_linear_72_9974)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-												<path d="M40.572 43.641C40.8254 43.46 40.8841 43.1079 40.7031 42.8545C38.9581 40.4115 38.9581 37.6374 40.7372 34.4351C42.7168 30.8717 42.7168 27.6318 40.7031 24.8126C40.5221 24.5592 40.17 24.5005 39.9166 24.6815C39.6632 24.8625 39.6046 25.2146 39.7856 25.468C41.5306 27.911 41.5306 30.6851 39.7515 33.8874C37.7718 37.4508 37.7718 40.6907 39.7856 43.5099C39.9665 43.7633 40.3187 43.822 40.572 43.641Z" fill="#0E2245"></path>
-												<path d="M31.5511 43.641C31.8045 43.46 31.8631 43.1079 31.6821 42.8545C29.9371 40.4115 29.9371 37.6374 31.7162 34.4351C33.6959 30.8717 33.6959 27.6318 31.6821 24.8126C31.5012 24.5592 31.149 24.5005 30.8957 24.6815C30.6423 24.8625 30.5836 25.2146 30.7646 25.468C32.5096 27.911 32.5096 30.6851 30.7305 33.8874C28.7509 37.4508 28.7509 40.6907 30.7646 43.5099C30.9456 43.7633 31.2977 43.822 31.5511 43.641Z" fill="#0E2245"></path>
-												<path d="M49.593 43.641C49.8464 43.46 49.9051 43.1079 49.7241 42.8545C47.9791 40.4115 47.9791 37.6374 49.7582 34.4351C51.7378 30.8717 51.7378 27.6318 49.7241 24.8126C49.5431 24.5592 49.191 24.5005 48.9376 24.6815C48.6842 24.8625 48.6255 25.2146 48.8065 25.468C50.5516 27.911 50.5516 30.6851 48.7725 33.8874C46.7928 37.4508 46.7928 40.6907 48.8065 43.5099C48.9875 43.7633 49.3396 43.822 49.593 43.641Z" fill="#0E2245"></path>
-												<path d="M40.572 43.641C40.8254 43.46 40.8841 43.1079 40.7031 42.8545C38.9581 40.4115 38.9581 37.6374 40.7372 34.4351C42.7168 30.8717 42.7168 27.6318 40.7031 24.8126C40.5221 24.5592 40.17 24.5005 39.9166 24.6815C39.6632 24.8625 39.6046 25.2146 39.7856 25.468C41.5306 27.911 41.5306 30.6851 39.7515 33.8874C37.7718 37.4508 37.7718 40.6907 39.7856 43.5099C39.9665 43.7633 40.3187 43.822 40.572 43.641Z" stroke="#0E2245" stroke-width="0.5"></path>
-												<path d="M31.5511 43.641C31.8045 43.46 31.8631 43.1079 31.6821 42.8545C29.9371 40.4115 29.9371 37.6374 31.7162 34.4351C33.6959 30.8717 33.6959 27.6318 31.6821 24.8126C31.5012 24.5592 31.149 24.5005 30.8957 24.6815C30.6423 24.8625 30.5836 25.2146 30.7646 25.468C32.5096 27.911 32.5096 30.6851 30.7305 33.8874C28.7509 37.4508 28.7509 40.6907 30.7646 43.5099C30.9456 43.7633 31.2977 43.822 31.5511 43.641Z" stroke="#0E2245" stroke-width="0.5"></path>
-												<path d="M49.593 43.641C49.8464 43.46 49.9051 43.1079 49.7241 42.8545C47.9791 40.4115 47.9791 37.6374 49.7582 34.4351C51.7378 30.8717 51.7378 27.6318 49.7241 24.8126C49.5431 24.5592 49.191 24.5005 48.9376 24.6815C48.6842 24.8625 48.6255 25.2146 48.8065 25.468C50.5516 27.911 50.5516 30.6851 48.7725 33.8874C46.7928 37.4508 46.7928 40.6907 48.8065 43.5099C48.9875 43.7633 49.3396 43.822 49.593 43.641Z" stroke="#0E2245" stroke-width="0.5"></path>
-												<rect x="19.25" y="13.75" width="41.5" height="41.5" rx="1.25" stroke="url(#paint1_linear_72_9974)" stroke-width="1.5"></rect>
-												<defs>
-													<lineargradient id="paint0_linear_72_9974" x1="40" y1="60.8789" x2="40" y2="66.8789" gradientunits="userSpaceOnUse">
-														<stop stop-color="#0E2245"></stop>
-														<stop offset="1" stop-color="#0E2245" stop-opacity="0"></stop>
-													</lineargradient>
-													<lineargradient id="paint1_linear_72_9974" x1="40" y1="13" x2="39.9788" y2="59.7211" gradientunits="userSpaceOnUse">
-														<stop stop-color="#0184FF"></stop>
-														<stop offset="1" stop-color="#0184FF" stop-opacity="0"></stop>
-													</lineargradient>
-												</defs>
-											</svg></div>
+										<div class="production-slider__icon">
+											<picture class="picture">
+												<source type="image/webp" srcset="assets/images/heat-icon.webp"><img class="picture__img" src="assets/images/heat-icon.png">
+											</picture>
+										</div>
 										<div class="production-slider__desc">
 											<div class="production-slider__desc-inner">
 												<h6 class="production-slider__title">Жаростойкие бетоны</h6><svg class="production-slider__arrow-svg" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1139,25 +1048,11 @@
 										<picture class="picture production-slider__bg mobile">
 											<source type="image/webp" srcset="assets/images/antistatic-m.webp"><img class="picture__img" src="assets/images/antistatic-m.png">
 										</picture>
-										<div class="production-slider__icon"><svg class="production-slider__icon-svg" width="80" height="80" viewbox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-												<path d="M30.1526 20.7512H31.8984V18.0507C31.8995 16.9767 32.3266 15.947 33.086 15.1876C33.8454 14.4282 34.8751 14.0011 35.9491 14H52.8271C54.438 14.0018 55.9824 14.6425 57.1215 15.7816C58.2606 16.9207 58.9013 18.4651 58.9031 20.0761V49.7812C58.9013 51.3922 58.2606 52.9366 57.1215 54.0757C55.9824 55.2148 54.438 55.8555 52.8271 55.8573H29.8731C28.2621 55.8555 26.7177 55.2148 25.5786 54.0757C24.4395 52.9366 23.7988 51.3922 23.797 49.7812V27.1067M30.1526 20.7512L27.6499 18.2485C27.5233 18.122 27.1726 18.0509 27.1726 18.0509C27.1726 18.0509 26.8219 18.122 26.6953 18.2485L21.2943 23.6495C21.1678 23.7761 21.0967 23.9477 21.0967 24.1268C21.0967 24.3058 21.1678 24.4775 21.2943 24.6041L23.797 27.1067M30.1526 20.7512L23.797 27.1067M48.9998 16.7005H37.1271C36.59 16.7005 36.0748 16.9139 35.695 17.2937C35.3152 17.6735 35.1018 18.1887 35.1018 18.7258V20.7512H44.1099C44.3761 20.7519 44.6397 20.6999 44.8856 20.598C45.1316 20.4962 45.3548 20.3465 45.5425 20.1577L47.6495 18.0507L48.9998 16.7005Z" stroke="url(#paint0_linear_941_41850)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-												<path d="M47.1468 31.553H35.5537M47.1468 31.553V45.0553M47.1468 31.553L53 26M35.5537 31.553V45.0553M35.5537 31.553L30 26M35.5537 45.0553C40.0811 45.0553 42.6194 45.0553 47.1468 45.0553M35.5537 45.0553L30 51M47.1468 45.0553L53 51" stroke="url(#paint1_radial_941_41850)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-												<path d="M14 61.4316H20.5M40 61.4316L35.0527 66.3789M40 61.4316H33.5M40 61.4316H46.5M27 61.4316L22.0527 66.3789M27 61.4316H33.5M27 61.4316H20.5M33.5 61.4316L28.5527 66.3789M20.5 61.4316L15.5527 66.3789M53 61.4316L48.0527 66.3789M53 61.4316H46.5M53 61.4316H59.5M46.5 61.4316L41.5527 66.3789M59.5 61.4316H66L61.0527 66.3789M59.5 61.4316L54.5527 66.3789" stroke="url(#paint2_linear_941_41850)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-												<defs>
-													<lineargradient id="paint0_linear_941_41850" x1="19.9998" y1="11.5" x2="58.9998" y2="57.5" gradientunits="userSpaceOnUse">
-														<stop stop-color="#0184FF"></stop>
-														<stop offset="0.958566" stop-color="#0184FF" stop-opacity="0"></stop>
-													</lineargradient>
-													<radialgradient id="paint1_radial_941_41850" cx="0" cy="0" r="1" gradientunits="userSpaceOnUse" gradienttransform="translate(41.5 38.5) rotate(90) scale(17.5 16.1)">
-														<stop stop-color="#0184FF"></stop>
-														<stop offset="1" stop-color="#0184FF" stop-opacity="0"></stop>
-													</radialgradient>
-													<lineargradient id="paint2_linear_941_41850" x1="40" y1="60.8789" x2="40" y2="66.8789" gradientunits="userSpaceOnUse">
-														<stop stop-color="#0E2245"></stop>
-														<stop offset="1" stop-color="#0E2245" stop-opacity="0"></stop>
-													</lineargradient>
-												</defs>
-											</svg></div>
+										<div class="production-slider__icon">
+											<picture class="picture">
+												<source type="image/webp" srcset="assets/images/oil-icon.webp"><img class="picture__img" src="assets/images/oil-icon.png">
+											</picture>
+										</div>
 										<div class="production-slider__desc">
 											<div class="production-slider__desc-inner">
 												<h6 class="production-slider__title">Маслобензостойкие полы</h6><svg class="production-slider__arrow-svg" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1177,20 +1072,11 @@
 										<picture class="picture production-slider__bg mobile">
 											<source type="image/webp" srcset="assets/images/antistatic-m.webp"><img class="picture__img" src="assets/images/antistatic-m.png">
 										</picture>
-										<div class="production-slider__icon"><svg class="production-slider__icon-svg" width="80" height="80" viewbox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-												<path d="M14 61.4316H20.5M40 61.4316L35.0527 66.3789M40 61.4316H33.5M40 61.4316H46.5M27 61.4316L22.0527 66.3789M27 61.4316H33.5M27 61.4316H20.5M33.5 61.4316L28.5527 66.3789M20.5 61.4316L15.5527 66.3789M53 61.4316L48.0527 66.3789M53 61.4316H46.5M53 61.4316H59.5M46.5 61.4316L41.5527 66.3789M59.5 61.4316H66L61.0527 66.3789M59.5 61.4316L54.5527 66.3789" stroke="url(#paint0_linear_941_42131)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-												<path fill-rule="evenodd" clip-rule="evenodd" d="M33.5114 14.2319C32.2799 14.2319 31.2816 15.2302 31.2816 16.4617C31.2816 17.6931 32.2799 18.6914 33.5114 18.6914C33.9144 18.6914 34.2411 19.0181 34.2411 19.4212V28.7774C34.2411 28.9116 34.2051 29.0434 34.1368 29.159L19.8476 53.3407C19.1583 54.5073 19.9992 55.981 21.3542 55.981H58.6902C60.0453 55.981 60.8862 54.5073 60.1969 53.3407L45.9077 29.159C45.8394 29.0434 45.8034 28.9116 45.8034 28.7774V19.4212C45.8034 19.0181 46.1301 18.6914 46.5331 18.6914C47.7646 18.6914 48.7629 17.6931 48.7629 16.4617C48.7629 15.2302 47.7646 14.2319 46.5331 14.2319H33.5114ZM32.7816 16.4617C32.7816 16.0587 33.1083 15.7319 33.5114 15.7319H46.5331C46.9361 15.7319 47.2629 16.0587 47.2629 16.4617C47.2629 16.8647 46.9361 17.1914 46.5331 17.1914C45.3017 17.1914 44.3034 18.1897 44.3034 19.4212V28.7774C44.3034 29.1801 44.4114 29.5754 44.6163 29.9221L52.1424 42.6585C49.4345 43.3551 46.6059 43.4713 43.843 42.995L35.7436 41.5986C33.3697 41.1893 30.9658 41.1666 28.5952 41.4856L35.4282 29.9221C35.633 29.5754 35.7411 29.1801 35.7411 28.7774V19.4212C35.7411 18.1897 34.7428 17.1914 33.5114 17.1914C33.1083 17.1914 32.7816 16.8647 32.7816 16.4617ZM27.6037 43.1635L21.139 54.1038C21.0405 54.2704 21.1607 54.481 21.3542 54.481H58.6902C58.8838 54.481 59.004 54.2704 58.9055 54.1038L52.9345 43.999C49.8953 44.8471 46.7029 45.0102 43.5881 44.4732L35.4888 43.0767C32.8783 42.6267 30.2186 42.6758 27.6037 43.1635Z" fill="url(#paint1_linear_941_42131)"></path>
-												<defs>
-													<lineargradient id="paint0_linear_941_42131" x1="40" y1="60.8789" x2="40" y2="66.8789" gradientunits="userSpaceOnUse">
-														<stop stop-color="#0E2245"></stop>
-														<stop offset="1" stop-color="#0E2245" stop-opacity="0"></stop>
-													</lineargradient>
-													<lineargradient id="paint1_linear_941_42131" x1="40.0222" y1="14.2319" x2="39.0271" y2="58.264" gradientunits="userSpaceOnUse">
-														<stop stop-color="#0184FF"></stop>
-														<stop offset="1" stop-color="#0184FF" stop-opacity="0"></stop>
-													</lineargradient>
-												</defs>
-											</svg></div>
+										<div class="production-slider__icon">
+											<picture class="picture">
+												<source type="image/webp" srcset="assets/images/chemistry-icon.webp"><img class="picture__img" src="assets/images/chemistry-icon.png">
+											</picture>
+										</div>
 										<div class="production-slider__desc">
 											<div class="production-slider__desc-inner">
 												<h6 class="production-slider__title">Химически стойкие полы</h6><svg class="production-slider__arrow-svg" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1210,27 +1096,11 @@
 										<picture class="picture production-slider__bg mobile">
 											<source type="image/webp" srcset="assets/images/antistatic-m.webp"><img class="picture__img" src="assets/images/antistatic-m.png">
 										</picture>
-										<div class="production-slider__icon"><svg class="production-slider__icon-svg" width="80" height="80" viewbox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-												<path fill-rule="evenodd" clip-rule="evenodd" d="M21.2124 17.1887C20.7982 17.1887 20.4624 17.5245 20.4624 17.9387C20.4624 18.3529 20.7982 18.6887 21.2124 18.6887L27.0933 18.6887C27.5075 18.6887 27.8433 18.3529 27.8433 17.9387C27.8433 17.5245 27.5075 17.1887 27.0933 17.1887H21.2124ZM15.3316 24.4292C14.9174 24.4292 14.5816 24.765 14.5816 25.1792C14.5816 25.5934 14.9174 25.9292 15.3316 25.9292H27.0153C27.4295 25.9292 27.7653 25.5934 27.7653 25.1792C27.7653 24.765 27.4295 24.4292 27.0153 24.4292H15.3316ZM10.1709 39.6601C10.1709 39.2459 10.5067 38.9101 10.9209 38.9101L27.0934 38.9101C27.5076 38.9101 27.8434 39.2459 27.8434 39.6601C27.8434 40.0743 27.5076 40.4101 27.0934 40.4101L10.9209 40.4101C10.5067 40.4101 10.1709 40.0743 10.1709 39.6601ZM18.272 31.6696C17.8578 31.6696 17.522 32.0054 17.522 32.4196C17.522 32.8339 17.8578 33.1696 18.272 33.1696L27.0934 33.1696C27.5076 33.1696 27.8434 32.8339 27.8434 32.4196C27.8434 32.0054 27.5076 31.6696 27.0934 31.6696L18.272 31.6696Z" fill="url(#paint0_linear_941_42388)"></path>
-												<path d="M48.0715 46.626C50.6322 48.903 52.2336 52.1793 52.2336 55.8182C52.2336 62.6679 46.5468 68.25 39.4952 68.25C32.4437 68.25 26.7568 62.6679 26.7568 55.8182C26.7568 52.1793 28.3582 48.903 30.9189 46.626L30.4205 46.0656L30.9189 46.626C31.6431 45.9821 32.1522 45.0531 32.1522 44.009V18.9091C32.1522 14.9714 35.4234 11.75 39.4952 11.75C43.567 11.75 46.8382 14.9714 46.8382 18.9091V44.009C46.8382 45.0531 47.3473 45.9821 48.0715 46.626Z" stroke="#0184FF" stroke-width="1.5"></path>
-												<path d="M39.4951 55.5117L39.4951 29.8838" stroke="url(#paint1_linear_941_42388)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-												<path d="M53.0984 32.7845C53.2666 33.0034 53.5938 33.0541 53.8292 32.8977C56.0991 31.3897 58.6768 31.3895 61.6526 32.9266C64.9638 34.6369 67.9743 34.6367 70.5938 32.8964C70.8293 32.74 70.8838 32.4358 70.7156 32.2168C70.5474 31.9979 70.2202 31.9472 69.9848 32.1036C67.7148 33.6116 65.1371 33.6118 62.1614 32.0748C58.8501 30.3645 55.8396 30.3647 53.2201 32.1049C52.9847 32.2613 52.9302 32.5656 53.0984 32.7845Z" fill="#0E2245"></path>
-												<path d="M53.0978 24.9896C53.266 25.2086 53.5932 25.2593 53.8286 25.1029C56.0986 23.5948 58.6762 23.5946 61.652 25.1317C64.9632 26.842 67.9738 26.8418 70.5932 25.1016C70.8287 24.9452 70.8832 24.6409 70.715 24.422C70.5468 24.2031 70.2196 24.1524 69.9842 24.3088C67.7142 25.8168 65.1365 25.817 62.1608 24.2799C58.8496 22.5696 55.839 22.5698 53.2195 24.31C52.9841 24.4665 52.9296 24.7707 53.0978 24.9896Z" fill="#0E2245"></path>
-												<path d="M53.099 40.5794C53.2671 40.7983 53.5943 40.849 53.8298 40.6926C56.0997 39.1846 58.6774 39.1844 61.6532 40.7214C64.9644 42.4317 67.9749 42.4315 70.5944 40.6913C70.8298 40.5349 70.8844 40.2306 70.7162 40.0117C70.548 39.7928 70.2208 39.7421 69.9853 39.8985C67.7154 41.4065 65.1377 41.4067 62.162 39.8696C58.8507 38.1593 55.8402 38.1595 53.2207 39.8998C52.9853 40.0562 52.9308 40.3604 53.099 40.5794Z" fill="#0E2245"></path>
-												<path d="M53.0984 32.7845C53.2666 33.0034 53.5938 33.0541 53.8292 32.8977C56.0991 31.3897 58.6768 31.3895 61.6526 32.9266C64.9638 34.6369 67.9743 34.6367 70.5938 32.8964C70.8293 32.74 70.8838 32.4358 70.7156 32.2168C70.5474 31.9979 70.2202 31.9472 69.9848 32.1036C67.7148 33.6116 65.1371 33.6118 62.1614 32.0748C58.8501 30.3645 55.8396 30.3647 53.2201 32.1049C52.9847 32.2613 52.9302 32.5656 53.0984 32.7845Z" stroke="#0E2245" stroke-width="0.5"></path>
-												<path d="M53.0978 24.9896C53.266 25.2086 53.5932 25.2593 53.8286 25.1029C56.0986 23.5948 58.6762 23.5946 61.652 25.1317C64.9632 26.842 67.9738 26.8418 70.5932 25.1016C70.8287 24.9452 70.8832 24.6409 70.715 24.422C70.5468 24.2031 70.2196 24.1524 69.9842 24.3088C67.7142 25.8168 65.1365 25.817 62.1608 24.2799C58.8496 22.5696 55.839 22.5698 53.2195 24.31C52.9841 24.4665 52.9296 24.7707 53.0978 24.9896Z" stroke="#0E2245" stroke-width="0.5"></path>
-												<path d="M53.099 40.5794C53.2671 40.7983 53.5943 40.849 53.8298 40.6926C56.0997 39.1846 58.6774 39.1844 61.6532 40.7214C64.9644 42.4317 67.9749 42.4315 70.5944 40.6913C70.8298 40.5349 70.8844 40.2306 70.7162 40.0117C70.548 39.7928 70.2208 39.7421 69.9853 39.8985C67.7154 41.4065 65.1377 41.4067 62.162 39.8696C58.8507 38.1593 55.8402 38.1595 53.2207 39.8998C52.9853 40.0562 52.9308 40.3604 53.099 40.5794Z" stroke="#0E2245" stroke-width="0.5"></path>
-												<defs>
-													<lineargradient id="paint0_linear_941_42388" x1="10.5243" y1="38.6239" x2="27.4899" y2="38.6239" gradientunits="userSpaceOnUse">
-														<stop stop-color="#0184FF"></stop>
-														<stop offset="1" stop-color="#0184FF" stop-opacity="0"></stop>
-													</lineargradient>
-													<lineargradient id="paint1_linear_941_42388" x1="39.9951" y1="29.8838" x2="39.9951" y2="55.5117" gradientunits="userSpaceOnUse">
-														<stop stop-color="#0E2245" stop-opacity="0"></stop>
-														<stop offset="1" stop-color="#0E2245"></stop>
-													</lineargradient>
-												</defs>
-											</svg></div>
+										<div class="production-slider__icon">
+											<picture class="picture">
+												<source type="image/webp" srcset="assets/images/thermo-icon.webp"><img class="picture__img" src="assets/images/thermo-icon.png">
+											</picture>
+										</div>
 										<div class="production-slider__desc">
 											<div class="production-slider__desc-inner">
 												<h6 class="production-slider__title">Термостойкие полы</h6><svg class="production-slider__arrow-svg" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1250,16 +1120,11 @@
 										<picture class="picture production-slider__bg mobile">
 											<source type="image/webp" srcset="assets/images/antistatic-m.webp"><img class="picture__img" src="assets/images/antistatic-m.png">
 										</picture>
-										<div class="production-slider__icon"><svg class="production-slider__icon-svg" width="80" height="80" viewbox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-												<circle cx="25.6093" cy="25.6093" r="4.35349" stroke="#0E2245" stroke-width="1.5"></circle>
-												<path fill-rule="evenodd" clip-rule="evenodd" d="M16.4186 15.814H63.5814C63.9153 15.814 64.186 16.0847 64.186 16.4186V42.7248L54.6842 35.2118C53.339 34.1481 51.4111 34.2581 50.1955 35.4678L41.8844 43.7391L37.0358 39.9296C35.8709 39.0143 34.2463 38.9626 33.0256 39.8018L15.814 51.6348V16.4186C15.814 16.0847 16.0847 15.814 16.4186 15.814ZM15.814 53.8361V63.5814C15.814 63.9153 16.0847 64.186 16.4186 64.186H63.3829L41.3827 45.6518L35.9151 41.3559C35.3743 40.931 34.62 40.9069 34.0532 41.2966L15.814 53.8361ZM64.186 62.4908V45.0373L53.5592 36.6346C52.9346 36.1408 52.0395 36.1919 51.4751 36.7535L43.2968 44.8926L64.186 62.4908ZM14 16.4186C14 15.0828 15.0828 14 16.4186 14H63.5814C64.9172 14 66 15.0828 66 16.4186V63.5814C66 64.9172 64.9172 66 63.5814 66H16.4186C15.0828 66 14 64.9172 14 63.5814V16.4186Z" fill="url(#paint0_linear_941_42777)"></path>
-												<defs>
-													<lineargradient id="paint0_linear_941_42777" x1="40" y1="14" x2="39.9743" y2="70.5" gradientunits="userSpaceOnUse">
-														<stop stop-color="#0184FF"></stop>
-														<stop offset="1" stop-color="#0184FF" stop-opacity="0"></stop>
-													</lineargradient>
-												</defs>
-											</svg></div>
+										<div class="production-slider__icon">
+											<picture class="picture">
+												<source type="image/webp" srcset="assets/images/decor-icon.webp"><img class="picture__img" src="assets/images/decor-icon.png">
+											</picture>
+										</div>
 										<div class="production-slider__desc">
 											<div class="production-slider__desc-inner">
 												<h6 class="production-slider__title">Декоративные полы</h6><svg class="production-slider__arrow-svg" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1329,15 +1194,11 @@
 									</div>
 								</div>
 								<div class="objects-slider__controls desktop">
-									<div class="objects-slider__btns"><button class="objects-slider__btn objects-slider__btn_left">
-											<div class="objects-slider__btn-inner"><svg class="objects-slider__btn-svg" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-													<path d="M9.72946 10.9602C9.3268 11.3392 9.30814 11.973 9.68781 12.3751L13.273 16.1711C13.8942 16.8289 15 16.3892 15 15.4845L15 8.31415C15 7.43778 13.9528 6.98532 13.3146 7.58595L9.72946 10.9602Z" fill="#0E2245"></path>
-												</svg></div>
-										</button><button class="objects-slider__btn right objects-slider__btn_right right">
-											<div class="objects-slider__btn-inner"><svg class="objects-slider__btn-svg" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-													<path d="M9.72946 10.9602C9.3268 11.3392 9.30814 11.973 9.68781 12.3751L13.273 16.1711C13.8942 16.8289 15 16.3892 15 15.4845L15 8.31415C15 7.43778 13.9528 6.98532 13.3146 7.58595L9.72946 10.9602Z" fill="#0E2245"></path>
-												</svg></div>
-										</button></div>
+									<div class="objects-slider__btns"><button class="slider-button objects-slider__btn left"><svg class="slider-button__svg" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M9.72946 10.9602C9.3268 11.3392 9.30814 11.973 9.68781 12.3751L13.273 16.1711C13.8942 16.8289 15 16.3892 15 15.4845L15 8.31415C15 7.43778 13.9528 6.98532 13.3146 7.58595L9.72946 10.9602Z" fill="#0E2245"></path>
+											</svg></button><button class="slider-button objects-slider__btn right"><svg class="slider-button__svg" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M9.72946 10.9602C9.3268 11.3392 9.30814 11.973 9.68781 12.3751L13.273 16.1711C13.8942 16.8289 15 16.3892 15 15.4845L15 8.31415C15 7.43778 13.9528 6.98532 13.3146 7.58595L9.72946 10.9602Z" fill="#0E2245"></path>
+											</svg></button></div>
 									<div class="objects-slider__pagination swiper__pagination"></div>
 								</div>
 							</div>
@@ -2064,7 +1925,7 @@
 							</svg></button>
 					</div>
 				</div>
-				<div class="modal-search__results" data-lenis-prevent="true">
+				<div class="modal-search__results" data-lenis-prevent="true" data-element="popup">
 					<div class="modal-search__results-inner">
 						<div class="modal-search__results-list catalog__goods" data-catalog-chapter="catalog-products"><a class="catalog-card" href="#">
 								<div class="catalog-card__illustration">
